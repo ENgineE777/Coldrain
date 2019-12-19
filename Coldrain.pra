@@ -1,0 +1,99 @@
+﻿{
+
+	"export_dir" : "",
+	"start_scene" : 0,
+	"scenes_count" : 1,
+	"scenes" : [
+		{
+			"path" : "coldrain.sca",
+			"selected_object" : 981628,
+			"selected_object_asset" : false,
+			"include" : [
+			]
+		}
+	],
+	"selected_scene" : "coldrain.sca",
+	"nodes" : [
+		{
+			"name" : "coldrain",
+			"type" : 1
+		},
+		{
+			"name" : "",
+			"type" : 2
+		}
+	],
+	"layers" : [
+		{
+			"name" : "Tunnels",
+			"state" : 2
+		},
+		{
+			"name" : "Ground",
+			"state" : 0
+		},
+		{
+			"name" : "Level",
+			"state" : 0
+		},
+		{
+			"name" : "Floor2",
+			"state" : 2
+		},
+		{
+			"name" : "Floor3",
+			"state" : 2
+		},
+		{
+			"name" : "Floor4",
+			"state" : 2
+		},
+		{
+			"name" : "Floor5",
+			"state" : 2
+		},
+		{
+			"name" : "Floor6",
+			"state" : 2
+		},
+		{
+			"name" : "Floor1",
+			"state" : 0
+		}
+	],
+	"groups" : [
+		{
+			"name" : "Level"
+		},
+		{
+			"name" : "ShadowCasters"
+		},
+		{
+			"name" : "SubShadowCasters"
+		},
+		{
+			"name" : "Tunnels"
+		},
+		{
+			"name" : "Ground"
+		},
+		{
+			"name" : "Floor2"
+		},
+		{
+			"name" : "Floor5"
+		},
+		{
+			"name" : "Floor6"
+		},
+		{
+			"name" : "Floor3"
+		},
+		{
+			"name" : "Floor4"
+		},
+		{
+			"name" : "Floor1"
+		}
+	]
+}
