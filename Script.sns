@@ -375,13 +375,12 @@ class Main
 		}
 	}
 
-	void OnChangeFloor(int self_index, string&in name, int index, int param)
+	void OnChangeFloor(int self_index, string&in name, int index, int floor_from, int floor_to, int marker_index)
 	{
-		int floor_to = param % 10;
-		int floor_from = param / 10;
-
 		core.scene.SetStateToGroup("Floor" + floor_from, 0);
 		core.scene.SetStateToGroup("Floor" + floor_to, 2);
+
+		hero[0].legs_phys.MoveTo(markers[marker_index].x, markers[marker_index].y);
 	}
 
 	void OnHeroAnimEvent(string&in name, int index, string&in event_name, string&in param)
