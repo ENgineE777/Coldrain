@@ -148,6 +148,31 @@
 		},
 		{
 			"uid" : -1,
+			"name" : "Doors",
+			"type" : 3
+		},
+		{
+			"uid" : 130804,
+			"name" : "DH_Lvl1",
+			"type" : 1
+		},
+		{
+			"uid" : 556660,
+			"name" : "DH_Lvl1_S",
+			"type" : 1
+		},
+		{
+			"uid" : 849783,
+			"name" : "DH_Lvl1_T",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
 			"name" : "Triggers",
 			"type" : 3
 		},
@@ -174,6 +199,11 @@
 		{
 			"uid" : 228340,
 			"name" : "Crate",
+			"type" : 1
+		},
+		{
+			"uid" : 950007,
+			"name" : "Item_CardLvl1",
 			"type" : 1
 		},
 		{
@@ -204,7 +234,62 @@
 		{
 			"uid" : -1,
 			"name" : "Floor3",
-			"type" : 3
+			"type" : 0
+		},
+		{
+			"uid" : -1,
+			"name" : "Doors",
+			"type" : 0
+		},
+		{
+			"uid" : 455806,
+			"name" : "DH_Lvl1",
+			"type" : 1
+		},
+		{
+			"uid" : 913526,
+			"name" : "DH_Lvl2",
+			"type" : 1
+		},
+		{
+			"uid" : 389366,
+			"name" : "DH_Lvl3",
+			"type" : 1
+		},
+		{
+			"uid" : 556413,
+			"name" : "DH_Lvl4",
+			"type" : 1
+		},
+		{
+			"uid" : 686207,
+			"name" : "DH_Lvl4_2",
+			"type" : 1
+		},
+		{
+			"uid" : 194046,
+			"name" : "DV_Lvl1",
+			"type" : 1
+		},
+		{
+			"uid" : 30196,
+			"name" : "DV_Lvl1_2",
+			"type" : 1
+		},
+		{
+			"uid" : 294524,
+			"name" : "DV_Lvl2",
+			"type" : 1
+		},
+		{
+			"uid" : 718844,
+			"name" : "DV_Lvl2_2",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
 		},
 		{
 			"uid" : -1,
@@ -260,6 +345,66 @@
 			"uid" : -1,
 			"name" : "Floor4",
 			"type" : 3
+		},
+		{
+			"uid" : -1,
+			"name" : "Doors",
+			"type" : 3
+		},
+		{
+			"uid" : 979958,
+			"name" : "DH_Lvl1",
+			"type" : 1
+		},
+		{
+			"uid" : 261621,
+			"name" : "DH_Lvl1_2",
+			"type" : 1
+		},
+		{
+			"uid" : 750839,
+			"name" : "DH_Lvl4",
+			"type" : 1
+		},
+		{
+			"uid" : 915317,
+			"name" : "DH_Lvl4_2",
+			"type" : 1
+		},
+		{
+			"uid" : 1015413,
+			"name" : "DH_Lvl4_3",
+			"type" : 1
+		},
+		{
+			"uid" : 523255,
+			"name" : "DV_Lvl1",
+			"type" : 1
+		},
+		{
+			"uid" : 520439,
+			"name" : "DV_Lvl1_2",
+			"type" : 1
+		},
+		{
+			"uid" : 654590,
+			"name" : "DV_Lvl2",
+			"type" : 1
+		},
+		{
+			"uid" : 653174,
+			"name" : "DV_Lvl2_2",
+			"type" : 1
+		},
+		{
+			"uid" : 454911,
+			"name" : "DV_Lvl3",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
 		},
 		{
 			"uid" : -1,
@@ -467,13 +612,13 @@
 			"type" : 1
 		},
 		{
-			"uid" : 654204,
-			"name" : "Marker",
+			"uid" : -211527680,
+			"name" : "MainScript",
 			"type" : 1
 		},
 		{
-			"uid" : -211527680,
-			"name" : "Script",
+			"uid" : 654204,
+			"name" : "Marker",
 			"type" : 1
 		},
 		{
@@ -488,6 +633,26 @@
 		}
 	],
 	"asset_nodes" : [
+		{
+			"uid" : -1,
+			"name" : "Scripts",
+			"type" : 3
+		},
+		{
+			"uid" : 685438,
+			"name" : "DoorScript",
+			"type" : 1
+		},
+		{
+			"uid" : 200902816,
+			"name" : "MainScript",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
 		{
 			"uid" : -1,
 			"name" : "Sprites",
@@ -774,6 +939,81 @@
 			"type" : 3
 		},
 		{
+			"uid" : -1,
+			"name" : "Doors",
+			"type" : 3
+		},
+		{
+			"uid" : 291455,
+			"name" : "DoorHorzLvl1",
+			"type" : 1
+		},
+		{
+			"uid" : 587388,
+			"name" : "DoorHorzLvl2",
+			"type" : 1
+		},
+		{
+			"uid" : 290942,
+			"name" : "DoorHorzLvl3",
+			"type" : 1
+		},
+		{
+			"uid" : 717431,
+			"name" : "DoorHorzLvl4",
+			"type" : 1
+		},
+		{
+			"uid" : 553854,
+			"name" : "DoorLevel_SD",
+			"type" : 1
+		},
+		{
+			"uid" : 883582,
+			"name" : "DoorVertLvl1",
+			"type" : 1
+		},
+		{
+			"uid" : 914431,
+			"name" : "DoorVertLvl2",
+			"type" : 1
+		},
+		{
+			"uid" : 422645,
+			"name" : "DoorVertLvl3",
+			"type" : 1
+		},
+		{
+			"uid" : 324092,
+			"name" : "DoorVertLvl4",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "Items",
+			"type" : 3
+		},
+		{
+			"uid" : 586229,
+			"name" : "Item_CardLvl1",
+			"type" : 1
+		},
+		{
+			"uid" : 884469,
+			"name" : "Item_SD",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
 			"uid" : 684150,
 			"name" : "BackTunel",
 			"type" : 1
@@ -891,7 +1131,7 @@
 		{
 			"uid" : -1,
 			"name" : "UI",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : 784383,
@@ -936,11 +1176,6 @@
 		{
 			"uid" : 980476,
 			"name" : "Floor6",
-			"type" : 1
-		},
-		{
-			"uid" : 200902816,
-			"name" : "Script",
 			"type" : 1
 		},
 		{

@@ -14,8 +14,8 @@
 	},
 	"camera_pos" :
 	{
-		"x" : 1193.537598,
-		"y" : -674.565979
+		"x" : 1369.041016,
+		"y" : -809.944031
 	},
 	"camera_zoom" : 0.980000,
 	"move_mode" : 1,
@@ -28,15 +28,15 @@
 			"ed_camera_2d" :
 			{
 				"x" : 1373.585083,
-				"y" : 912.679016
+				"y" : 912.678955
 			},
 			"ed_camera_2d_zoom" : 1.060000,
-			"Name" : "Script",
+			"Name" : "MainScript",
 			"State" : 2,
 			"Group" : "",
 			"Layer" : "",
 			"main_class" : "Main",
-			"Count" : 52,
+			"Count" : 55,
 			"Node" : [
 				{
 					"type" : 1,
@@ -697,6 +697,45 @@
 						"x" : 1718.000000,
 						"y" : 1096.038452
 					}
+				},
+				{
+					"type" : 1,
+					"name" : "item_card_lvl1",
+					"pos" :
+					{
+						"x" : 1527.538940,
+						"y" : 156.592392
+					},
+					"prefix" : ""
+				},
+				{
+					"type" : 0,
+					"name" : "Object",
+					"pos" :
+					{
+						"x" : 1507.130493,
+						"y" : 274.959686
+					}
+				},
+				{
+					"type" : 2,
+					"name" : "OnPickupLevelCard1",
+					"pos" :
+					{
+						"x" : 1712.232178,
+						"y" : 274.959686
+					},
+					"param_type" : 0,
+					"call_type" : 0,
+					"Count" : 1,
+					"Link" : [
+						{
+							"node" : 53,
+							"param" : "",
+							"param2" : "",
+							"param3" : ""
+						}
+					]
 				}
 			],
 			"dep_count" : 24,
@@ -8651,6 +8690,1002 @@
 					}
 				]
 			}
+		},
+		{
+			"type" : "SpriteAsset",
+			"uid" : 883582,
+			"ed_camera_2d" :
+			{
+				"x" : 0.000000,
+				"y" : 0.000000
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "DoorVertLvl1",
+			"x" : -44.272972,
+			"y" : 2.856099,
+			"width" : 24.000000,
+			"height" : 96.000000,
+			"anchorn_x" : 0.500000,
+			"anchorn_y" : 0.000000,
+			"use_source_size" : false,
+			"source_scaleX" : 1.000000,
+			"source_scaleY" : 1.000000,
+			"sprite" :
+			{
+				"width" : 558,
+				"height" : 722,
+				"type" : 0,
+				"color" :
+				{
+					"r" : 1.000000,
+					"g" : 1.000000,
+					"b" : 1.000000,
+					"a" : 1.000000
+				},
+				"texName" : "Sprites/Seizure.png",
+				"texMode" : 0,
+				"texFilter" : 0,
+				"count" : 1,
+				"Rect" : [
+					{
+						"pos" :
+						{
+							"x" : 244.000000,
+							"y" : 357.000000
+						},
+						"size" :
+						{
+							"x" : 8.000000,
+							"y" : 32.000000
+						},
+						"uv" :
+						{
+							"x" : 0.437276,
+							"y" : 0.494460
+						},
+						"duv" :
+						{
+							"x" : 0.014337,
+							"y" : 0.044321
+						},
+						"offset" :
+						{
+							"x" : 0.000000,
+							"y" : 0.000000
+						}
+					}
+				]
+			},
+			"components" : [
+				{
+					"type" : "Phys2DComp",
+					"body_type" : 0,
+					"density" : 1.250000,
+					"friction" : 0.250000,
+					"allow_rotate" : true,
+					"use_object_size" : true,
+					"width" : 64.000000,
+					"height" : 64.000000,
+					"group" : 1
+				},
+				{
+					"type" : "ScriptMetaDataComp",
+					"Asset" :
+					{
+						"uid" : 553854,
+						"child_uid" : 0,
+						"is_asset" : true
+					},
+					"count" : 1,
+					"value" : [
+						{
+							"type" : 1,
+							"value" : 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "SpriteAsset",
+			"uid" : 291455,
+			"ed_camera_2d" :
+			{
+				"x" : 0.000000,
+				"y" : 0.000000
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "DoorHorzLvl1",
+			"x" : -44.272972,
+			"y" : 2.856099,
+			"width" : 96.000000,
+			"height" : 24.000000,
+			"anchorn_x" : 0.000000,
+			"anchorn_y" : 0.500000,
+			"use_source_size" : false,
+			"source_scaleX" : 1.000000,
+			"source_scaleY" : 1.000000,
+			"sprite" :
+			{
+				"width" : 558,
+				"height" : 722,
+				"type" : 0,
+				"color" :
+				{
+					"r" : 1.000000,
+					"g" : 1.000000,
+					"b" : 1.000000,
+					"a" : 1.000000
+				},
+				"texName" : "Sprites/Seizure.png",
+				"texMode" : 0,
+				"texFilter" : 0,
+				"count" : 1,
+				"Rect" : [
+					{
+						"pos" :
+						{
+							"x" : 202.000000,
+							"y" : 363.000000
+						},
+						"size" :
+						{
+							"x" : 32.000000,
+							"y" : 8.000000
+						},
+						"uv" :
+						{
+							"x" : 0.362007,
+							"y" : 0.502770
+						},
+						"duv" :
+						{
+							"x" : 0.057348,
+							"y" : 0.011080
+						},
+						"offset" :
+						{
+							"x" : 0.000000,
+							"y" : 0.000000
+						}
+					}
+				]
+			},
+			"components" : [
+				{
+					"type" : "Phys2DComp",
+					"body_type" : 0,
+					"density" : 1.250000,
+					"friction" : 0.250000,
+					"allow_rotate" : true,
+					"use_object_size" : true,
+					"width" : 64.000000,
+					"height" : 64.000000,
+					"group" : 1
+				},
+				{
+					"type" : "ScriptMetaDataComp",
+					"Asset" :
+					{
+						"uid" : 553854,
+						"child_uid" : 0,
+						"is_asset" : true
+					},
+					"count" : 1,
+					"value" : [
+						{
+							"type" : 1,
+							"value" : 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "SpriteAsset",
+			"uid" : 914431,
+			"ed_camera_2d" :
+			{
+				"x" : 0.000000,
+				"y" : 0.000000
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "DoorVertLvl2",
+			"x" : -44.272972,
+			"y" : 2.856099,
+			"width" : 24.000000,
+			"height" : 96.000000,
+			"anchorn_x" : 0.500000,
+			"anchorn_y" : 0.000000,
+			"use_source_size" : false,
+			"source_scaleX" : 1.000000,
+			"source_scaleY" : 1.000000,
+			"sprite" :
+			{
+				"width" : 558,
+				"height" : 722,
+				"type" : 0,
+				"color" :
+				{
+					"r" : 1.000000,
+					"g" : 1.000000,
+					"b" : 1.000000,
+					"a" : 1.000000
+				},
+				"texName" : "Sprites/Seizure.png",
+				"texMode" : 0,
+				"texFilter" : 0,
+				"count" : 1,
+				"Rect" : [
+					{
+						"pos" :
+						{
+							"x" : 256.000000,
+							"y" : 357.000000
+						},
+						"size" :
+						{
+							"x" : 8.000000,
+							"y" : 32.000000
+						},
+						"uv" :
+						{
+							"x" : 0.458781,
+							"y" : 0.494460
+						},
+						"duv" :
+						{
+							"x" : 0.014337,
+							"y" : 0.044321
+						},
+						"offset" :
+						{
+							"x" : 0.000000,
+							"y" : 0.000000
+						}
+					}
+				]
+			},
+			"components" : [
+				{
+					"type" : "Phys2DComp",
+					"body_type" : 0,
+					"density" : 1.250000,
+					"friction" : 0.250000,
+					"allow_rotate" : true,
+					"use_object_size" : true,
+					"width" : 64.000000,
+					"height" : 64.000000,
+					"group" : 1
+				},
+				{
+					"type" : "ScriptMetaDataComp",
+					"Asset" :
+					{
+						"uid" : 553854,
+						"child_uid" : 0,
+						"is_asset" : true
+					},
+					"count" : 1,
+					"value" : [
+						{
+							"type" : 1,
+							"value" : 2
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "SpriteAsset",
+			"uid" : 587388,
+			"ed_camera_2d" :
+			{
+				"x" : 0.000000,
+				"y" : 0.000000
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "DoorHorzLvl2",
+			"x" : -44.272972,
+			"y" : 2.856099,
+			"width" : 96.000000,
+			"height" : 24.000000,
+			"anchorn_x" : 0.000000,
+			"anchorn_y" : 0.500000,
+			"use_source_size" : false,
+			"source_scaleX" : 1.000000,
+			"source_scaleY" : 1.000000,
+			"sprite" :
+			{
+				"width" : 558,
+				"height" : 722,
+				"type" : 0,
+				"color" :
+				{
+					"r" : 1.000000,
+					"g" : 1.000000,
+					"b" : 1.000000,
+					"a" : 1.000000
+				},
+				"texName" : "Sprites/Seizure.png",
+				"texMode" : 0,
+				"texFilter" : 0,
+				"count" : 1,
+				"Rect" : [
+					{
+						"pos" :
+						{
+							"x" : 202.000000,
+							"y" : 351.000000
+						},
+						"size" :
+						{
+							"x" : 32.000000,
+							"y" : 8.000000
+						},
+						"uv" :
+						{
+							"x" : 0.362007,
+							"y" : 0.486150
+						},
+						"duv" :
+						{
+							"x" : 0.057348,
+							"y" : 0.011080
+						},
+						"offset" :
+						{
+							"x" : 0.000000,
+							"y" : 0.000000
+						}
+					}
+				]
+			},
+			"components" : [
+				{
+					"type" : "Phys2DComp",
+					"body_type" : 0,
+					"density" : 1.250000,
+					"friction" : 0.250000,
+					"allow_rotate" : true,
+					"use_object_size" : true,
+					"width" : 64.000000,
+					"height" : 64.000000,
+					"group" : 1
+				},
+				{
+					"type" : "ScriptMetaDataComp",
+					"Asset" :
+					{
+						"uid" : 553854,
+						"child_uid" : 0,
+						"is_asset" : true
+					},
+					"count" : 1,
+					"value" : [
+						{
+							"type" : 1,
+							"value" : 2
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "SpriteAsset",
+			"uid" : 290942,
+			"ed_camera_2d" :
+			{
+				"x" : 0.000000,
+				"y" : 0.000000
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "DoorHorzLvl3",
+			"x" : -44.272972,
+			"y" : 2.856099,
+			"width" : 96.000000,
+			"height" : 24.000000,
+			"anchorn_x" : 0.000000,
+			"anchorn_y" : 0.500000,
+			"use_source_size" : false,
+			"source_scaleX" : 1.000000,
+			"source_scaleY" : 1.000000,
+			"sprite" :
+			{
+				"width" : 558,
+				"height" : 722,
+				"type" : 0,
+				"color" :
+				{
+					"r" : 1.000000,
+					"g" : 1.000000,
+					"b" : 1.000000,
+					"a" : 1.000000
+				},
+				"texName" : "Sprites/Seizure.png",
+				"texMode" : 0,
+				"texFilter" : 0,
+				"count" : 1,
+				"Rect" : [
+					{
+						"pos" :
+						{
+							"x" : 202.000000,
+							"y" : 339.000000
+						},
+						"size" :
+						{
+							"x" : 32.000000,
+							"y" : 8.000000
+						},
+						"uv" :
+						{
+							"x" : 0.362007,
+							"y" : 0.469529
+						},
+						"duv" :
+						{
+							"x" : 0.057348,
+							"y" : 0.011080
+						},
+						"offset" :
+						{
+							"x" : 0.000000,
+							"y" : 0.000000
+						}
+					}
+				]
+			},
+			"components" : [
+				{
+					"type" : "Phys2DComp",
+					"body_type" : 0,
+					"density" : 1.250000,
+					"friction" : 0.250000,
+					"allow_rotate" : true,
+					"use_object_size" : true,
+					"width" : 64.000000,
+					"height" : 64.000000,
+					"group" : 1
+				},
+				{
+					"type" : "ScriptMetaDataComp",
+					"Asset" :
+					{
+						"uid" : 553854,
+						"child_uid" : 0,
+						"is_asset" : true
+					},
+					"count" : 1,
+					"value" : [
+						{
+							"type" : 1,
+							"value" : 3
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "SpriteAsset",
+			"uid" : 717431,
+			"ed_camera_2d" :
+			{
+				"x" : 0.000000,
+				"y" : 0.000000
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "DoorHorzLvl4",
+			"x" : -44.272972,
+			"y" : 2.856099,
+			"width" : 96.000000,
+			"height" : 24.000000,
+			"anchorn_x" : 0.000000,
+			"anchorn_y" : 0.500000,
+			"use_source_size" : false,
+			"source_scaleX" : 1.000000,
+			"source_scaleY" : 1.000000,
+			"sprite" :
+			{
+				"width" : 558,
+				"height" : 722,
+				"type" : 0,
+				"color" :
+				{
+					"r" : 1.000000,
+					"g" : 1.000000,
+					"b" : 1.000000,
+					"a" : 1.000000
+				},
+				"texName" : "Sprites/Seizure.png",
+				"texMode" : 0,
+				"texFilter" : 0,
+				"count" : 1,
+				"Rect" : [
+					{
+						"pos" :
+						{
+							"x" : 202.000000,
+							"y" : 327.000000
+						},
+						"size" :
+						{
+							"x" : 32.000000,
+							"y" : 8.000000
+						},
+						"uv" :
+						{
+							"x" : 0.362007,
+							"y" : 0.452909
+						},
+						"duv" :
+						{
+							"x" : 0.057348,
+							"y" : 0.011080
+						},
+						"offset" :
+						{
+							"x" : 0.000000,
+							"y" : 0.000000
+						}
+					}
+				]
+			},
+			"components" : [
+				{
+					"type" : "Phys2DComp",
+					"body_type" : 0,
+					"density" : 1.250000,
+					"friction" : 0.250000,
+					"allow_rotate" : true,
+					"use_object_size" : true,
+					"width" : 64.000000,
+					"height" : 64.000000,
+					"group" : 1
+				},
+				{
+					"type" : "ScriptMetaDataComp",
+					"Asset" :
+					{
+						"uid" : 553854,
+						"child_uid" : 0,
+						"is_asset" : true
+					},
+					"count" : 1,
+					"value" : [
+						{
+							"type" : 1,
+							"value" : 4
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "SpriteAsset",
+			"uid" : 422645,
+			"ed_camera_2d" :
+			{
+				"x" : 0.000000,
+				"y" : 0.000000
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "DoorVertLvl3",
+			"x" : -44.272972,
+			"y" : 2.856099,
+			"width" : 24.000000,
+			"height" : 96.000000,
+			"anchorn_x" : 0.500000,
+			"anchorn_y" : 0.000000,
+			"use_source_size" : false,
+			"source_scaleX" : 1.000000,
+			"source_scaleY" : 1.000000,
+			"sprite" :
+			{
+				"width" : 558,
+				"height" : 722,
+				"type" : 0,
+				"color" :
+				{
+					"r" : 1.000000,
+					"g" : 1.000000,
+					"b" : 1.000000,
+					"a" : 1.000000
+				},
+				"texName" : "Sprites/Seizure.png",
+				"texMode" : 0,
+				"texFilter" : 0,
+				"count" : 1,
+				"Rect" : [
+					{
+						"pos" :
+						{
+							"x" : 268.000000,
+							"y" : 357.000000
+						},
+						"size" :
+						{
+							"x" : 8.000000,
+							"y" : 32.000000
+						},
+						"uv" :
+						{
+							"x" : 0.480287,
+							"y" : 0.494460
+						},
+						"duv" :
+						{
+							"x" : 0.014337,
+							"y" : 0.044321
+						},
+						"offset" :
+						{
+							"x" : 0.000000,
+							"y" : 0.000000
+						}
+					}
+				]
+			},
+			"components" : [
+				{
+					"type" : "Phys2DComp",
+					"body_type" : 0,
+					"density" : 1.250000,
+					"friction" : 0.250000,
+					"allow_rotate" : true,
+					"use_object_size" : true,
+					"width" : 64.000000,
+					"height" : 64.000000,
+					"group" : 1
+				},
+				{
+					"type" : "ScriptMetaDataComp",
+					"Asset" :
+					{
+						"uid" : 553854,
+						"child_uid" : 0,
+						"is_asset" : true
+					},
+					"count" : 1,
+					"value" : [
+						{
+							"type" : 1,
+							"value" : 3
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "SpriteAsset",
+			"uid" : 324092,
+			"ed_camera_2d" :
+			{
+				"x" : 0.000000,
+				"y" : 0.000000
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "DoorVertLvl4",
+			"x" : -44.272972,
+			"y" : 2.856099,
+			"width" : 24.000000,
+			"height" : 96.000000,
+			"anchorn_x" : 0.500000,
+			"anchorn_y" : 0.000000,
+			"use_source_size" : false,
+			"source_scaleX" : 1.000000,
+			"source_scaleY" : 1.000000,
+			"sprite" :
+			{
+				"width" : 558,
+				"height" : 722,
+				"type" : 0,
+				"color" :
+				{
+					"r" : 1.000000,
+					"g" : 1.000000,
+					"b" : 1.000000,
+					"a" : 1.000000
+				},
+				"texName" : "Sprites/Seizure.png",
+				"texMode" : 0,
+				"texFilter" : 0,
+				"count" : 1,
+				"Rect" : [
+					{
+						"pos" :
+						{
+							"x" : 280.000000,
+							"y" : 357.000000
+						},
+						"size" :
+						{
+							"x" : 8.000000,
+							"y" : 32.000000
+						},
+						"uv" :
+						{
+							"x" : 0.501792,
+							"y" : 0.494460
+						},
+						"duv" :
+						{
+							"x" : 0.014337,
+							"y" : 0.044321
+						},
+						"offset" :
+						{
+							"x" : 0.000000,
+							"y" : 0.000000
+						}
+					}
+				]
+			},
+			"components" : [
+				{
+					"type" : "Phys2DComp",
+					"body_type" : 0,
+					"density" : 1.250000,
+					"friction" : 0.250000,
+					"allow_rotate" : true,
+					"use_object_size" : true,
+					"width" : 64.000000,
+					"height" : 64.000000,
+					"group" : 1
+				},
+				{
+					"type" : "ScriptMetaDataComp",
+					"Asset" :
+					{
+						"uid" : 553854,
+						"child_uid" : 0,
+						"is_asset" : true
+					},
+					"count" : 1,
+					"value" : [
+						{
+							"type" : 1,
+							"value" : 4
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "SceneScriptAsset",
+			"uid" : 685438,
+			"ed_camera_2d" :
+			{
+				"x" : 417.829681,
+				"y" : 188.957474
+			},
+			"ed_camera_2d_zoom" : 0.940000,
+			"Name" : "DoorScript",
+			"State" : 2,
+			"Group" : "",
+			"Layer" : "",
+			"main_class" : "DoorController",
+			"Count" : 6,
+			"Node" : [
+				{
+					"type" : 1,
+					"name" : "door",
+					"pos" :
+					{
+						"x" : 172.829803,
+						"y" : 125.957443
+					},
+					"prefix" : ""
+				},
+				{
+					"type" : 0,
+					"name" : "Trigger",
+					"pos" :
+					{
+						"x" : 161.446579,
+						"y" : 244.638260
+					}
+				},
+				{
+					"type" : 2,
+					"name" : "OnEnter",
+					"pos" :
+					{
+						"x" : 438.924683,
+						"y" : 244.356232
+					},
+					"param_type" : 0,
+					"call_type" : 0,
+					"Count" : 1,
+					"Link" : [
+						{
+							"node" : 1,
+							"param" : "",
+							"param2" : "",
+							"param3" : ""
+						}
+					]
+				},
+				{
+					"type" : 2,
+					"name" : "OnLeave",
+					"pos" :
+					{
+						"x" : 448.201416,
+						"y" : 372.127625
+					},
+					"param_type" : 0,
+					"call_type" : 0,
+					"Count" : 1,
+					"Link" : [
+						{
+							"node" : 4,
+							"param" : "",
+							"param2" : "",
+							"param3" : ""
+						}
+					]
+				},
+				{
+					"type" : 0,
+					"name" : "Trigger",
+					"pos" :
+					{
+						"x" : 165.378082,
+						"y" : 372.137451
+					}
+				},
+				{
+					"type" : 1,
+					"name" : "main",
+					"pos" :
+					{
+						"x" : 454.329681,
+						"y" : 134.457474
+					},
+					"prefix" : ""
+				}
+			],
+			"dep_count" : 0,
+			"Dep" : [
+			]
+		},
+		{
+			"type" : "ScriptMetaDataAsset",
+			"uid" : 553854,
+			"ed_camera_2d" :
+			{
+				"x" : 0.000000,
+				"y" : 0.000000
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "DoorLevel_SD",
+			"properties" :
+			{
+				"count" : 1,
+				"Elem" : [
+					{
+						"data_type" : 1,
+						"name" : "level"
+					}
+				]
+			}
+		},
+		{
+			"type" : "ScriptMetaDataAsset",
+			"uid" : 884469,
+			"ed_camera_2d" :
+			{
+				"x" : 0.000000,
+				"y" : 0.000000
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "Item_SD",
+			"properties" :
+			{
+				"count" : 1,
+				"Elem" : [
+					{
+						"data_type" : 1,
+						"name" : "door_level"
+					}
+				]
+			}
+		},
+		{
+			"type" : "SpriteAsset",
+			"uid" : 586229,
+			"ed_camera_2d" :
+			{
+				"x" : 0.000000,
+				"y" : 0.000000
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "Item_CardLvl1",
+			"x" : 0.000000,
+			"y" : 0.000000,
+			"width" : 66.000000,
+			"height" : 54.000000,
+			"anchorn_x" : 0.500000,
+			"anchorn_y" : 0.500000,
+			"use_source_size" : true,
+			"source_scaleX" : 3.000000,
+			"source_scaleY" : 3.000000,
+			"sprite" :
+			{
+				"width" : 558,
+				"height" : 722,
+				"type" : 0,
+				"color" :
+				{
+					"r" : 1.000000,
+					"g" : 1.000000,
+					"b" : 1.000000,
+					"a" : 1.000000
+				},
+				"texName" : "Sprites/Seizure.png",
+				"texMode" : 0,
+				"texFilter" : 0,
+				"count" : 1,
+				"Rect" : [
+					{
+						"pos" :
+						{
+							"x" : 293.000000,
+							"y" : 360.500000
+						},
+						"size" :
+						{
+							"x" : 22.000000,
+							"y" : 18.000000
+						},
+						"uv" :
+						{
+							"x" : 0.525090,
+							"y" : 0.499307
+						},
+						"duv" :
+						{
+							"x" : 0.039427,
+							"y" : 0.024931
+						},
+						"offset" :
+						{
+							"x" : 0.000000,
+							"y" : 0.000000
+						}
+					}
+				]
+			},
+			"components" : [
+				{
+					"type" : "Phys2DComp",
+					"body_type" : 4,
+					"density" : 1.250000,
+					"friction" : 0.250000,
+					"allow_rotate" : true,
+					"use_object_size" : true,
+					"width" : 64.000000,
+					"height" : 64.000000,
+					"group" : 1
+				},
+				{
+					"type" : "ScriptMetaDataComp",
+					"Asset" :
+					{
+						"uid" : 884469,
+						"child_uid" : 0,
+						"is_asset" : true
+					},
+					"count" : 1,
+					"value" : [
+						{
+							"type" : 1,
+							"value" : 1
+						}
+					]
+				}
+			]
 		}
 	],
 	"SceneObject" : [
@@ -8914,16 +9949,16 @@
 			"uid" : -211527680,
 			"ed_camera_2d" :
 			{
-				"x" : 1001.007935,
-				"y" : 534.742310
+				"x" : 1732.130493,
+				"y" : 324.449554
 			},
-			"ed_camera_2d_zoom" : 0.920000,
-			"Name" : "Script",
+			"ed_camera_2d_zoom" : 0.980000,
+			"Name" : "MainScript",
 			"State" : 2,
-			"Group" : "Floor1",
-			"Layer" : "Floor1",
+			"Group" : "Level",
+			"Layer" : "Level",
 			"asset_uid" : 200902816,
-			"Count" : 52,
+			"Count" : 55,
 			"Node" : [
 				{
 					"callback_type" : "",
@@ -9808,6 +10843,57 @@
 							}
 						]
 					}
+				},
+				{
+					"callback_type" : "OnContact",
+					"objects_list" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"object" :
+								{
+									"uid" : 950007,
+									"child_uid" : 0,
+									"is_asset" : false
+								}
+							}
+						]
+					}
+				},
+				{
+					"callback_type" : "OnContactStart",
+					"objects_list" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"object" :
+								{
+									"uid" : 950007,
+									"child_uid" : 0,
+									"is_asset" : false
+								}
+							}
+						]
+					}
+				},
+				{
+					"callback_type" : "",
+					"objects_list" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"object" :
+								{
+									"uid" : 0,
+									"child_uid" : 0,
+									"is_asset" : false
+								}
+							}
+						]
+					}
 				}
 			]
 		},
@@ -10487,7 +11573,7 @@
 			"x" : -624.000000,
 			"y" : -847.241150,
 			"width" : 198.416199,
-			"height" : 66.308167,
+			"height" : 66.308182,
 			"collision_group" : 1
 		},
 		{
@@ -10743,7 +11829,7 @@
 			"State" : 2,
 			"Group" : "Floor4",
 			"Layer" : "Floor4",
-			"x" : 2359.495117,
+			"x" : 2359.493408,
 			"y" : -1084.450928,
 			"width" : 149.755707,
 			"height" : 190.297440,
@@ -25048,7 +26134,7 @@
 			"draw_level" : 0,
 			"inst" :
 			{
-				"count" : 243,
+				"count" : 242,
 				"Elem" : [
 					{
 						"x" : 2112.000000,
@@ -25570,20 +26656,6 @@
 					},
 					{
 						"x" : 960.000000,
-						"y" : -1344.000000,
-						"index" : 0,
-						"visible" : 1,
-						"color" :
-						{
-							"r" : 1.000000,
-							"g" : 1.000000,
-							"b" : 1.000000,
-							"a" : 1.000000
-						},
-						"alpha" : 1.000000
-					},
-					{
-						"x" : 864.000000,
 						"y" : -1344.000000,
 						"index" : 0,
 						"visible" : 1,
@@ -28474,7 +29546,7 @@
 			"draw_level" : 0,
 			"inst" :
 			{
-				"count" : 176,
+				"count" : 177,
 				"Elem" : [
 					{
 						"x" : 2112.000000,
@@ -30939,6 +32011,20 @@
 							"a" : 1.000000
 						},
 						"alpha" : 1.000000
+					},
+					{
+						"x" : 1344.000000,
+						"y" : -960.000000,
+						"index" : 0,
+						"visible" : 1,
+						"color" :
+						{
+							"r" : 1.000000,
+							"g" : 1.000000,
+							"b" : 1.000000,
+							"a" : 1.000000
+						},
+						"alpha" : 1.000000
 					}
 				]
 			},
@@ -30946,6 +32032,1000 @@
 			"components" : [
 				{
 					"type" : "Phys2DCompInst"
+				}
+			]
+		},
+		{
+			"type" : "SpriteInst",
+			"uid" : 130804,
+			"Name" : "DH_Lvl1",
+			"State" : 2,
+			"Group" : "Floor2",
+			"Layer" : "Floor2",
+			"axis_scale" : 1.000000,
+			"Depth" : 0.500000,
+			"UseDepth" : true,
+			"draw_level" : 0,
+			"inst" :
+			{
+				"count" : 1,
+				"Elem" : [
+					{
+						"x" : -96.000000,
+						"y" : -3312.000000,
+						"index" : 0,
+						"visible" : 1,
+						"color" :
+						{
+							"r" : 1.000000,
+							"g" : 1.000000,
+							"b" : 1.000000,
+							"a" : 1.000000
+						},
+						"alpha" : 1.000000
+					}
+				]
+			},
+			"asset_uid" : 291455,
+			"components" : [
+				{
+					"type" : "Phys2DCompInst"
+				},
+				{
+					"type" : "ScriptMetaDataCompInst"
+				}
+			]
+		},
+		{
+			"type" : "Trigger2D",
+			"uid" : 849783,
+			"Name" : "DH_Lvl1_T",
+			"State" : 2,
+			"Group" : "Floor2",
+			"Layer" : "Floor2",
+			"x" : -48.000000,
+			"y" : -3312.000000,
+			"width" : 100.000000,
+			"height" : 100.000000,
+			"collision_group" : 1
+		},
+		{
+			"type" : "SceneScriptInst",
+			"uid" : 556660,
+			"ed_camera_2d" :
+			{
+				"x" : 417.829681,
+				"y" : 188.957474
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "DH_Lvl1_S",
+			"State" : 2,
+			"Group" : "",
+			"Layer" : "",
+			"asset_uid" : 685438,
+			"Count" : 6,
+			"Node" : [
+				{
+					"callback_type" : "OnContact",
+					"objects_list" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"object" :
+								{
+									"uid" : 130804,
+									"child_uid" : 0,
+									"is_asset" : false
+								}
+							}
+						]
+					}
+				},
+				{
+					"callback_type" : "OnContactStart",
+					"objects_list" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"object" :
+								{
+									"uid" : 849783,
+									"child_uid" : 0,
+									"is_asset" : false
+								}
+							}
+						]
+					}
+				},
+				{
+					"callback_type" : "",
+					"objects_list" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"object" :
+								{
+									"uid" : 0,
+									"child_uid" : 0,
+									"is_asset" : false
+								}
+							}
+						]
+					}
+				},
+				{
+					"callback_type" : "",
+					"objects_list" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"object" :
+								{
+									"uid" : 0,
+									"child_uid" : 0,
+									"is_asset" : false
+								}
+							}
+						]
+					}
+				},
+				{
+					"callback_type" : "OnContactEnd",
+					"objects_list" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"object" :
+								{
+									"uid" : 849783,
+									"child_uid" : 0,
+									"is_asset" : false
+								}
+							}
+						]
+					}
+				},
+				{
+					"callback_type" : "",
+					"objects_list" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"object" :
+								{
+									"uid" : -211527680,
+									"child_uid" : 0,
+									"is_asset" : false
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"type" : "SpriteInst",
+			"uid" : 950007,
+			"Name" : "Item_CardLvl1",
+			"State" : 2,
+			"Group" : "Floor2",
+			"Layer" : "Floor2",
+			"axis_scale" : 1.000000,
+			"Depth" : 0.500000,
+			"UseDepth" : true,
+			"draw_level" : 0,
+			"inst" :
+			{
+				"count" : 1,
+				"Elem" : [
+					{
+						"x" : 96.000000,
+						"y" : -1584.000000,
+						"index" : 0,
+						"visible" : 1,
+						"color" :
+						{
+							"r" : 1.000000,
+							"g" : 1.000000,
+							"b" : 1.000000,
+							"a" : 1.000000
+						},
+						"alpha" : 1.000000
+					}
+				]
+			},
+			"asset_uid" : 586229,
+			"components" : [
+				{
+					"type" : "Phys2DCompInst"
+				},
+				{
+					"type" : "ScriptMetaDataCompInst"
+				}
+			]
+		},
+		{
+			"type" : "SpriteInst",
+			"uid" : 455806,
+			"Name" : "DH_Lvl1",
+			"State" : 2,
+			"Group" : "Floor3",
+			"Layer" : "Floor3",
+			"axis_scale" : 1.000000,
+			"Depth" : 0.500000,
+			"UseDepth" : true,
+			"draw_level" : 0,
+			"inst" :
+			{
+				"count" : 1,
+				"Elem" : [
+					{
+						"x" : 0.000000,
+						"y" : -2736.000000,
+						"index" : 0,
+						"visible" : 1,
+						"color" :
+						{
+							"r" : 1.000000,
+							"g" : 1.000000,
+							"b" : 1.000000,
+							"a" : 1.000000
+						},
+						"alpha" : 1.000000
+					}
+				]
+			},
+			"asset_uid" : 291455,
+			"components" : [
+				{
+					"type" : "Phys2DCompInst"
+				},
+				{
+					"type" : "ScriptMetaDataCompInst"
+				}
+			]
+		},
+		{
+			"type" : "SpriteInst",
+			"uid" : 194046,
+			"Name" : "DV_Lvl1",
+			"State" : 2,
+			"Group" : "Floor3",
+			"Layer" : "Floor3",
+			"axis_scale" : 1.000000,
+			"Depth" : 0.500000,
+			"UseDepth" : true,
+			"draw_level" : 0,
+			"inst" :
+			{
+				"count" : 1,
+				"Elem" : [
+					{
+						"x" : -1248.000000,
+						"y" : -2160.000000,
+						"index" : 0,
+						"visible" : 1,
+						"color" :
+						{
+							"r" : 1.000000,
+							"g" : 1.000000,
+							"b" : 1.000000,
+							"a" : 1.000000
+						},
+						"alpha" : 1.000000
+					}
+				]
+			},
+			"asset_uid" : 883582,
+			"components" : [
+				{
+					"type" : "Phys2DCompInst"
+				},
+				{
+					"type" : "ScriptMetaDataCompInst"
+				}
+			]
+		},
+		{
+			"type" : "SpriteInst",
+			"uid" : 913526,
+			"Name" : "DH_Lvl2",
+			"State" : 2,
+			"Group" : "Floor3",
+			"Layer" : "Floor3",
+			"axis_scale" : 1.000000,
+			"Depth" : 0.500000,
+			"UseDepth" : true,
+			"draw_level" : 0,
+			"inst" :
+			{
+				"count" : 1,
+				"Elem" : [
+					{
+						"x" : 192.000000,
+						"y" : -2448.000000,
+						"index" : 0,
+						"visible" : 1,
+						"color" :
+						{
+							"r" : 1.000000,
+							"g" : 1.000000,
+							"b" : 1.000000,
+							"a" : 1.000000
+						},
+						"alpha" : 1.000000
+					}
+				]
+			},
+			"asset_uid" : 587388,
+			"components" : [
+				{
+					"type" : "Phys2DCompInst"
+				},
+				{
+					"type" : "ScriptMetaDataCompInst"
+				}
+			]
+		},
+		{
+			"type" : "SpriteInst",
+			"uid" : 294524,
+			"Name" : "DV_Lvl2",
+			"State" : 2,
+			"Group" : "Floor3",
+			"Layer" : "Floor3",
+			"axis_scale" : 1.000000,
+			"Depth" : 0.500000,
+			"UseDepth" : true,
+			"draw_level" : 0,
+			"inst" :
+			{
+				"count" : 1,
+				"Elem" : [
+					{
+						"x" : -1248.000000,
+						"y" : -1104.000000,
+						"index" : 0,
+						"visible" : 1,
+						"color" :
+						{
+							"r" : 1.000000,
+							"g" : 1.000000,
+							"b" : 1.000000,
+							"a" : 1.000000
+						},
+						"alpha" : 1.000000
+					}
+				]
+			},
+			"asset_uid" : 914431,
+			"components" : [
+				{
+					"type" : "Phys2DCompInst"
+				},
+				{
+					"type" : "ScriptMetaDataCompInst"
+				}
+			]
+		},
+		{
+			"type" : "SpriteInst",
+			"uid" : 389366,
+			"Name" : "DH_Lvl3",
+			"State" : 2,
+			"Group" : "Floor3",
+			"Layer" : "Floor3",
+			"axis_scale" : 1.000000,
+			"Depth" : 0.500000,
+			"UseDepth" : true,
+			"draw_level" : 0,
+			"inst" :
+			{
+				"count" : 1,
+				"Elem" : [
+					{
+						"x" : 1440.000000,
+						"y" : -2736.000000,
+						"index" : 0,
+						"visible" : 1,
+						"color" :
+						{
+							"r" : 1.000000,
+							"g" : 1.000000,
+							"b" : 1.000000,
+							"a" : 1.000000
+						},
+						"alpha" : 1.000000
+					}
+				]
+			},
+			"asset_uid" : 290942,
+			"components" : [
+				{
+					"type" : "Phys2DCompInst"
+				},
+				{
+					"type" : "ScriptMetaDataCompInst"
+				}
+			]
+		},
+		{
+			"type" : "SpriteInst",
+			"uid" : 556413,
+			"Name" : "DH_Lvl4",
+			"State" : 2,
+			"Group" : "Floor3",
+			"Layer" : "Floor3",
+			"axis_scale" : 1.000000,
+			"Depth" : 0.500000,
+			"UseDepth" : true,
+			"draw_level" : 0,
+			"inst" :
+			{
+				"count" : 1,
+				"Elem" : [
+					{
+						"x" : -1152.000000,
+						"y" : -336.000000,
+						"index" : 0,
+						"visible" : 1,
+						"color" :
+						{
+							"r" : 1.000000,
+							"g" : 1.000000,
+							"b" : 1.000000,
+							"a" : 1.000000
+						},
+						"alpha" : 1.000000
+					}
+				]
+			},
+			"asset_uid" : 717431,
+			"components" : [
+				{
+					"type" : "Phys2DCompInst"
+				},
+				{
+					"type" : "ScriptMetaDataCompInst"
+				}
+			]
+		},
+		{
+			"type" : "SpriteInst",
+			"uid" : 979958,
+			"Name" : "DH_Lvl1",
+			"State" : 2,
+			"Group" : "Floor4",
+			"Layer" : "Floor4",
+			"axis_scale" : 1.000000,
+			"Depth" : 0.500000,
+			"UseDepth" : true,
+			"draw_level" : 0,
+			"inst" :
+			{
+				"count" : 1,
+				"Elem" : [
+					{
+						"x" : 864.000000,
+						"y" : -2400.000000,
+						"index" : 0,
+						"visible" : 1,
+						"color" :
+						{
+							"r" : 1.000000,
+							"g" : 1.000000,
+							"b" : 1.000000,
+							"a" : 1.000000
+						},
+						"alpha" : 1.000000
+					}
+				]
+			},
+			"asset_uid" : 291455,
+			"components" : [
+				{
+					"type" : "Phys2DCompInst"
+				},
+				{
+					"type" : "ScriptMetaDataCompInst"
+				}
+			]
+		},
+		{
+			"type" : "SpriteInst",
+			"uid" : 523255,
+			"Name" : "DV_Lvl1",
+			"State" : 2,
+			"Group" : "Floor4",
+			"Layer" : "Floor4",
+			"axis_scale" : 1.000000,
+			"Depth" : 0.500000,
+			"UseDepth" : true,
+			"draw_level" : 0,
+			"inst" :
+			{
+				"count" : 1,
+				"Elem" : [
+					{
+						"x" : -960.000000,
+						"y" : -3072.000000,
+						"index" : 0,
+						"visible" : 1,
+						"color" :
+						{
+							"r" : 1.000000,
+							"g" : 1.000000,
+							"b" : 1.000000,
+							"a" : 1.000000
+						},
+						"alpha" : 1.000000
+					}
+				]
+			},
+			"asset_uid" : 883582,
+			"components" : [
+				{
+					"type" : "Phys2DCompInst"
+				},
+				{
+					"type" : "ScriptMetaDataCompInst"
+				}
+			]
+		},
+		{
+			"type" : "SpriteInst",
+			"uid" : 654590,
+			"Name" : "DV_Lvl2",
+			"State" : 2,
+			"Group" : "Floor4",
+			"Layer" : "Floor4",
+			"axis_scale" : 1.000000,
+			"Depth" : 0.500000,
+			"UseDepth" : true,
+			"draw_level" : 0,
+			"inst" :
+			{
+				"count" : 1,
+				"Elem" : [
+					{
+						"x" : -960.000000,
+						"y" : -1056.000000,
+						"index" : 0,
+						"visible" : 1,
+						"color" :
+						{
+							"r" : 1.000000,
+							"g" : 1.000000,
+							"b" : 1.000000,
+							"a" : 1.000000
+						},
+						"alpha" : 1.000000
+					}
+				]
+			},
+			"asset_uid" : 914431,
+			"components" : [
+				{
+					"type" : "Phys2DCompInst"
+				},
+				{
+					"type" : "ScriptMetaDataCompInst"
+				}
+			]
+		},
+		{
+			"type" : "SpriteInst",
+			"uid" : 750839,
+			"Name" : "DH_Lvl4",
+			"State" : 2,
+			"Group" : "Floor4",
+			"Layer" : "Floor4",
+			"axis_scale" : 1.000000,
+			"Depth" : 0.500000,
+			"UseDepth" : true,
+			"draw_level" : 0,
+			"inst" :
+			{
+				"count" : 1,
+				"Elem" : [
+					{
+						"x" : 864.000000,
+						"y" : -1344.000000,
+						"index" : 0,
+						"visible" : 1,
+						"color" :
+						{
+							"r" : 1.000000,
+							"g" : 1.000000,
+							"b" : 1.000000,
+							"a" : 1.000000
+						},
+						"alpha" : 1.000000
+					}
+				]
+			},
+			"asset_uid" : 717431,
+			"components" : [
+				{
+					"type" : "Phys2DCompInst"
+				},
+				{
+					"type" : "ScriptMetaDataCompInst"
+				}
+			]
+		},
+		{
+			"type" : "SpriteInst",
+			"uid" : 454911,
+			"Name" : "DV_Lvl3",
+			"State" : 2,
+			"Group" : "Floor4",
+			"Layer" : "Floor4",
+			"axis_scale" : 1.000000,
+			"Depth" : 0.500000,
+			"UseDepth" : true,
+			"draw_level" : 0,
+			"inst" :
+			{
+				"count" : 1,
+				"Elem" : [
+					{
+						"x" : 1344.000000,
+						"y" : 0.000000,
+						"index" : 0,
+						"visible" : 1,
+						"color" :
+						{
+							"r" : 1.000000,
+							"g" : 1.000000,
+							"b" : 1.000000,
+							"a" : 1.000000
+						},
+						"alpha" : 1.000000
+					}
+				]
+			},
+			"asset_uid" : 422645,
+			"components" : [
+				{
+					"type" : "Phys2DCompInst"
+				},
+				{
+					"type" : "ScriptMetaDataCompInst"
+				}
+			]
+		},
+		{
+			"type" : "SpriteInst",
+			"uid" : 686207,
+			"Name" : "DH_Lvl4_2",
+			"State" : 2,
+			"Group" : "Floor3",
+			"Layer" : "Floor3",
+			"axis_scale" : 1.000000,
+			"Depth" : 0.500000,
+			"UseDepth" : true,
+			"draw_level" : 0,
+			"inst" :
+			{
+				"count" : 1,
+				"Elem" : [
+					{
+						"x" : -1152.000000,
+						"y" : -2736.000000,
+						"index" : 0,
+						"visible" : 1,
+						"color" :
+						{
+							"r" : 1.000000,
+							"g" : 1.000000,
+							"b" : 1.000000,
+							"a" : 1.000000
+						},
+						"alpha" : 1.000000
+					}
+				]
+			},
+			"asset_uid" : 717431,
+			"components" : [
+				{
+					"type" : "Phys2DCompInst"
+				},
+				{
+					"type" : "ScriptMetaDataCompInst"
+				}
+			]
+		},
+		{
+			"type" : "SpriteInst",
+			"uid" : 30196,
+			"Name" : "DV_Lvl1_2",
+			"State" : 2,
+			"Group" : "Floor3",
+			"Layer" : "Floor3",
+			"axis_scale" : 1.000000,
+			"Depth" : 0.500000,
+			"UseDepth" : true,
+			"draw_level" : 0,
+			"inst" :
+			{
+				"count" : 1,
+				"Elem" : [
+					{
+						"x" : 1824.000000,
+						"y" : -2160.000000,
+						"index" : 0,
+						"visible" : 1,
+						"color" :
+						{
+							"r" : 1.000000,
+							"g" : 1.000000,
+							"b" : 1.000000,
+							"a" : 1.000000
+						},
+						"alpha" : 1.000000
+					}
+				]
+			},
+			"asset_uid" : 883582,
+			"components" : [
+				{
+					"type" : "Phys2DCompInst"
+				},
+				{
+					"type" : "ScriptMetaDataCompInst"
+				}
+			]
+		},
+		{
+			"type" : "SpriteInst",
+			"uid" : 718844,
+			"Name" : "DV_Lvl2_2",
+			"State" : 2,
+			"Group" : "Floor3",
+			"Layer" : "Floor3",
+			"axis_scale" : 1.000000,
+			"Depth" : 0.500000,
+			"UseDepth" : true,
+			"draw_level" : 0,
+			"inst" :
+			{
+				"count" : 1,
+				"Elem" : [
+					{
+						"x" : 1536.000000,
+						"y" : -1104.000000,
+						"index" : 0,
+						"visible" : 1,
+						"color" :
+						{
+							"r" : 1.000000,
+							"g" : 1.000000,
+							"b" : 1.000000,
+							"a" : 1.000000
+						},
+						"alpha" : 1.000000
+					}
+				]
+			},
+			"asset_uid" : 914431,
+			"components" : [
+				{
+					"type" : "Phys2DCompInst"
+				},
+				{
+					"type" : "ScriptMetaDataCompInst"
+				}
+			]
+		},
+		{
+			"type" : "SpriteInst",
+			"uid" : 261621,
+			"Name" : "DH_Lvl1_2",
+			"State" : 2,
+			"Group" : "Floor4",
+			"Layer" : "Floor4",
+			"axis_scale" : 1.000000,
+			"Depth" : 0.500000,
+			"UseDepth" : true,
+			"draw_level" : 0,
+			"inst" :
+			{
+				"count" : 1,
+				"Elem" : [
+					{
+						"x" : -672.000000,
+						"y" : -288.000000,
+						"index" : 0,
+						"visible" : 1,
+						"color" :
+						{
+							"r" : 1.000000,
+							"g" : 1.000000,
+							"b" : 1.000000,
+							"a" : 1.000000
+						},
+						"alpha" : 1.000000
+					}
+				]
+			},
+			"asset_uid" : 291455,
+			"components" : [
+				{
+					"type" : "Phys2DCompInst"
+				},
+				{
+					"type" : "ScriptMetaDataCompInst"
+				}
+			]
+		},
+		{
+			"type" : "SpriteInst",
+			"uid" : 915317,
+			"Name" : "DH_Lvl4_2",
+			"State" : 2,
+			"Group" : "Floor4",
+			"Layer" : "Floor4",
+			"axis_scale" : 1.000000,
+			"Depth" : 0.500000,
+			"UseDepth" : true,
+			"draw_level" : 0,
+			"inst" :
+			{
+				"count" : 1,
+				"Elem" : [
+					{
+						"x" : -864.000000,
+						"y" : -2400.000000,
+						"index" : 0,
+						"visible" : 1,
+						"color" :
+						{
+							"r" : 1.000000,
+							"g" : 1.000000,
+							"b" : 1.000000,
+							"a" : 1.000000
+						},
+						"alpha" : 1.000000
+					}
+				]
+			},
+			"asset_uid" : 717431,
+			"components" : [
+				{
+					"type" : "Phys2DCompInst"
+				},
+				{
+					"type" : "ScriptMetaDataCompInst"
+				}
+			]
+		},
+		{
+			"type" : "SpriteInst",
+			"uid" : 1015413,
+			"Name" : "DH_Lvl4_3",
+			"State" : 2,
+			"Group" : "Floor4",
+			"Layer" : "Floor4",
+			"axis_scale" : 1.000000,
+			"Depth" : 0.500000,
+			"UseDepth" : true,
+			"draw_level" : 0,
+			"inst" :
+			{
+				"count" : 1,
+				"Elem" : [
+					{
+						"x" : 2016.000000,
+						"y" : -2016.000000,
+						"index" : 0,
+						"visible" : 1,
+						"color" :
+						{
+							"r" : 1.000000,
+							"g" : 1.000000,
+							"b" : 1.000000,
+							"a" : 1.000000
+						},
+						"alpha" : 1.000000
+					}
+				]
+			},
+			"asset_uid" : 717431,
+			"components" : [
+				{
+					"type" : "Phys2DCompInst"
+				},
+				{
+					"type" : "ScriptMetaDataCompInst"
+				}
+			]
+		},
+		{
+			"type" : "SpriteInst",
+			"uid" : 520439,
+			"Name" : "DV_Lvl1_2",
+			"State" : 2,
+			"Group" : "Floor4",
+			"Layer" : "Floor4",
+			"axis_scale" : 1.000000,
+			"Depth" : 0.500000,
+			"UseDepth" : true,
+			"draw_level" : 0,
+			"inst" :
+			{
+				"count" : 1,
+				"Elem" : [
+					{
+						"x" : 1632.000000,
+						"y" : -3072.000000,
+						"index" : 0,
+						"visible" : 1,
+						"color" :
+						{
+							"r" : 1.000000,
+							"g" : 1.000000,
+							"b" : 1.000000,
+							"a" : 1.000000
+						},
+						"alpha" : 1.000000
+					}
+				]
+			},
+			"asset_uid" : 883582,
+			"components" : [
+				{
+					"type" : "Phys2DCompInst"
+				},
+				{
+					"type" : "ScriptMetaDataCompInst"
+				}
+			]
+		},
+		{
+			"type" : "SpriteInst",
+			"uid" : 653174,
+			"Name" : "DV_Lvl2_2",
+			"State" : 2,
+			"Group" : "Floor4",
+			"Layer" : "Floor4",
+			"axis_scale" : 1.000000,
+			"Depth" : 0.500000,
+			"UseDepth" : true,
+			"draw_level" : 0,
+			"inst" :
+			{
+				"count" : 1,
+				"Elem" : [
+					{
+						"x" : 1344.000000,
+						"y" : -2976.000000,
+						"index" : 0,
+						"visible" : 1,
+						"color" :
+						{
+							"r" : 1.000000,
+							"g" : 1.000000,
+							"b" : 1.000000,
+							"a" : 1.000000
+						},
+						"alpha" : 1.000000
+					}
+				]
+			},
+			"asset_uid" : 914431,
+			"components" : [
+				{
+					"type" : "Phys2DCompInst"
+				},
+				{
+					"type" : "ScriptMetaDataCompInst"
 				}
 			]
 		}
@@ -31054,12 +33134,12 @@
 		},
 		{
 			"asset_uid" : 200902816,
-			"asset_name" : "Script",
+			"asset_name" : "MainScript",
 			"instances" : [
 				{
 					"scene" : "coldrain.sca",
 					"inst_uid" : -211527680,
-					"inst_name" : "Script"
+					"inst_name" : "MainScript"
 				}
 			]
 		},
@@ -31359,6 +33439,248 @@
 					"scene" : "coldrain.sca",
 					"inst_uid" : 490102,
 					"inst_name" : "WallVert"
+				}
+			]
+		},
+		{
+			"asset_uid" : 291455,
+			"asset_name" : "DoorHorzLvl1",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 130804,
+					"inst_name" : "DH_Lvl1"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "DoorScript",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 556660,
+					"inst_name" : "DH_Lvl1_S"
+				}
+			]
+		},
+		{
+			"asset_uid" : 586229,
+			"asset_name" : "Item_CardLvl1",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 950007,
+					"inst_name" : "Item_CardLvl1"
+				}
+			]
+		},
+		{
+			"asset_uid" : 291455,
+			"asset_name" : "DoorHorzLvl1",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 455806,
+					"inst_name" : "DH_Lvl1"
+				}
+			]
+		},
+		{
+			"asset_uid" : 883582,
+			"asset_name" : "DoorVertLvl1",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 194046,
+					"inst_name" : "DV_Lvl1"
+				}
+			]
+		},
+		{
+			"asset_uid" : 587388,
+			"asset_name" : "DoorHorzLvl2",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 913526,
+					"inst_name" : "DH_Lvl2"
+				}
+			]
+		},
+		{
+			"asset_uid" : 914431,
+			"asset_name" : "DoorVertLvl2",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 294524,
+					"inst_name" : "DV_Lvl2"
+				}
+			]
+		},
+		{
+			"asset_uid" : 290942,
+			"asset_name" : "DoorHorzLvl3",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 389366,
+					"inst_name" : "DH_Lvl3"
+				}
+			]
+		},
+		{
+			"asset_uid" : 717431,
+			"asset_name" : "DoorHorzLvl4",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 556413,
+					"inst_name" : "DH_Lvl4"
+				}
+			]
+		},
+		{
+			"asset_uid" : 291455,
+			"asset_name" : "DoorHorzLvl1",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 979958,
+					"inst_name" : "DH_Lvl1"
+				}
+			]
+		},
+		{
+			"asset_uid" : 883582,
+			"asset_name" : "DoorVertLvl1",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 523255,
+					"inst_name" : "DV_Lvl1"
+				}
+			]
+		},
+		{
+			"asset_uid" : 914431,
+			"asset_name" : "DoorVertLvl2",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 654590,
+					"inst_name" : "DV_Lvl2"
+				}
+			]
+		},
+		{
+			"asset_uid" : 717431,
+			"asset_name" : "DoorHorzLvl4",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 750839,
+					"inst_name" : "DH_Lvl4"
+				}
+			]
+		},
+		{
+			"asset_uid" : 422645,
+			"asset_name" : "DoorVertLvl3",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 454911,
+					"inst_name" : "DV_Lvl3"
+				}
+			]
+		},
+		{
+			"asset_uid" : 717431,
+			"asset_name" : "DoorHorzLvl4",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 686207,
+					"inst_name" : "DH_Lvl4_2"
+				}
+			]
+		},
+		{
+			"asset_uid" : 883582,
+			"asset_name" : "DoorVertLvl1",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 30196,
+					"inst_name" : "DV_Lvl1_2"
+				}
+			]
+		},
+		{
+			"asset_uid" : 914431,
+			"asset_name" : "DoorVertLvl2",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 718844,
+					"inst_name" : "DV_Lvl2_2"
+				}
+			]
+		},
+		{
+			"asset_uid" : 291455,
+			"asset_name" : "DoorHorzLvl1",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 261621,
+					"inst_name" : "DH_Lvl1_2"
+				}
+			]
+		},
+		{
+			"asset_uid" : 717431,
+			"asset_name" : "DoorHorzLvl4",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 915317,
+					"inst_name" : "DH_Lvl4_2"
+				}
+			]
+		},
+		{
+			"asset_uid" : 717431,
+			"asset_name" : "DoorHorzLvl4",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 1015413,
+					"inst_name" : "DH_Lvl4_3"
+				}
+			]
+		},
+		{
+			"asset_uid" : 883582,
+			"asset_name" : "DoorVertLvl1",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 520439,
+					"inst_name" : "DV_Lvl1_2"
+				}
+			]
+		},
+		{
+			"asset_uid" : 914431,
+			"asset_name" : "DoorVertLvl2",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 653174,
+					"inst_name" : "DV_Lvl2_2"
 				}
 			]
 		}

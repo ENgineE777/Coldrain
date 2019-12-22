@@ -136,7 +136,7 @@ class Pointer
 {
 	float x,y;	
 	float angle = 0.0f;
-	float visible = 1;
+	int visible = 1;
 	float anim = 0.0f;
 }
 
@@ -153,6 +153,13 @@ class Bullet
 	int   group = 1;
 }
 
+class Item
+{
+	float x,y;
+	int visible = 1;
+	int door_level = 0;
+}
+
 class Main
 {
 	bool show_debug_check = true;
@@ -167,6 +174,11 @@ class Main
 	UIView@ ui_restart_message;
 	ShadowCaster2D@ shadow_caster;
 	ShadowCaster2D@ sub_shadow_caster;
+
+	array<Item> item_card_lvl1;
+	array<Item> item_card_lvl2;
+	array<Item> item_card_lvl3;
+	array<Item> item_card_lvl4;
 
 	float max_health_level_width = 1.0f;
 	UIImage@ health_level;
@@ -205,6 +217,19 @@ class Main
 
 	bool is_crouching = false;
 	int player_group = 1;
+
+	int holded_door_card = 0;
+
+	void PickupLevelCard1(Item@ item)
+	{
+		item.visible = 0;
+		holded_door_card = item.door_level;
+	}
+
+	void OnPickupLevelCard1(int self_index, string&in name, int index)
+	{
+		PickupLevelCard1(item_card_lvl1[0]);
+	}
 
 	int GetEnemiesCount()
 	{
@@ -306,6 +331,11 @@ class Main
 		}
 
 		return false;
+	}
+
+	bool CanOpen(int door_level)
+	{
+		return holded_door_card >= door_level;
 	}
 
 	void MakeCharacterDead(Character@ character, float dir_x, float dir_y)
