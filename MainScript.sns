@@ -422,6 +422,7 @@ class Main
 
 	void OnChangeFloor(int self_index, string&in name, int index, int floor_from, int floor_to, int marker_index)
 	{
+		core.Log("fl " + floor_from + " " + floor_to + " " + marker_index);
 		core.scene.SetStateToGroup("Floor" + floor_from, 0);
 		core.scene.SetStateToGroup("Floor" + floor_to, 2);
 
