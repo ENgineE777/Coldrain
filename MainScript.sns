@@ -231,6 +231,21 @@ class Main
 		PickupLevelCard1(item_card_lvl1[0]);
 	}
 
+	void OnPickupLevelCard2(int self_index, string&in name, int index)
+	{
+		PickupLevelCard1(item_card_lvl2[0]);
+	}
+
+	void OnPickupLevelCard3(int self_index, string&in name, int index)
+	{
+		PickupLevelCard1(item_card_lvl3[0]);
+	}
+
+	void OnPickupLevelCard4(int self_index, string&in name, int index)
+	{
+		PickupLevelCard1(item_card_lvl4[0]);
+	}
+
 	int GetEnemiesCount()
 	{
 		return soldiersAK47.get_length() + soldiersMachete.get_length() + soldiersGrabber.get_length() + soldiersStalker.get_length();

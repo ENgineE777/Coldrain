@@ -34,7 +34,7 @@
 		{
 			"uid" : -1,
 			"name" : "Floor1",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : -1,
@@ -152,18 +152,8 @@
 			"type" : 3
 		},
 		{
-			"uid" : 130804,
-			"name" : "DH_Lvl1",
-			"type" : 1
-		},
-		{
-			"uid" : 556660,
-			"name" : "DH_Lvl1_S",
-			"type" : 1
-		},
-		{
-			"uid" : 849783,
-			"name" : "DH_Lvl1_T",
+			"uid" : 94452,
+			"name" : "DoorHrz_L1_BP",
 			"type" : 1
 		},
 		{
@@ -234,56 +224,71 @@
 		{
 			"uid" : -1,
 			"name" : "Floor3",
-			"type" : 0
+			"type" : 3
 		},
 		{
 			"uid" : -1,
 			"name" : "Doors",
-			"type" : 0
+			"type" : 3
 		},
 		{
-			"uid" : 455806,
-			"name" : "DH_Lvl1",
+			"uid" : 327036,
+			"name" : "DoorHrz_L1_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 913526,
-			"name" : "DH_Lvl2",
+			"uid" : 980094,
+			"name" : "DoorHrz_L2_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 389366,
-			"name" : "DH_Lvl3",
+			"uid" : 819191,
+			"name" : "DoorHrz_L3_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 556413,
-			"name" : "DH_Lvl4",
+			"uid" : 294140,
+			"name" : "DoorHrz_L4_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 686207,
-			"name" : "DH_Lvl4_2",
+			"uid" : 556279,
+			"name" : "DoorHrz_L4_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 194046,
-			"name" : "DV_Lvl1",
+			"uid" : 489725,
+			"name" : "DoorVrt_L1_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 30196,
-			"name" : "DV_Lvl1_2",
+			"uid" : 163580,
+			"name" : "DoorVrt_L1_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 294524,
-			"name" : "DV_Lvl2",
+			"uid" : 490996,
+			"name" : "DoorVrt_L2_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 718844,
-			"name" : "DV_Lvl2_2",
+			"uid" : 291831,
+			"name" : "DoorVrt_L2_BP",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "Items",
+			"type" : 3
+		},
+		{
+			"uid" : 357366,
+			"name" : "Item_CardLvl3",
 			"type" : 1
 		},
 		{
@@ -349,56 +354,76 @@
 		{
 			"uid" : -1,
 			"name" : "Doors",
-			"type" : 3
+			"type" : 0
 		},
 		{
-			"uid" : 979958,
-			"name" : "DH_Lvl1",
+			"uid" : 196599,
+			"name" : "DoorHrz_L1_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 261621,
-			"name" : "DH_Lvl1_2",
+			"uid" : 390782,
+			"name" : "DoorHrz_L1_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 750839,
-			"name" : "DH_Lvl4",
+			"uid" : 850557,
+			"name" : "DoorHrz_L4_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 915317,
-			"name" : "DH_Lvl4_2",
+			"uid" : 389628,
+			"name" : "DoorHrz_L4_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 1015413,
-			"name" : "DH_Lvl4_3",
+			"uid" : 588157,
+			"name" : "DoorHrz_L4_BP",
 			"type" : 1
 		},
 		{
 			"uid" : 523255,
-			"name" : "DV_Lvl1",
+			"name" : "DoorVrt_L1_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 520439,
-			"name" : "DV_Lvl1_2",
+			"uid" : 393078,
+			"name" : "DoorVrt_L1_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 654590,
-			"name" : "DV_Lvl2",
+			"uid" : 357495,
+			"name" : "DoorVrt_L2_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 653174,
-			"name" : "DV_Lvl2_2",
+			"uid" : 718583,
+			"name" : "DoorVrt_L2_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 454911,
-			"name" : "DV_Lvl3",
+			"uid" : 783093,
+			"name" : "DoorVrt_L3_BP",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "Items",
+			"type" : 3
+		},
+		{
+			"uid" : 979191,
+			"name" : "Item_CardLvl2",
+			"type" : 1
+		},
+		{
+			"uid" : 818038,
+			"name" : "Item_CardLvl4",
 			"type" : 1
 		},
 		{
@@ -409,7 +434,7 @@
 		{
 			"uid" : -1,
 			"name" : "Triggers",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : 884468,
@@ -429,7 +454,7 @@
 		{
 			"uid" : -1,
 			"name" : "Walls",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : 913791,
@@ -635,8 +660,68 @@
 	"asset_nodes" : [
 		{
 			"uid" : -1,
-			"name" : "Scripts",
+			"name" : "Blueprints",
 			"type" : 3
+		},
+		{
+			"uid" : -1,
+			"name" : "Doors",
+			"type" : 3
+		},
+		{
+			"uid" : 687485,
+			"name" : "DoorHrz_L1_BP",
+			"type" : 1
+		},
+		{
+			"uid" : 914685,
+			"name" : "DoorHrz_L2_BP",
+			"type" : 1
+		},
+		{
+			"uid" : 750845,
+			"name" : "DoorHrz_L3_BP",
+			"type" : 1
+		},
+		{
+			"uid" : 423927,
+			"name" : "DoorHrz_L4_BP",
+			"type" : 1
+		},
+		{
+			"uid" : 752254,
+			"name" : "DoorVrt_L1_BP",
+			"type" : 1
+		},
+		{
+			"uid" : 1015807,
+			"name" : "DoorVrt_L2_BP",
+			"type" : 1
+		},
+		{
+			"uid" : 718069,
+			"name" : "DoorVrt_L3_BP",
+			"type" : 1
+		},
+		{
+			"uid" : 554103,
+			"name" : "DoorVrt_L4_BP",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "Scripts",
+			"type" : 0
 		},
 		{
 			"uid" : 685438,
@@ -855,6 +940,46 @@
 		},
 		{
 			"uid" : -1,
+			"name" : "Floors",
+			"type" : 3
+		},
+		{
+			"uid" : 491007,
+			"name" : "Floor1",
+			"type" : 1
+		},
+		{
+			"uid" : 29436,
+			"name" : "Floor2",
+			"type" : 1
+		},
+		{
+			"uid" : 194293,
+			"name" : "Floor3",
+			"type" : 1
+		},
+		{
+			"uid" : 881919,
+			"name" : "Floor4",
+			"type" : 1
+		},
+		{
+			"uid" : 293878,
+			"name" : "Floor5",
+			"type" : 1
+		},
+		{
+			"uid" : 980476,
+			"name" : "Floor6",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
 			"name" : "Hero",
 			"type" : 0
 		},
@@ -1004,6 +1129,21 @@
 			"type" : 1
 		},
 		{
+			"uid" : 193021,
+			"name" : "Item_CardLvl2",
+			"type" : 1
+		},
+		{
+			"uid" : 621949,
+			"name" : "Item_CardLvl3",
+			"type" : 1
+		},
+		{
+			"uid" : 29815,
+			"name" : "Item_CardLvl4",
+			"type" : 1
+		},
+		{
 			"uid" : 884469,
 			"name" : "Item_SD",
 			"type" : 1
@@ -1147,36 +1287,6 @@
 			"uid" : -1,
 			"name" : "",
 			"type" : 2
-		},
-		{
-			"uid" : 491007,
-			"name" : "Floor1",
-			"type" : 1
-		},
-		{
-			"uid" : 29436,
-			"name" : "Floor2",
-			"type" : 1
-		},
-		{
-			"uid" : 194293,
-			"name" : "Floor3",
-			"type" : 1
-		},
-		{
-			"uid" : 881919,
-			"name" : "Floor4",
-			"type" : 1
-		},
-		{
-			"uid" : 293878,
-			"name" : "Floor5",
-			"type" : 1
-		},
-		{
-			"uid" : 980476,
-			"name" : "Floor6",
-			"type" : 1
 		},
 		{
 			"uid" : -1,

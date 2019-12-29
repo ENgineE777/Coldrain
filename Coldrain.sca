@@ -14,10 +14,10 @@
 	},
 	"camera_pos" :
 	{
-		"x" : 1369.041016,
-		"y" : -809.944031
+		"x" : 351.604187,
+		"y" : -239.226929
 	},
-	"camera_zoom" : 0.980000,
+	"camera_zoom" : 0.380000,
 	"move_mode" : 1,
 	"gizmo2d_align_x" : 48,
 	"gizmo2d_align_y" : 48,
@@ -36,7 +36,7 @@
 			"Group" : "",
 			"Layer" : "",
 			"main_class" : "Main",
-			"Count" : 55,
+			"Count" : 64,
 			"Node" : [
 				{
 					"type" : 1,
@@ -703,8 +703,8 @@
 					"name" : "item_card_lvl1",
 					"pos" :
 					{
-						"x" : 1527.538940,
-						"y" : 156.592392
+						"x" : 1505.799805,
+						"y" : 159.853256
 					},
 					"prefix" : ""
 				},
@@ -713,8 +713,8 @@
 					"name" : "Object",
 					"pos" :
 					{
-						"x" : 1507.130493,
-						"y" : 274.959686
+						"x" : 1691.913086,
+						"y" : 167.350967
 					}
 				},
 				{
@@ -722,8 +722,8 @@
 					"name" : "OnPickupLevelCard1",
 					"pos" :
 					{
-						"x" : 1712.232178,
-						"y" : 274.959686
+						"x" : 1878.536377,
+						"y" : 170.611862
 					},
 					"param_type" : 0,
 					"call_type" : 0,
@@ -736,6 +736,123 @@
 							"param3" : ""
 						}
 					]
+				},
+				{
+					"type" : 1,
+					"name" : "item_card_lvl2",
+					"pos" :
+					{
+						"x" : 1502.427734,
+						"y" : 258.389252
+					},
+					"prefix" : ""
+				},
+				{
+					"type" : 0,
+					"name" : "Object",
+					"pos" :
+					{
+						"x" : 1704.268677,
+						"y" : 264.045837
+					}
+				},
+				{
+					"type" : 2,
+					"name" : "OnPickupLevelCard2",
+					"pos" :
+					{
+						"x" : 1899.898926,
+						"y" : 262.071564
+					},
+					"param_type" : 0,
+					"call_type" : 0,
+					"Count" : 1,
+					"Link" : [
+						{
+							"node" : 56,
+							"param" : "",
+							"param2" : "",
+							"param3" : ""
+						}
+					]
+				},
+				{
+					"type" : 2,
+					"name" : "OnPickupLevelCard3",
+					"pos" :
+					{
+						"x" : 1891.524780,
+						"y" : 369.890961
+					},
+					"param_type" : 0,
+					"call_type" : 0,
+					"Count" : 1,
+					"Link" : [
+						{
+							"node" : 60,
+							"param" : "",
+							"param2" : "",
+							"param3" : ""
+						}
+					]
+				},
+				{
+					"type" : 2,
+					"name" : "OnPickupLevelCard4",
+					"pos" :
+					{
+						"x" : 1907.829224,
+						"y" : 460.108307
+					},
+					"param_type" : 0,
+					"call_type" : 0,
+					"Count" : 1,
+					"Link" : [
+						{
+							"node" : 61,
+							"param" : "",
+							"param2" : "",
+							"param3" : ""
+						}
+					]
+				},
+				{
+					"type" : 0,
+					"name" : "Object",
+					"pos" :
+					{
+						"x" : 1701.307373,
+						"y" : 361.195282
+					}
+				},
+				{
+					"type" : 0,
+					"name" : "Object",
+					"pos" :
+					{
+						"x" : 1702.394409,
+						"y" : 466.630127
+					}
+				},
+				{
+					"type" : 1,
+					"name" : "item_card_lvl3",
+					"pos" :
+					{
+						"x" : 1512.177368,
+						"y" : 354.673462
+					},
+					"prefix" : ""
+				},
+				{
+					"type" : 1,
+					"name" : "item_card_lvl4",
+					"pos" :
+					{
+						"x" : 1505.655273,
+						"y" : 463.369232
+					},
+					"prefix" : ""
 				}
 			],
 			"dep_count" : 24,
@@ -8154,7 +8271,7 @@
 			"ed_camera_2d_zoom" : 1.000000,
 			"Name" : "Floor3",
 			"x" : 0.000000,
-			"y" : -48.000000,
+			"y" : 0.000000,
 			"width" : 14400.000000,
 			"height" : 10800.000000,
 			"anchorn_x" : 0.500000,
@@ -9604,13 +9721,13 @@
 			"Name" : "Item_CardLvl1",
 			"x" : 0.000000,
 			"y" : 0.000000,
-			"width" : 66.000000,
-			"height" : 54.000000,
+			"width" : 44.000000,
+			"height" : 36.000000,
 			"anchorn_x" : 0.500000,
 			"anchorn_y" : 0.500000,
 			"use_source_size" : true,
-			"source_scaleX" : 3.000000,
-			"source_scaleY" : 3.000000,
+			"source_scaleX" : 2.000000,
+			"source_scaleY" : 2.000000,
 			"sprite" :
 			{
 				"width" : 558,
@@ -9686,6 +9803,1739 @@
 					]
 				}
 			]
+		},
+		{
+			"type" : "BlueprintAsset",
+			"uid" : 687485,
+			"ed_camera_2d" :
+			{
+				"x" : 250.000000,
+				"y" : 215.000000
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "DoorHrz_L1_BP",
+			"Childs" : [
+				{
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
+				},
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 687485,
+											"child_uid" : 534743,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 687485,
+											"child_uid" : 389628,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 687485,
+											"child_uid" : 389628,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 534743,
+					"Name" : "DoorHorzLvl1",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : -48.000000,
+								"y" : 0.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 291455,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "BlueprintAsset",
+			"uid" : 914685,
+			"ed_camera_2d" :
+			{
+				"x" : 250.000000,
+				"y" : 215.000000
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "DoorHrz_L2_BP",
+			"Childs" : [
+				{
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
+				},
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 914685,
+											"child_uid" : 426077,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 914685,
+											"child_uid" : 389628,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 914685,
+											"child_uid" : 389628,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 426077,
+					"Name" : "DoorHorzLvl2",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : -48.000000,
+								"y" : 0.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 587388,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "BlueprintAsset",
+			"uid" : 750845,
+			"ed_camera_2d" :
+			{
+				"x" : 250.000000,
+				"y" : 215.000000
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "DoorHrz_L3_BP",
+			"Childs" : [
+				{
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
+				},
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 750845,
+											"child_uid" : 443248,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 750845,
+											"child_uid" : 389628,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 750845,
+											"child_uid" : 389628,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 443248,
+					"Name" : "DoorHorzLvl3",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : -48.000000,
+								"y" : 0.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 290942,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "BlueprintAsset",
+			"uid" : 423927,
+			"ed_camera_2d" :
+			{
+				"x" : 250.000000,
+				"y" : 215.000000
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "DoorHrz_L4_BP",
+			"Childs" : [
+				{
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
+				},
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 423927,
+											"child_uid" : 747512,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 423927,
+											"child_uid" : 389628,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 423927,
+											"child_uid" : 389628,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 747512,
+					"Name" : "DoorHorzLvl4",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : -48.000000,
+								"y" : 0.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 717431,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "BlueprintAsset",
+			"uid" : 752254,
+			"ed_camera_2d" :
+			{
+				"x" : 250.000000,
+				"y" : 215.000000
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "DoorVrt_L1_BP",
+			"Childs" : [
+				{
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
+				},
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 752254,
+											"child_uid" : 593447,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 752254,
+											"child_uid" : 389628,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 752254,
+											"child_uid" : 389628,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 593447,
+					"Name" : "DoorVertLvl1",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : 0.000000,
+								"y" : -48.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 883582,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "BlueprintAsset",
+			"uid" : 1015807,
+			"ed_camera_2d" :
+			{
+				"x" : 250.000000,
+				"y" : 215.000000
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "DoorVrt_L2_BP",
+			"Childs" : [
+				{
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
+				},
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 1015807,
+											"child_uid" : 362778,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 1015807,
+											"child_uid" : 389628,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 1015807,
+											"child_uid" : 389628,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 362778,
+					"Name" : "DoorVertLvl2",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : 0.000000,
+								"y" : -48.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 914431,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "BlueprintAsset",
+			"uid" : 718069,
+			"ed_camera_2d" :
+			{
+				"x" : 250.000000,
+				"y" : 215.000000
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "DoorVrt_L3_BP",
+			"Childs" : [
+				{
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
+				},
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 718069,
+											"child_uid" : 357139,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 718069,
+											"child_uid" : 389628,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 718069,
+											"child_uid" : 389628,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 357139,
+					"Name" : "DoorVertLvl3",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : 0.000000,
+								"y" : -48.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 422645,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "BlueprintAsset",
+			"uid" : 554103,
+			"ed_camera_2d" :
+			{
+				"x" : 250.000000,
+				"y" : 215.000000
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "DoorVrt_L4_BP",
+			"Childs" : [
+				{
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
+				},
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 554103,
+											"child_uid" : 345544,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 554103,
+											"child_uid" : 389628,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 554103,
+											"child_uid" : 389628,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 345544,
+					"Name" : "DoorVertLvl4",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : 0.000000,
+								"y" : -48.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 324092,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "SpriteAsset",
+			"uid" : 193021,
+			"ed_camera_2d" :
+			{
+				"x" : 0.000000,
+				"y" : 0.000000
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "Item_CardLvl2",
+			"x" : 0.000000,
+			"y" : 0.000000,
+			"width" : 44.000000,
+			"height" : 36.000000,
+			"anchorn_x" : 0.500000,
+			"anchorn_y" : 0.500000,
+			"use_source_size" : true,
+			"source_scaleX" : 2.000000,
+			"source_scaleY" : 2.000000,
+			"sprite" :
+			{
+				"width" : 558,
+				"height" : 722,
+				"type" : 0,
+				"color" :
+				{
+					"r" : 1.000000,
+					"g" : 1.000000,
+					"b" : 1.000000,
+					"a" : 1.000000
+				},
+				"texName" : "Sprites/Seizure.png",
+				"texMode" : 0,
+				"texFilter" : 0,
+				"count" : 1,
+				"Rect" : [
+					{
+						"pos" :
+						{
+							"x" : 317.500000,
+							"y" : 360.500000
+						},
+						"size" :
+						{
+							"x" : 22.000000,
+							"y" : 18.000000
+						},
+						"uv" :
+						{
+							"x" : 0.568996,
+							"y" : 0.499307
+						},
+						"duv" :
+						{
+							"x" : 0.039427,
+							"y" : 0.024931
+						},
+						"offset" :
+						{
+							"x" : 0.000000,
+							"y" : 0.000000
+						}
+					}
+				]
+			},
+			"components" : [
+				{
+					"type" : "Phys2DComp",
+					"body_type" : 4,
+					"density" : 1.250000,
+					"friction" : 0.250000,
+					"allow_rotate" : true,
+					"use_object_size" : true,
+					"width" : 64.000000,
+					"height" : 64.000000,
+					"group" : 1
+				},
+				{
+					"type" : "ScriptMetaDataComp",
+					"Asset" :
+					{
+						"uid" : 884469,
+						"child_uid" : 0,
+						"is_asset" : true
+					},
+					"count" : 1,
+					"value" : [
+						{
+							"type" : 1,
+							"value" : 2
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "SpriteAsset",
+			"uid" : 621949,
+			"ed_camera_2d" :
+			{
+				"x" : 0.000000,
+				"y" : 0.000000
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "Item_CardLvl3",
+			"x" : 0.000000,
+			"y" : 0.000000,
+			"width" : 44.000000,
+			"height" : 36.000000,
+			"anchorn_x" : 0.500000,
+			"anchorn_y" : 0.500000,
+			"use_source_size" : true,
+			"source_scaleX" : 2.000000,
+			"source_scaleY" : 2.000000,
+			"sprite" :
+			{
+				"width" : 558,
+				"height" : 722,
+				"type" : 0,
+				"color" :
+				{
+					"r" : 1.000000,
+					"g" : 1.000000,
+					"b" : 1.000000,
+					"a" : 1.000000
+				},
+				"texName" : "Sprites/Seizure.png",
+				"texMode" : 0,
+				"texFilter" : 0,
+				"count" : 1,
+				"Rect" : [
+					{
+						"pos" :
+						{
+							"x" : 292.500000,
+							"y" : 340.500000
+						},
+						"size" :
+						{
+							"x" : 22.000000,
+							"y" : 18.000000
+						},
+						"uv" :
+						{
+							"x" : 0.524194,
+							"y" : 0.471607
+						},
+						"duv" :
+						{
+							"x" : 0.039427,
+							"y" : 0.024931
+						},
+						"offset" :
+						{
+							"x" : 0.000000,
+							"y" : 0.000000
+						}
+					}
+				]
+			},
+			"components" : [
+				{
+					"type" : "Phys2DComp",
+					"body_type" : 4,
+					"density" : 1.250000,
+					"friction" : 0.250000,
+					"allow_rotate" : true,
+					"use_object_size" : true,
+					"width" : 64.000000,
+					"height" : 64.000000,
+					"group" : 1
+				},
+				{
+					"type" : "ScriptMetaDataComp",
+					"Asset" :
+					{
+						"uid" : 884469,
+						"child_uid" : 0,
+						"is_asset" : true
+					},
+					"count" : 1,
+					"value" : [
+						{
+							"type" : 1,
+							"value" : 3
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "SpriteAsset",
+			"uid" : 29815,
+			"ed_camera_2d" :
+			{
+				"x" : 0.000000,
+				"y" : 0.000000
+			},
+			"ed_camera_2d_zoom" : 1.760000,
+			"Name" : "Item_CardLvl4",
+			"x" : 0.000000,
+			"y" : 0.000000,
+			"width" : 44.000000,
+			"height" : 36.000000,
+			"anchorn_x" : 0.500000,
+			"anchorn_y" : 0.500000,
+			"use_source_size" : true,
+			"source_scaleX" : 2.000000,
+			"source_scaleY" : 2.000000,
+			"sprite" :
+			{
+				"width" : 558,
+				"height" : 722,
+				"type" : 0,
+				"color" :
+				{
+					"r" : 1.000000,
+					"g" : 1.000000,
+					"b" : 1.000000,
+					"a" : 1.000000
+				},
+				"texName" : "Sprites/Seizure.png",
+				"texMode" : 0,
+				"texFilter" : 0,
+				"count" : 1,
+				"Rect" : [
+					{
+						"pos" :
+						{
+							"x" : 317.500000,
+							"y" : 340.500000
+						},
+						"size" :
+						{
+							"x" : 22.000000,
+							"y" : 18.000000
+						},
+						"uv" :
+						{
+							"x" : 0.568996,
+							"y" : 0.471607
+						},
+						"duv" :
+						{
+							"x" : 0.039427,
+							"y" : 0.024931
+						},
+						"offset" :
+						{
+							"x" : 0.000000,
+							"y" : 0.000000
+						}
+					}
+				]
+			},
+			"components" : [
+				{
+					"type" : "Phys2DComp",
+					"body_type" : 4,
+					"density" : 1.250000,
+					"friction" : 0.250000,
+					"allow_rotate" : true,
+					"use_object_size" : true,
+					"width" : 64.000000,
+					"height" : 64.000000,
+					"group" : 1
+				},
+				{
+					"type" : "ScriptMetaDataComp",
+					"Asset" :
+					{
+						"uid" : 884469,
+						"child_uid" : 0,
+						"is_asset" : true
+					},
+					"count" : 1,
+					"value" : [
+						{
+							"type" : 1,
+							"value" : 4
+						}
+					]
+				}
+			]
 		}
 	],
 	"SceneObject" : [
@@ -9719,8 +11569,8 @@
 			"State" : 2,
 			"Group" : "Level",
 			"Layer" : "Level",
-			"x" : 1088.000000,
-			"y" : 0.000000,
+			"x" : -480.000000,
+			"y" : -2928.000000,
 			"ScreenBorder" : 200.000000,
 			"ScreenVertBorder" : 500.000000,
 			"UseLRBorder" : false,
@@ -9949,16 +11799,16 @@
 			"uid" : -211527680,
 			"ed_camera_2d" :
 			{
-				"x" : 1732.130493,
-				"y" : 324.449554
+				"x" : 1774.676880,
+				"y" : 438.912659
 			},
-			"ed_camera_2d_zoom" : 0.980000,
+			"ed_camera_2d_zoom" : 0.920000,
 			"Name" : "MainScript",
 			"State" : 2,
 			"Group" : "Level",
 			"Layer" : "Level",
 			"asset_uid" : 200902816,
-			"Count" : 55,
+			"Count" : 64,
 			"Node" : [
 				{
 					"callback_type" : "",
@@ -10888,6 +12738,159 @@
 								"object" :
 								{
 									"uid" : 0,
+									"child_uid" : 0,
+									"is_asset" : false
+								}
+							}
+						]
+					}
+				},
+				{
+					"callback_type" : "OnContact",
+					"objects_list" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"object" :
+								{
+									"uid" : 979191,
+									"child_uid" : 0,
+									"is_asset" : false
+								}
+							}
+						]
+					}
+				},
+				{
+					"callback_type" : "OnContactStart",
+					"objects_list" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"object" :
+								{
+									"uid" : 979191,
+									"child_uid" : 0,
+									"is_asset" : false
+								}
+							}
+						]
+					}
+				},
+				{
+					"callback_type" : "",
+					"objects_list" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"object" :
+								{
+									"uid" : 0,
+									"child_uid" : 0,
+									"is_asset" : false
+								}
+							}
+						]
+					}
+				},
+				{
+					"callback_type" : "",
+					"objects_list" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"object" :
+								{
+									"uid" : 0,
+									"child_uid" : 0,
+									"is_asset" : false
+								}
+							}
+						]
+					}
+				},
+				{
+					"callback_type" : "",
+					"objects_list" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"object" :
+								{
+									"uid" : 0,
+									"child_uid" : 0,
+									"is_asset" : false
+								}
+							}
+						]
+					}
+				},
+				{
+					"callback_type" : "OnContactStart",
+					"objects_list" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"object" :
+								{
+									"uid" : 357366,
+									"child_uid" : 0,
+									"is_asset" : false
+								}
+							}
+						]
+					}
+				},
+				{
+					"callback_type" : "OnContactStart",
+					"objects_list" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"object" :
+								{
+									"uid" : 818038,
+									"child_uid" : 0,
+									"is_asset" : false
+								}
+							}
+						]
+					}
+				},
+				{
+					"callback_type" : "OnContact",
+					"objects_list" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"object" :
+								{
+									"uid" : 357366,
+									"child_uid" : 0,
+									"is_asset" : false
+								}
+							}
+						]
+					}
+				},
+				{
+					"callback_type" : "OnContact",
+					"objects_list" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"object" :
+								{
+									"uid" : 818038,
 									"child_uid" : 0,
 									"is_asset" : false
 								}
@@ -32037,180 +34040,6 @@
 		},
 		{
 			"type" : "SpriteInst",
-			"uid" : 130804,
-			"Name" : "DH_Lvl1",
-			"State" : 2,
-			"Group" : "Floor2",
-			"Layer" : "Floor2",
-			"axis_scale" : 1.000000,
-			"Depth" : 0.500000,
-			"UseDepth" : true,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 1,
-				"Elem" : [
-					{
-						"x" : -96.000000,
-						"y" : -3312.000000,
-						"index" : 0,
-						"visible" : 1,
-						"color" :
-						{
-							"r" : 1.000000,
-							"g" : 1.000000,
-							"b" : 1.000000,
-							"a" : 1.000000
-						},
-						"alpha" : 1.000000
-					}
-				]
-			},
-			"asset_uid" : 291455,
-			"components" : [
-				{
-					"type" : "Phys2DCompInst"
-				},
-				{
-					"type" : "ScriptMetaDataCompInst"
-				}
-			]
-		},
-		{
-			"type" : "Trigger2D",
-			"uid" : 849783,
-			"Name" : "DH_Lvl1_T",
-			"State" : 2,
-			"Group" : "Floor2",
-			"Layer" : "Floor2",
-			"x" : -48.000000,
-			"y" : -3312.000000,
-			"width" : 100.000000,
-			"height" : 100.000000,
-			"collision_group" : 1
-		},
-		{
-			"type" : "SceneScriptInst",
-			"uid" : 556660,
-			"ed_camera_2d" :
-			{
-				"x" : 417.829681,
-				"y" : 188.957474
-			},
-			"ed_camera_2d_zoom" : 1.000000,
-			"Name" : "DH_Lvl1_S",
-			"State" : 2,
-			"Group" : "",
-			"Layer" : "",
-			"asset_uid" : 685438,
-			"Count" : 6,
-			"Node" : [
-				{
-					"callback_type" : "OnContact",
-					"objects_list" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"object" :
-								{
-									"uid" : 130804,
-									"child_uid" : 0,
-									"is_asset" : false
-								}
-							}
-						]
-					}
-				},
-				{
-					"callback_type" : "OnContactStart",
-					"objects_list" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"object" :
-								{
-									"uid" : 849783,
-									"child_uid" : 0,
-									"is_asset" : false
-								}
-							}
-						]
-					}
-				},
-				{
-					"callback_type" : "",
-					"objects_list" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"object" :
-								{
-									"uid" : 0,
-									"child_uid" : 0,
-									"is_asset" : false
-								}
-							}
-						]
-					}
-				},
-				{
-					"callback_type" : "",
-					"objects_list" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"object" :
-								{
-									"uid" : 0,
-									"child_uid" : 0,
-									"is_asset" : false
-								}
-							}
-						]
-					}
-				},
-				{
-					"callback_type" : "OnContactEnd",
-					"objects_list" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"object" :
-								{
-									"uid" : 849783,
-									"child_uid" : 0,
-									"is_asset" : false
-								}
-							}
-						]
-					}
-				},
-				{
-					"callback_type" : "",
-					"objects_list" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"object" :
-								{
-									"uid" : -211527680,
-									"child_uid" : 0,
-									"is_asset" : false
-								}
-							}
-						]
-					}
-				}
-			]
-		},
-		{
-			"type" : "SpriteInst",
 			"uid" : 950007,
 			"Name" : "Item_CardLvl1",
 			"State" : 2,
@@ -32251,296 +34080,3629 @@
 			]
 		},
 		{
-			"type" : "SpriteInst",
-			"uid" : 455806,
-			"Name" : "DH_Lvl1",
+			"type" : "BlueprintInst",
+			"uid" : 94452,
+			"Name" : "DoorHrz_L1_BP",
 			"State" : 2,
-			"Group" : "Floor3",
-			"Layer" : "Floor3",
-			"axis_scale" : 1.000000,
-			"Depth" : 0.500000,
-			"UseDepth" : true,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 1,
-				"Elem" : [
-					{
-						"x" : 0.000000,
-						"y" : -2736.000000,
-						"index" : 0,
-						"visible" : 1,
-						"color" :
-						{
-							"r" : 1.000000,
-							"g" : 1.000000,
-							"b" : 1.000000,
-							"a" : 1.000000
-						},
-						"alpha" : 1.000000
-					}
-				]
-			},
-			"asset_uid" : 291455,
-			"components" : [
+			"Group" : "Floor2",
+			"Layer" : "Floor2",
+			"x" : -48.000000,
+			"y" : -3312.000000,
+			"asset_uid" : 687485,
+			"Childs" : [
 				{
-					"type" : "Phys2DCompInst"
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "Floor2",
+					"Layer" : "Floor2",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
 				},
 				{
-					"type" : "ScriptMetaDataCompInst"
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "Floor2",
+					"Layer" : "Floor2",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 94452,
+											"child_uid" : 534743,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 94452,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 94452,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 534743,
+					"Name" : "DoorHorzLvl1",
+					"State" : 2,
+					"Group" : "Floor2",
+					"Layer" : "Floor2",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : -48.000000,
+								"y" : 0.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 291455,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
 				}
 			]
 		},
 		{
-			"type" : "SpriteInst",
-			"uid" : 194046,
-			"Name" : "DV_Lvl1",
+			"type" : "BlueprintInst",
+			"uid" : 327036,
+			"Name" : "DoorHrz_L1_BP",
 			"State" : 2,
 			"Group" : "Floor3",
 			"Layer" : "Floor3",
-			"axis_scale" : 1.000000,
-			"Depth" : 0.500000,
-			"UseDepth" : true,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 1,
-				"Elem" : [
-					{
-						"x" : -1248.000000,
-						"y" : -2160.000000,
-						"index" : 0,
-						"visible" : 1,
-						"color" :
-						{
-							"r" : 1.000000,
-							"g" : 1.000000,
-							"b" : 1.000000,
-							"a" : 1.000000
-						},
-						"alpha" : 1.000000
-					}
-				]
-			},
-			"asset_uid" : 883582,
-			"components" : [
+			"x" : 48.000000,
+			"y" : -2736.000000,
+			"asset_uid" : 687485,
+			"Childs" : [
 				{
-					"type" : "Phys2DCompInst"
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
 				},
 				{
-					"type" : "ScriptMetaDataCompInst"
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 327036,
+											"child_uid" : 534743,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 327036,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 327036,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 534743,
+					"Name" : "DoorHorzLvl1",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : -48.000000,
+								"y" : 0.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 291455,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
 				}
 			]
 		},
 		{
-			"type" : "SpriteInst",
-			"uid" : 913526,
-			"Name" : "DH_Lvl2",
+			"type" : "BlueprintInst",
+			"uid" : 980094,
+			"Name" : "DoorHrz_L2_BP",
 			"State" : 2,
 			"Group" : "Floor3",
 			"Layer" : "Floor3",
-			"axis_scale" : 1.000000,
-			"Depth" : 0.500000,
-			"UseDepth" : true,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 1,
-				"Elem" : [
-					{
-						"x" : 192.000000,
-						"y" : -2448.000000,
-						"index" : 0,
-						"visible" : 1,
-						"color" :
-						{
-							"r" : 1.000000,
-							"g" : 1.000000,
-							"b" : 1.000000,
-							"a" : 1.000000
-						},
-						"alpha" : 1.000000
-					}
-				]
-			},
-			"asset_uid" : 587388,
-			"components" : [
+			"x" : 240.000000,
+			"y" : -2448.000000,
+			"asset_uid" : 914685,
+			"Childs" : [
 				{
-					"type" : "Phys2DCompInst"
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
 				},
 				{
-					"type" : "ScriptMetaDataCompInst"
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 980094,
+											"child_uid" : 426077,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 980094,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 980094,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 426077,
+					"Name" : "DoorHorzLvl2",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : -48.000000,
+								"y" : 0.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 587388,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
 				}
 			]
 		},
 		{
-			"type" : "SpriteInst",
-			"uid" : 294524,
-			"Name" : "DV_Lvl2",
+			"type" : "BlueprintInst",
+			"uid" : 819191,
+			"Name" : "DoorHrz_L3_BP",
 			"State" : 2,
 			"Group" : "Floor3",
 			"Layer" : "Floor3",
-			"axis_scale" : 1.000000,
-			"Depth" : 0.500000,
-			"UseDepth" : true,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 1,
-				"Elem" : [
-					{
-						"x" : -1248.000000,
-						"y" : -1104.000000,
-						"index" : 0,
-						"visible" : 1,
-						"color" :
-						{
-							"r" : 1.000000,
-							"g" : 1.000000,
-							"b" : 1.000000,
-							"a" : 1.000000
-						},
-						"alpha" : 1.000000
-					}
-				]
-			},
-			"asset_uid" : 914431,
-			"components" : [
+			"x" : 1488.000000,
+			"y" : -2736.000000,
+			"asset_uid" : 750845,
+			"Childs" : [
 				{
-					"type" : "Phys2DCompInst"
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
 				},
 				{
-					"type" : "ScriptMetaDataCompInst"
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 819191,
+											"child_uid" : 443248,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 819191,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 819191,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 443248,
+					"Name" : "DoorHorzLvl3",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : -48.000000,
+								"y" : 0.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 290942,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
 				}
 			]
 		},
 		{
-			"type" : "SpriteInst",
-			"uid" : 389366,
-			"Name" : "DH_Lvl3",
+			"type" : "BlueprintInst",
+			"uid" : 294140,
+			"Name" : "DoorHrz_L4_BP",
 			"State" : 2,
 			"Group" : "Floor3",
 			"Layer" : "Floor3",
-			"axis_scale" : 1.000000,
-			"Depth" : 0.500000,
-			"UseDepth" : true,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 1,
-				"Elem" : [
-					{
-						"x" : 1440.000000,
-						"y" : -2736.000000,
-						"index" : 0,
-						"visible" : 1,
-						"color" :
-						{
-							"r" : 1.000000,
-							"g" : 1.000000,
-							"b" : 1.000000,
-							"a" : 1.000000
-						},
-						"alpha" : 1.000000
-					}
-				]
-			},
-			"asset_uid" : 290942,
-			"components" : [
+			"x" : -1104.000000,
+			"y" : -2736.000000,
+			"asset_uid" : 423927,
+			"Childs" : [
 				{
-					"type" : "Phys2DCompInst"
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
 				},
 				{
-					"type" : "ScriptMetaDataCompInst"
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 294140,
+											"child_uid" : 747512,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 294140,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 294140,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 747512,
+					"Name" : "DoorHorzLvl4",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : -48.000000,
+								"y" : 0.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 717431,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
 				}
 			]
 		},
 		{
-			"type" : "SpriteInst",
-			"uid" : 556413,
-			"Name" : "DH_Lvl4",
+			"type" : "BlueprintInst",
+			"uid" : 556279,
+			"Name" : "DoorHrz_L4_BP",
 			"State" : 2,
 			"Group" : "Floor3",
 			"Layer" : "Floor3",
-			"axis_scale" : 1.000000,
-			"Depth" : 0.500000,
-			"UseDepth" : true,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 1,
-				"Elem" : [
-					{
-						"x" : -1152.000000,
-						"y" : -336.000000,
-						"index" : 0,
-						"visible" : 1,
-						"color" :
-						{
-							"r" : 1.000000,
-							"g" : 1.000000,
-							"b" : 1.000000,
-							"a" : 1.000000
-						},
-						"alpha" : 1.000000
-					}
-				]
-			},
-			"asset_uid" : 717431,
-			"components" : [
+			"x" : -1104.000000,
+			"y" : -336.000000,
+			"asset_uid" : 423927,
+			"Childs" : [
 				{
-					"type" : "Phys2DCompInst"
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
 				},
 				{
-					"type" : "ScriptMetaDataCompInst"
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 556279,
+											"child_uid" : 747512,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 556279,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 556279,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 747512,
+					"Name" : "DoorHorzLvl4",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : -48.000000,
+								"y" : 0.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 717431,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
 				}
 			]
 		},
 		{
-			"type" : "SpriteInst",
-			"uid" : 979958,
-			"Name" : "DH_Lvl1",
+			"type" : "BlueprintInst",
+			"uid" : 489725,
+			"Name" : "DoorVrt_L1_BP",
+			"State" : 2,
+			"Group" : "Floor3",
+			"Layer" : "Floor3",
+			"x" : -1248.000000,
+			"y" : -2112.000000,
+			"asset_uid" : 752254,
+			"Childs" : [
+				{
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
+				},
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 489725,
+											"child_uid" : 593447,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 489725,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 489725,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 593447,
+					"Name" : "DoorVertLvl1",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : 0.000000,
+								"y" : -48.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 883582,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "BlueprintInst",
+			"uid" : 163580,
+			"Name" : "DoorVrt_L1_BP",
+			"State" : 2,
+			"Group" : "Floor3",
+			"Layer" : "Floor3",
+			"x" : 1824.000000,
+			"y" : -2112.000000,
+			"asset_uid" : 752254,
+			"Childs" : [
+				{
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
+				},
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 163580,
+											"child_uid" : 593447,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 163580,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 163580,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 593447,
+					"Name" : "DoorVertLvl1",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : 0.000000,
+								"y" : -48.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 883582,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "BlueprintInst",
+			"uid" : 490996,
+			"Name" : "DoorVrt_L2_BP",
+			"State" : 2,
+			"Group" : "Floor3",
+			"Layer" : "Floor3",
+			"x" : -1248.000000,
+			"y" : -1056.000000,
+			"asset_uid" : 1015807,
+			"Childs" : [
+				{
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
+				},
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 490996,
+											"child_uid" : 362778,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 490996,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 490996,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 362778,
+					"Name" : "DoorVertLvl2",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : 0.000000,
+								"y" : -48.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 914431,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "BlueprintInst",
+			"uid" : 291831,
+			"Name" : "DoorVrt_L2_BP",
+			"State" : 2,
+			"Group" : "Floor3",
+			"Layer" : "Floor3",
+			"x" : 1536.000000,
+			"y" : -1056.000000,
+			"asset_uid" : 1015807,
+			"Childs" : [
+				{
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
+				},
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 291831,
+											"child_uid" : 362778,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 291831,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 291831,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 362778,
+					"Name" : "DoorVertLvl2",
+					"State" : 2,
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : 0.000000,
+								"y" : -48.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 914431,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "BlueprintInst",
+			"uid" : 196599,
+			"Name" : "DoorHrz_L1_BP",
 			"State" : 2,
 			"Group" : "Floor4",
 			"Layer" : "Floor4",
-			"axis_scale" : 1.000000,
-			"Depth" : 0.500000,
-			"UseDepth" : true,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 1,
-				"Elem" : [
-					{
-						"x" : 864.000000,
-						"y" : -2400.000000,
-						"index" : 0,
-						"visible" : 1,
-						"color" :
-						{
-							"r" : 1.000000,
-							"g" : 1.000000,
-							"b" : 1.000000,
-							"a" : 1.000000
-						},
-						"alpha" : 1.000000
-					}
-				]
-			},
-			"asset_uid" : 291455,
-			"components" : [
+			"x" : -624.000000,
+			"y" : -288.000000,
+			"asset_uid" : 687485,
+			"Childs" : [
 				{
-					"type" : "Phys2DCompInst"
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
 				},
 				{
-					"type" : "ScriptMetaDataCompInst"
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 196599,
+											"child_uid" : 534743,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 196599,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 196599,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 534743,
+					"Name" : "DoorHorzLvl1",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : -48.000000,
+								"y" : 0.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 291455,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
 				}
 			]
 		},
 		{
-			"type" : "SpriteInst",
+			"type" : "BlueprintInst",
+			"uid" : 390782,
+			"Name" : "DoorHrz_L1_BP",
+			"State" : 2,
+			"Group" : "Floor4",
+			"Layer" : "Floor4",
+			"x" : 912.000000,
+			"y" : -2400.000000,
+			"asset_uid" : 687485,
+			"Childs" : [
+				{
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
+				},
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 390782,
+											"child_uid" : 534743,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 390782,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 390782,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 534743,
+					"Name" : "DoorHorzLvl1",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : -48.000000,
+								"y" : 0.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 291455,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "BlueprintInst",
+			"uid" : 850557,
+			"Name" : "DoorHrz_L4_BP",
+			"State" : 2,
+			"Group" : "Floor4",
+			"Layer" : "Floor4",
+			"x" : -816.000000,
+			"y" : -2400.000000,
+			"asset_uid" : 423927,
+			"Childs" : [
+				{
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
+				},
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 850557,
+											"child_uid" : 747512,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 850557,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 850557,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 747512,
+					"Name" : "DoorHorzLvl4",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : -48.000000,
+								"y" : 0.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 717431,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "BlueprintInst",
+			"uid" : 389628,
+			"Name" : "DoorHrz_L4_BP",
+			"State" : 2,
+			"Group" : "Floor4",
+			"Layer" : "Floor4",
+			"x" : 2064.000000,
+			"y" : -2016.000000,
+			"asset_uid" : 423927,
+			"Childs" : [
+				{
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
+				},
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 389628,
+											"child_uid" : 747512,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 389628,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 389628,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 747512,
+					"Name" : "DoorHorzLvl4",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : -48.000000,
+								"y" : 0.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 717431,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "BlueprintInst",
+			"uid" : 588157,
+			"Name" : "DoorHrz_L4_BP",
+			"State" : 2,
+			"Group" : "Floor4",
+			"Layer" : "Floor4",
+			"x" : 912.000000,
+			"y" : -1344.000000,
+			"asset_uid" : 423927,
+			"Childs" : [
+				{
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
+				},
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 588157,
+											"child_uid" : 747512,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 588157,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 588157,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 747512,
+					"Name" : "DoorHorzLvl4",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : -48.000000,
+								"y" : 0.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 717431,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "BlueprintInst",
 			"uid" : 523255,
-			"Name" : "DV_Lvl1",
+			"Name" : "DoorVrt_L1_BP",
+			"State" : 2,
+			"Group" : "Floor4",
+			"Layer" : "Floor4",
+			"x" : -960.000000,
+			"y" : -3024.000000,
+			"asset_uid" : 752254,
+			"Childs" : [
+				{
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
+				},
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 523255,
+											"child_uid" : 593447,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 523255,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 523255,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 593447,
+					"Name" : "DoorVertLvl1",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : 0.000000,
+								"y" : -48.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 883582,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "BlueprintInst",
+			"uid" : 393078,
+			"Name" : "DoorVrt_L1_BP",
+			"State" : 2,
+			"Group" : "Floor4",
+			"Layer" : "Floor4",
+			"x" : 1632.000000,
+			"y" : -3024.000000,
+			"asset_uid" : 752254,
+			"Childs" : [
+				{
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
+				},
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 393078,
+											"child_uid" : 593447,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 393078,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 393078,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 593447,
+					"Name" : "DoorVertLvl1",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : 0.000000,
+								"y" : -48.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 883582,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "BlueprintInst",
+			"uid" : 783093,
+			"Name" : "DoorVrt_L3_BP",
+			"State" : 2,
+			"Group" : "Floor4",
+			"Layer" : "Floor4",
+			"x" : 1344.000000,
+			"y" : 48.000000,
+			"asset_uid" : 718069,
+			"Childs" : [
+				{
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
+				},
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 783093,
+											"child_uid" : 357139,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 783093,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 783093,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 357139,
+					"Name" : "DoorVertLvl3",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : 0.000000,
+								"y" : -48.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 422645,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "BlueprintInst",
+			"uid" : 357495,
+			"Name" : "DoorVrt_L2_BP",
+			"State" : 2,
+			"Group" : "Floor4",
+			"Layer" : "Floor4",
+			"x" : -960.000000,
+			"y" : -1008.000000,
+			"asset_uid" : 1015807,
+			"Childs" : [
+				{
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
+				},
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 357495,
+											"child_uid" : 362778,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 357495,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 357495,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 362778,
+					"Name" : "DoorVertLvl2",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : 0.000000,
+								"y" : -48.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 914431,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "BlueprintInst",
+			"uid" : 718583,
+			"Name" : "DoorVrt_L2_BP",
+			"State" : 2,
+			"Group" : "Floor4",
+			"Layer" : "Floor4",
+			"x" : 1344.000000,
+			"y" : -2928.000000,
+			"asset_uid" : 1015807,
+			"Childs" : [
+				{
+					"type" : "Trigger2D",
+					"uid" : 389628,
+					"Name" : "Trigger2D",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"x" : 0.000000,
+					"y" : 0.000000,
+					"width" : 195.687607,
+					"height" : 187.118515,
+					"collision_group" : 1
+				},
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 138033,
+					"Name" : "DoorScript",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"asset_uid" : 685438,
+					"Count" : 6,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 718583,
+											"child_uid" : 362778,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 718583,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 718583,
+											"child_uid" : 389628,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 362778,
+					"Name" : "DoorVertLvl2",
+					"State" : 2,
+					"Group" : "Floor4",
+					"Layer" : "Floor4",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.500000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : 0.000000,
+								"y" : -48.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 914431,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						},
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "SpriteInst",
+			"uid" : 979191,
+			"Name" : "Item_CardLvl2",
 			"State" : 2,
 			"Group" : "Floor4",
 			"Layer" : "Floor4",
@@ -32553,7 +37715,7 @@
 				"count" : 1,
 				"Elem" : [
 					{
-						"x" : -960.000000,
+						"x" : -144.000000,
 						"y" : -3072.000000,
 						"index" : 0,
 						"visible" : 1,
@@ -32568,7 +37730,7 @@
 					}
 				]
 			},
-			"asset_uid" : 883582,
+			"asset_uid" : 193021,
 			"components" : [
 				{
 					"type" : "Phys2DCompInst"
@@ -32580,8 +37742,8 @@
 		},
 		{
 			"type" : "SpriteInst",
-			"uid" : 654590,
-			"Name" : "DV_Lvl2",
+			"uid" : 818038,
+			"Name" : "Item_CardLvl4",
 			"State" : 2,
 			"Group" : "Floor4",
 			"Layer" : "Floor4",
@@ -32594,7 +37756,48 @@
 				"count" : 1,
 				"Elem" : [
 					{
-						"x" : -960.000000,
+						"x" : 624.000000,
+						"y" : 48.000000,
+						"index" : 0,
+						"visible" : 1,
+						"color" :
+						{
+							"r" : 1.000000,
+							"g" : 1.000000,
+							"b" : 1.000000,
+							"a" : 1.000000
+						},
+						"alpha" : 1.000000
+					}
+				]
+			},
+			"asset_uid" : 29815,
+			"components" : [
+				{
+					"type" : "Phys2DCompInst"
+				},
+				{
+					"type" : "ScriptMetaDataCompInst"
+				}
+			]
+		},
+		{
+			"type" : "SpriteInst",
+			"uid" : 357366,
+			"Name" : "Item_CardLvl3",
+			"State" : 2,
+			"Group" : "Floor3",
+			"Layer" : "Floor3",
+			"axis_scale" : 1.000000,
+			"Depth" : 0.500000,
+			"UseDepth" : true,
+			"draw_level" : 0,
+			"inst" :
+			{
+				"count" : 1,
+				"Elem" : [
+					{
+						"x" : -624.000000,
 						"y" : -1056.000000,
 						"index" : 0,
 						"visible" : 1,
@@ -32609,417 +37812,7 @@
 					}
 				]
 			},
-			"asset_uid" : 914431,
-			"components" : [
-				{
-					"type" : "Phys2DCompInst"
-				},
-				{
-					"type" : "ScriptMetaDataCompInst"
-				}
-			]
-		},
-		{
-			"type" : "SpriteInst",
-			"uid" : 750839,
-			"Name" : "DH_Lvl4",
-			"State" : 2,
-			"Group" : "Floor4",
-			"Layer" : "Floor4",
-			"axis_scale" : 1.000000,
-			"Depth" : 0.500000,
-			"UseDepth" : true,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 1,
-				"Elem" : [
-					{
-						"x" : 864.000000,
-						"y" : -1344.000000,
-						"index" : 0,
-						"visible" : 1,
-						"color" :
-						{
-							"r" : 1.000000,
-							"g" : 1.000000,
-							"b" : 1.000000,
-							"a" : 1.000000
-						},
-						"alpha" : 1.000000
-					}
-				]
-			},
-			"asset_uid" : 717431,
-			"components" : [
-				{
-					"type" : "Phys2DCompInst"
-				},
-				{
-					"type" : "ScriptMetaDataCompInst"
-				}
-			]
-		},
-		{
-			"type" : "SpriteInst",
-			"uid" : 454911,
-			"Name" : "DV_Lvl3",
-			"State" : 2,
-			"Group" : "Floor4",
-			"Layer" : "Floor4",
-			"axis_scale" : 1.000000,
-			"Depth" : 0.500000,
-			"UseDepth" : true,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 1,
-				"Elem" : [
-					{
-						"x" : 1344.000000,
-						"y" : 0.000000,
-						"index" : 0,
-						"visible" : 1,
-						"color" :
-						{
-							"r" : 1.000000,
-							"g" : 1.000000,
-							"b" : 1.000000,
-							"a" : 1.000000
-						},
-						"alpha" : 1.000000
-					}
-				]
-			},
-			"asset_uid" : 422645,
-			"components" : [
-				{
-					"type" : "Phys2DCompInst"
-				},
-				{
-					"type" : "ScriptMetaDataCompInst"
-				}
-			]
-		},
-		{
-			"type" : "SpriteInst",
-			"uid" : 686207,
-			"Name" : "DH_Lvl4_2",
-			"State" : 2,
-			"Group" : "Floor3",
-			"Layer" : "Floor3",
-			"axis_scale" : 1.000000,
-			"Depth" : 0.500000,
-			"UseDepth" : true,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 1,
-				"Elem" : [
-					{
-						"x" : -1152.000000,
-						"y" : -2736.000000,
-						"index" : 0,
-						"visible" : 1,
-						"color" :
-						{
-							"r" : 1.000000,
-							"g" : 1.000000,
-							"b" : 1.000000,
-							"a" : 1.000000
-						},
-						"alpha" : 1.000000
-					}
-				]
-			},
-			"asset_uid" : 717431,
-			"components" : [
-				{
-					"type" : "Phys2DCompInst"
-				},
-				{
-					"type" : "ScriptMetaDataCompInst"
-				}
-			]
-		},
-		{
-			"type" : "SpriteInst",
-			"uid" : 30196,
-			"Name" : "DV_Lvl1_2",
-			"State" : 2,
-			"Group" : "Floor3",
-			"Layer" : "Floor3",
-			"axis_scale" : 1.000000,
-			"Depth" : 0.500000,
-			"UseDepth" : true,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 1,
-				"Elem" : [
-					{
-						"x" : 1824.000000,
-						"y" : -2160.000000,
-						"index" : 0,
-						"visible" : 1,
-						"color" :
-						{
-							"r" : 1.000000,
-							"g" : 1.000000,
-							"b" : 1.000000,
-							"a" : 1.000000
-						},
-						"alpha" : 1.000000
-					}
-				]
-			},
-			"asset_uid" : 883582,
-			"components" : [
-				{
-					"type" : "Phys2DCompInst"
-				},
-				{
-					"type" : "ScriptMetaDataCompInst"
-				}
-			]
-		},
-		{
-			"type" : "SpriteInst",
-			"uid" : 718844,
-			"Name" : "DV_Lvl2_2",
-			"State" : 2,
-			"Group" : "Floor3",
-			"Layer" : "Floor3",
-			"axis_scale" : 1.000000,
-			"Depth" : 0.500000,
-			"UseDepth" : true,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 1,
-				"Elem" : [
-					{
-						"x" : 1536.000000,
-						"y" : -1104.000000,
-						"index" : 0,
-						"visible" : 1,
-						"color" :
-						{
-							"r" : 1.000000,
-							"g" : 1.000000,
-							"b" : 1.000000,
-							"a" : 1.000000
-						},
-						"alpha" : 1.000000
-					}
-				]
-			},
-			"asset_uid" : 914431,
-			"components" : [
-				{
-					"type" : "Phys2DCompInst"
-				},
-				{
-					"type" : "ScriptMetaDataCompInst"
-				}
-			]
-		},
-		{
-			"type" : "SpriteInst",
-			"uid" : 261621,
-			"Name" : "DH_Lvl1_2",
-			"State" : 2,
-			"Group" : "Floor4",
-			"Layer" : "Floor4",
-			"axis_scale" : 1.000000,
-			"Depth" : 0.500000,
-			"UseDepth" : true,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 1,
-				"Elem" : [
-					{
-						"x" : -672.000000,
-						"y" : -288.000000,
-						"index" : 0,
-						"visible" : 1,
-						"color" :
-						{
-							"r" : 1.000000,
-							"g" : 1.000000,
-							"b" : 1.000000,
-							"a" : 1.000000
-						},
-						"alpha" : 1.000000
-					}
-				]
-			},
-			"asset_uid" : 291455,
-			"components" : [
-				{
-					"type" : "Phys2DCompInst"
-				},
-				{
-					"type" : "ScriptMetaDataCompInst"
-				}
-			]
-		},
-		{
-			"type" : "SpriteInst",
-			"uid" : 915317,
-			"Name" : "DH_Lvl4_2",
-			"State" : 2,
-			"Group" : "Floor4",
-			"Layer" : "Floor4",
-			"axis_scale" : 1.000000,
-			"Depth" : 0.500000,
-			"UseDepth" : true,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 1,
-				"Elem" : [
-					{
-						"x" : -864.000000,
-						"y" : -2400.000000,
-						"index" : 0,
-						"visible" : 1,
-						"color" :
-						{
-							"r" : 1.000000,
-							"g" : 1.000000,
-							"b" : 1.000000,
-							"a" : 1.000000
-						},
-						"alpha" : 1.000000
-					}
-				]
-			},
-			"asset_uid" : 717431,
-			"components" : [
-				{
-					"type" : "Phys2DCompInst"
-				},
-				{
-					"type" : "ScriptMetaDataCompInst"
-				}
-			]
-		},
-		{
-			"type" : "SpriteInst",
-			"uid" : 1015413,
-			"Name" : "DH_Lvl4_3",
-			"State" : 2,
-			"Group" : "Floor4",
-			"Layer" : "Floor4",
-			"axis_scale" : 1.000000,
-			"Depth" : 0.500000,
-			"UseDepth" : true,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 1,
-				"Elem" : [
-					{
-						"x" : 2016.000000,
-						"y" : -2016.000000,
-						"index" : 0,
-						"visible" : 1,
-						"color" :
-						{
-							"r" : 1.000000,
-							"g" : 1.000000,
-							"b" : 1.000000,
-							"a" : 1.000000
-						},
-						"alpha" : 1.000000
-					}
-				]
-			},
-			"asset_uid" : 717431,
-			"components" : [
-				{
-					"type" : "Phys2DCompInst"
-				},
-				{
-					"type" : "ScriptMetaDataCompInst"
-				}
-			]
-		},
-		{
-			"type" : "SpriteInst",
-			"uid" : 520439,
-			"Name" : "DV_Lvl1_2",
-			"State" : 2,
-			"Group" : "Floor4",
-			"Layer" : "Floor4",
-			"axis_scale" : 1.000000,
-			"Depth" : 0.500000,
-			"UseDepth" : true,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 1,
-				"Elem" : [
-					{
-						"x" : 1632.000000,
-						"y" : -3072.000000,
-						"index" : 0,
-						"visible" : 1,
-						"color" :
-						{
-							"r" : 1.000000,
-							"g" : 1.000000,
-							"b" : 1.000000,
-							"a" : 1.000000
-						},
-						"alpha" : 1.000000
-					}
-				]
-			},
-			"asset_uid" : 883582,
-			"components" : [
-				{
-					"type" : "Phys2DCompInst"
-				},
-				{
-					"type" : "ScriptMetaDataCompInst"
-				}
-			]
-		},
-		{
-			"type" : "SpriteInst",
-			"uid" : 653174,
-			"Name" : "DV_Lvl2_2",
-			"State" : 2,
-			"Group" : "Floor4",
-			"Layer" : "Floor4",
-			"axis_scale" : 1.000000,
-			"Depth" : 0.500000,
-			"UseDepth" : true,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 1,
-				"Elem" : [
-					{
-						"x" : 1344.000000,
-						"y" : -2976.000000,
-						"index" : 0,
-						"visible" : 1,
-						"color" :
-						{
-							"r" : 1.000000,
-							"g" : 1.000000,
-							"b" : 1.000000,
-							"a" : 1.000000
-						},
-						"alpha" : 1.000000
-					}
-				]
-			},
-			"asset_uid" : 914431,
+			"asset_uid" : 621949,
 			"components" : [
 				{
 					"type" : "Phys2DCompInst"
@@ -33443,28 +38236,6 @@
 			]
 		},
 		{
-			"asset_uid" : 291455,
-			"asset_name" : "DoorHorzLvl1",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 130804,
-					"inst_name" : "DH_Lvl1"
-				}
-			]
-		},
-		{
-			"asset_uid" : 685438,
-			"asset_name" : "DoorScript",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 556660,
-					"inst_name" : "DH_Lvl1_S"
-				}
-			]
-		},
-		{
 			"asset_uid" : 586229,
 			"asset_name" : "Item_CardLvl1",
 			"instances" : [
@@ -33476,211 +38247,255 @@
 			]
 		},
 		{
-			"asset_uid" : 291455,
-			"asset_name" : "DoorHorzLvl1",
+			"asset_uid" : 687485,
+			"asset_name" : "DoorHrz_L1_BP",
 			"instances" : [
 				{
 					"scene" : "coldrain.sca",
-					"inst_uid" : 455806,
-					"inst_name" : "DH_Lvl1"
+					"inst_uid" : 94452,
+					"inst_name" : "DoorHrz_L1_BP"
 				}
 			]
 		},
 		{
-			"asset_uid" : 883582,
-			"asset_name" : "DoorVertLvl1",
+			"asset_uid" : 687485,
+			"asset_name" : "DoorHrz_L1_BP",
 			"instances" : [
 				{
 					"scene" : "coldrain.sca",
-					"inst_uid" : 194046,
-					"inst_name" : "DV_Lvl1"
+					"inst_uid" : 327036,
+					"inst_name" : "DoorHrz_L1_BP"
 				}
 			]
 		},
 		{
-			"asset_uid" : 587388,
-			"asset_name" : "DoorHorzLvl2",
+			"asset_uid" : 914685,
+			"asset_name" : "DoorHrz_L2_BP",
 			"instances" : [
 				{
 					"scene" : "coldrain.sca",
-					"inst_uid" : 913526,
-					"inst_name" : "DH_Lvl2"
+					"inst_uid" : 980094,
+					"inst_name" : "DoorHrz_L2_BP"
 				}
 			]
 		},
 		{
-			"asset_uid" : 914431,
-			"asset_name" : "DoorVertLvl2",
+			"asset_uid" : 750845,
+			"asset_name" : "DoorHrz_L3_BP",
 			"instances" : [
 				{
 					"scene" : "coldrain.sca",
-					"inst_uid" : 294524,
-					"inst_name" : "DV_Lvl2"
+					"inst_uid" : 819191,
+					"inst_name" : "DoorHrz_L3_BP"
 				}
 			]
 		},
 		{
-			"asset_uid" : 290942,
-			"asset_name" : "DoorHorzLvl3",
+			"asset_uid" : 423927,
+			"asset_name" : "DoorHrz_L4_BP",
 			"instances" : [
 				{
 					"scene" : "coldrain.sca",
-					"inst_uid" : 389366,
-					"inst_name" : "DH_Lvl3"
+					"inst_uid" : 294140,
+					"inst_name" : "DoorHrz_L4_BP"
 				}
 			]
 		},
 		{
-			"asset_uid" : 717431,
-			"asset_name" : "DoorHorzLvl4",
+			"asset_uid" : 423927,
+			"asset_name" : "DoorHrz_L4_BP",
 			"instances" : [
 				{
 					"scene" : "coldrain.sca",
-					"inst_uid" : 556413,
-					"inst_name" : "DH_Lvl4"
+					"inst_uid" : 556279,
+					"inst_name" : "DoorHrz_L4_BP"
 				}
 			]
 		},
 		{
-			"asset_uid" : 291455,
-			"asset_name" : "DoorHorzLvl1",
+			"asset_uid" : 752254,
+			"asset_name" : "DoorVrt_L1_BP",
 			"instances" : [
 				{
 					"scene" : "coldrain.sca",
-					"inst_uid" : 979958,
-					"inst_name" : "DH_Lvl1"
+					"inst_uid" : 489725,
+					"inst_name" : "DoorVrt_L1_BP"
 				}
 			]
 		},
 		{
-			"asset_uid" : 883582,
-			"asset_name" : "DoorVertLvl1",
+			"asset_uid" : 752254,
+			"asset_name" : "DoorVrt_L1_BP",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 163580,
+					"inst_name" : "DoorVrt_L1_BP"
+				}
+			]
+		},
+		{
+			"asset_uid" : 1015807,
+			"asset_name" : "DoorVrt_L2_BP",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 490996,
+					"inst_name" : "DoorVrt_L2_BP"
+				}
+			]
+		},
+		{
+			"asset_uid" : 1015807,
+			"asset_name" : "DoorVrt_L2_BP",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 291831,
+					"inst_name" : "DoorVrt_L2_BP"
+				}
+			]
+		},
+		{
+			"asset_uid" : 687485,
+			"asset_name" : "DoorHrz_L1_BP",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 196599,
+					"inst_name" : "DoorHrz_L1_BP"
+				}
+			]
+		},
+		{
+			"asset_uid" : 687485,
+			"asset_name" : "DoorHrz_L1_BP",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 390782,
+					"inst_name" : "DoorHrz_L1_BP"
+				}
+			]
+		},
+		{
+			"asset_uid" : 423927,
+			"asset_name" : "DoorHrz_L4_BP",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 850557,
+					"inst_name" : "DoorHrz_L4_BP"
+				}
+			]
+		},
+		{
+			"asset_uid" : 423927,
+			"asset_name" : "DoorHrz_L4_BP",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 389628,
+					"inst_name" : "DoorHrz_L4_BP"
+				}
+			]
+		},
+		{
+			"asset_uid" : 423927,
+			"asset_name" : "DoorHrz_L4_BP",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 588157,
+					"inst_name" : "DoorHrz_L4_BP"
+				}
+			]
+		},
+		{
+			"asset_uid" : 752254,
+			"asset_name" : "DoorVrt_L1_BP",
 			"instances" : [
 				{
 					"scene" : "coldrain.sca",
 					"inst_uid" : 523255,
-					"inst_name" : "DV_Lvl1"
+					"inst_name" : "DoorVrt_L1_BP"
 				}
 			]
 		},
 		{
-			"asset_uid" : 914431,
-			"asset_name" : "DoorVertLvl2",
+			"asset_uid" : 752254,
+			"asset_name" : "DoorVrt_L1_BP",
 			"instances" : [
 				{
 					"scene" : "coldrain.sca",
-					"inst_uid" : 654590,
-					"inst_name" : "DV_Lvl2"
+					"inst_uid" : 393078,
+					"inst_name" : "DoorVrt_L1_BP"
 				}
 			]
 		},
 		{
-			"asset_uid" : 717431,
-			"asset_name" : "DoorHorzLvl4",
+			"asset_uid" : 718069,
+			"asset_name" : "DoorVrt_L3_BP",
 			"instances" : [
 				{
 					"scene" : "coldrain.sca",
-					"inst_uid" : 750839,
-					"inst_name" : "DH_Lvl4"
+					"inst_uid" : 783093,
+					"inst_name" : "DoorVrt_L3_BP"
 				}
 			]
 		},
 		{
-			"asset_uid" : 422645,
-			"asset_name" : "DoorVertLvl3",
+			"asset_uid" : 1015807,
+			"asset_name" : "DoorVrt_L2_BP",
 			"instances" : [
 				{
 					"scene" : "coldrain.sca",
-					"inst_uid" : 454911,
-					"inst_name" : "DV_Lvl3"
+					"inst_uid" : 357495,
+					"inst_name" : "DoorVrt_L2_BP"
 				}
 			]
 		},
 		{
-			"asset_uid" : 717431,
-			"asset_name" : "DoorHorzLvl4",
+			"asset_uid" : 1015807,
+			"asset_name" : "DoorVrt_L2_BP",
 			"instances" : [
 				{
 					"scene" : "coldrain.sca",
-					"inst_uid" : 686207,
-					"inst_name" : "DH_Lvl4_2"
+					"inst_uid" : 718583,
+					"inst_name" : "DoorVrt_L2_BP"
 				}
 			]
 		},
 		{
-			"asset_uid" : 883582,
-			"asset_name" : "DoorVertLvl1",
+			"asset_uid" : 193021,
+			"asset_name" : "Item_CardLvl2",
 			"instances" : [
 				{
 					"scene" : "coldrain.sca",
-					"inst_uid" : 30196,
-					"inst_name" : "DV_Lvl1_2"
+					"inst_uid" : 979191,
+					"inst_name" : "Item_CardLvl2"
 				}
 			]
 		},
 		{
-			"asset_uid" : 914431,
-			"asset_name" : "DoorVertLvl2",
+			"asset_uid" : 29815,
+			"asset_name" : "Item_CardLvl4",
 			"instances" : [
 				{
 					"scene" : "coldrain.sca",
-					"inst_uid" : 718844,
-					"inst_name" : "DV_Lvl2_2"
+					"inst_uid" : 818038,
+					"inst_name" : "Item_CardLvl4"
 				}
 			]
 		},
 		{
-			"asset_uid" : 291455,
-			"asset_name" : "DoorHorzLvl1",
+			"asset_uid" : 621949,
+			"asset_name" : "Item_CardLvl3",
 			"instances" : [
 				{
 					"scene" : "coldrain.sca",
-					"inst_uid" : 261621,
-					"inst_name" : "DH_Lvl1_2"
-				}
-			]
-		},
-		{
-			"asset_uid" : 717431,
-			"asset_name" : "DoorHorzLvl4",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 915317,
-					"inst_name" : "DH_Lvl4_2"
-				}
-			]
-		},
-		{
-			"asset_uid" : 717431,
-			"asset_name" : "DoorHorzLvl4",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 1015413,
-					"inst_name" : "DH_Lvl4_3"
-				}
-			]
-		},
-		{
-			"asset_uid" : 883582,
-			"asset_name" : "DoorVertLvl1",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 520439,
-					"inst_name" : "DV_Lvl1_2"
-				}
-			]
-		},
-		{
-			"asset_uid" : 914431,
-			"asset_name" : "DoorVertLvl2",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 653174,
-					"inst_name" : "DV_Lvl2_2"
+					"inst_uid" : 357366,
+					"inst_name" : "Item_CardLvl3"
 				}
 			]
 		}
