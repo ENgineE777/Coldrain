@@ -15,7 +15,7 @@
 	"camera_pos" :
 	{
 		"x" : 168.069702,
-		"y" : -1458.257568
+		"y" : -1458.257324
 	},
 	"camera_zoom" : 0.760000,
 	"move_mode" : 0,
@@ -40965,6 +40965,994 @@
 					"scene" : "coldrain.sca",
 					"inst_uid" : 553078,
 					"inst_name" : "Enemies"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 687485,
+					"inst_child_uid" : 138033,
+					"is_asset" : true,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 291455,
+			"asset_name" : "DoorHorzLvl1",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 687485,
+					"inst_child_uid" : 534743,
+					"is_asset" : true,
+					"inst_name" : "DoorHorzLvl1"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 94452,
+					"inst_child_uid" : 138033,
+					"is_asset" : false,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 291455,
+			"asset_name" : "DoorHorzLvl1",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 94452,
+					"inst_child_uid" : 534743,
+					"is_asset" : false,
+					"inst_name" : "DoorHorzLvl1"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 327036,
+					"inst_child_uid" : 138033,
+					"is_asset" : false,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 291455,
+			"asset_name" : "DoorHorzLvl1",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 327036,
+					"inst_child_uid" : 534743,
+					"is_asset" : false,
+					"inst_name" : "DoorHorzLvl1"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 196599,
+					"inst_child_uid" : 138033,
+					"is_asset" : false,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 291455,
+			"asset_name" : "DoorHorzLvl1",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 196599,
+					"inst_child_uid" : 534743,
+					"is_asset" : false,
+					"inst_name" : "DoorHorzLvl1"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 390782,
+					"inst_child_uid" : 138033,
+					"is_asset" : false,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 291455,
+			"asset_name" : "DoorHorzLvl1",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 390782,
+					"inst_child_uid" : 534743,
+					"is_asset" : false,
+					"inst_name" : "DoorHorzLvl1"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 914685,
+					"inst_child_uid" : 138033,
+					"is_asset" : true,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 587388,
+			"asset_name" : "DoorHorzLvl2",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 914685,
+					"inst_child_uid" : 426077,
+					"is_asset" : true,
+					"inst_name" : "DoorHorzLvl2"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 980094,
+					"inst_child_uid" : 138033,
+					"is_asset" : false,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 587388,
+			"asset_name" : "DoorHorzLvl2",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 980094,
+					"inst_child_uid" : 426077,
+					"is_asset" : false,
+					"inst_name" : "DoorHorzLvl2"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 750845,
+					"inst_child_uid" : 138033,
+					"is_asset" : true,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 290942,
+			"asset_name" : "DoorHorzLvl3",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 750845,
+					"inst_child_uid" : 443248,
+					"is_asset" : true,
+					"inst_name" : "DoorHorzLvl3"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 819191,
+					"inst_child_uid" : 138033,
+					"is_asset" : false,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 290942,
+			"asset_name" : "DoorHorzLvl3",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 819191,
+					"inst_child_uid" : 443248,
+					"is_asset" : false,
+					"inst_name" : "DoorHorzLvl3"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 423927,
+					"inst_child_uid" : 138033,
+					"is_asset" : true,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 717431,
+			"asset_name" : "DoorHorzLvl4",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 423927,
+					"inst_child_uid" : 747512,
+					"is_asset" : true,
+					"inst_name" : "DoorHorzLvl4"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 294140,
+					"inst_child_uid" : 138033,
+					"is_asset" : false,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 717431,
+			"asset_name" : "DoorHorzLvl4",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 294140,
+					"inst_child_uid" : 747512,
+					"is_asset" : false,
+					"inst_name" : "DoorHorzLvl4"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 556279,
+					"inst_child_uid" : 138033,
+					"is_asset" : false,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 717431,
+			"asset_name" : "DoorHorzLvl4",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 556279,
+					"inst_child_uid" : 747512,
+					"is_asset" : false,
+					"inst_name" : "DoorHorzLvl4"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 850557,
+					"inst_child_uid" : 138033,
+					"is_asset" : false,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 717431,
+			"asset_name" : "DoorHorzLvl4",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 850557,
+					"inst_child_uid" : 747512,
+					"is_asset" : false,
+					"inst_name" : "DoorHorzLvl4"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 389628,
+					"inst_child_uid" : 138033,
+					"is_asset" : false,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 717431,
+			"asset_name" : "DoorHorzLvl4",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 389628,
+					"inst_child_uid" : 747512,
+					"is_asset" : false,
+					"inst_name" : "DoorHorzLvl4"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 588157,
+					"inst_child_uid" : 138033,
+					"is_asset" : false,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 717431,
+			"asset_name" : "DoorHorzLvl4",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 588157,
+					"inst_child_uid" : 747512,
+					"is_asset" : false,
+					"inst_name" : "DoorHorzLvl4"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 752254,
+					"inst_child_uid" : 138033,
+					"is_asset" : true,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 883582,
+			"asset_name" : "DoorVertLvl1",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 752254,
+					"inst_child_uid" : 593447,
+					"is_asset" : true,
+					"inst_name" : "DoorVertLvl1"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 489725,
+					"inst_child_uid" : 138033,
+					"is_asset" : false,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 883582,
+			"asset_name" : "DoorVertLvl1",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 489725,
+					"inst_child_uid" : 593447,
+					"is_asset" : false,
+					"inst_name" : "DoorVertLvl1"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 163580,
+					"inst_child_uid" : 138033,
+					"is_asset" : false,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 883582,
+			"asset_name" : "DoorVertLvl1",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 163580,
+					"inst_child_uid" : 593447,
+					"is_asset" : false,
+					"inst_name" : "DoorVertLvl1"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 523255,
+					"inst_child_uid" : 138033,
+					"is_asset" : false,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 883582,
+			"asset_name" : "DoorVertLvl1",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 523255,
+					"inst_child_uid" : 593447,
+					"is_asset" : false,
+					"inst_name" : "DoorVertLvl1"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 393078,
+					"inst_child_uid" : 138033,
+					"is_asset" : false,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 883582,
+			"asset_name" : "DoorVertLvl1",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 393078,
+					"inst_child_uid" : 593447,
+					"is_asset" : false,
+					"inst_name" : "DoorVertLvl1"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 1015807,
+					"inst_child_uid" : 138033,
+					"is_asset" : true,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 914431,
+			"asset_name" : "DoorVertLvl2",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 1015807,
+					"inst_child_uid" : 362778,
+					"is_asset" : true,
+					"inst_name" : "DoorVertLvl2"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 490996,
+					"inst_child_uid" : 138033,
+					"is_asset" : false,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 914431,
+			"asset_name" : "DoorVertLvl2",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 490996,
+					"inst_child_uid" : 362778,
+					"is_asset" : false,
+					"inst_name" : "DoorVertLvl2"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 291831,
+					"inst_child_uid" : 138033,
+					"is_asset" : false,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 914431,
+			"asset_name" : "DoorVertLvl2",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 291831,
+					"inst_child_uid" : 362778,
+					"is_asset" : false,
+					"inst_name" : "DoorVertLvl2"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 357495,
+					"inst_child_uid" : 138033,
+					"is_asset" : false,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 914431,
+			"asset_name" : "DoorVertLvl2",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 357495,
+					"inst_child_uid" : 362778,
+					"is_asset" : false,
+					"inst_name" : "DoorVertLvl2"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 718583,
+					"inst_child_uid" : 138033,
+					"is_asset" : false,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 914431,
+			"asset_name" : "DoorVertLvl2",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 718583,
+					"inst_child_uid" : 362778,
+					"is_asset" : false,
+					"inst_name" : "DoorVertLvl2"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 718069,
+					"inst_child_uid" : 138033,
+					"is_asset" : true,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 422645,
+			"asset_name" : "DoorVertLvl3",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 718069,
+					"inst_child_uid" : 357139,
+					"is_asset" : true,
+					"inst_name" : "DoorVertLvl3"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 783093,
+					"inst_child_uid" : 138033,
+					"is_asset" : false,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 422645,
+			"asset_name" : "DoorVertLvl3",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 783093,
+					"inst_child_uid" : 357139,
+					"is_asset" : false,
+					"inst_name" : "DoorVertLvl3"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 554103,
+					"inst_child_uid" : 138033,
+					"is_asset" : true,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 324092,
+			"asset_name" : "DoorVertLvl4",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 554103,
+					"inst_child_uid" : 345544,
+					"is_asset" : true,
+					"inst_name" : "DoorVertLvl4"
+				}
+			]
+		},
+		{
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 783356,
+					"inst_child_uid" : 138033,
+					"is_asset" : false,
+					"inst_name" : "DoorScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 324092,
+			"asset_name" : "DoorVertLvl4",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 783356,
+					"inst_child_uid" : 345544,
+					"is_asset" : false,
+					"inst_name" : "DoorVertLvl4"
+				}
+			]
+		},
+		{
+			"asset_uid" : -1780856064,
+			"asset_name" : "SoldierLegs_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 883318,
+					"inst_child_uid" : 72834,
+					"is_asset" : true,
+					"inst_name" : "SoldierGrabber_Legs"
+				}
+			]
+		},
+		{
+			"asset_uid" : -1780856064,
+			"asset_name" : "SoldierLegs_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 883318,
+					"inst_child_uid" : 881278,
+					"is_asset" : true,
+					"inst_name" : "SoldierAK47_Legs"
+				}
+			]
+		},
+		{
+			"asset_uid" : -1780856064,
+			"asset_name" : "SoldierLegs_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 883318,
+					"inst_child_uid" : 94582,
+					"is_asset" : true,
+					"inst_name" : "SoldierMachete_Legs"
+				}
+			]
+		},
+		{
+			"asset_uid" : -1780856064,
+			"asset_name" : "SoldierLegs_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 883318,
+					"inst_child_uid" : 818940,
+					"is_asset" : true,
+					"inst_name" : "SoldierStalker_Legs"
+				}
+			]
+		},
+		{
+			"asset_uid" : 365581472,
+			"asset_name" : "SoldierAK47_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 883318,
+					"inst_child_uid" : 993895,
+					"is_asset" : true,
+					"inst_name" : "SoldierAK47"
+				}
+			]
+		},
+		{
+			"asset_uid" : 782972,
+			"asset_name" : "SoldierGrabber_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 883318,
+					"inst_child_uid" : 509683,
+					"is_asset" : true,
+					"inst_name" : "SoldierGrabber"
+				}
+			]
+		},
+		{
+			"asset_uid" : 63478,
+			"asset_name" : "SoldierMachete_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 883318,
+					"inst_child_uid" : 276131,
+					"is_asset" : true,
+					"inst_name" : "SoldierMachete"
+				}
+			]
+		},
+		{
+			"asset_uid" : 524286,
+			"asset_name" : "SoldierStalker_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 883318,
+					"inst_child_uid" : 310853,
+					"is_asset" : true,
+					"inst_name" : "SoldierStalker"
+				}
+			]
+		},
+		{
+			"asset_uid" : 752380,
+			"asset_name" : "EnemiesPool",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 883318,
+					"inst_child_uid" : 884120,
+					"is_asset" : true,
+					"inst_name" : "EnemiesPool"
+				}
+			]
+		},
+		{
+			"asset_uid" : -1780856064,
+			"asset_name" : "SoldierLegs_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 553078,
+					"inst_child_uid" : 72834,
+					"is_asset" : false,
+					"inst_name" : "SoldierGrabber_Legs"
+				}
+			]
+		},
+		{
+			"asset_uid" : -1780856064,
+			"asset_name" : "SoldierLegs_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 553078,
+					"inst_child_uid" : 881278,
+					"is_asset" : false,
+					"inst_name" : "SoldierAK47_Legs"
+				}
+			]
+		},
+		{
+			"asset_uid" : -1780856064,
+			"asset_name" : "SoldierLegs_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 553078,
+					"inst_child_uid" : 94582,
+					"is_asset" : false,
+					"inst_name" : "SoldierMachete_Legs"
+				}
+			]
+		},
+		{
+			"asset_uid" : -1780856064,
+			"asset_name" : "SoldierLegs_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 553078,
+					"inst_child_uid" : 818940,
+					"is_asset" : false,
+					"inst_name" : "SoldierStalker_Legs"
+				}
+			]
+		},
+		{
+			"asset_uid" : 365581472,
+			"asset_name" : "SoldierAK47_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 553078,
+					"inst_child_uid" : 993895,
+					"is_asset" : false,
+					"inst_name" : "SoldierAK47"
+				}
+			]
+		},
+		{
+			"asset_uid" : 782972,
+			"asset_name" : "SoldierGrabber_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 553078,
+					"inst_child_uid" : 509683,
+					"is_asset" : false,
+					"inst_name" : "SoldierGrabber"
+				}
+			]
+		},
+		{
+			"asset_uid" : 63478,
+			"asset_name" : "SoldierMachete_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 553078,
+					"inst_child_uid" : 276131,
+					"is_asset" : false,
+					"inst_name" : "SoldierMachete"
+				}
+			]
+		},
+		{
+			"asset_uid" : 524286,
+			"asset_name" : "SoldierStalker_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 553078,
+					"inst_child_uid" : 310853,
+					"is_asset" : false,
+					"inst_name" : "SoldierStalker"
+				}
+			]
+		},
+		{
+			"asset_uid" : 752380,
+			"asset_name" : "EnemiesPool",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 553078,
+					"inst_child_uid" : 884120,
+					"is_asset" : false,
+					"inst_name" : "EnemiesPool"
 				}
 			]
 		}
