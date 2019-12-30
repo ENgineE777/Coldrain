@@ -34,51 +34,26 @@
 		{
 			"uid" : -1,
 			"name" : "Floor1",
-			"type" : 0
+			"type" : 3
 		},
 		{
 			"uid" : -1,
-			"name" : "Characters",
+			"name" : "Colliders",
 			"type" : 0
 		},
 		{
-			"uid" : 913568320,
-			"name" : "SoldiersAK47",
+			"uid" : 717303,
+			"name" : "Crate",
 			"type" : 1
 		},
 		{
-			"uid" : -112360960,
-			"name" : "SoldiersAK47_Legs",
+			"uid" : 160757,
+			"name" : "WallHorz",
 			"type" : 1
 		},
 		{
-			"uid" : 520308,
-			"name" : "SoldiersGrabber",
-			"type" : 1
-		},
-		{
-			"uid" : 96629,
-			"name" : "SoldiersGrabber_Legs",
-			"type" : 1
-		},
-		{
-			"uid" : 979709,
-			"name" : "SoldiersMachete",
-			"type" : 1
-		},
-		{
-			"uid" : 947061,
-			"name" : "SoldiersMachete_Legs",
-			"type" : 1
-		},
-		{
-			"uid" : 981628,
-			"name" : "SoldiersStalker",
-			"type" : 1
-		},
-		{
-			"uid" : 425716,
-			"name" : "SoldiersStalker_Legs",
+			"uid" : 1014262,
+			"name" : "WallVert",
 			"type" : 1
 		},
 		{
@@ -102,33 +77,8 @@
 			"type" : 2
 		},
 		{
-			"uid" : -1,
-			"name" : "Walls",
-			"type" : 3
-		},
-		{
-			"uid" : 717303,
-			"name" : "Crate",
-			"type" : 1
-		},
-		{
-			"uid" : 160757,
-			"name" : "WallHorz",
-			"type" : 1
-		},
-		{
-			"uid" : 1014262,
-			"name" : "WallVert",
-			"type" : 1
-		},
-		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : 390388,
-			"name" : "Àäùùê1NavMesh",
+			"uid" : 553078,
+			"name" : "Enemies",
 			"type" : 1
 		},
 		{
@@ -148,52 +98,12 @@
 		},
 		{
 			"uid" : -1,
-			"name" : "Doors",
-			"type" : 3
-		},
-		{
-			"uid" : 94452,
-			"name" : "DoorHrz_L1_BP",
-			"type" : 1
-		},
-		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : -1,
-			"name" : "Triggers",
-			"type" : 3
-		},
-		{
-			"uid" : 1048061,
-			"name" : "ChangeFloor2-1",
-			"type" : 1
-		},
-		{
-			"uid" : 488950,
-			"name" : "ChangeFloor2-3",
-			"type" : 1
-		},
-		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : -1,
-			"name" : "Walls",
-			"type" : 3
+			"name" : "Colliders",
+			"type" : 0
 		},
 		{
 			"uid" : 228340,
 			"name" : "Crate",
-			"type" : 1
-		},
-		{
-			"uid" : 950007,
-			"name" : "Item_CardLvl1",
 			"type" : 1
 		},
 		{
@@ -212,8 +122,48 @@
 			"type" : 2
 		},
 		{
+			"uid" : -1,
+			"name" : "Doors",
+			"type" : 0
+		},
+		{
+			"uid" : 94452,
+			"name" : "DoorHrz_L1_BP",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "Triggers",
+			"type" : 0
+		},
+		{
+			"uid" : 1048061,
+			"name" : "ChangeFloor2-1",
+			"type" : 1
+		},
+		{
+			"uid" : 488950,
+			"name" : "ChangeFloor2-3",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
 			"uid" : 491135,
 			"name" : "Floor2",
+			"type" : 1
+		},
+		{
+			"uid" : 950007,
+			"name" : "Item_CardLvl1",
 			"type" : 1
 		},
 		{
@@ -671,7 +621,7 @@
 		{
 			"uid" : -1,
 			"name" : "Doors",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : 687485,
@@ -719,6 +669,11 @@
 			"type" : 2
 		},
 		{
+			"uid" : 883318,
+			"name" : "Enemies",
+			"type" : 1
+		},
+		{
 			"uid" : -1,
 			"name" : "",
 			"type" : 2
@@ -726,16 +681,26 @@
 		{
 			"uid" : -1,
 			"name" : "Scripts",
-			"type" : 0
+			"type" : 3
+		},
+		{
+			"uid" : 195958,
+			"name" : "CharacterBase",
+			"type" : 1
 		},
 		{
 			"uid" : 685438,
-			"name" : "DoorScript",
+			"name" : "Door",
+			"type" : 1
+		},
+		{
+			"uid" : 752380,
+			"name" : "EnemiesPool",
 			"type" : 1
 		},
 		{
 			"uid" : 200902816,
-			"name" : "MainScript",
+			"name" : "Main",
 			"type" : 1
 		},
 		{
@@ -751,7 +716,7 @@
 		{
 			"uid" : -1,
 			"name" : "Enemies",
-			"type" : 0
+			"type" : 3
 		},
 		{
 			"uid" : -1,

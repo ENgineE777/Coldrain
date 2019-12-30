@@ -1,0 +1,162 @@
+enum EnemyState
+{
+	FollowingTrack,
+	Idle,
+	Pursuit,
+	Shoting,
+	Strafing,
+	GoingClose,
+	MelleAttack,
+	Stalking,
+	FatalityReady,
+	Stunned
+}
+
+class Character
+{
+	float x,y;
+	float alpha = 1.0f;
+	float angle;
+	float dest_x,dest_y;
+	int visible;
+	float prev_x = 0; 
+	float prev_y = 0;	
+	int hp = 1;
+	int type = 0;
+	float fly_time = -1.0f;
+	float spill_blood = -1.0f;
+	float fly_dir_x;
+	float fly_dir_y;
+	int cur_path = -1;
+	EnemyState state = FollowingTrack;
+	float action_time = -1.0f;
+	float action_time2 = -1.0f;
+	float strafe_time = -1.0f;
+	float strafe_dir = 1.0f;
+	float strafe_dir2 = 1.0f;
+	float r = 1.0f, g = 1.0f, b = 1.0f; 
+	float legs_r = 1.0f, legs_g = 1.0f, legs_b = 1.0f;
+	float higlight_time = -1.0f;
+	Track2D@ track;
+	Graph2D@ graph;
+	int legs_visible = 1;
+	float legs_angle;
+	float stun_time = 1.0f;
+	Graph2D@ legs_graph;
+	Phys2D@ legs_phys;
+	int combo_counter = 0;
+	float combo_cooldown = -1.0f;
+	bool is_player = false;
+
+	Vector2 started_pos;
+	Character@ target;
+	bool lock_to_target = false;
+	bool in_fly_to_target = false;
+
+	void Reset()
+	{
+		state = FollowingTrack;
+
+		visible = 1;
+		legs_visible = 1;
+		hp = 4;
+		higlight_time = -1.0f;
+
+		r = g = b = alpha = 1.0;
+		
+		legs_phys.SetGroup(1);
+
+		fly_time = -1.0f;
+		spill_blood = -1.0f;
+		action_time = -1.0f;
+
+		track.Activate(true);
+
+		graph.GotoNode("Walk");
+		legs_graph.GotoNode("Walk");
+	}
+
+	void FindPath(NavMesh2DGen@ nav_mesh, float target_x, float target_y)
+	{
+		StopPathMoving(nav_mesh);
+
+		cur_path = nav_mesh.GetPath(x, y, target_x, target_y);
+		dest_x = target_x;
+		dest_y = target_y;
+	}
+
+	int MoveAlongPath(NavMesh2DGen@ nav_mesh, float dt)
+	{
+		int res = nav_mesh.MoveAlongPath(cur_path, dt * 300.0f);
+		nav_mesh.GetPathCurPoint(cur_path, x, y, angle);
+
+		legs_angle = angle;
+
+		graph.ActivateLink("Walk");
+		legs_graph.ActivateLink("Walk");
+
+		legs_phys.MoveTo(x, y);
+
+		if (res == 0)
+		{
+			nav_mesh.RemovePath(cur_path);
+			cur_path = -1;
+		}
+
+		return res;
+	}
+
+	void StopPathMoving(NavMesh2DGen@ nav_mesh)
+	{
+		if (cur_path != -1)
+		{
+			nav_mesh.RemovePath(cur_path);
+			cur_path = -1;
+		}
+	}
+
+	void UpdateHighlight(float dt)
+	{
+		if (higlight_time > 0.0f)
+		{
+			higlight_time -= dt;
+
+			if (higlight_time < 0.0f)
+			{
+				higlight_time	= -1.0f;
+			}
+		}
+
+		g = b = legs_g = legs_b = higlight_time > 0.0f ? 0.5f : 1.0f;
+	}
+}
+
+class ChracterPoolBase
+{
+	string group_name;
+
+	int GetEnemiesCount()
+	{
+		return 0;
+	}
+
+	Character@ GetEnemy(int index)
+	{
+		return null;
+	}
+
+	Character@ GetEnemy(string&in name,int index)
+	{
+		return null;
+	}
+
+	void RestartLevel()
+	{
+
+	}
+
+	void AgroEnemies(float dist)
+	{
+
+	}
+}

@@ -1,0 +1,725 @@
+#import "Main"
+
+class EnemiesPool : ChracterPoolBase
+{
+	Main@ main;
+
+	array<Character> soldiersAK47;
+	array<Character> soldiersMachete;
+	array<Character> soldiersGrabber;
+	array<Character> soldiersStalker;
+	NavMesh2DGen@ nav_mesh;
+
+	Character@ hero;
+	float enemy_view_dist = 700.0f;
+	float enemy_view_angle = 90.0f * 0.01745329f;
+
+	void OnInit()
+	{
+		group_name = "Floor1";
+
+		@hero = @main.GetHero();
+		main.character_pools.insertLast(this);
+
+		@main.active_character_pool = this;
+
+		RestartLevel();
+	}
+
+	int GetEnemiesCount()
+	{
+		return soldiersAK47.get_length() + soldiersMachete.get_length() + soldiersGrabber.get_length() + soldiersStalker.get_length();
+	}
+
+	Character@ GetEnemy(int index)
+	{
+		int count = soldiersAK47.get_length() + soldiersMachete.get_length() + soldiersStalker.get_length();
+
+		if (index >= count)
+		{
+			return soldiersGrabber[index - count];
+		}
+
+		count = soldiersAK47.get_length() + soldiersMachete.get_length();
+
+		if (index >= count)
+		{
+			return soldiersStalker[index - count];
+		}
+
+		count = soldiersAK47.get_length();
+
+		if (index >= soldiersAK47.get_length())
+		{
+			return soldiersMachete[index - count];
+		}
+
+		return soldiersAK47[index];
+	}
+
+	Character@ GetEnemy(string&in name, int index)
+	{
+		if (name == "SoldiersMachete_Legs" || name == "SoldiersMachete")
+		{
+			return soldiersMachete[index];			
+		}
+
+		if (name == "SoldiersAK47_Legs" || name == "SoldiersAK47")
+		{
+			return soldiersAK47[index];			
+		}
+
+		if (name == "SoldiersStalker_Legs" || name == "SoldiersStalker")
+		{
+			return soldiersStalker[index];			
+		}
+
+		if (name == "SoldiersGrabber_Legs" || name == "SoldiersGrabber")
+		{
+			return soldiersGrabber[index];			
+		}
+
+		return null;
+	}
+
+	void RestartLevel()
+	{
+		for (int j = 0; j<GetEnemiesCount(); j++)
+		{
+			Character@ enemy = GetEnemy(j);
+			enemy.Reset();
+		}
+	}
+
+	bool IsPlayerVisibleByRadius(Character@ enemy, float dist)
+	{
+		float dir_x = hero.x - enemy.x;
+		float dir_y = hero.y - enemy.y;
+
+		return dir_x * dir_x + dir_y * dir_y < dist * dist;
+	}
+
+	bool IsPlayerVisible(Character@ enemy, float dist)
+	{
+		float pos_x, pos_y, normal_x, normal_y;
+		string str_object;
+		int obj_index;
+
+		float dir_x = hero.x - enemy.x;
+		float dir_y = hero.y - enemy.y;
+
+		float len = sqrt(dir_x * dir_x + dir_y * dir_y);
+
+		float dist_offset = 35.0f;
+
+		if (len < dist)
+		{
+			if (len < 0.01f)
+			{
+				return true;
+			}
+
+			dir_x /= len;
+			dir_y /= len;
+
+			if (core.scene.Raycast2D(enemy.x + dir_x * dist_offset, enemy.y + dir_y * dist_offset - 33.0f, dir_x, dir_y, len - dist_offset, main.player_group,
+			                    pos_x, pos_y, normal_x, normal_y, str_object, obj_index))
+			{
+				//core.render.DrawLine2D(enemy.x+ dir_x * dist_offset, enemy.y + dir_y * dist_offset - 33.0f, pos_x, pos_y);
+
+				if (str_object == "Hero_Legs")
+				{
+					return true;
+				}
+			}
+		}
+
+		return false;
+	}
+
+	void OnEnemyAnimEvent(string&in name, int index, string&in event_name, string&in param)
+	{
+		Character@ enemy = GetEnemy(name, index);
+
+		float dir_x = hero.x - enemy.x;
+		float dir_y = hero.y - enemy.y;
+
+		float len = sqrt(dir_x * dir_x + dir_y * dir_y);
+
+		if (len < 0.01f)
+		{
+			dir_x = 1.0f;
+			dir_y = 0.0f;
+		}
+		else
+		{
+			dir_x /= len;
+			dir_y /= len;
+		}
+
+		if (event_name == "MelleAttack")
+		{
+			if (core.utils.IsPointInRectangle(Vector2(hero.x, hero.y - 32.0f), Vector2(enemy.x,  enemy.y - 32.0f), Vector2(0.0f, 0.0f), Vector2(120.0f, 64.0f), enemy.angle, main.show_debug_check))
+			{
+				main.DecHealth(hero, dir_x, dir_y);
+			}
+		}
+	}
+
+	void AgroEnemies(float dist)
+	{
+		float dist2 = dist * dist;
+
+		for (int j = 0; j<GetEnemiesCount();j++)
+		{
+			Character@ enemy = GetEnemy(j);
+
+			if (enemy.hp == 0 || enemy.state != FollowingTrack)
+			{
+				continue;
+			}
+
+			float dir_x = enemy.x - hero.x;
+			float dir_y = enemy.y - hero.y;
+			float angle = atan2(dir_y, dir_x);
+
+			if (dir_x * dir_x + dir_y * dir_y < dist2)
+			{
+				enemy.track.Activate(false);
+				enemy.state = Idle;
+			}
+		}
+	}
+
+	void Update(float dt)
+	{
+		for (int j = 0; j<GetEnemiesCount();j++)
+		{
+			Character@ enemy = GetEnemy(j);
+
+			if (enemy.hp <= 0)
+			{
+				main.DeadBodyFly(enemy, dt);
+
+				continue;
+			}
+
+			enemy.UpdateHighlight(dt);
+
+			if (enemy.state == FollowingTrack)
+			{
+				float dir_x = enemy.x - enemy.prev_x;
+				float dir_y = enemy.y - enemy.prev_y;
+
+				float len = sqrt(dir_x * dir_x + dir_y * dir_y);
+
+				if (len > 0.01f)
+				{
+					enemy.angle = atan2(dir_y / len, dir_x / len);
+					enemy.legs_angle = enemy.angle;
+
+					enemy.prev_x = enemy.x; 
+					enemy.prev_y = enemy.y;
+
+					if ((IsPlayerVisibleByRadius(enemy, 175.0f) || core.utils.IsPointInSector(Vector2(hero.x, hero.y - 32), Vector2(enemy.x, enemy.y - 32), enemy.angle, enemy_view_dist, enemy_view_angle, main.show_debug_check)) &&
+					 	IsPlayerVisible(enemy, enemy_view_dist))
+					{
+						enemy.track.Activate(false);
+
+						enemy.state = Idle;
+					}
+				}
+			}
+			else
+			{
+				enemy.action_time -= dt;
+
+				if (enemy.action_time < 0.0f)
+				{
+					enemy.action_time = -1.0f;
+				}
+
+				float view_dist = enemy_view_dist;
+				
+				if (enemy.type == 1)
+				{
+					view_dist = 300.0f;
+
+					if (enemy.state == 1)
+					{
+						view_dist = 175.0f;
+					}
+				}
+
+				float dir_x = hero.x - enemy.x;
+				float dir_y = hero.y - enemy.y;
+
+				float len = sqrt(dir_x * dir_x + dir_y * dir_y);
+
+				if (len < 0.01f)
+				{
+					dir_x = 1.0f;
+					dir_y = 0.0f;
+				}
+				else
+				{
+					dir_x /= len;
+					dir_y /= len;
+				}
+
+				if (enemy.state != FatalityReady && enemy.state != Stunned && enemy.state != Stalking)
+				{
+					enemy.angle = atan2(dir_y, dir_x);
+					enemy.legs_angle = enemy.angle;
+				}
+
+				if (enemy.state == FatalityReady)
+				{
+					enemy.alpha = 0.5f;
+
+					if (enemy.action_time < 0.0f)
+					{
+						enemy.state = Idle;
+						enemy.alpha = 1.0f;
+					}
+				}
+				else
+				if (enemy.state == Stunned)
+				{
+					if (enemy.action_time < 0.0f)
+					{
+						enemy.state = Idle;
+						enemy.alpha = 1.0f;
+					}
+				}
+				else
+				if (enemy.type == 0)
+				{
+					if (enemy.state == Idle)
+					{
+						if (hero.hp != 0)
+						{
+							if (IsPlayerVisible(enemy, view_dist))
+							{
+								enemy.state = Shoting;
+								enemy.action_time = 0.55f;
+
+								enemy.graph.ActivateLink("Idle");
+								enemy.legs_graph.ActivateLink("Idle");
+							}
+							else
+							{
+								enemy.state = Pursuit;
+								enemy.FindPath(nav_mesh, hero.x, hero.y);
+							}
+						}
+						else
+						{
+							enemy.graph.ActivateLink("Idle");
+							enemy.legs_graph.ActivateLink("Idle");
+						}
+					}
+					else
+					if (enemy.state == Pursuit)
+					{
+						float dir_x = hero.x - enemy.dest_x;
+						float dir_y = hero.y - enemy.dest_y;
+
+						float len = sqrt(dir_x * dir_x + dir_y * dir_y);
+
+						if (len > 50 || enemy.MoveAlongPath(nav_mesh, dt) == 0)
+						{
+							enemy.state = Idle;
+						}
+					}
+					else
+					if (enemy.state == Shoting)
+					{
+						if (!IsPlayerVisible(enemy, view_dist + 20) || hero.hp == 0)
+						{
+							enemy.state = Idle;
+						}
+						else
+						{
+							enemy.legs_phys.Move(-dir_y * 350.0f * dt * enemy.strafe_dir, dir_x * 350.0f * dt * enemy.strafe_dir, 1, 0);
+
+							if (enemy.action_time < 0.0f)
+							{
+								if (enemy.graph.ActivateLink("shoot"))
+								{
+									AgroEnemies(1000);
+
+									main.AddBullet(enemy, dir_x, dir_y, 2.0f);
+
+									enemy.action_time = 0.55f;
+
+									enemy.strafe_dir = rand() > 0.5f ? -1.0f : 1.0f;
+								}
+							}
+						}	
+					}
+				}
+				else
+				if (enemy.type == 1)
+				{
+					if (enemy.state == Idle)
+					{
+						if (hero.hp != 0)
+						{
+							if (IsPlayerVisible(enemy, view_dist))
+							{
+								enemy.state = Strafing;
+								enemy.action_time = 3.0f;
+								enemy.strafe_dir = rand() > 0.5f ? -1.0f : 1.0f;
+
+								enemy.graph.ActivateLink("Idle");
+								enemy.legs_graph.ActivateLink("Idle");
+							}
+							else
+							{
+								enemy.state = Pursuit;
+								enemy.FindPath(nav_mesh, hero.x, hero.y);
+							}
+						}
+						else
+						{
+							enemy.graph.ActivateLink("Idle");
+							enemy.legs_graph.ActivateLink("Idle");
+						}
+					}
+					else
+					if (enemy.state == Pursuit)
+					{
+						float dir_x = hero.x - enemy.dest_x;
+						float dir_y = hero.y - enemy.dest_y;
+
+						float len = sqrt(dir_x * dir_x + dir_y * dir_y);
+
+						if (len > 50 || enemy.MoveAlongPath(nav_mesh, dt) == 0 || IsPlayerVisible(enemy, view_dist - 5))
+						{
+							enemy.StopPathMoving(nav_mesh);
+							enemy.state = Idle;
+						}
+					}
+					else
+					if (enemy.state == Strafing)
+					{
+						enemy.legs_phys.Move(-dir_y * 350.0f * dt * enemy.strafe_dir, dir_x * 350.0f * dt * enemy.strafe_dir, 1, 0);
+
+						if (enemy.action_time < 0.0f)
+						{
+							enemy.state = GoingClose;
+							enemy.action_time = 3.0f;
+						}
+						else
+						if (len < 115)
+						{
+							if (enemy.graph.ActivateLink("shoot"))
+							{
+								enemy.StopPathMoving(nav_mesh);
+								enemy.state = MelleAttack;
+								enemy.action_time = 0.75f;
+							}
+						}
+					}
+					else
+					if (enemy.state == GoingClose)
+					{
+						if (len < 115 || enemy.action_time < 0.0f)
+						{
+							if (enemy.graph.ActivateLink("shoot"))
+							{
+								enemy.StopPathMoving(nav_mesh);
+								enemy.state = MelleAttack;
+								enemy.action_time = 0.75f;
+							}
+						}
+						else
+						if (enemy.cur_path != -1)
+						{
+							float dir_x = hero.x - enemy.dest_x;
+							float dir_y = hero.y - enemy.dest_y;
+
+							float len = sqrt(dir_x * dir_x + dir_y * dir_y);
+
+							if (len > 50 || enemy.MoveAlongPath(nav_mesh, dt) == 0)
+							{
+								enemy.FindPath(nav_mesh, hero.x, hero.y);
+							}
+						}
+						else
+						{
+							enemy.FindPath(nav_mesh, hero.x, hero.y);
+						}
+					}
+					else
+					if (enemy.state == MelleAttack)
+					{
+						if (enemy.action_time < 0.0f)
+						{
+							enemy.state = Idle;
+						}
+					}
+				}
+				else
+				if (enemy.type == 2)
+				{
+					if (enemy.state == Idle)
+					{
+						if (hero.hp != 0)
+						{
+							if (IsPlayerVisible(enemy, view_dist))
+							{
+								enemy.state = Strafing;
+								enemy.action_time = 3.0f + rand() * 2.0f;
+								enemy.action_time2 = -1.0f;
+
+								enemy.graph.ActivateLink("Idle");
+								enemy.legs_graph.ActivateLink("Idle");
+							}
+							else
+							{
+								enemy.state = Pursuit;
+								enemy.FindPath(nav_mesh, hero.x, hero.y);
+							}
+						}
+						else
+						{
+							enemy.graph.ActivateLink("Idle");
+							enemy.legs_graph.ActivateLink("Idle");
+						}
+					}
+					else
+					if (enemy.state == Pursuit)
+					{
+						float dir_x = hero.x - enemy.dest_x;
+						float dir_y = hero.y - enemy.dest_y;
+
+						float len = sqrt(dir_x * dir_x + dir_y * dir_y);
+
+						if (len > 50 || enemy.MoveAlongPath(nav_mesh, dt) == 0 || IsPlayerVisible(enemy, view_dist - 5))
+						{
+							enemy.StopPathMoving(nav_mesh);
+							enemy.state = Idle;
+						}
+					}
+					else
+					if (enemy.state == Strafing)
+					{
+						if (enemy.action_time2 < 0.0f)
+						{
+							enemy.action_time2 = 0.75f;
+
+							enemy.strafe_dir = -1.0f + 2.0f * rand();
+							enemy.strafe_dir2 = -1.0f + 2.0f * rand();
+
+							float len = sqrt(enemy.strafe_dir * enemy.strafe_dir + enemy.strafe_dir2 * enemy.strafe_dir2);
+
+							if (len > 0.01f)
+							{
+								enemy.strafe_dir /= len;
+								enemy.strafe_dir2 /= len;
+							}
+							else
+							{
+								enemy.strafe_dir = 1.0f;
+								enemy.strafe_dir2 = 0.0f;
+							}
+						}
+						else
+						{
+							enemy.action_time2 -= dt;
+						}
+
+						enemy.legs_phys.Move(enemy.strafe_dir * 250.0f * dt, enemy.strafe_dir2 * 250.0f * dt, 1, 0);
+
+						if (enemy.action_time < 0.0f)
+						{
+							enemy.state = GoingClose;
+							enemy.action_time = 3.0f;
+						}
+
+						if (len < 115 && !hero.lock_to_target)
+						{
+							if (enemy.graph.ActivateLink("shoot"))
+							{
+								enemy.StopPathMoving(nav_mesh);
+								enemy.state = MelleAttack;
+								enemy.action_time = 0.75f;
+							}
+						}
+					}
+					else
+					if (enemy.state == GoingClose)
+					{
+						if (len < 115 || enemy.action_time < 0.0f)
+						{
+							if (enemy.graph.ActivateLink("shoot"))
+							{
+								enemy.StopPathMoving(nav_mesh);
+								enemy.state = MelleAttack;
+								enemy.action_time = 0.75f;
+							}
+						}
+						else
+						if (enemy.cur_path != -1)
+						{
+							float dir_x = hero.x - enemy.dest_x;
+							float dir_y = hero.y - enemy.dest_y;
+
+							float len = sqrt(dir_x * dir_x + dir_y * dir_y);
+
+							if (len > 50 || enemy.MoveAlongPath(nav_mesh, dt) == 0)
+							{
+								enemy.FindPath(nav_mesh, hero.x, hero.y);
+							}
+						}
+						else
+						{
+							enemy.FindPath(nav_mesh, hero.x, hero.y);
+						}
+					}
+					else
+					if (enemy.state == MelleAttack)
+					{
+						if (enemy.action_time < 0.0f)
+						{
+							enemy.state = Idle;
+						}
+					}
+				}
+				else
+				if (enemy.type == 3)
+				{
+					if (enemy.state == Idle)
+					{
+						if (hero.hp != 0)
+						{
+							if (IsPlayerVisible(enemy, view_dist))
+							{
+								enemy.state = Strafing;
+								enemy.action_time = 3.0f + rand() * 2.0f;
+								enemy.action_time2 = -1.0f;
+
+								enemy.graph.ActivateLink("Idle");
+								enemy.legs_graph.ActivateLink("Idle");
+							}
+							else
+							{
+								enemy.state = Pursuit;
+								enemy.FindPath(nav_mesh, hero.x, hero.y);
+							}
+						}
+						else
+						{
+							enemy.graph.ActivateLink("Idle");
+							enemy.legs_graph.ActivateLink("Idle");
+						}
+					}
+					else
+					if (enemy.state == Pursuit)
+					{
+						float dir_x = hero.x - enemy.dest_x;
+						float dir_y = hero.y - enemy.dest_y;
+
+						float len = sqrt(dir_x * dir_x + dir_y * dir_y);
+
+						if (len > 50 || enemy.MoveAlongPath(nav_mesh, dt) == 0 || IsPlayerVisible(enemy, view_dist - 5))
+						{
+							enemy.StopPathMoving(nav_mesh);
+							enemy.state = Idle;
+						}
+					}
+					else
+					if (enemy.state == Strafing)
+					{
+						if (enemy.action_time2 < 0.0f)
+						{
+							enemy.action_time2 = 0.75f;
+
+							enemy.strafe_dir = -1.0f + 2.0f * rand();
+							enemy.strafe_dir2 = -1.0f + 2.0f * rand();
+
+							float len = sqrt(enemy.strafe_dir * enemy.strafe_dir + enemy.strafe_dir2 * enemy.strafe_dir2);
+
+							if (len > 0.01f)
+							{
+								enemy.strafe_dir /= len;
+								enemy.strafe_dir2 /= len;
+							}
+							else
+							{
+								enemy.strafe_dir = 1.0f;
+								enemy.strafe_dir2 = 0.0f;
+							}
+						}
+						else
+						{
+							enemy.action_time2 -= dt;
+						}
+
+						enemy.legs_phys.Move(enemy.strafe_dir * 250.0f * dt, enemy.strafe_dir2 * 250.0f * dt, 1, 0);
+
+						if (enemy.action_time < 0.0f)
+						{
+							enemy.state = Stalking;
+							enemy.action_time = 1.25f;
+
+							enemy.strafe_dir = dir_x;
+							enemy.strafe_dir2 = dir_y;
+
+							enemy.dest_x = hero.x;
+							enemy.dest_y = hero.y;
+
+							enemy.graph.ActivateLink("Stalk");
+						}
+
+						if (len < 115)
+						{
+							if (enemy.graph.ActivateLink("shoot"))
+							{
+								enemy.StopPathMoving(nav_mesh);
+								enemy.state = MelleAttack;
+								enemy.action_time = 0.6f;
+							}
+						}
+					}
+					else
+					if (enemy.state == Stalking)
+					{
+						Vector2 dir_dest(hero.x - enemy.dest_x, hero.y - enemy.dest_y);
+
+						if (enemy.action_time < 0.0f)
+						{
+							enemy.action_time = 0.75f;
+							enemy.state = Stunned;
+
+							enemy.graph.ActivateLink("StalkEnd");
+						}
+						else
+						{
+							enemy.legs_phys.Move(enemy.strafe_dir * 550.0f * dt, enemy.strafe_dir2 * 550.0f * dt, 1, 0);
+
+							if (core.utils.IsPointInRectangle(Vector2(hero.x, hero.y - 32.0f), Vector2(enemy.x,  enemy.y - 32.0f), Vector2(0.0f, 0.0f), Vector2(110.0f, 100.0f), enemy.angle, main.show_debug_check))
+							{
+								if (enemy.graph.ActivateLink("shoot"))
+								{
+									enemy.state = MelleAttack;
+									enemy.action_time = 0.6f;
+								}
+							}
+						}
+					}
+					else
+					if (enemy.state == MelleAttack)
+					{
+						if (enemy.action_time < 0.0f)
+						{
+							enemy.state = Idle;
+						}
+					}
+				}
+			}
+		}
+	}
+}

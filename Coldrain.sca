@@ -14,37 +14,37 @@
 	},
 	"camera_pos" :
 	{
-		"x" : 583.697693,
-		"y" : -1226.582886
+		"x" : 168.069702,
+		"y" : -1458.257568
 	},
-	"camera_zoom" : 0.680000,
-	"move_mode" : 1,
-	"gizmo2d_align_x" : 96,
-	"gizmo2d_align_y" : 96,
+	"camera_zoom" : 0.760000,
+	"move_mode" : 0,
+	"gizmo2d_align_x" : 48,
+	"gizmo2d_align_y" : 48,
 	"SceneAsset" : [
 		{
 			"type" : "SceneScriptAsset",
 			"uid" : 200902816,
 			"ed_camera_2d" :
 			{
-				"x" : 1373.585083,
-				"y" : 912.678955
+				"x" : 1188.706299,
+				"y" : 498.498230
 			},
-			"ed_camera_2d_zoom" : 1.060000,
-			"Name" : "MainScript",
+			"ed_camera_2d_zoom" : 0.820000,
+			"Name" : "Main",
 			"State" : 2,
 			"Group" : "",
 			"Layer" : "",
 			"main_class" : "Main",
-			"Count" : 59,
+			"Count" : 43,
 			"Node" : [
 				{
 					"type" : 1,
 					"name" : "camera",
 					"pos" :
 					{
-						"x" : 372.000000,
-						"y" : 166.000000
+						"x" : 819.826111,
+						"y" : 259.478302
 					},
 					"prefix" : ""
 				},
@@ -53,8 +53,8 @@
 					"name" : "hero",
 					"pos" :
 					{
-						"x" : 168.000000,
-						"y" : 167.000000
+						"x" : 643.000061,
+						"y" : 968.087036
 					},
 					"prefix" : "legs"
 				},
@@ -63,8 +63,8 @@
 					"name" : "hero",
 					"pos" :
 					{
-						"x" : -9.000000,
-						"y" : 169.000000
+						"x" : 410.565155,
+						"y" : 965.739136
 					},
 					"prefix" : ""
 				},
@@ -73,8 +73,8 @@
 					"name" : "Update",
 					"pos" :
 					{
-						"x" : 789.000000,
-						"y" : 152.000000
+						"x" : 640.086914,
+						"y" : 653.086975
 					},
 					"param_type" : 3,
 					"call_type" : 2,
@@ -84,31 +84,11 @@
 				},
 				{
 					"type" : 1,
-					"name" : "soldiersAK47",
-					"pos" :
-					{
-						"x" : 167.000000,
-						"y" : 272.000000
-					},
-					"prefix" : "legs"
-				},
-				{
-					"type" : 1,
-					"name" : "soldiersAK47",
-					"pos" :
-					{
-						"x" : -10.000000,
-						"y" : 271.000000
-					},
-					"prefix" : ""
-				},
-				{
-					"type" : 1,
 					"name" : "bullets",
 					"pos" :
 					{
 						"x" : 1245.000000,
-						"y" : 378.000000
+						"y" : 380.173920
 					},
 					"prefix" : ""
 				},
@@ -117,8 +97,8 @@
 					"name" : "blood_splash_obj",
 					"pos" :
 					{
-						"x" : 1230.000000,
-						"y" : 154.000000
+						"x" : 1241.956543,
+						"y" : 148.565231
 					},
 					"prefix" : ""
 				},
@@ -127,18 +107,8 @@
 					"name" : "bullet_wall_hit",
 					"pos" :
 					{
-						"x" : 1239.000000,
-						"y" : 266.000000
-					},
-					"prefix" : ""
-				},
-				{
-					"type" : 1,
-					"name" : "nav_mesh",
-					"pos" :
-					{
-						"x" : 361.000000,
-						"y" : 276.000000
+						"x" : 1243.347900,
+						"y" : 262.739136
 					},
 					"prefix" : ""
 				},
@@ -154,31 +124,11 @@
 				},
 				{
 					"type" : 1,
-					"name" : "shadow_caster",
-					"pos" :
-					{
-						"x" : 35.000000,
-						"y" : 826.000000
-					},
-					"prefix" : ""
-				},
-				{
-					"type" : 1,
-					"name" : "sub_shadow_caster",
-					"pos" :
-					{
-						"x" : 234.000000,
-						"y" : 829.000000
-					},
-					"prefix" : ""
-				},
-				{
-					"type" : 1,
 					"name" : "markers",
 					"pos" :
 					{
 						"x" : 1251.000000,
-						"y" : 476.000000
+						"y" : 486.869385
 					},
 					"prefix" : ""
 				},
@@ -187,34 +137,14 @@
 					"name" : "OnInit",
 					"pos" :
 					{
-						"x" : 616.000000,
-						"y" : 725.000000
+						"x" : 436.652313,
+						"y" : 657.608643
 					},
 					"param_type" : 0,
 					"call_type" : 1,
 					"Count" : 0,
 					"Link" : [
 					]
-				},
-				{
-					"type" : 1,
-					"name" : "soldiersMachete",
-					"pos" :
-					{
-						"x" : 2.000000,
-						"y" : 371.000000
-					},
-					"prefix" : ""
-				},
-				{
-					"type" : 1,
-					"name" : "soldiersMachete",
-					"pos" :
-					{
-						"x" : 172.000000,
-						"y" : 373.000000
-					},
-					"prefix" : "legs"
 				},
 				{
 					"type" : 1,
@@ -228,67 +158,11 @@
 				},
 				{
 					"type" : 0,
-					"name" : "soldiersMachete",
-					"pos" :
-					{
-						"x" : 399.000000,
-						"y" : 388.000000
-					}
-				},
-				{
-					"type" : 0,
-					"name" : "soldiersAK47",
-					"pos" :
-					{
-						"x" : 381.000000,
-						"y" : 483.000000
-					}
-				},
-				{
-					"type" : 2,
-					"name" : "OnEnemyAnimEvent",
-					"pos" :
-					{
-						"x" : 618.000000,
-						"y" : 478.000000
-					},
-					"param_type" : 0,
-					"call_type" : 0,
-					"Count" : 4,
-					"Link" : [
-						{
-							"node" : 19,
-							"param" : "",
-							"param2" : "",
-							"param3" : ""
-						},
-						{
-							"node" : 18,
-							"param" : "",
-							"param2" : "",
-							"param3" : ""
-						},
-						{
-							"node" : 28,
-							"param" : "",
-							"param2" : "",
-							"param3" : ""
-						},
-						{
-							"node" : 29,
-							"param" : "",
-							"param2" : "",
-							"param3" : ""
-						}
-					]
-				},
-				{
-					"type" : 0,
 					"name" : "hero",
 					"pos" :
 					{
-						"x" : 401.000000,
-						"y" : 859.000000
+						"x" : 409.695648,
+						"y" : 853.565186
 					}
 				},
 				{
@@ -296,15 +170,15 @@
 					"name" : "OnHeroAnimEvent",
 					"pos" :
 					{
-						"x" : 630.000000,
-						"y" : 859.000000
+						"x" : 636.521667,
+						"y" : 853.565247
 					},
 					"param_type" : 0,
 					"call_type" : 0,
 					"Count" : 1,
 					"Link" : [
 						{
-							"node" : 21,
+							"node" : 11,
 							"param" : "",
 							"param2" : "",
 							"param3" : ""
@@ -316,76 +190,18 @@
 					"name" : "combo_counter",
 					"pos" :
 					{
-						"x" : 1016.000000,
-						"y" : 480.000000
+						"x" : 1017.086975,
+						"y" : 481.086884
 					},
 					"prefix" : ""
-				},
-				{
-					"type" : 1,
-					"name" : "soldiersStalker",
-					"pos" :
-					{
-						"x" : -1.000000,
-						"y" : 478.000000
-					},
-					"prefix" : ""
-				},
-				{
-					"type" : 1,
-					"name" : "soldiersStalker",
-					"pos" :
-					{
-						"x" : 184.000000,
-						"y" : 470.000000
-					},
-					"prefix" : "legs"
-				},
-				{
-					"type" : 1,
-					"name" : "soldiersGrabber",
-					"pos" :
-					{
-						"x" : 181.000000,
-						"y" : 572.000000
-					},
-					"prefix" : "legs"
-				},
-				{
-					"type" : 1,
-					"name" : "soldiersGrabber",
-					"pos" :
-					{
-						"x" : -3.000000,
-						"y" : 575.000000
-					},
-					"prefix" : ""
-				},
-				{
-					"type" : 0,
-					"name" : "soldiersStlakers",
-					"pos" :
-					{
-						"x" : 380.000000,
-						"y" : 586.000000
-					}
-				},
-				{
-					"type" : 0,
-					"name" : "SoldiersGrabber",
-					"pos" :
-					{
-						"x" : 410.000000,
-						"y" : 677.000000
-					}
 				},
 				{
 					"type" : 1,
 					"name" : "crosshair",
 					"pos" :
 					{
-						"x" : 1008.000000,
-						"y" : 159.000000
+						"x" : 1024.304321,
+						"y" : 147.043472
 					},
 					"prefix" : ""
 				},
@@ -394,8 +210,8 @@
 					"name" : "markers",
 					"pos" :
 					{
-						"x" : 1004.000000,
-						"y" : 262.000000
+						"x" : 1017.043457,
+						"y" : 258.739136
 					},
 					"prefix" : ""
 				},
@@ -430,85 +246,85 @@
 					"Count" : 14,
 					"Link" : [
 						{
-							"node" : 33,
+							"node" : 17,
 							"param" : "2",
 							"param2" : "1",
 							"param3" : "1"
 						},
 						{
-							"node" : 32,
+							"node" : 16,
 							"param" : "1",
 							"param2" : "2",
 							"param3" : "2"
 						},
 						{
-							"node" : 35,
+							"node" : 19,
 							"param" : "2",
 							"param2" : "3",
 							"param3" : "4"
 						},
 						{
-							"node" : 36,
+							"node" : 20,
 							"param" : "32",
 							"param2" : "",
 							"param3" : ""
 						},
 						{
-							"node" : 37,
+							"node" : 21,
 							"param" : "5",
 							"param2" : "3",
 							"param3" : "8"
 						},
 						{
-							"node" : 38,
+							"node" : 22,
 							"param" : "3",
 							"param2" : "5",
 							"param3" : "7"
 						},
 						{
-							"node" : 39,
+							"node" : 23,
 							"param" : "4",
 							"param2" : "3",
 							"param3" : "5"
 						},
 						{
-							"node" : 40,
+							"node" : 24,
 							"param" : "56",
 							"param2" : "",
 							"param3" : ""
 						},
 						{
-							"node" : 41,
+							"node" : 25,
 							"param" : "23",
 							"param2" : "",
 							"param3" : ""
 						},
 						{
-							"node" : 42,
+							"node" : 26,
 							"param" : "3",
 							"param2" : "2",
 							"param3" : "3"
 						},
 						{
-							"node" : 43,
+							"node" : 27,
 							"param" : "3",
 							"param2" : "4",
 							"param3" : "6"
 						},
 						{
-							"node" : 44,
+							"node" : 28,
 							"param" : "43",
 							"param2" : "",
 							"param3" : ""
 						},
 						{
-							"node" : 45,
+							"node" : 29,
 							"param" : "56",
 							"param2" : "",
 							"param3" : ""
 						},
 						{
-							"node" : 46,
+							"node" : 30,
 							"param" : "56",
 							"param2" : "",
 							"param3" : ""
@@ -530,7 +346,7 @@
 					"pos" :
 					{
 						"x" : 1336.565308,
-						"y" : 1064.782471
+						"y" : 1064.780884
 					}
 				},
 				{
@@ -547,8 +363,8 @@
 					"name" : "Object",
 					"pos" :
 					{
-						"x" : 1048.434814,
-						"y" : 848.217468
+						"x" : 1048.434937,
+						"y" : 848.217529
 					}
 				},
 				{
@@ -566,7 +382,7 @@
 					"pos" :
 					{
 						"x" : 1334.434937,
-						"y" : 970.869507
+						"y" : 970.869446
 					}
 				},
 				{
@@ -610,7 +426,7 @@
 					"name" : "Object",
 					"pos" :
 					{
-						"x" : 1516.913208,
+						"x" : 1516.913330,
 						"y" : 972.043457
 					}
 				},
@@ -655,7 +471,7 @@
 					"Count" : 1,
 					"Link" : [
 						{
-							"node" : 48,
+							"node" : 32,
 							"param" : "",
 							"param2" : "",
 							"param3" : ""
@@ -694,7 +510,7 @@
 					"Count" : 1,
 					"Link" : [
 						{
-							"node" : 51,
+							"node" : 35,
 							"param" : "",
 							"param2" : "",
 							"param3" : ""
@@ -707,14 +523,14 @@
 					"pos" :
 					{
 						"x" : 1891.524902,
-						"y" : 369.890808
+						"y" : 369.890686
 					},
 					"param_type" : 0,
 					"call_type" : 0,
 					"Count" : 1,
 					"Link" : [
 						{
-							"node" : 55,
+							"node" : 39,
 							"param" : "",
 							"param2" : "",
 							"param3" : ""
@@ -734,7 +550,7 @@
 					"Count" : 1,
 					"Link" : [
 						{
-							"node" : 56,
+							"node" : 40,
 							"param" : "",
 							"param2" : "",
 							"param3" : ""
@@ -4622,7 +4438,7 @@
 			"x" : -44.272972,
 			"y" : 2.856099,
 			"width" : 49.422222,
-			"height" : 46.577778,
+			"height" : 69.333336,
 			"anchorn_x" : 0.000000,
 			"anchorn_y" : 0.000000,
 			"use_source_size" : false,
@@ -4684,7 +4500,7 @@
 					"use_object_size" : true,
 					"width" : 64.000000,
 					"height" : 64.000000,
-					"group" : 2
+					"group" : 1
 				}
 			]
 		},
@@ -9502,7 +9318,7 @@
 				"y" : 188.957474
 			},
 			"ed_camera_2d_zoom" : 0.940000,
-			"Name" : "DoorScript",
+			"Name" : "Door",
 			"State" : 2,
 			"Group" : "",
 			"Layer" : "",
@@ -11461,6 +11277,757 @@
 					]
 				}
 			]
+		},
+		{
+			"type" : "SceneScriptAsset",
+			"uid" : 752380,
+			"ed_camera_2d" :
+			{
+				"x" : -250.000000,
+				"y" : -43.000000
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "EnemiesPool",
+			"State" : 2,
+			"Group" : "",
+			"Layer" : "",
+			"main_class" : "EnemiesPool",
+			"Count" : 17,
+			"Node" : [
+				{
+					"type" : 1,
+					"name" : "soldiersAK47",
+					"pos" :
+					{
+						"x" : -422.500000,
+						"y" : -169.500000
+					},
+					"prefix" : ""
+				},
+				{
+					"type" : 1,
+					"name" : "soldiersAK47",
+					"pos" :
+					{
+						"x" : -219.500000,
+						"y" : -167.500000
+					},
+					"prefix" : "legs"
+				},
+				{
+					"type" : 1,
+					"name" : "soldiersMachete",
+					"pos" :
+					{
+						"x" : -416.500000,
+						"y" : 40.500000
+					},
+					"prefix" : ""
+				},
+				{
+					"type" : 1,
+					"name" : "soldiersGrabber",
+					"pos" :
+					{
+						"x" : -423.500000,
+						"y" : -61.500000
+					},
+					"prefix" : ""
+				},
+				{
+					"type" : 1,
+					"name" : "soldiersStalker",
+					"pos" :
+					{
+						"x" : -421.500000,
+						"y" : 144.500000
+					},
+					"prefix" : ""
+				},
+				{
+					"type" : 1,
+					"name" : "soldiersMachete",
+					"pos" :
+					{
+						"x" : -214.500000,
+						"y" : 38.500000
+					},
+					"prefix" : "legs"
+				},
+				{
+					"type" : 1,
+					"name" : "soldiersGrabber",
+					"pos" :
+					{
+						"x" : -216.500000,
+						"y" : -58.500000
+					},
+					"prefix" : "legs"
+				},
+				{
+					"type" : 1,
+					"name" : "soldiersStalker",
+					"pos" :
+					{
+						"x" : -216.500000,
+						"y" : 150.500000
+					},
+					"prefix" : "legs"
+				},
+				{
+					"type" : 0,
+					"name" : "Object",
+					"pos" :
+					{
+						"x" : 7.500000,
+						"y" : -162.500000
+					}
+				},
+				{
+					"type" : 0,
+					"name" : "Object",
+					"pos" :
+					{
+						"x" : 13.500000,
+						"y" : -56.500000
+					}
+				},
+				{
+					"type" : 0,
+					"name" : "Object",
+					"pos" :
+					{
+						"x" : 19.500000,
+						"y" : 57.500000
+					}
+				},
+				{
+					"type" : 0,
+					"name" : "Object",
+					"pos" :
+					{
+						"x" : 17.500000,
+						"y" : 166.500000
+					}
+				},
+				{
+					"type" : 2,
+					"name" : "OnEnemyAnimEvent",
+					"pos" :
+					{
+						"x" : 276.500000,
+						"y" : -5.500000
+					},
+					"param_type" : 0,
+					"call_type" : 0,
+					"Count" : 4,
+					"Link" : [
+						{
+							"node" : 8,
+							"param" : "",
+							"param2" : "",
+							"param3" : ""
+						},
+						{
+							"node" : 9,
+							"param" : "",
+							"param2" : "",
+							"param3" : ""
+						},
+						{
+							"node" : 10,
+							"param" : "",
+							"param2" : "",
+							"param3" : ""
+						},
+						{
+							"node" : 11,
+							"param" : "",
+							"param2" : "",
+							"param3" : ""
+						}
+					]
+				},
+				{
+					"type" : 1,
+					"name" : "main",
+					"pos" :
+					{
+						"x" : -781.500000,
+						"y" : -173.500000
+					},
+					"prefix" : ""
+				},
+				{
+					"type" : 1,
+					"name" : "nav_mesh",
+					"pos" :
+					{
+						"x" : -601.500000,
+						"y" : -175.500000
+					},
+					"prefix" : ""
+				},
+				{
+					"type" : 2,
+					"name" : "OnInit",
+					"pos" :
+					{
+						"x" : -785.500000,
+						"y" : -45.500000
+					},
+					"param_type" : 0,
+					"call_type" : 1,
+					"Count" : 0,
+					"Link" : [
+					]
+				},
+				{
+					"type" : 2,
+					"name" : "Update",
+					"pos" :
+					{
+						"x" : -603.500000,
+						"y" : -45.500000
+					},
+					"param_type" : 0,
+					"call_type" : 2,
+					"Count" : 0,
+					"Link" : [
+					]
+				}
+			],
+			"dep_count" : 0,
+			"Dep" : [
+			]
+		},
+		{
+			"type" : "SceneScriptAsset",
+			"uid" : 195958,
+			"ed_camera_2d" :
+			{
+				"x" : 0.000000,
+				"y" : 0.000000
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "CharacterBase",
+			"State" : 2,
+			"Group" : "",
+			"Layer" : "",
+			"main_class" : "",
+			"Count" : 0,
+			"Node" : [
+			],
+			"dep_count" : 0,
+			"Dep" : [
+			]
+		},
+		{
+			"type" : "BlueprintAsset",
+			"uid" : 883318,
+			"ed_camera_2d" :
+			{
+				"x" : -205.000000,
+				"y" : -5.000000
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "Enemies",
+			"Childs" : [
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 72834,
+					"Name" : "SoldierGrabber_Legs",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"Depth" : 0.470000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : -1780856064,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 881278,
+					"Name" : "SoldierAK47_Legs",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"Depth" : 0.470000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : -1780856064,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 94582,
+					"Name" : "SoldierMachete_Legs",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"Depth" : 0.470000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : -1780856064,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 818940,
+					"Name" : "SoldierStalker_Legs",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"Depth" : 0.470000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : -1780856064,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 993895,
+					"Name" : "SoldierAK47",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"Depth" : 0.465000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : 365581472,
+					"components" : [
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 509683,
+					"Name" : "SoldierGrabber",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"Depth" : 0.465000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : 782972,
+					"components" : [
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 276131,
+					"Name" : "SoldierMachete",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"Depth" : 0.465000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : 63478,
+					"components" : [
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 310853,
+					"Name" : "SoldierStalker",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"Depth" : 0.465000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : 524286,
+					"components" : [
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				},
+				{
+					"type" : "NavMesh2DGen",
+					"uid" : 96375,
+					"Name" : "NavMesh",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"collider_radius" : 32.000000
+				},
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 884120,
+					"Name" : "EnemiesPool",
+					"State" : 2,
+					"Group" : "",
+					"Layer" : "",
+					"asset_uid" : 752380,
+					"Count" : 17,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 883318,
+											"child_uid" : 993895,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 883318,
+											"child_uid" : 881278,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 883318,
+											"child_uid" : 276131,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 883318,
+											"child_uid" : 509683,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 883318,
+											"child_uid" : 310853,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 883318,
+											"child_uid" : 94582,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 883318,
+											"child_uid" : 72834,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 883318,
+											"child_uid" : 818940,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 883318,
+											"child_uid" : 993895,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 883318,
+											"child_uid" : 509683,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 883318,
+											"child_uid" : 276131,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 883318,
+											"child_uid" : 310853,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 883318,
+											"child_uid" : 96375,
+											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				}
+			]
 		}
 	],
 	"SceneObject" : [
@@ -11534,62 +12101,6 @@
 				]
 			},
 			"asset_uid" : 988714176
-		},
-		{
-			"type" : "SpriteGraphInst",
-			"uid" : 913568320,
-			"Name" : "SoldiersAK47",
-			"State" : 2,
-			"Group" : "Floor1",
-			"Layer" : "Floor1",
-			"Depth" : 0.475000,
-			"hack_height" : -32.000000,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 0,
-				"Elem" : [
-				]
-			},
-			"asset_uid" : 365581472,
-			"components" : [
-				{
-					"type" : "Track2DComp",
-					"flip_mode" : 0,
-					"tracks" :
-					{
-						"count" : 0,
-						"Elem" : [
-						]
-					}
-				},
-				{
-					"type" : "ScriptMetaDataCompInst"
-				}
-			]
-		},
-		{
-			"type" : "SpriteGraphInst",
-			"uid" : -112360960,
-			"Name" : "SoldiersAK47_Legs",
-			"State" : 2,
-			"Group" : "Floor1",
-			"Layer" : "Floor1",
-			"Depth" : 0.480000,
-			"hack_height" : -32.000000,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 0,
-				"Elem" : [
-				]
-			},
-			"asset_uid" : -1780856064,
-			"components" : [
-				{
-					"type" : "Phys2DCompInst"
-				}
-			]
 		},
 		{
 			"type" : "SpriteInst",
@@ -11724,8 +12235,8 @@
 			"uid" : -211527680,
 			"ed_camera_2d" :
 			{
-				"x" : 1306.198242,
-				"y" : 812.825745
+				"x" : 921.415710,
+				"y" : 831.304321
 			},
 			"ed_camera_2d_zoom" : 0.920000,
 			"Name" : "MainScript",
@@ -11733,7 +12244,7 @@
 			"Group" : "Level",
 			"Layer" : "Level",
 			"asset_uid" : 200902816,
-			"Count" : 59,
+			"Count" : 43,
 			"Node" : [
 				{
 					"callback_type" : "",
@@ -11804,40 +12315,6 @@
 					}
 				},
 				{
-					"callback_type" : "OnContact",
-					"objects_list" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"object" :
-								{
-									"uid" : -112360960,
-									"child_uid" : 0,
-									"is_asset" : false
-								}
-							}
-						]
-					}
-				},
-				{
-					"callback_type" : "OnContact",
-					"objects_list" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"object" :
-								{
-									"uid" : 913568320,
-									"child_uid" : 0,
-									"is_asset" : false
-								}
-							}
-						]
-					}
-				},
-				{
 					"callback_type" : "",
 					"objects_list" :
 					{
@@ -11897,58 +12374,7 @@
 							{
 								"object" :
 								{
-									"uid" : 390388,
-									"child_uid" : 0,
-									"is_asset" : false
-								}
-							}
-						]
-					}
-				},
-				{
-					"callback_type" : "",
-					"objects_list" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"object" :
-								{
 									"uid" : 895327744,
-									"child_uid" : 0,
-									"is_asset" : false
-								}
-							}
-						]
-					}
-				},
-				{
-					"callback_type" : "",
-					"objects_list" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"object" :
-								{
-									"uid" : 619895,
-									"child_uid" : 0,
-									"is_asset" : false
-								}
-							}
-						]
-					}
-				},
-				{
-					"callback_type" : "",
-					"objects_list" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"object" :
-								{
-									"uid" : 783612,
 									"child_uid" : 0,
 									"is_asset" : false
 								}
@@ -11991,40 +12417,6 @@
 					}
 				},
 				{
-					"callback_type" : "OnContact",
-					"objects_list" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"object" :
-								{
-									"uid" : 979709,
-									"child_uid" : 0,
-									"is_asset" : false
-								}
-							}
-						]
-					}
-				},
-				{
-					"callback_type" : "OnContact",
-					"objects_list" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"object" :
-								{
-									"uid" : 947061,
-									"child_uid" : 0,
-									"is_asset" : false
-								}
-							}
-						]
-					}
-				},
-				{
 					"callback_type" : "",
 					"objects_list" :
 					{
@@ -12035,57 +12427,6 @@
 								{
 									"uid" : 130815,
 									"child_uid" : 555637,
-									"is_asset" : false
-								}
-							}
-						]
-					}
-				},
-				{
-					"callback_type" : "AnimEvent",
-					"objects_list" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"object" :
-								{
-									"uid" : 979709,
-									"child_uid" : 0,
-									"is_asset" : false
-								}
-							}
-						]
-					}
-				},
-				{
-					"callback_type" : "AnimEvent",
-					"objects_list" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"object" :
-								{
-									"uid" : 913568320,
-									"child_uid" : 0,
-									"is_asset" : false
-								}
-							}
-						]
-					}
-				},
-				{
-					"callback_type" : "",
-					"objects_list" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"object" :
-								{
-									"uid" : 0,
-									"child_uid" : 0,
 									"is_asset" : false
 								}
 							}
@@ -12137,108 +12478,6 @@
 								{
 									"uid" : 130815,
 									"child_uid" : 359284,
-									"is_asset" : false
-								}
-							}
-						]
-					}
-				},
-				{
-					"callback_type" : "OnContact",
-					"objects_list" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"object" :
-								{
-									"uid" : 981628,
-									"child_uid" : 0,
-									"is_asset" : false
-								}
-							}
-						]
-					}
-				},
-				{
-					"callback_type" : "OnContact",
-					"objects_list" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"object" :
-								{
-									"uid" : 425716,
-									"child_uid" : 0,
-									"is_asset" : false
-								}
-							}
-						]
-					}
-				},
-				{
-					"callback_type" : "OnContact",
-					"objects_list" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"object" :
-								{
-									"uid" : 96629,
-									"child_uid" : 0,
-									"is_asset" : false
-								}
-							}
-						]
-					}
-				},
-				{
-					"callback_type" : "OnContact",
-					"objects_list" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"object" :
-								{
-									"uid" : 520308,
-									"child_uid" : 0,
-									"is_asset" : false
-								}
-							}
-						]
-					}
-				},
-				{
-					"callback_type" : "AnimEvent",
-					"objects_list" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"object" :
-								{
-									"uid" : 981628,
-									"child_uid" : 0,
-									"is_asset" : false
-								}
-							}
-						]
-					}
-				},
-				{
-					"callback_type" : "AnimEvent",
-					"objects_list" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"object" :
-								{
-									"uid" : 520308,
-									"child_uid" : 0,
 									"is_asset" : false
 								}
 							}
@@ -12778,94 +13017,6 @@
 			"Aliases" : "control_aliases"
 		},
 		{
-			"type" : "SpriteGraphInst",
-			"uid" : 979709,
-			"Name" : "SoldiersMachete",
-			"State" : 2,
-			"Group" : "Floor1",
-			"Layer" : "Floor1",
-			"Depth" : 0.475000,
-			"hack_height" : -32.000000,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 1,
-				"Elem" : [
-					{
-						"x" : -384.000000,
-						"y" : -3888.000000,
-						"index" : 0,
-						"visible" : 1,
-						"color" :
-						{
-							"r" : 1.000000,
-							"g" : 1.000000,
-							"b" : 1.000000,
-							"a" : 1.000000
-						},
-						"alpha" : 1.000000
-					}
-				]
-			},
-			"asset_uid" : 63478,
-			"components" : [
-				{
-					"type" : "Track2DComp",
-					"flip_mode" : 0,
-					"tracks" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"data_type" : 1,
-								"speed" : 160.000000,
-								"track" :
-								{
-									"count" : 2,
-									"Elem" : [
-										{
-											"x" : -384.000000,
-											"y" : -3888.000000
-										},
-										{
-											"x" : -384.000000,
-											"y" : -4224.000000
-										}
-									]
-								}
-							}
-						]
-					}
-				},
-				{
-					"type" : "ScriptMetaDataCompInst"
-				}
-			]
-		},
-		{
-			"type" : "SpriteGraphInst",
-			"uid" : 947061,
-			"Name" : "SoldiersMachete_Legs",
-			"State" : 2,
-			"Group" : "Floor1",
-			"Layer" : "Floor1",
-			"Depth" : 0.480000,
-			"hack_height" : -32.000000,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 0,
-				"Elem" : [
-				]
-			},
-			"asset_uid" : -1780856064,
-			"components" : [
-				{
-					"type" : "Phys2DCompInst"
-				}
-			]
-		},
-		{
 			"type" : "SpriteInst",
 			"uid" : 522229,
 			"Name" : "Floor1",
@@ -12897,16 +13048,6 @@
 				]
 			},
 			"asset_uid" : 491007
-		},
-		{
-			"type" : "NavMesh2DGen",
-			"uid" : 390388,
-			"Name" : "Àäùùê1NavMesh",
-			"State" : 2,
-			"Group" : "Floor1",
-			"Layer" : "Floor1",
-			"CasterGroup" : "Floor1",
-			"collider_radius" : 32.000000
 		},
 		{
 			"type" : "UIViewInstance",
@@ -12974,140 +13115,6 @@
 					"alpha" : 1.000000,
 					"Childs" : [
 					]
-				}
-			]
-		},
-		{
-			"type" : "SpriteGraphInst",
-			"uid" : 96629,
-			"Name" : "SoldiersGrabber_Legs",
-			"State" : 2,
-			"Group" : "Floor1",
-			"Layer" : "Floor1",
-			"Depth" : 0.480000,
-			"hack_height" : -32.000000,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 0,
-				"Elem" : [
-				]
-			},
-			"asset_uid" : -1780856064,
-			"components" : [
-				{
-					"type" : "Phys2DCompInst"
-				}
-			]
-		},
-		{
-			"type" : "SpriteGraphInst",
-			"uid" : 425716,
-			"Name" : "SoldiersStalker_Legs",
-			"State" : 2,
-			"Group" : "Floor1",
-			"Layer" : "Floor1",
-			"Depth" : 0.480000,
-			"hack_height" : -32.000000,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 0,
-				"Elem" : [
-				]
-			},
-			"asset_uid" : -1780856064,
-			"components" : [
-				{
-					"type" : "Phys2DCompInst"
-				}
-			]
-		},
-		{
-			"type" : "SpriteGraphInst",
-			"uid" : 981628,
-			"Name" : "SoldiersStalker",
-			"State" : 2,
-			"Group" : "Floor1",
-			"Layer" : "Floor1",
-			"Depth" : 0.475000,
-			"hack_height" : -32.000000,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 1,
-				"Elem" : [
-					{
-						"x" : 48.000000,
-						"y" : -4032.000000,
-						"index" : 0,
-						"visible" : 1,
-						"color" :
-						{
-							"r" : 1.000000,
-							"g" : 1.000000,
-							"b" : 1.000000,
-							"a" : 1.000000
-						},
-						"alpha" : 1.000000
-					}
-				]
-			},
-			"asset_uid" : 524286,
-			"components" : [
-				{
-					"type" : "ScriptMetaDataCompInst"
-				},
-				{
-					"type" : "Track2DComp",
-					"flip_mode" : 0,
-					"tracks" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"data_type" : 1,
-								"speed" : 160.000000,
-								"track" :
-								{
-									"count" : 2,
-									"Elem" : [
-										{
-											"x" : 48.000000,
-											"y" : -4032.000000
-										},
-										{
-											"x" : 528.000000,
-											"y" : -4032.000000
-										}
-									]
-								}
-							}
-						]
-					}
-				}
-			]
-		},
-		{
-			"type" : "SpriteGraphInst",
-			"uid" : 520308,
-			"Name" : "SoldiersGrabber",
-			"State" : 2,
-			"Group" : "Floor1",
-			"Layer" : "Floor1",
-			"Depth" : 0.475000,
-			"hack_height" : -32.000000,
-			"draw_level" : 0,
-			"inst" :
-			{
-				"count" : 0,
-				"Elem" : [
-				]
-			},
-			"asset_uid" : 782972,
-			"components" : [
-				{
-					"type" : "ScriptMetaDataCompInst"
 				}
 			]
 		},
@@ -13470,7 +13477,7 @@
 			"x" : 1920.000000,
 			"y" : -2016.000000,
 			"width" : 222.221527,
-			"height" : 490.113281,
+			"height" : 490.113312,
 			"collision_group" : 1
 		},
 		{
@@ -39566,8 +39573,8 @@
 			"uid" : 783356,
 			"Name" : "DoorVrt_L4_BP",
 			"State" : 2,
-			"Group" : "",
-			"Layer" : "",
+			"Group" : "Floor3",
+			"Layer" : "Floor3",
 			"x" : -1536.000000,
 			"y" : -1728.000000,
 			"asset_uid" : 554103,
@@ -39577,8 +39584,8 @@
 					"uid" : 389628,
 					"Name" : "Trigger2D",
 					"State" : 2,
-					"Group" : "",
-					"Layer" : "",
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
 					"x" : 0.000000,
 					"y" : 0.000000,
 					"width" : 195.687607,
@@ -39590,8 +39597,8 @@
 					"uid" : 138033,
 					"Name" : "DoorScript",
 					"State" : 2,
-					"Group" : "",
-					"Layer" : "",
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
 					"asset_uid" : 685438,
 					"Count" : 6,
 					"Node" : [
@@ -39704,8 +39711,8 @@
 					"uid" : 345544,
 					"Name" : "DoorVertLvl4",
 					"State" : 2,
-					"Group" : "",
-					"Layer" : "",
+					"Group" : "Floor3",
+					"Layer" : "Floor3",
 					"axis_scale" : 1.000000,
 					"Depth" : 0.500000,
 					"UseDepth" : true,
@@ -39741,6 +39748,603 @@
 					]
 				}
 			]
+		},
+		{
+			"type" : "BlueprintInst",
+			"uid" : 553078,
+			"Name" : "Enemies",
+			"State" : 2,
+			"Group" : "Floor1",
+			"Layer" : "Floor1",
+			"x" : 528.000000,
+			"y" : -1584.000000,
+			"asset_uid" : 883318,
+			"Childs" : [
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 72834,
+					"Name" : "SoldierGrabber_Legs",
+					"State" : 2,
+					"Group" : "Floor1",
+					"Layer" : "Floor1",
+					"Depth" : 0.500000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : -1780856064,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 881278,
+					"Name" : "SoldierAK47_Legs",
+					"State" : 2,
+					"Group" : "Floor1",
+					"Layer" : "Floor1",
+					"Depth" : 0.470000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : -1780856064,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 94582,
+					"Name" : "SoldierMachete_Legs",
+					"State" : 2,
+					"Group" : "Floor1",
+					"Layer" : "Floor1",
+					"Depth" : 0.500000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : -1780856064,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 818940,
+					"Name" : "SoldierStalker_Legs",
+					"State" : 2,
+					"Group" : "Floor1",
+					"Layer" : "Floor1",
+					"Depth" : 0.500000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : -1780856064,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 993895,
+					"Name" : "SoldierAK47",
+					"State" : 2,
+					"Group" : "Floor1",
+					"Layer" : "Floor1",
+					"Depth" : 0.465000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 2,
+						"Elem" : [
+							{
+								"x" : -288.000000,
+								"y" : -2112.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : 432.000000,
+								"y" : -1584.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 365581472,
+					"components" : [
+						{
+							"type" : "ScriptMetaDataCompInst"
+						},
+						{
+							"type" : "Track2DComp",
+							"flip_mode" : 0,
+							"tracks" :
+							{
+								"count" : 2,
+								"Elem" : [
+									{
+										"data_type" : 2,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 4,
+											"Elem" : [
+												{
+													"x" : -288.000000,
+													"y" : -2112.000000
+												},
+												{
+													"x" : 288.000000,
+													"y" : -2112.000000
+												},
+												{
+													"x" : 288.000000,
+													"y" : -1584.000000
+												},
+												{
+													"x" : -288.000000,
+													"y" : -1584.000000
+												}
+											]
+										}
+									},
+									{
+										"data_type" : 2,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 4,
+											"Elem" : [
+												{
+													"x" : 432.000000,
+													"y" : -1584.000000
+												},
+												{
+													"x" : 960.000000,
+													"y" : -1584.000000
+												},
+												{
+													"x" : 960.000000,
+													"y" : -2112.000000
+												},
+												{
+													"x" : 432.000000,
+													"y" : -2112.000000
+												}
+											]
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 509683,
+					"Name" : "SoldierGrabber",
+					"State" : 2,
+					"Group" : "Floor1",
+					"Layer" : "Floor1",
+					"Depth" : 0.500000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : 782972,
+					"components" : [
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 276131,
+					"Name" : "SoldierMachete",
+					"State" : 2,
+					"Group" : "Floor1",
+					"Layer" : "Floor1",
+					"Depth" : 0.500000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : 63478,
+					"components" : [
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 310853,
+					"Name" : "SoldierStalker",
+					"State" : 2,
+					"Group" : "Floor1",
+					"Layer" : "Floor1",
+					"Depth" : 0.500000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : 524286,
+					"components" : [
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				},
+				{
+					"type" : "NavMesh2DGen",
+					"uid" : 96375,
+					"Name" : "NavMesh",
+					"State" : 2,
+					"Group" : "Floor1",
+					"Layer" : "Floor1",
+					"collider_radius" : 32.000000
+				},
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 884120,
+					"Name" : "EnemiesPool",
+					"State" : 2,
+					"Group" : "Floor1",
+					"Layer" : "Floor1",
+					"asset_uid" : 752380,
+					"Count" : 17,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 553078,
+											"child_uid" : 993895,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 553078,
+											"child_uid" : 881278,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 553078,
+											"child_uid" : 276131,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 553078,
+											"child_uid" : 509683,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 553078,
+											"child_uid" : 310853,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 553078,
+											"child_uid" : 94582,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 553078,
+											"child_uid" : 72834,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 553078,
+											"child_uid" : 818940,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 553078,
+											"child_uid" : 993895,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 553078,
+											"child_uid" : 509683,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 553078,
+											"child_uid" : 276131,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 553078,
+											"child_uid" : 310853,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 553078,
+											"child_uid" : 96375,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				}
+			]
 		}
 	],
 	"asset_instances" : [
@@ -39763,28 +40367,6 @@
 					"scene" : "coldrain.sca",
 					"inst_uid" : 1105479296,
 					"inst_name" : "Crosshair"
-				}
-			]
-		},
-		{
-			"asset_uid" : 365581472,
-			"asset_name" : "SoldierAK47_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 913568320,
-					"inst_name" : "SoldiersAK47"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : -112360960,
-					"inst_name" : "SoldiersAK47_Legs"
 				}
 			]
 		},
@@ -39847,34 +40429,12 @@
 		},
 		{
 			"asset_uid" : 200902816,
-			"asset_name" : "MainScript",
+			"asset_name" : "Main",
 			"instances" : [
 				{
 					"scene" : "coldrain.sca",
 					"inst_uid" : -211527680,
 					"inst_name" : "MainScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 63478,
-			"asset_name" : "SoldierMachete_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 979709,
-					"inst_name" : "SoldiersMachete"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 947061,
-					"inst_name" : "SoldiersMachete_Legs"
 				}
 			]
 		},
@@ -39899,50 +40459,6 @@
 					"inst_child_uid" : 0,
 					"is_asset" : false,
 					"inst_name" : "Healthbar"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 96629,
-					"inst_name" : "SoldiersGrabber_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 425716,
-					"inst_name" : "SoldiersStalker_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : 524286,
-			"asset_name" : "SoldierStalker_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 981628,
-					"inst_name" : "SoldiersStalker"
-				}
-			]
-		},
-		{
-			"asset_uid" : 782972,
-			"asset_name" : "SoldierGrabber_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 520308,
-					"inst_name" : "SoldiersGrabber"
 				}
 			]
 		},
@@ -40438,6 +40954,17 @@
 					"scene" : "coldrain.sca",
 					"inst_uid" : 783356,
 					"inst_name" : "DoorVrt_L4_BP"
+				}
+			]
+		},
+		{
+			"asset_uid" : 883318,
+			"asset_name" : "Enemies",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 553078,
+					"inst_name" : "Enemies"
 				}
 			]
 		}
