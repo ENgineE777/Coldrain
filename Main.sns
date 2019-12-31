@@ -184,8 +184,11 @@ class Main
 		}
 	}
 
-	void ActivateEnemies(string&in group_name)
+	void ActivateFloor(string&in group_name)
 	{
+		blood_splash_obj.ClearInstances();
+		bullet_wall_hit.ClearInstances();
+
 		if (active_character_pool != null)
 		{
 			active_character_pool.RestartLevel();
@@ -210,7 +213,7 @@ class Main
 		string str_floor_to = "Floor" + floor_to;
 		core.scene.SetStateToGroup(str_floor_to, 2);
 
-		ActivateEnemies(str_floor_to);
+		ActivateFloor(str_floor_to);
 
 		hero[0].legs_phys.MoveTo(markers[marker_index].x, markers[marker_index].y);
 	}
@@ -245,16 +248,12 @@ class Main
 		hero[0].lock_to_target = false;
 		hero[0].in_fly_to_target = false;
 
-
-		blood_splash_obj.ClearInstances();
-		bullet_wall_hit.ClearInstances();
-
 		for (int i = 0; i < character_pools.get_length(); i++)
 		{
 			character_pools[i].RestartLevel();
 		}
 
-		ActivateEnemies("Floor1");
+		ActivateFloor("Floor1");
 	}
 
 	void OnInit()
