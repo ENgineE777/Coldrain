@@ -70,6 +70,7 @@ class Character
 		spill_blood = -1.0f;
 		action_time = -1.0f;
 
+		track.Reset();
 		track.Activate(true);
 
 		graph.GotoNode("Walk");
