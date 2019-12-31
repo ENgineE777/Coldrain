@@ -16,12 +16,8 @@ class EnemiesPool : ChracterPoolBase
 
 	void OnInit()
 	{
-		group_name = "Floor1";
-
 		@hero = @main.GetHero();
 		main.character_pools.insertLast(this);
-
-		@main.active_character_pool = this;
 
 		RestartLevel();
 	}

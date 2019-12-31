@@ -15,7 +15,7 @@
 	"camera_pos" :
 	{
 		"x" : 168.069702,
-		"y" : -1458.257324
+		"y" : -1458.257202
 	},
 	"camera_zoom" : 0.760000,
 	"move_mode" : 0,
@@ -11292,7 +11292,7 @@
 			"Group" : "",
 			"Layer" : "",
 			"main_class" : "EnemiesPool",
-			"Count" : 17,
+			"Count" : 18,
 			"Node" : [
 				{
 					"type" : 1,
@@ -11339,7 +11339,7 @@
 					"name" : "soldiersStalker",
 					"pos" :
 					{
-						"x" : -421.500000,
+						"x" : -422.500000,
 						"y" : 144.500000
 					},
 					"prefix" : ""
@@ -11495,6 +11495,15 @@
 					"Count" : 0,
 					"Link" : [
 					]
+				},
+				{
+					"type" : 3,
+					"name" : "const",
+					"pos" :
+					{
+						"x" : -700.500000,
+						"y" : 90.500000
+					}
 				}
 			],
 			"dep_count" : 0,
@@ -11527,10 +11536,10 @@
 			"uid" : 883318,
 			"ed_camera_2d" :
 			{
-				"x" : -205.000000,
-				"y" : -5.000000
+				"x" : -286.641510,
+				"y" : -0.150944
 			},
-			"ed_camera_2d_zoom" : 1.000000,
+			"ed_camera_2d_zoom" : 1.060000,
 			"Name" : "Enemies",
 			"Childs" : [
 				{
@@ -11734,7 +11743,7 @@
 					"Group" : "",
 					"Layer" : "",
 					"asset_uid" : 752380,
-					"Count" : 17,
+					"Count" : 18,
 					"Node" : [
 						{
 							"callback_type" : "OnContact",
@@ -11986,6 +11995,23 @@
 											"uid" : 883318,
 											"child_uid" : 96375,
 											"is_asset" : true
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
 										}
 									}
 								]
@@ -40051,7 +40077,7 @@
 					"Group" : "Floor1",
 					"Layer" : "Floor1",
 					"asset_uid" : 752380,
-					"Count" : 17,
+					"Count" : 18,
 					"Node" : [
 						{
 							"callback_type" : "OnContact",
@@ -40327,6 +40353,23 @@
 						},
 						{
 							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "Floor1",
 							"objects_list" :
 							{
 								"count" : 1,

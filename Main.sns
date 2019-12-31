@@ -282,6 +282,8 @@ class Main
 		hero[0].is_player = true;
 
 		RestartLevel();
+
+		ActivateEnemies("Floor1");
 	}
 
 	void KickEnemies(float dist)
