@@ -27,8 +27,8 @@
 			"uid" : 200902816,
 			"ed_camera_2d" :
 			{
-				"x" : 1188.706299,
-				"y" : 498.498230
+				"x" : 1081.389404,
+				"y" : 607.034729
 			},
 			"ed_camera_2d_zoom" : 0.820000,
 			"Name" : "Main",
@@ -78,6 +78,7 @@
 					},
 					"param_type" : 3,
 					"call_type" : 2,
+					"priority" : 0,
 					"Count" : 0,
 					"Link" : [
 					]
@@ -142,6 +143,7 @@
 					},
 					"param_type" : 0,
 					"call_type" : 1,
+					"priority" : 5,
 					"Count" : 0,
 					"Link" : [
 					]
@@ -175,6 +177,7 @@
 					},
 					"param_type" : 0,
 					"call_type" : 0,
+					"priority" : 0,
 					"Count" : 1,
 					"Link" : [
 						{
@@ -243,6 +246,7 @@
 					},
 					"param_type" : 4,
 					"call_type" : 0,
+					"priority" : 0,
 					"Count" : 14,
 					"Link" : [
 						{
@@ -468,6 +472,7 @@
 					},
 					"param_type" : 0,
 					"call_type" : 0,
+					"priority" : 0,
 					"Count" : 1,
 					"Link" : [
 						{
@@ -507,6 +512,7 @@
 					},
 					"param_type" : 0,
 					"call_type" : 0,
+					"priority" : 0,
 					"Count" : 1,
 					"Link" : [
 						{
@@ -527,6 +533,7 @@
 					},
 					"param_type" : 0,
 					"call_type" : 0,
+					"priority" : 0,
 					"Count" : 1,
 					"Link" : [
 						{
@@ -547,6 +554,7 @@
 					},
 					"param_type" : 0,
 					"call_type" : 0,
+					"priority" : 0,
 					"Count" : 1,
 					"Link" : [
 						{
@@ -9354,6 +9362,7 @@
 					},
 					"param_type" : 0,
 					"call_type" : 0,
+					"priority" : 0,
 					"Count" : 1,
 					"Link" : [
 						{
@@ -9374,6 +9383,7 @@
 					},
 					"param_type" : 0,
 					"call_type" : 0,
+					"priority" : 0,
 					"Count" : 1,
 					"Link" : [
 						{
@@ -11283,8 +11293,8 @@
 			"uid" : 752380,
 			"ed_camera_2d" :
 			{
-				"x" : -250.000000,
-				"y" : -43.000000
+				"x" : -215.000000,
+				"y" : 4.000000
 			},
 			"ed_camera_2d_zoom" : 1.000000,
 			"Name" : "EnemiesPool",
@@ -11420,6 +11430,7 @@
 					},
 					"param_type" : 0,
 					"call_type" : 0,
+					"priority" : 0,
 					"Count" : 4,
 					"Link" : [
 						{
@@ -11478,6 +11489,7 @@
 					},
 					"param_type" : 0,
 					"call_type" : 1,
+					"priority" : 0,
 					"Count" : 0,
 					"Link" : [
 					]
@@ -11492,13 +11504,14 @@
 					},
 					"param_type" : 0,
 					"call_type" : 2,
+					"priority" : 0,
 					"Count" : 0,
 					"Link" : [
 					]
 				},
 				{
 					"type" : 3,
-					"name" : "const",
+					"name" : "group_name",
 					"pos" :
 					{
 						"x" : -700.500000,

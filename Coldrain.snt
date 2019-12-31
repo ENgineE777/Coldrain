@@ -197,18 +197,13 @@
 			"type" : 1
 		},
 		{
-			"uid" : 294140,
-			"name" : "DoorHrz_L4_BP",
-			"type" : 1
-		},
-		{
 			"uid" : 556279,
 			"name" : "DoorHrz_L4_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 489725,
-			"name" : "DoorVrt_L1_BP",
+			"uid" : 294140,
+			"name" : "DoorHrz_L4_BP",
 			"type" : 1
 		},
 		{
@@ -217,12 +212,17 @@
 			"type" : 1
 		},
 		{
-			"uid" : 490996,
-			"name" : "DoorVrt_L2_BP",
+			"uid" : 489725,
+			"name" : "DoorVrt_L1_BP",
 			"type" : 1
 		},
 		{
 			"uid" : 291831,
+			"name" : "DoorVrt_L2_BP",
+			"type" : 1
+		},
+		{
+			"uid" : 490996,
 			"name" : "DoorVrt_L2_BP",
 			"type" : 1
 		},
@@ -317,17 +317,17 @@
 			"type" : 3
 		},
 		{
-			"uid" : 196599,
-			"name" : "DoorHrz_L1_BP",
-			"type" : 1
-		},
-		{
 			"uid" : 390782,
 			"name" : "DoorHrz_L1_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 850557,
+			"uid" : 196599,
+			"name" : "DoorHrz_L1_BP",
+			"type" : 1
+		},
+		{
+			"uid" : 588157,
 			"name" : "DoorHrz_L4_BP",
 			"type" : 1
 		},
@@ -337,13 +337,8 @@
 			"type" : 1
 		},
 		{
-			"uid" : 588157,
+			"uid" : 850557,
 			"name" : "DoorHrz_L4_BP",
-			"type" : 1
-		},
-		{
-			"uid" : 523255,
-			"name" : "DoorVrt_L1_BP",
 			"type" : 1
 		},
 		{
@@ -352,12 +347,17 @@
 			"type" : 1
 		},
 		{
-			"uid" : 357495,
-			"name" : "DoorVrt_L2_BP",
+			"uid" : 523255,
+			"name" : "DoorVrt_L1_BP",
 			"type" : 1
 		},
 		{
 			"uid" : 718583,
+			"name" : "DoorVrt_L2_BP",
+			"type" : 1
+		},
+		{
+			"uid" : 357495,
 			"name" : "DoorVrt_L2_BP",
 			"type" : 1
 		},
@@ -502,7 +502,7 @@
 			"type" : 3
 		},
 		{
-			"uid" : 424446,
+			"uid" : 64373,
 			"name" : "ChangeFloor6-5",
 			"type" : 1
 		},
@@ -512,7 +512,7 @@
 			"type" : 1
 		},
 		{
-			"uid" : 64373,
+			"uid" : 424446,
 			"name" : "ChangeFloor6-5",
 			"type" : 1
 		},
