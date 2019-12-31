@@ -189,6 +189,8 @@ class Main
 		blood_splash_obj.ClearInstances();
 		bullet_wall_hit.ClearInstances();
 
+		core.scene.SetStateToGroup(group_name, 2);
+
 		if (active_character_pool != null)
 		{
 			active_character_pool.RestartLevel();
@@ -229,6 +231,13 @@ class Main
 
 	void RestartLevel()
 	{
+		core.scene.SetStateToGroup("Floor1", 0);
+		core.scene.SetStateToGroup("Floor2", 0);
+		core.scene.SetStateToGroup("Floor3", 0);
+		core.scene.SetStateToGroup("Floor4", 0);
+		core.scene.SetStateToGroup("Floor5", 0);
+		core.scene.SetStateToGroup("Floor6", 0);
+
 		core.scene.SetStateToGroup("Ground", 2);
 		core.scene.SetStateToGroup("Tunnels", 0);
 
@@ -258,13 +267,6 @@ class Main
 
 	void OnInit()
 	{
-		core.scene.SetStateToGroup("Floor1", 2);
-		core.scene.SetStateToGroup("Floor2", 0);
-		core.scene.SetStateToGroup("Floor3", 0);
-		core.scene.SetStateToGroup("Floor4", 0);
-		core.scene.SetStateToGroup("Floor5", 0);
-		core.scene.SetStateToGroup("Floor6", 0);
-
 		alias_move_vert = core.controls.GetAliasIndex("Hero.MOVE_VERT");
 		alias_move_horz = core.controls.GetAliasIndex("Hero.MOVE_HORZ");
 		alias_move_strafe = core.controls.GetAliasIndex("Hero.MOVE_STRAFE");
