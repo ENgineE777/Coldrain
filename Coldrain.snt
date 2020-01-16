@@ -39,7 +39,7 @@
 		{
 			"uid" : -1,
 			"name" : "Colliders",
-			"type" : 0
+			"type" : 3
 		},
 		{
 			"uid" : 717303,
@@ -99,7 +99,7 @@
 		{
 			"uid" : -1,
 			"name" : "Colliders",
-			"type" : 0
+			"type" : 3
 		},
 		{
 			"uid" : 228340,
@@ -167,6 +167,11 @@
 			"type" : 1
 		},
 		{
+			"uid" : 947455,
+			"name" : "Grass",
+			"type" : 1
+		},
+		{
 			"uid" : 950007,
 			"name" : "Item_CardLvl1",
 			"type" : 1
@@ -202,18 +207,13 @@
 			"type" : 1
 		},
 		{
-			"uid" : 294140,
-			"name" : "DoorHrz_L4_BP",
-			"type" : 1
-		},
-		{
 			"uid" : 556279,
 			"name" : "DoorHrz_L4_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 489725,
-			"name" : "DoorVrt_L1_BP",
+			"uid" : 294140,
+			"name" : "DoorHrz_L4_BP",
 			"type" : 1
 		},
 		{
@@ -222,12 +222,17 @@
 			"type" : 1
 		},
 		{
-			"uid" : 490996,
-			"name" : "DoorVrt_L2_BP",
+			"uid" : 489725,
+			"name" : "DoorVrt_L1_BP",
 			"type" : 1
 		},
 		{
 			"uid" : 291831,
+			"name" : "DoorVrt_L2_BP",
+			"type" : 1
+		},
+		{
+			"uid" : 490996,
 			"name" : "DoorVrt_L2_BP",
 			"type" : 1
 		},
@@ -302,6 +307,11 @@
 			"type" : 2
 		},
 		{
+			"uid" : 326270,
+			"name" : "Enemies",
+			"type" : 1
+		},
+		{
 			"uid" : 555510,
 			"name" : "Floor3",
 			"type" : 1
@@ -322,17 +332,17 @@
 			"type" : 3
 		},
 		{
-			"uid" : 196599,
-			"name" : "DoorHrz_L1_BP",
-			"type" : 1
-		},
-		{
 			"uid" : 390782,
 			"name" : "DoorHrz_L1_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 850557,
+			"uid" : 196599,
+			"name" : "DoorHrz_L1_BP",
+			"type" : 1
+		},
+		{
+			"uid" : 588157,
 			"name" : "DoorHrz_L4_BP",
 			"type" : 1
 		},
@@ -342,13 +352,8 @@
 			"type" : 1
 		},
 		{
-			"uid" : 588157,
+			"uid" : 850557,
 			"name" : "DoorHrz_L4_BP",
-			"type" : 1
-		},
-		{
-			"uid" : 523255,
-			"name" : "DoorVrt_L1_BP",
 			"type" : 1
 		},
 		{
@@ -357,12 +362,17 @@
 			"type" : 1
 		},
 		{
-			"uid" : 357495,
-			"name" : "DoorVrt_L2_BP",
+			"uid" : 523255,
+			"name" : "DoorVrt_L1_BP",
 			"type" : 1
 		},
 		{
 			"uid" : 718583,
+			"name" : "DoorVrt_L2_BP",
+			"type" : 1
+		},
+		{
+			"uid" : 357495,
 			"name" : "DoorVrt_L2_BP",
 			"type" : 1
 		},
@@ -430,6 +440,11 @@
 			"uid" : -1,
 			"name" : "",
 			"type" : 2
+		},
+		{
+			"uid" : 816245,
+			"name" : "Enemies",
+			"type" : 1
 		},
 		{
 			"uid" : 130293,
@@ -507,7 +522,7 @@
 			"type" : 3
 		},
 		{
-			"uid" : 424446,
+			"uid" : 64373,
 			"name" : "ChangeFloor6-5",
 			"type" : 1
 		},
@@ -517,7 +532,7 @@
 			"type" : 1
 		},
 		{
-			"uid" : 64373,
+			"uid" : 424446,
 			"name" : "ChangeFloor6-5",
 			"type" : 1
 		},
@@ -549,7 +564,7 @@
 		{
 			"uid" : -1,
 			"name" : "UI",
-			"type" : 0
+			"type" : 3
 		},
 		{
 			"uid" : 1105479296,
@@ -626,7 +641,7 @@
 		{
 			"uid" : -1,
 			"name" : "Doors",
-			"type" : 0
+			"type" : 3
 		},
 		{
 			"uid" : 687485,
@@ -679,6 +694,11 @@
 			"type" : 1
 		},
 		{
+			"uid" : 292725,
+			"name" : "Grass",
+			"type" : 1
+		},
+		{
 			"uid" : -1,
 			"name" : "",
 			"type" : 2
@@ -701,6 +721,11 @@
 		{
 			"uid" : 752380,
 			"name" : "EnemiesPool",
+			"type" : 1
+		},
+		{
+			"uid" : 258164,
+			"name" : "Grass",
 			"type" : 1
 		},
 		{
@@ -956,7 +981,7 @@
 		{
 			"uid" : -1,
 			"name" : "Hero",
-			"type" : 0
+			"type" : 3
 		},
 		{
 			"uid" : -1,
@@ -1159,6 +1184,11 @@
 			"type" : 1
 		},
 		{
+			"uid" : 913653,
+			"name" : "Grass",
+			"type" : 1
+		},
+		{
 			"uid" : 357886,
 			"name" : "Marker",
 			"type" : 1
@@ -1246,7 +1276,7 @@
 		{
 			"uid" : -1,
 			"name" : "UI",
-			"type" : 0
+			"type" : 3
 		},
 		{
 			"uid" : 784383,

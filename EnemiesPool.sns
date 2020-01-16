@@ -217,7 +217,7 @@ class EnemiesPool : ChracterPoolBase
 					enemy.prev_x = enemy.x; 
 					enemy.prev_y = enemy.y;
 
-					if ((IsPlayerVisibleByRadius(enemy, 175.0f) || core.utils.IsPointInSector(Vector2(hero.x, hero.y - 32), Vector2(enemy.x, enemy.y - 32), enemy.angle, enemy_view_dist, enemy_view_angle, main.show_debug_check)) &&
+					if ((core.utils.IsPointInSector(Vector2(hero.x, hero.y - 32), Vector2(enemy.x, enemy.y - 32), enemy.angle, enemy_view_dist, enemy_view_angle, main.show_debug_check)) &&
 					 	IsPlayerVisible(enemy, enemy_view_dist))
 					{
 						enemy.track.Activate(false);
@@ -337,7 +337,7 @@ class EnemiesPool : ChracterPoolBase
 						}
 						else
 						{
-							enemy.legs_phys.Move(-dir_y * 350.0f * dt * enemy.strafe_dir, dir_x * 350.0f * dt * enemy.strafe_dir, 1, 0);
+							enemy.legs_phys.Move(-dir_y * 350.0f * dt * enemy.strafe_dir, dir_x * 350.0f * dt * enemy.strafe_dir, 3, 0);
 
 							if (enemy.action_time < 0.0f)
 							{
@@ -400,7 +400,7 @@ class EnemiesPool : ChracterPoolBase
 					else
 					if (enemy.state == Strafing)
 					{
-						enemy.legs_phys.Move(-dir_y * 350.0f * dt * enemy.strafe_dir, dir_x * 350.0f * dt * enemy.strafe_dir, 1, 0);
+						enemy.legs_phys.Move(-dir_y * 350.0f * dt * enemy.strafe_dir, dir_x * 350.0f * dt * enemy.strafe_dir, 3, 0);
 
 						if (enemy.action_time < 0.0f)
 						{
@@ -527,7 +527,7 @@ class EnemiesPool : ChracterPoolBase
 							enemy.action_time2 -= dt;
 						}
 
-						enemy.legs_phys.Move(enemy.strafe_dir * 250.0f * dt, enemy.strafe_dir2 * 250.0f * dt, 1, 0);
+						enemy.legs_phys.Move(enemy.strafe_dir * 250.0f * dt, enemy.strafe_dir2 * 250.0f * dt, 3, 0);
 
 						if (enemy.action_time < 0.0f)
 						{
@@ -654,7 +654,7 @@ class EnemiesPool : ChracterPoolBase
 							enemy.action_time2 -= dt;
 						}
 
-						enemy.legs_phys.Move(enemy.strafe_dir * 250.0f * dt, enemy.strafe_dir2 * 250.0f * dt, 1, 0);
+						enemy.legs_phys.Move(enemy.strafe_dir * 250.0f * dt, enemy.strafe_dir2 * 250.0f * dt, 3, 0);
 
 						if (enemy.action_time < 0.0f)
 						{
@@ -694,7 +694,7 @@ class EnemiesPool : ChracterPoolBase
 						}
 						else
 						{
-							enemy.legs_phys.Move(enemy.strafe_dir * 550.0f * dt, enemy.strafe_dir2 * 550.0f * dt, 1, 0);
+							enemy.legs_phys.Move(enemy.strafe_dir * 550.0f * dt, enemy.strafe_dir2 * 550.0f * dt, 3, 0);
 
 							if (core.utils.IsPointInRectangle(Vector2(hero.x, hero.y - 32.0f), Vector2(enemy.x,  enemy.y - 32.0f), Vector2(0.0f, 0.0f), Vector2(110.0f, 100.0f), enemy.angle, main.show_debug_check))
 							{

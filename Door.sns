@@ -14,8 +14,6 @@ class DoorController
 
 	void OnEnter(int self_index, string&in name, int index)
 	{
-		core.Log(name + " " + self_index);
-
 		if (main.CanOpen(door[0].level))
 		{
 			door[0].visible = 0;

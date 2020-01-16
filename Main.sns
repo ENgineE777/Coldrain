@@ -50,6 +50,9 @@ class Main
 	UIImage@ health_level;
 	UILabel@ combo_counter;
 
+	float timer_value = 0.0f;
+	UILabel@ timer_label;
+
 	int alias_move_vert = -1;
 	int alias_move_horz = -1;
 	int alias_move_strafe = -1;
@@ -62,7 +65,8 @@ class Main
 	int alias_kick = -1;
 	int alias_cover = -1;
 
-	float speed = 500.0f;
+	float crouch_speed = 225.0f;
+	float speed = 350.0f;
 	float strafe_speed = 900.0f;
 
 	float crosshair_dist = 90.0f;
@@ -77,6 +81,7 @@ class Main
 	int player_group = 1;
 
 	int holded_door_card = 0;
+	int grass_counter = 0;
 
 	array<ChracterPoolBase@> character_pools;
 	ChracterPoolBase@ active_character_pool;
@@ -227,6 +232,14 @@ class Main
 			KickEnemies(150);
 			hero[0].lock_to_target = false;
 		}
+		else
+		if (event_name == "Step")
+		{
+			if (!is_crouching)
+			{
+				active_character_pool.AgroEnemies(475);
+			}
+		}
 	}
 
 	void RestartLevel()
@@ -243,7 +256,22 @@ class Main
 
 		ui_restart_message.SetState(0);
 
-		hero[0].legs_phys.MoveTo(markers[0].x, markers[0].y);
+		item_card_lvl1[0].visible = 1;
+		item_card_lvl2[0].visible = 1;
+		item_card_lvl3[0].visible = 1;
+		item_card_lvl4[0].visible = 1;
+
+		holded_door_card = 0;
+		grass_counter = 0;
+
+		//int marke_index = 0;
+		//ActivateFloor("Floor1");
+
+		int marke_index = 2;
+		ActivateFloor("Floor2");
+
+
+		hero[0].legs_phys.MoveTo(markers[marke_index].x, markers[marke_index].y);
 		hero[0].visible = 1;
 		hero[0].legs_visible = 1;
 		hero[0].hp = 5;
@@ -262,7 +290,7 @@ class Main
 			character_pools[i].RestartLevel();
 		}
 
-		ActivateFloor("Floor1");
+		timer_value = 0.0f;
 	}
 
 	void OnInit()
@@ -338,7 +366,7 @@ class Main
 
 	void UpdateHero(Character@ hero, float dt)
 	{
-		is_crouching = (core.controls.GetState(alias_cover, 0) > 0);
+		is_crouching = (core.controls.GetState(alias_cover, 0) > 0) || (grass_counter > 0);
 		hero.legs_phys.SetGroup(is_crouching ? 4 : 1);
 		hero.alpha = is_crouching ? 0.5f : 1.0f;
 		player_group = is_crouching ? 7 : 1;
@@ -425,7 +453,8 @@ class Main
 					dir_x /= len;
 					dir_y /= len;
 
-					hero.legs_phys.Move(dir_x * dt * speed, dir_y * dt * speed, 3, 0);
+					float cur_speed = dt * (is_crouching ? crouch_speed : speed);
+					hero.legs_phys.Move(dir_x * cur_speed, dir_y * cur_speed, 3, 0);
 
 					if (core.controls.GetState(alias_move_strafe, 1) > 0)
 					{
@@ -714,7 +743,12 @@ class Main
 
 	void Update(float dt)
 	{
+		timer_value += dt;
+		timer_label.SetText("" + timer_value);
+
 		UpdateHero(hero[0], dt);
 		UpdateBullets(dt);
+
+		core.render.DebugText(10, 30, "Grass: " + grass_counter);
 	}
 }
