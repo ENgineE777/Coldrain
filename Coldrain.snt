@@ -94,7 +94,7 @@
 		{
 			"uid" : -1,
 			"name" : "Floor2",
-			"type" : 0
+			"type" : 3
 		},
 		{
 			"uid" : -1,
@@ -224,7 +224,7 @@
 		{
 			"uid" : -1,
 			"name" : "Lasers",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : 30077,
@@ -309,6 +309,11 @@
 		{
 			"uid" : 227316,
 			"name" : "Gas",
+			"type" : 1
+		},
+		{
+			"uid" : 163191,
+			"name" : "Grass",
 			"type" : 1
 		},
 		{
@@ -626,7 +631,7 @@
 		{
 			"uid" : -1,
 			"name" : "Doors",
-			"type" : 0
+			"type" : 3
 		},
 		{
 			"uid" : 687485,
@@ -1066,7 +1071,7 @@
 		{
 			"uid" : -1,
 			"name" : "Doors",
-			"type" : 0
+			"type" : 3
 		},
 		{
 			"uid" : 291455,

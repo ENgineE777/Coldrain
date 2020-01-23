@@ -12,7 +12,7 @@ class EnemiesPool : ChracterPoolBase
 
 	Character@ hero;
 	float enemy_view_dist = 700.0f;
-	float enemy_view_angle = 90.0f * 0.01745329f;
+	float enemy_view_angle = 65.0f * 0.01745329f;
 
 	void OnInit()
 	{
@@ -162,7 +162,7 @@ class EnemiesPool : ChracterPoolBase
 		}
 	}
 
-	void AgroEnemies(float dist)
+	void AgroEnemies(float dist, bool check_visibility)
 	{
 		float dist2 = dist * dist;
 
@@ -181,6 +181,17 @@ class EnemiesPool : ChracterPoolBase
 
 			if (dir_x * dir_x + dir_y * dir_y < dist2)
 			{
+				float pos_x, pos_y, normal_x, normal_y;
+				string str_object;
+				int obj_index;
+
+				float dist_offset = 35.0f;
+
+				if (check_visibility && !IsPlayerVisible(enemy, dist))
+				{
+					continue;
+				}
+
 				enemy.track.Activate(false);
 				enemy.state = Idle;
 			}

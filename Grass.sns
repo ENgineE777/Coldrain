@@ -6,11 +6,17 @@ class Grass
 
 	void OnEnter(int self_index, string&in name, int index)
 	{
-		main.grass_counter++;
+		if (name == "Hero_Legs")
+		{
+			main.grass_counter++;
+		}
 	}
 
 	void OnLeave(int self_index, string&in name, int index)
 	{
-		main.grass_counter--;
+		if (name == "Hero_Legs")
+		{
+			main.grass_counter--;
+		}
 	}
 }

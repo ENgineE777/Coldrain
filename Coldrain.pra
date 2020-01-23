@@ -6,8 +6,8 @@
 	"scenes" : [
 		{
 			"path" : "coldrain.sca",
-			"selected_object" : 686716,
-			"selected_object_asset" : false,
+			"selected_object" : 324092,
+			"selected_object_asset" : true,
 			"include" : [
 			]
 		}
