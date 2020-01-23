@@ -1,0 +1,61 @@
+#import "Main"
+
+class Laser
+{
+	float x,y;	
+	int visible = 1;
+	int level;
+}
+
+class LaserController
+{
+	Main@ main;
+	int start_state = 0;
+	float on_time = 3.0f;
+	float off_time = 3.0f;
+	int cur_state = 0;
+	float time_to_change = 0.0f;
+	array<Laser> laser;
+
+	void SetState(int state)
+	{
+		cur_state = state;
+
+		time_to_change = cur_state == 1 ? on_time : off_time;
+
+		for (int i = 0; i < laser.get_length(); i++)
+		{
+			laser[i].visible = cur_state == 1 ? 1 : 0;
+		}
+	}
+
+	void OnInit()
+	{
+		if (start_state == 2)
+		{
+			return;
+		}
+
+		SetState(start_state);
+	}
+
+	void Update(float dt)
+	{
+		if (start_state == 2)
+		{
+			return;
+		}
+
+		time_to_change -= dt;
+
+		if (time_to_change < 0.0f)
+		{
+			SetState(1 - cur_state);
+		}
+	}
+
+	void OnTouch(int self_index, string&in name, int index)
+	{
+		main.MakeCharacterDead(main.GetHero(), 0.0f, 1.0f);
+	}
+}

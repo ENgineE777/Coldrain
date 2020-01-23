@@ -6,7 +6,7 @@
 	"scenes" : [
 		{
 			"path" : "coldrain.sca",
-			"selected_object" : 993895,
+			"selected_object" : 686716,
 			"selected_object_asset" : false,
 			"include" : [
 			]
@@ -38,11 +38,11 @@
 		},
 		{
 			"name" : "Floor2",
-			"state" : 0
+			"state" : 2
 		},
 		{
 			"name" : "Floor3",
-			"state" : 2
+			"state" : 0
 		},
 		{
 			"name" : "Floor4",

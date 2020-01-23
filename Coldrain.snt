@@ -94,7 +94,7 @@
 		{
 			"uid" : -1,
 			"name" : "Floor2",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : -1,
@@ -172,11 +172,6 @@
 			"type" : 1
 		},
 		{
-			"uid" : 950007,
-			"name" : "Item_CardLvl1",
-			"type" : 1
-		},
-		{
 			"uid" : -1,
 			"name" : "",
 			"type" : 2
@@ -189,56 +184,16 @@
 		{
 			"uid" : -1,
 			"name" : "Doors",
-			"type" : 3
+			"type" : 0
 		},
 		{
-			"uid" : 327036,
+			"uid" : 62844,
 			"name" : "DoorHrz_L1_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 980094,
-			"name" : "DoorHrz_L2_BP",
-			"type" : 1
-		},
-		{
-			"uid" : 819191,
-			"name" : "DoorHrz_L3_BP",
-			"type" : 1
-		},
-		{
-			"uid" : 556279,
-			"name" : "DoorHrz_L4_BP",
-			"type" : 1
-		},
-		{
-			"uid" : 294140,
-			"name" : "DoorHrz_L4_BP",
-			"type" : 1
-		},
-		{
-			"uid" : 163580,
+			"uid" : 980597,
 			"name" : "DoorVrt_L1_BP",
-			"type" : 1
-		},
-		{
-			"uid" : 489725,
-			"name" : "DoorVrt_L1_BP",
-			"type" : 1
-		},
-		{
-			"uid" : 291831,
-			"name" : "DoorVrt_L2_BP",
-			"type" : 1
-		},
-		{
-			"uid" : 490996,
-			"name" : "DoorVrt_L2_BP",
-			"type" : 1
-		},
-		{
-			"uid" : 783356,
-			"name" : "DoorVrt_L4_BP",
 			"type" : 1
 		},
 		{
@@ -249,11 +204,41 @@
 		{
 			"uid" : -1,
 			"name" : "Items",
+			"type" : 0
+		},
+		{
+			"uid" : 950007,
+			"name" : "Item_CardLvl1",
+			"type" : 1
+		},
+		{
+			"uid" : 817012,
+			"name" : "Item_GasMask",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "Lasers",
 			"type" : 3
 		},
 		{
-			"uid" : 357366,
-			"name" : "Item_CardLvl3",
+			"uid" : 30077,
+			"name" : "LaserHorz",
+			"type" : 1
+		},
+		{
+			"uid" : 686716,
+			"name" : "LaserHorzConst",
+			"type" : 1
+		},
+		{
+			"uid" : 327029,
+			"name" : "LaserVertConst",
 			"type" : 1
 		},
 		{
@@ -264,7 +249,7 @@
 		{
 			"uid" : -1,
 			"name" : "Triggers",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : 717692,
@@ -277,8 +262,8 @@
 			"type" : 1
 		},
 		{
-			"uid" : 259447,
-			"name" : "ChangeFloor3-5",
+			"uid" : 32631,
+			"name" : "GasZone",
 			"type" : 1
 		},
 		{
@@ -289,7 +274,7 @@
 		{
 			"uid" : -1,
 			"name" : "Walls",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : 751733,
@@ -307,6 +292,11 @@
 			"type" : 2
 		},
 		{
+			"uid" : 652917,
+			"name" : "Crate",
+			"type" : 1
+		},
+		{
 			"uid" : 326270,
 			"name" : "Enemies",
 			"type" : 1
@@ -314,6 +304,11 @@
 		{
 			"uid" : 555510,
 			"name" : "Floor3",
+			"type" : 1
+		},
+		{
+			"uid" : 227316,
+			"name" : "Gas",
 			"type" : 1
 		},
 		{
@@ -332,17 +327,17 @@
 			"type" : 3
 		},
 		{
-			"uid" : 390782,
-			"name" : "DoorHrz_L1_BP",
-			"type" : 1
-		},
-		{
 			"uid" : 196599,
 			"name" : "DoorHrz_L1_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 588157,
+			"uid" : 390782,
+			"name" : "DoorHrz_L1_BP",
+			"type" : 1
+		},
+		{
+			"uid" : 850557,
 			"name" : "DoorHrz_L4_BP",
 			"type" : 1
 		},
@@ -352,13 +347,8 @@
 			"type" : 1
 		},
 		{
-			"uid" : 850557,
+			"uid" : 588157,
 			"name" : "DoorHrz_L4_BP",
-			"type" : 1
-		},
-		{
-			"uid" : 393078,
-			"name" : "DoorVrt_L1_BP",
 			"type" : 1
 		},
 		{
@@ -367,12 +357,17 @@
 			"type" : 1
 		},
 		{
-			"uid" : 718583,
-			"name" : "DoorVrt_L2_BP",
+			"uid" : 393078,
+			"name" : "DoorVrt_L1_BP",
 			"type" : 1
 		},
 		{
 			"uid" : 357495,
+			"name" : "DoorVrt_L2_BP",
+			"type" : 1
+		},
+		{
+			"uid" : 718583,
 			"name" : "DoorVrt_L2_BP",
 			"type" : 1
 		},
@@ -390,16 +385,6 @@
 			"uid" : -1,
 			"name" : "Items",
 			"type" : 3
-		},
-		{
-			"uid" : 979191,
-			"name" : "Item_CardLvl2",
-			"type" : 1
-		},
-		{
-			"uid" : 818038,
-			"name" : "Item_CardLvl4",
-			"type" : 1
 		},
 		{
 			"uid" : -1,
@@ -522,7 +507,7 @@
 			"type" : 3
 		},
 		{
-			"uid" : 64373,
+			"uid" : 424446,
 			"name" : "ChangeFloor6-5",
 			"type" : 1
 		},
@@ -532,7 +517,7 @@
 			"type" : 1
 		},
 		{
-			"uid" : 424446,
+			"uid" : 64373,
 			"name" : "ChangeFloor6-5",
 			"type" : 1
 		},
@@ -641,7 +626,7 @@
 		{
 			"uid" : -1,
 			"name" : "Doors",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : 687485,
@@ -699,6 +684,16 @@
 			"type" : 1
 		},
 		{
+			"uid" : 226302,
+			"name" : "LaserHorz",
+			"type" : 1
+		},
+		{
+			"uid" : 523639,
+			"name" : "LaserVert",
+			"type" : 1
+		},
+		{
 			"uid" : -1,
 			"name" : "",
 			"type" : 2
@@ -729,6 +724,11 @@
 			"type" : 1
 		},
 		{
+			"uid" : 589823,
+			"name" : "Laser",
+			"type" : 1
+		},
+		{
 			"uid" : 200902816,
 			"name" : "Main",
 			"type" : 1
@@ -746,7 +746,7 @@
 		{
 			"uid" : -1,
 			"name" : "Enemies",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : -1,
@@ -981,7 +981,7 @@
 		{
 			"uid" : -1,
 			"name" : "Hero",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : -1,
@@ -1066,7 +1066,7 @@
 		{
 			"uid" : -1,
 			"name" : "Doors",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : 291455,
@@ -1121,7 +1121,7 @@
 		{
 			"uid" : -1,
 			"name" : "Items",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : 586229,
@@ -1144,8 +1144,33 @@
 			"type" : 1
 		},
 		{
+			"uid" : 589813,
+			"name" : "Item_GasMask",
+			"type" : 1
+		},
+		{
 			"uid" : 884469,
 			"name" : "Item_SD",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "Lasers",
+			"type" : 3
+		},
+		{
+			"uid" : 424445,
+			"name" : "LaserHorz",
+			"type" : 1
+		},
+		{
+			"uid" : 96757,
+			"name" : "LaserVert",
 			"type" : 1
 		},
 		{
@@ -1181,6 +1206,11 @@
 		{
 			"uid" : 429937152,
 			"name" : "FloorWood",
+			"type" : 1
+		},
+		{
+			"uid" : 652406,
+			"name" : "Gas",
 			"type" : 1
 		},
 		{
@@ -1276,7 +1306,7 @@
 		{
 			"uid" : -1,
 			"name" : "UI",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : 784383,

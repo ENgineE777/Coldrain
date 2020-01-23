@@ -45,6 +45,7 @@ class Main
 	array<Item> item_card_lvl2;
 	array<Item> item_card_lvl3;
 	array<Item> item_card_lvl4;
+	array<Item> item_gas_mask;
 
 	float max_health_level_width = 1.0f;
 	UIImage@ health_level;
@@ -83,6 +84,10 @@ class Main
 	int holded_door_card = 0;
 	int grass_counter = 0;
 
+	bool has_gas_mask = false;
+	bool in_gas_zone = false;
+	float time_to_dec_health = 0.0f; 
+
 	array<ChracterPoolBase@> character_pools;
 	ChracterPoolBase@ active_character_pool;
 
@@ -95,6 +100,13 @@ class Main
 	{
 		item.visible = 0;
 		holded_door_card = item.door_level;
+	}
+
+	void OnPickupGasMask(int self_index, string&in name, int index)
+	{
+		core.render.DebugText(10, 10, "sfsd");
+		item_gas_mask[0].visible = 0; 
+		has_gas_mask = true;
 	}
 
 	void OnPickupLevelCard1(int self_index, string&in name, int index)
@@ -120,6 +132,23 @@ class Main
 	bool CanOpen(int door_level)
 	{
 		return holded_door_card >= door_level;
+	}
+
+	void EnteringGasZone(int self_index, string&in name, int index)
+	{
+		if (name == "Hero_Legs" && !has_gas_mask)
+		{
+			in_gas_zone = true;
+			time_to_dec_health = 0.5f; 
+		}
+	}
+
+	void LeavingGasZone(int self_index, string&in name, int index)
+	{
+		if (name == "Hero_Legs")
+		{
+			in_gas_zone = false;
+		}
 	}
 
 	void MakeCharacterDead(Character@ character, float dir_x, float dir_y)
@@ -257,9 +286,10 @@ class Main
 		ui_restart_message.SetState(0);
 
 		item_card_lvl1[0].visible = 1;
-		item_card_lvl2[0].visible = 1;
-		item_card_lvl3[0].visible = 1;
-		item_card_lvl4[0].visible = 1;
+		//item_card_lvl2[0].visible = 1;
+		//item_card_lvl3[0].visible = 1;
+		//item_card_lvl4[0].visible = 1;
+		item_gas_mask[0].visible = 1;
 
 		holded_door_card = 0;
 		grass_counter = 0;
@@ -267,8 +297,12 @@ class Main
 		//int marke_index = 0;
 		//ActivateFloor("Floor1");
 
-		int marke_index = 2;
-		ActivateFloor("Floor2");
+		int marke_index = 4;
+		ActivateFloor("Floor3");
+
+		has_gas_mask = false;
+		in_gas_zone = false;
+		time_to_dec_health = 0.0f; 
 
 
 		hero[0].legs_phys.MoveTo(markers[marke_index].x, markers[marke_index].y);
@@ -370,6 +404,17 @@ class Main
 		hero.legs_phys.SetGroup(is_crouching ? 4 : 1);
 		hero.alpha = is_crouching ? 0.5f : 1.0f;
 		player_group = is_crouching ? 7 : 1;
+
+		if (hero.hp > 0 && in_gas_zone)
+		{
+			time_to_dec_health -= dt;
+
+			if (time_to_dec_health < 0.0f)
+			{
+				time_to_dec_health = 0.5f;
+				DecHealth(hero, 0.0f, 1.0f);
+			}
+		}
 
 		if (hero.hp > 0)
 		{
@@ -748,7 +793,5 @@ class Main
 
 		UpdateHero(hero[0], dt);
 		UpdateBullets(dt);
-
-		core.render.DebugText(10, 30, "Grass: " + grass_counter);
 	}
 }
