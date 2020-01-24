@@ -297,8 +297,8 @@ class Main
 		//int marke_index = 0;
 		//ActivateFloor("Floor1");
 
-		int marke_index = 4;
-		ActivateFloor("Floor3");
+		int marke_index = 6;
+		ActivateFloor("Floor4");
 
 		has_gas_mask = false;
 		in_gas_zone = false;
