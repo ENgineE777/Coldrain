@@ -124,12 +124,7 @@
 		{
 			"uid" : -1,
 			"name" : "Doors",
-			"type" : 0
-		},
-		{
-			"uid" : 94452,
-			"name" : "DoorHrz_L1_BP",
-			"type" : 1
+			"type" : 3
 		},
 		{
 			"uid" : -1,
@@ -139,7 +134,7 @@
 		{
 			"uid" : -1,
 			"name" : "Triggers",
-			"type" : 0
+			"type" : 3
 		},
 		{
 			"uid" : 1048061,
@@ -179,16 +174,21 @@
 		{
 			"uid" : -1,
 			"name" : "Floor3",
-			"type" : 0
+			"type" : 3
 		},
 		{
 			"uid" : -1,
 			"name" : "Doors",
-			"type" : 0
+			"type" : 3
 		},
 		{
 			"uid" : 62844,
 			"name" : "DoorHrz_L1_BP",
+			"type" : 1
+		},
+		{
+			"uid" : 687351,
+			"name" : "DoorHrz_L2_BP",
 			"type" : 1
 		},
 		{
@@ -249,7 +249,7 @@
 		{
 			"uid" : -1,
 			"name" : "Triggers",
-			"type" : 0
+			"type" : 3
 		},
 		{
 			"uid" : 717692,
@@ -259,6 +259,11 @@
 		{
 			"uid" : 30327,
 			"name" : "ChangeFloor3-4",
+			"type" : 1
+		},
+		{
+			"uid" : 819068,
+			"name" : "ChangeFloor3-5",
 			"type" : 1
 		},
 		{
@@ -332,12 +337,12 @@
 			"type" : 3
 		},
 		{
-			"uid" : 260734,
+			"uid" : 293493,
 			"name" : "DoorHrz_L2_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 293493,
+			"uid" : 260734,
 			"name" : "DoorHrz_L2_BP",
 			"type" : 1
 		},
@@ -412,6 +417,11 @@
 			"type" : 1
 		},
 		{
+			"uid" : 424061,
+			"name" : "Grass",
+			"type" : 1
+		},
+		{
 			"uid" : -1,
 			"name" : "",
 			"type" : 2
@@ -482,7 +492,7 @@
 			"type" : 3
 		},
 		{
-			"uid" : 424446,
+			"uid" : 64373,
 			"name" : "ChangeFloor6-5",
 			"type" : 1
 		},
@@ -492,7 +502,7 @@
 			"type" : 1
 		},
 		{
-			"uid" : 64373,
+			"uid" : 424446,
 			"name" : "ChangeFloor6-5",
 			"type" : 1
 		},

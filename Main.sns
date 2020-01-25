@@ -104,28 +104,52 @@ class Main
 
 	void OnPickupGasMask(int self_index, string&in name, int index)
 	{
-		core.render.DebugText(10, 10, "sfsd");
+		if (name != "Hero_Legs")
+		{
+			return;
+		}
+
 		item_gas_mask[0].visible = 0; 
 		has_gas_mask = true;
 	}
 
 	void OnPickupLevelCard1(int self_index, string&in name, int index)
 	{
+		if (name != "Hero_Legs")
+		{
+			return;
+		}
+
 		PickupLevelCard1(item_card_lvl1[0]);
 	}
 
 	void OnPickupLevelCard2(int self_index, string&in name, int index)
 	{
+		if (name != "Hero_Legs")
+		{
+			return;
+		}
+
 		PickupLevelCard1(item_card_lvl2[0]);
 	}
 
 	void OnPickupLevelCard3(int self_index, string&in name, int index)
 	{
+		if (name != "Hero_Legs")
+		{
+			return;
+		}
+
 		PickupLevelCard1(item_card_lvl3[0]);
 	}
 
 	void OnPickupLevelCard4(int self_index, string&in name, int index)
 	{
+		if (name != "Hero_Legs")
+		{
+			return;
+		}
+
 		PickupLevelCard1(item_card_lvl4[0]);
 	}
 
@@ -243,6 +267,11 @@ class Main
 
 	void OnChangeFloor(int self_index, string&in name, int index, int floor_from, int floor_to, int marker_index)
 	{
+		if (name != "Hero_Legs")
+		{
+			return;
+		}
+		
 		core.Log("fl " + floor_from + " " + floor_to + " " + marker_index);
 		core.scene.SetStateToGroup("Floor" + floor_from, 0);
 
@@ -264,7 +293,7 @@ class Main
 		else
 		if (event_name == "Step")
 		{
-			if (!is_crouching)
+			if (!is_crouching && active_character_pool != null)
 			{
 				active_character_pool.AgroEnemies(475);
 			}
@@ -294,11 +323,11 @@ class Main
 		holded_door_card = 0;
 		grass_counter = 0;
 
-		//int marke_index = 0;
-		//ActivateFloor("Floor1");
+		int marke_index = 0;
+		ActivateFloor("Floor1");
 
-		int marke_index = 6;
-		ActivateFloor("Floor4");
+		//int marke_index = 6;
+		//ActivateFloor("Floor4");
 
 		has_gas_mask = false;
 		in_gas_zone = false;
