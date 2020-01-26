@@ -337,12 +337,12 @@
 			"type" : 3
 		},
 		{
-			"uid" : 293493,
+			"uid" : 260734,
 			"name" : "DoorHrz_L2_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 260734,
+			"uid" : 293493,
 			"name" : "DoorHrz_L2_BP",
 			"type" : 1
 		},
@@ -429,7 +429,7 @@
 		{
 			"uid" : -1,
 			"name" : "Floor5",
-			"type" : 0
+			"type" : 3
 		},
 		{
 			"uid" : -1,
@@ -439,6 +439,26 @@
 		{
 			"uid" : 520575,
 			"name" : "ChangeFloor5-3",
+			"type" : 1
+		},
+		{
+			"uid" : 324350,
+			"name" : "FromTunnel1",
+			"type" : 1
+		},
+		{
+			"uid" : 260085,
+			"name" : "FromTunnel2",
+			"type" : 1
+		},
+		{
+			"uid" : 458494,
+			"name" : "ToTunnel1",
+			"type" : 1
+		},
+		{
+			"uid" : 979829,
+			"name" : "ToTunnel2",
 			"type" : 1
 		},
 		{
@@ -492,7 +512,7 @@
 			"type" : 3
 		},
 		{
-			"uid" : 64373,
+			"uid" : 424446,
 			"name" : "ChangeFloor6-5",
 			"type" : 1
 		},
@@ -502,7 +522,7 @@
 			"type" : 1
 		},
 		{
-			"uid" : 424446,
+			"uid" : 64373,
 			"name" : "ChangeFloor6-5",
 			"type" : 1
 		},

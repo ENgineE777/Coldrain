@@ -271,14 +271,16 @@ class Main
 		{
 			return;
 		}
-		
-		core.Log("fl " + floor_from + " " + floor_to + " " + marker_index);
-		core.scene.SetStateToGroup("Floor" + floor_from, 0);
 
-		string str_floor_to = "Floor" + floor_to;
-		core.scene.SetStateToGroup(str_floor_to, 2);
+		if (floor_from != floor_to)
+		{
+			core.scene.SetStateToGroup("Floor" + floor_from, 0);
 
-		ActivateFloor(str_floor_to);
+			string str_floor_to = "Floor" + floor_to;
+			core.scene.SetStateToGroup(str_floor_to, 2);
+
+			ActivateFloor(str_floor_to);
+		}
 
 		hero[0].legs_phys.MoveTo(markers[marker_index].x, markers[marker_index].y);
 	}
@@ -323,11 +325,14 @@ class Main
 		holded_door_card = 0;
 		grass_counter = 0;
 
-		int marke_index = 0;
-		ActivateFloor("Floor1");
+		//int marke_index = 0;
+		//ActivateFloor("Floor1");
 
 		//int marke_index = 6;
 		//ActivateFloor("Floor4");
+
+		int marke_index = 7;
+		ActivateFloor("Floor5");
 
 		has_gas_mask = false;
 		in_gas_zone = false;
