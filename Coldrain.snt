@@ -337,12 +337,12 @@
 			"type" : 3
 		},
 		{
-			"uid" : 293493,
+			"uid" : 260734,
 			"name" : "DoorHrz_L2_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 260734,
+			"uid" : 293493,
 			"name" : "DoorHrz_L2_BP",
 			"type" : 1
 		},
@@ -502,8 +502,18 @@
 			"type" : 1
 		},
 		{
+			"uid" : 950015,
+			"name" : "Enemies",
+			"type" : 1
+		},
+		{
 			"uid" : 225399,
 			"name" : "Floor5",
+			"type" : 1
+		},
+		{
+			"uid" : 196087,
+			"name" : "Grass",
 			"type" : 1
 		},
 		{
@@ -575,6 +585,11 @@
 			"uid" : -1,
 			"name" : "",
 			"type" : 2
+		},
+		{
+			"uid" : 785014,
+			"name" : "Enemies",
+			"type" : 1
 		},
 		{
 			"uid" : 946422,

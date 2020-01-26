@@ -14,13 +14,13 @@
 	},
 	"camera_pos" :
 	{
-		"x" : 730.662598,
-		"y" : -993.756104
+		"x" : 1224.265625,
+		"y" : -1826.533447
 	},
-	"camera_zoom" : 0.200000,
+	"camera_zoom" : 0.500000,
 	"move_mode" : 1,
 	"gizmo2d_align_x" : 48,
-	"gizmo2d_align_y" : 96,
+	"gizmo2d_align_y" : 48,
 	"SceneAsset" : [
 		{
 			"type" : "SceneScriptAsset",
@@ -409,7 +409,7 @@
 					"name" : "Object",
 					"pos" :
 					{
-						"x" : 851.935120,
+						"x" : 851.935181,
 						"y" : 1177.119385
 					}
 				},
@@ -14007,7 +14007,7 @@
 			"ed_camera_2d" :
 			{
 				"x" : 1627.910522,
-				"y" : 269.740265
+				"y" : 269.740295
 			},
 			"ed_camera_2d_zoom" : 0.740000,
 			"Name" : "MainScript",
@@ -15439,8 +15439,8 @@
 						"alpha" : 1.000000
 					},
 					{
-						"x" : 4416.000000,
-						"y" : -1632.000000,
+						"x" : 4464.000000,
+						"y" : -1584.000000,
 						"index" : 0,
 						"visible" : 0,
 						"color" :
@@ -15701,7 +15701,7 @@
 			"x" : 4656.000000,
 			"y" : -1584.000000,
 			"width" : 207.188156,
-			"height" : 275.887177,
+			"height" : 275.887115,
 			"collision_group" : 1
 		},
 		{
@@ -15715,7 +15715,7 @@
 			"y" : -4608.000000,
 			"width" : 257.329254,
 			"height" : 144.348572,
-			"collision_group" : 1
+			"collision_group" : 5
 		},
 		{
 			"type" : "Trigger2D",
@@ -85509,9 +85509,9 @@
 			"Layer" : "Floor6",
 			"x" : 2976.000000,
 			"y" : -384.000000,
-			"width" : 168.068420,
+			"width" : 168.068405,
 			"height" : 210.656525,
-			"collision_group" : 1
+			"collision_group" : 5
 		},
 		{
 			"type" : "Trigger2D",
@@ -85522,9 +85522,9 @@
 			"Layer" : "Floor6",
 			"x" : -2208.000000,
 			"y" : -1248.000000,
-			"width" : 168.068420,
+			"width" : 168.068405,
 			"height" : 133.535263,
-			"collision_group" : 1
+			"collision_group" : 5
 		},
 		{
 			"type" : "Trigger2D",
@@ -85535,9 +85535,9 @@
 			"Layer" : "Floor6",
 			"x" : -2208.000000,
 			"y" : 1344.000000,
-			"width" : 168.068420,
+			"width" : 168.068405,
 			"height" : 133.535263,
-			"collision_group" : 1
+			"collision_group" : 5
 		},
 		{
 			"type" : "Trigger2D",
@@ -85548,9 +85548,9 @@
 			"Layer" : "Floor6",
 			"x" : 2976.000000,
 			"y" : 1920.000000,
-			"width" : 168.068420,
+			"width" : 168.068405,
 			"height" : 210.656525,
-			"collision_group" : 1
+			"collision_group" : 5
 		},
 		{
 			"type" : "Trigger2D",
@@ -85751,8 +85751,8 @@
 			"uid" : 262143,
 			"Name" : "Item_CardLvl3",
 			"State" : 2,
-			"Group" : "",
-			"Layer" : "",
+			"Group" : "Floor6",
+			"Layer" : "Floor6",
 			"axis_scale" : 1.000000,
 			"Depth" : 0.500000,
 			"UseDepth" : true,
@@ -90120,8 +90120,8 @@
 			"uid" : 556023,
 			"Name" : "Item_WeatOff",
 			"State" : 2,
-			"Group" : "",
-			"Layer" : "",
+			"Group" : "Floor6",
+			"Layer" : "Floor6",
 			"axis_scale" : 1.000000,
 			"Depth" : 0.500000,
 			"UseDepth" : true,
@@ -90153,6 +90153,2516 @@
 				},
 				{
 					"type" : "ScriptMetaDataCompInst"
+				}
+			]
+		},
+		{
+			"type" : "BlueprintInst",
+			"uid" : 785014,
+			"Name" : "Enemies",
+			"State" : 2,
+			"Group" : "Floor6",
+			"Layer" : "Floor6",
+			"x" : 0.000000,
+			"y" : 0.000000,
+			"asset_uid" : 883318,
+			"Childs" : [
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 72834,
+					"Name" : "SoldierGrabber_Legs",
+					"State" : 2,
+					"Group" : "Floor6",
+					"Layer" : "Floor6",
+					"Depth" : 0.470000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : -1780856064,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 881278,
+					"Name" : "SoldierAK47_Legs",
+					"State" : 2,
+					"Group" : "Floor6",
+					"Layer" : "Floor6",
+					"Depth" : 0.470000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : -1780856064,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 94582,
+					"Name" : "SoldierMachete_Legs",
+					"State" : 2,
+					"Group" : "Floor6",
+					"Layer" : "Floor6",
+					"Depth" : 0.470000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : -1780856064,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 818940,
+					"Name" : "SoldierStalker_Legs",
+					"State" : 2,
+					"Group" : "Floor6",
+					"Layer" : "Floor6",
+					"Depth" : 0.470000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : -1780856064,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 993895,
+					"Name" : "SoldierAK47",
+					"State" : 2,
+					"Group" : "Floor6",
+					"Layer" : "Floor6",
+					"Depth" : 0.465000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 8,
+						"Elem" : [
+							{
+								"x" : 2064.000000,
+								"y" : -2928.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : 1920.000000,
+								"y" : -1536.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : 2784.000000,
+								"y" : 144.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -576.000000,
+								"y" : -96.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -48.000000,
+								"y" : -576.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -1968.000000,
+								"y" : 0.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -1008.000000,
+								"y" : 0.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : 2064.000000,
+								"y" : -2304.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 365581472,
+					"components" : [
+						{
+							"type" : "ScriptMetaDataCompInst"
+						},
+						{
+							"type" : "Track2DComp",
+							"flip_mode" : 0,
+							"tracks" :
+							{
+								"count" : 8,
+								"Elem" : [
+									{
+										"data_type" : 1,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 2,
+											"Elem" : [
+												{
+													"x" : 2064.000000,
+													"y" : -2928.000000
+												},
+												{
+													"x" : 2592.000000,
+													"y" : -2928.000000
+												}
+											]
+										}
+									},
+									{
+										"data_type" : 1,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 2,
+											"Elem" : [
+												{
+													"x" : 1920.000000,
+													"y" : -1536.000000
+												},
+												{
+													"x" : 2496.000000,
+													"y" : -1536.000000
+												}
+											]
+										}
+									},
+									{
+										"data_type" : 1,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 2,
+											"Elem" : [
+												{
+													"x" : 2784.000000,
+													"y" : 144.000000
+												},
+												{
+													"x" : 2784.000000,
+													"y" : -336.000000
+												}
+											]
+										}
+									},
+									{
+										"data_type" : 2,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 4,
+											"Elem" : [
+												{
+													"x" : -576.000000,
+													"y" : -96.000000
+												},
+												{
+													"x" : -576.000000,
+													"y" : -432.000000
+												},
+												{
+													"x" : -144.000000,
+													"y" : -432.000000
+												},
+												{
+													"x" : -144.000000,
+													"y" : -96.000000
+												}
+											]
+										}
+									},
+									{
+										"data_type" : 2,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 4,
+											"Elem" : [
+												{
+													"x" : -48.000000,
+													"y" : -576.000000
+												},
+												{
+													"x" : -48.000000,
+													"y" : -912.000000
+												},
+												{
+													"x" : 384.000000,
+													"y" : -912.000000
+												},
+												{
+													"x" : 384.000000,
+													"y" : -576.000000
+												}
+											]
+										}
+									},
+									{
+										"data_type" : 1,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 3,
+											"Elem" : [
+												{
+													"x" : -1968.000000,
+													"y" : 0.000000
+												},
+												{
+													"x" : -1968.000000,
+													"y" : -480.000000
+												},
+												{
+													"x" : -1536.000000,
+													"y" : -480.000000
+												}
+											]
+										}
+									},
+									{
+										"data_type" : 1,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 2,
+											"Elem" : [
+												{
+													"x" : -1008.000000,
+													"y" : 0.000000
+												},
+												{
+													"x" : -1008.000000,
+													"y" : -672.000000
+												}
+											]
+										}
+									},
+									{
+										"data_type" : 1,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 2,
+											"Elem" : [
+												{
+													"x" : 2064.000000,
+													"y" : -2304.000000
+												},
+												{
+													"x" : 2592.000000,
+													"y" : -2304.000000
+												}
+											]
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 509683,
+					"Name" : "SoldierGrabber",
+					"State" : 2,
+					"Group" : "Floor6",
+					"Layer" : "Floor6",
+					"Depth" : 0.465000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : 782972,
+					"components" : [
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 276131,
+					"Name" : "SoldierMachete",
+					"State" : 2,
+					"Group" : "Floor6",
+					"Layer" : "Floor6",
+					"Depth" : 0.465000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : 63478,
+					"components" : [
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 310853,
+					"Name" : "SoldierStalker",
+					"State" : 2,
+					"Group" : "Floor6",
+					"Layer" : "Floor6",
+					"Depth" : 0.465000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : 524286,
+					"components" : [
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				},
+				{
+					"type" : "NavMesh2DGen",
+					"uid" : 96375,
+					"Name" : "NavMesh",
+					"State" : 2,
+					"Group" : "Floor6",
+					"Layer" : "Floor6",
+					"collider_radius" : 32.000000
+				},
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 884120,
+					"Name" : "EnemiesPool",
+					"State" : 2,
+					"Group" : "Floor6",
+					"Layer" : "Floor6",
+					"asset_uid" : 752380,
+					"Count" : 18,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 785014,
+											"child_uid" : 993895,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 785014,
+											"child_uid" : 881278,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 785014,
+											"child_uid" : 276131,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 785014,
+											"child_uid" : 509683,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 785014,
+											"child_uid" : 310853,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 785014,
+											"child_uid" : 94582,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 785014,
+											"child_uid" : 72834,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 785014,
+											"child_uid" : 818940,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 785014,
+											"child_uid" : 993895,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 785014,
+											"child_uid" : 509683,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 785014,
+											"child_uid" : 276131,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 785014,
+											"child_uid" : 310853,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 785014,
+											"child_uid" : 96375,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "BlueprintInst",
+			"uid" : 950015,
+			"Name" : "Enemies",
+			"State" : 2,
+			"Group" : "Floor5",
+			"Layer" : "Floor5",
+			"x" : 2160.000000,
+			"y" : -1440.000000,
+			"asset_uid" : 883318,
+			"Childs" : [
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 72834,
+					"Name" : "SoldierGrabber_Legs",
+					"State" : 2,
+					"Group" : "Floor5",
+					"Layer" : "Floor5",
+					"Depth" : 0.470000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : -1780856064,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 881278,
+					"Name" : "SoldierAK47_Legs",
+					"State" : 2,
+					"Group" : "Floor5",
+					"Layer" : "Floor5",
+					"Depth" : 0.470000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : -1780856064,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 94582,
+					"Name" : "SoldierMachete_Legs",
+					"State" : 2,
+					"Group" : "Floor5",
+					"Layer" : "Floor5",
+					"Depth" : 0.470000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : -1780856064,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 818940,
+					"Name" : "SoldierStalker_Legs",
+					"State" : 2,
+					"Group" : "Floor5",
+					"Layer" : "Floor5",
+					"Depth" : 0.470000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : -1780856064,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 993895,
+					"Name" : "SoldierAK47",
+					"State" : 2,
+					"Group" : "Floor5",
+					"Layer" : "Floor5",
+					"Depth" : 0.465000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 17,
+						"Elem" : [
+							{
+								"x" : 3552.000000,
+								"y" : -1584.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : 1200.000000,
+								"y" : -2112.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : 1488.000000,
+								"y" : -1104.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : 1488.000000,
+								"y" : -672.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : 1248.000000,
+								"y" : -48.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -1680.000000,
+								"y" : -2880.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -1152.000000,
+								"y" : -3072.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -1680.000000,
+								"y" : -3648.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -1440.000000,
+								"y" : -672.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -2016.000000,
+								"y" : -1152.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -1104.000000,
+								"y" : 384.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -48.000000,
+								"y" : -384.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -192.000000,
+								"y" : -672.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : 432.000000,
+								"y" : -1392.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -336.000000,
+								"y" : -1248.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : 96.000000,
+								"y" : -2304.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : 96.000000,
+								"y" : -3552.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 365581472,
+					"components" : [
+						{
+							"type" : "ScriptMetaDataCompInst"
+						},
+						{
+							"type" : "Track2DComp",
+							"flip_mode" : 0,
+							"tracks" :
+							{
+								"count" : 17,
+								"Elem" : [
+									{
+										"data_type" : 2,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 4,
+											"Elem" : [
+												{
+													"x" : 3552.000000,
+													"y" : -1584.000000
+												},
+												{
+													"x" : 3936.000000,
+													"y" : -1584.000000
+												},
+												{
+													"x" : 3936.000000,
+													"y" : -1248.000000
+												},
+												{
+													"x" : 3552.000000,
+													"y" : -1248.000000
+												}
+											]
+										}
+									},
+									{
+										"data_type" : 2,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 2,
+											"Elem" : [
+												{
+													"x" : 1200.000000,
+													"y" : -2112.000000
+												},
+												{
+													"x" : 1200.000000,
+													"y" : -1584.000000
+												}
+											]
+										}
+									},
+									{
+										"data_type" : 2,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 2,
+											"Elem" : [
+												{
+													"x" : 1488.000000,
+													"y" : -1104.000000
+												},
+												{
+													"x" : 1920.000000,
+													"y" : -1104.000000
+												}
+											]
+										}
+									},
+									{
+										"data_type" : 2,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 2,
+											"Elem" : [
+												{
+													"x" : 1488.000000,
+													"y" : -672.000000
+												},
+												{
+													"x" : 1920.000000,
+													"y" : -672.000000
+												}
+											]
+										}
+									},
+									{
+										"data_type" : 2,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 4,
+											"Elem" : [
+												{
+													"x" : 1248.000000,
+													"y" : -48.000000
+												},
+												{
+													"x" : 1632.000000,
+													"y" : -48.000000
+												},
+												{
+													"x" : 1632.000000,
+													"y" : 288.000000
+												},
+												{
+													"x" : 1248.000000,
+													"y" : 288.000000
+												}
+											]
+										}
+									},
+									{
+										"data_type" : 2,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 2,
+											"Elem" : [
+												{
+													"x" : -1680.000000,
+													"y" : -2880.000000
+												},
+												{
+													"x" : -1680.000000,
+													"y" : -2304.000000
+												}
+											]
+										}
+									},
+									{
+										"data_type" : 2,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 2,
+											"Elem" : [
+												{
+													"x" : -1152.000000,
+													"y" : -3072.000000
+												},
+												{
+													"x" : -1152.000000,
+													"y" : -2496.000000
+												}
+											]
+										}
+									},
+									{
+										"data_type" : 2,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 2,
+											"Elem" : [
+												{
+													"x" : -1680.000000,
+													"y" : -3648.000000
+												},
+												{
+													"x" : -1152.000000,
+													"y" : -3648.000000
+												}
+											]
+										}
+									},
+									{
+										"data_type" : 2,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 4,
+											"Elem" : [
+												{
+													"x" : -1440.000000,
+													"y" : -672.000000
+												},
+												{
+													"x" : -1056.000000,
+													"y" : -672.000000
+												},
+												{
+													"x" : -1056.000000,
+													"y" : -336.000000
+												},
+												{
+													"x" : -1440.000000,
+													"y" : -336.000000
+												}
+											]
+										}
+									},
+									{
+										"data_type" : 2,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 2,
+											"Elem" : [
+												{
+													"x" : -2016.000000,
+													"y" : -1152.000000
+												},
+												{
+													"x" : -1584.000000,
+													"y" : -1152.000000
+												}
+											]
+										}
+									},
+									{
+										"data_type" : 2,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 2,
+											"Elem" : [
+												{
+													"x" : -1104.000000,
+													"y" : 384.000000
+												},
+												{
+													"x" : -432.000000,
+													"y" : 384.000000
+												}
+											]
+										}
+									},
+									{
+										"data_type" : 2,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 2,
+											"Elem" : [
+												{
+													"x" : -48.000000,
+													"y" : -384.000000
+												},
+												{
+													"x" : 624.000000,
+													"y" : -384.000000
+												}
+											]
+										}
+									},
+									{
+										"data_type" : 2,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 2,
+											"Elem" : [
+												{
+													"x" : -192.000000,
+													"y" : -672.000000
+												},
+												{
+													"x" : 576.000000,
+													"y" : -672.000000
+												}
+											]
+										}
+									},
+									{
+										"data_type" : 2,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 2,
+											"Elem" : [
+												{
+													"x" : 432.000000,
+													"y" : -1392.000000
+												},
+												{
+													"x" : 432.000000,
+													"y" : -960.000000
+												}
+											]
+										}
+									},
+									{
+										"data_type" : 2,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 2,
+											"Elem" : [
+												{
+													"x" : -336.000000,
+													"y" : -1248.000000
+												},
+												{
+													"x" : 96.000000,
+													"y" : -1248.000000
+												}
+											]
+										}
+									},
+									{
+										"data_type" : 2,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 4,
+											"Elem" : [
+												{
+													"x" : 96.000000,
+													"y" : -2304.000000
+												},
+												{
+													"x" : 480.000000,
+													"y" : -2304.000000
+												},
+												{
+													"x" : 480.000000,
+													"y" : -1968.000000
+												},
+												{
+													"x" : 96.000000,
+													"y" : -1968.000000
+												}
+											]
+										}
+									},
+									{
+										"data_type" : 2,
+										"speed" : 100.000000,
+										"track" :
+										{
+											"count" : 4,
+											"Elem" : [
+												{
+													"x" : 96.000000,
+													"y" : -3552.000000
+												},
+												{
+													"x" : 480.000000,
+													"y" : -3552.000000
+												},
+												{
+													"x" : 480.000000,
+													"y" : -3216.000000
+												},
+												{
+													"x" : 96.000000,
+													"y" : -3216.000000
+												}
+											]
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 509683,
+					"Name" : "SoldierGrabber",
+					"State" : 2,
+					"Group" : "Floor5",
+					"Layer" : "Floor5",
+					"Depth" : 0.465000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : 782972,
+					"components" : [
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 276131,
+					"Name" : "SoldierMachete",
+					"State" : 2,
+					"Group" : "Floor5",
+					"Layer" : "Floor5",
+					"Depth" : 0.465000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : 63478,
+					"components" : [
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				},
+				{
+					"type" : "SpriteGraphInst",
+					"uid" : 310853,
+					"Name" : "SoldierStalker",
+					"State" : 2,
+					"Group" : "Floor5",
+					"Layer" : "Floor5",
+					"Depth" : 0.465000,
+					"hack_height" : -32.000000,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 0,
+						"Elem" : [
+						]
+					},
+					"asset_uid" : 524286,
+					"components" : [
+						{
+							"type" : "ScriptMetaDataCompInst"
+						}
+					]
+				},
+				{
+					"type" : "NavMesh2DGen",
+					"uid" : 96375,
+					"Name" : "NavMesh",
+					"State" : 2,
+					"Group" : "Floor5",
+					"Layer" : "Floor5",
+					"collider_radius" : 32.000000
+				},
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 884120,
+					"Name" : "EnemiesPool",
+					"State" : 2,
+					"Group" : "Floor5",
+					"Layer" : "Floor5",
+					"asset_uid" : 752380,
+					"Count" : 18,
+					"Node" : [
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 950015,
+											"child_uid" : 993895,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 950015,
+											"child_uid" : 881278,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 950015,
+											"child_uid" : 276131,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 950015,
+											"child_uid" : 509683,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 950015,
+											"child_uid" : 310853,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 950015,
+											"child_uid" : 94582,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 950015,
+											"child_uid" : 72834,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 950015,
+											"child_uid" : 818940,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 950015,
+											"child_uid" : 993895,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 950015,
+											"child_uid" : 509683,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 950015,
+											"child_uid" : 276131,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContact",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 950015,
+											"child_uid" : 310853,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 950015,
+											"child_uid" : 96375,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "BlueprintInst",
+			"uid" : 196087,
+			"Name" : "Grass",
+			"State" : 2,
+			"Group" : "Floor5",
+			"Layer" : "Floor5",
+			"x" : 0.000000,
+			"y" : 0.000000,
+			"asset_uid" : 292725,
+			"Childs" : [
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 902052,
+					"Name" : "GrassScript",
+					"State" : 2,
+					"Group" : "Floor5",
+					"Layer" : "Floor5",
+					"asset_uid" : 258164,
+					"Count" : 5,
+					"Node" : [
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 196087,
+											"child_uid" : 413468,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 196087,
+											"child_uid" : 413468,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 413468,
+					"Name" : "GrassInst",
+					"State" : 2,
+					"Group" : "Floor5",
+					"Layer" : "Floor5",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.520000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 32,
+						"Elem" : [
+							{
+								"x" : -912.000000,
+								"y" : 192.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -816.000000,
+								"y" : 192.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -1008.000000,
+								"y" : 192.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -720.000000,
+								"y" : 192.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -624.000000,
+								"y" : 192.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : 96.000000,
+								"y" : -576.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : 192.000000,
+								"y" : -576.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : 288.000000,
+								"y" : -576.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : 384.000000,
+								"y" : -576.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : 0.000000,
+								"y" : -864.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : 96.000000,
+								"y" : -864.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : 192.000000,
+								"y" : -864.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : 288.000000,
+								"y" : -864.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -1536.000000,
+								"y" : -2496.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -1536.000000,
+								"y" : -2592.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -1536.000000,
+								"y" : -2688.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -1536.000000,
+								"y" : -2784.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -1728.000000,
+								"y" : -3456.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -1632.000000,
+								"y" : -3456.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -1536.000000,
+								"y" : -3456.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -1440.000000,
+								"y" : -3456.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -1344.000000,
+								"y" : -3120.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -1344.000000,
+								"y" : -3024.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -1344.000000,
+								"y" : -2928.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -1344.000000,
+								"y" : -2832.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : -1344.000000,
+								"y" : -2736.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : 1440.000000,
+								"y" : -1440.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : 1344.000000,
+								"y" : -1440.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : 1440.000000,
+								"y" : -864.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : 1536.000000,
+								"y" : -864.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : 1632.000000,
+								"y" : -864.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							},
+							{
+								"x" : 1728.000000,
+								"y" : -864.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 913653,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						}
+					]
 				}
 			]
 		}
@@ -90786,6 +93296,39 @@
 					"scene" : "coldrain.sca",
 					"inst_uid" : 556023,
 					"inst_name" : "Item_WeatOff"
+				}
+			]
+		},
+		{
+			"asset_uid" : 883318,
+			"asset_name" : "Enemies",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 785014,
+					"inst_name" : "Enemies"
+				}
+			]
+		},
+		{
+			"asset_uid" : 883318,
+			"asset_name" : "Enemies",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 950015,
+					"inst_name" : "Enemies"
+				}
+			]
+		},
+		{
+			"asset_uid" : 292725,
+			"asset_name" : "Grass",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 196087,
+					"inst_name" : "Grass"
 				}
 			]
 		},
@@ -91739,6 +94282,240 @@
 			]
 		},
 		{
+			"asset_uid" : -1780856064,
+			"asset_name" : "SoldierLegs_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 785014,
+					"inst_child_uid" : 72834,
+					"is_asset" : false,
+					"inst_name" : "SoldierGrabber_Legs"
+				}
+			]
+		},
+		{
+			"asset_uid" : -1780856064,
+			"asset_name" : "SoldierLegs_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 785014,
+					"inst_child_uid" : 881278,
+					"is_asset" : false,
+					"inst_name" : "SoldierAK47_Legs"
+				}
+			]
+		},
+		{
+			"asset_uid" : -1780856064,
+			"asset_name" : "SoldierLegs_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 785014,
+					"inst_child_uid" : 94582,
+					"is_asset" : false,
+					"inst_name" : "SoldierMachete_Legs"
+				}
+			]
+		},
+		{
+			"asset_uid" : -1780856064,
+			"asset_name" : "SoldierLegs_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 785014,
+					"inst_child_uid" : 818940,
+					"is_asset" : false,
+					"inst_name" : "SoldierStalker_Legs"
+				}
+			]
+		},
+		{
+			"asset_uid" : 365581472,
+			"asset_name" : "SoldierAK47_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 785014,
+					"inst_child_uid" : 993895,
+					"is_asset" : false,
+					"inst_name" : "SoldierAK47"
+				}
+			]
+		},
+		{
+			"asset_uid" : 782972,
+			"asset_name" : "SoldierGrabber_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 785014,
+					"inst_child_uid" : 509683,
+					"is_asset" : false,
+					"inst_name" : "SoldierGrabber"
+				}
+			]
+		},
+		{
+			"asset_uid" : 63478,
+			"asset_name" : "SoldierMachete_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 785014,
+					"inst_child_uid" : 276131,
+					"is_asset" : false,
+					"inst_name" : "SoldierMachete"
+				}
+			]
+		},
+		{
+			"asset_uid" : 524286,
+			"asset_name" : "SoldierStalker_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 785014,
+					"inst_child_uid" : 310853,
+					"is_asset" : false,
+					"inst_name" : "SoldierStalker"
+				}
+			]
+		},
+		{
+			"asset_uid" : 752380,
+			"asset_name" : "EnemiesPool",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 785014,
+					"inst_child_uid" : 884120,
+					"is_asset" : false,
+					"inst_name" : "EnemiesPool"
+				}
+			]
+		},
+		{
+			"asset_uid" : -1780856064,
+			"asset_name" : "SoldierLegs_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 950015,
+					"inst_child_uid" : 72834,
+					"is_asset" : false,
+					"inst_name" : "SoldierGrabber_Legs"
+				}
+			]
+		},
+		{
+			"asset_uid" : -1780856064,
+			"asset_name" : "SoldierLegs_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 950015,
+					"inst_child_uid" : 881278,
+					"is_asset" : false,
+					"inst_name" : "SoldierAK47_Legs"
+				}
+			]
+		},
+		{
+			"asset_uid" : -1780856064,
+			"asset_name" : "SoldierLegs_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 950015,
+					"inst_child_uid" : 94582,
+					"is_asset" : false,
+					"inst_name" : "SoldierMachete_Legs"
+				}
+			]
+		},
+		{
+			"asset_uid" : -1780856064,
+			"asset_name" : "SoldierLegs_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 950015,
+					"inst_child_uid" : 818940,
+					"is_asset" : false,
+					"inst_name" : "SoldierStalker_Legs"
+				}
+			]
+		},
+		{
+			"asset_uid" : 365581472,
+			"asset_name" : "SoldierAK47_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 950015,
+					"inst_child_uid" : 993895,
+					"is_asset" : false,
+					"inst_name" : "SoldierAK47"
+				}
+			]
+		},
+		{
+			"asset_uid" : 782972,
+			"asset_name" : "SoldierGrabber_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 950015,
+					"inst_child_uid" : 509683,
+					"is_asset" : false,
+					"inst_name" : "SoldierGrabber"
+				}
+			]
+		},
+		{
+			"asset_uid" : 63478,
+			"asset_name" : "SoldierMachete_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 950015,
+					"inst_child_uid" : 276131,
+					"is_asset" : false,
+					"inst_name" : "SoldierMachete"
+				}
+			]
+		},
+		{
+			"asset_uid" : 524286,
+			"asset_name" : "SoldierStalker_Graph",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 950015,
+					"inst_child_uid" : 310853,
+					"is_asset" : false,
+					"inst_name" : "SoldierStalker"
+				}
+			]
+		},
+		{
+			"asset_uid" : 752380,
+			"asset_name" : "EnemiesPool",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 950015,
+					"inst_child_uid" : 884120,
+					"is_asset" : false,
+					"inst_name" : "EnemiesPool"
+				}
+			]
+		},
+		{
 			"asset_uid" : 258164,
 			"asset_name" : "Grass",
 			"instances" : [
@@ -91836,6 +94613,32 @@
 				{
 					"scene" : "coldrain.sca",
 					"inst_uid" : 424061,
+					"inst_child_uid" : 413468,
+					"is_asset" : false,
+					"inst_name" : "GrassInst"
+				}
+			]
+		},
+		{
+			"asset_uid" : 258164,
+			"asset_name" : "Grass",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 196087,
+					"inst_child_uid" : 902052,
+					"is_asset" : false,
+					"inst_name" : "GrassScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 913653,
+			"asset_name" : "Grass",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 196087,
 					"inst_child_uid" : 413468,
 					"is_asset" : false,
 					"inst_name" : "GrassInst"

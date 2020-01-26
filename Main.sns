@@ -109,7 +109,7 @@ class Main
 		if (name != "Hero_Legs")
 		{
 			return;
-		}
+		}      
 
 		item_weat_off[0].visible = 0; 
 		weat_on = false;
@@ -347,11 +347,11 @@ class Main
 		//int marke_index = 6;
 		//ActivateFloor("Floor4");
 
-		//int marke_index = 7;
-		//ActivateFloor("Floor5");
+		int marke_index = 7;
+		ActivateFloor("Floor5");
 
-		int marke_index = 16;
-		ActivateFloor("Floor6");
+		//int marke_index = 16;
+		//ActivateFloor("Floor6");
 
 		has_gas_mask = false;
 		in_gas_zone = false;
