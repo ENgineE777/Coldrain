@@ -56,6 +56,9 @@ class LaserController
 
 	void OnTouch(int self_index, string&in name, int index)
 	{
-		main.MakeCharacterDead(main.GetHero(), 0.0f, 1.0f);
+		if (name == "Hero_Legs")
+		{
+			main.MakeCharacterDead(main.GetHero(), 0.0f, 1.0f);
+		}
 	}
 }

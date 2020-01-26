@@ -337,12 +337,12 @@
 			"type" : 3
 		},
 		{
-			"uid" : 260734,
+			"uid" : 293493,
 			"name" : "DoorHrz_L2_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 293493,
+			"uid" : 260734,
 			"name" : "DoorHrz_L2_BP",
 			"type" : 1
 		},
@@ -442,6 +442,11 @@
 			"type" : 1
 		},
 		{
+			"uid" : 162685,
+			"name" : "ChangeFloor5-6",
+			"type" : 1
+		},
+		{
 			"uid" : 324350,
 			"name" : "FromTunnel1",
 			"type" : 1
@@ -492,6 +497,11 @@
 			"type" : 1
 		},
 		{
+			"uid" : 588276,
+			"name" : "DoorHrz_L3_BP",
+			"type" : 1
+		},
+		{
 			"uid" : 225399,
 			"name" : "Floor5",
 			"type" : 1
@@ -504,7 +514,32 @@
 		{
 			"uid" : -1,
 			"name" : "Floor6",
-			"type" : 0
+			"type" : 3
+		},
+		{
+			"uid" : -1,
+			"name" : "Level",
+			"type" : 3
+		},
+		{
+			"uid" : 816630,
+			"name" : "Crate",
+			"type" : 1
+		},
+		{
+			"uid" : 1046900,
+			"name" : "WallHorz",
+			"type" : 1
+		},
+		{
+			"uid" : 359029,
+			"name" : "WallVert",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
 		},
 		{
 			"uid" : -1,
@@ -512,18 +547,28 @@
 			"type" : 3
 		},
 		{
-			"uid" : 424446,
-			"name" : "ChangeFloor6-5",
-			"type" : 1
-		},
-		{
-			"uid" : 554614,
-			"name" : "ChangeFloor6-5",
-			"type" : 1
-		},
-		{
 			"uid" : 64373,
 			"name" : "ChangeFloor6-5",
+			"type" : 1
+		},
+		{
+			"uid" : 1045759,
+			"name" : "FromTunnel1",
+			"type" : 1
+		},
+		{
+			"uid" : 917494,
+			"name" : "FromTunnel2",
+			"type" : 1
+		},
+		{
+			"uid" : 31231,
+			"name" : "ToTunnel1",
+			"type" : 1
+		},
+		{
+			"uid" : 654070,
+			"name" : "ToTunnel2",
 			"type" : 1
 		},
 		{
@@ -537,8 +582,18 @@
 			"type" : 1
 		},
 		{
-			"uid" : 258934,
-			"name" : "Floor6StairsDown",
+			"uid" : 262143,
+			"name" : "Item_CardLvl3",
+			"type" : 1
+		},
+		{
+			"uid" : 556023,
+			"name" : "Item_WeatOff",
+			"type" : 1
+		},
+		{
+			"uid" : 488446,
+			"name" : "Weat",
 			"type" : 1
 		},
 		{
@@ -699,6 +754,11 @@
 			"type" : 1
 		},
 		{
+			"uid" : 979582,
+			"name" : "Weat",
+			"type" : 1
+		},
+		{
 			"uid" : -1,
 			"name" : "",
 			"type" : 2
@@ -736,6 +796,11 @@
 		{
 			"uid" : 200902816,
 			"name" : "Main",
+			"type" : 1
+		},
+		{
+			"uid" : 95996,
+			"name" : "Weat",
 			"type" : 1
 		},
 		{
@@ -1071,7 +1136,7 @@
 		{
 			"uid" : -1,
 			"name" : "Doors",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : 291455,
@@ -1159,6 +1224,11 @@
 			"type" : 1
 		},
 		{
+			"uid" : 29302,
+			"name" : "Item_WeatOff",
+			"type" : 1
+		},
+		{
 			"uid" : -1,
 			"name" : "",
 			"type" : 2
@@ -1182,6 +1252,11 @@
 			"uid" : -1,
 			"name" : "",
 			"type" : 2
+		},
+		{
+			"uid" : 554743,
+			"name" : "Ã–ÃWeat",
+			"type" : 1
 		},
 		{
 			"uid" : 684150,
