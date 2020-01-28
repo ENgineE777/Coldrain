@@ -50,7 +50,7 @@
 		},
 		{
 			"name" : "Floor5",
-			"state" : 0
+			"state" : 2
 		},
 		{
 			"name" : "Floor6",
@@ -59,6 +59,10 @@
 		{
 			"name" : "Floor1",
 			"state" : 2
+		},
+		{
+			"name" : "Floor7",
+			"state" : 0
 		}
 	],
 	"groups" : [
@@ -94,6 +98,9 @@
 		},
 		{
 			"name" : "Floor1"
+		},
+		{
+			"name" : "Floor7"
 		}
 	]
 }

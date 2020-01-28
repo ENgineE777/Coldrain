@@ -34,7 +34,7 @@
 		{
 			"uid" : -1,
 			"name" : "Floor1",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : -1,
@@ -94,7 +94,7 @@
 		{
 			"uid" : -1,
 			"name" : "Floor2",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : -1,
@@ -174,7 +174,7 @@
 		{
 			"uid" : -1,
 			"name" : "Floor3",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : -1,
@@ -329,7 +329,7 @@
 		{
 			"uid" : -1,
 			"name" : "Floor4",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : -1,
@@ -429,7 +429,7 @@
 		{
 			"uid" : -1,
 			"name" : "Floor5",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : -1,
@@ -524,7 +524,7 @@
 		{
 			"uid" : -1,
 			"name" : "Floor6",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : -1,
@@ -609,6 +609,46 @@
 		{
 			"uid" : 488446,
 			"name" : "Weat",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "Floor7",
+			"type" : 3
+		},
+		{
+			"uid" : -1,
+			"name" : "Level",
+			"type" : 3
+		},
+		{
+			"uid" : 982270,
+			"name" : "Crate",
+			"type" : 1
+		},
+		{
+			"uid" : 784893,
+			"name" : "WallHorz",
+			"type" : 1
+		},
+		{
+			"uid" : 389878,
+			"name" : "WallVert",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : 751604,
+			"name" : "Floor7",
 			"type" : 1
 		},
 		{
@@ -1026,7 +1066,7 @@
 		{
 			"uid" : -1,
 			"name" : "Floors",
-			"type" : 0
+			"type" : 3
 		},
 		{
 			"uid" : 491007,

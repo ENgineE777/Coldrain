@@ -347,11 +347,15 @@ class Main
 		//int marke_index = 6;
 		//ActivateFloor("Floor4");
 
-		int marke_index = 7;
-		ActivateFloor("Floor5");
+		//int marke_index = 7;
+		//ActivateFloor("Floor5");
 
 		//int marke_index = 16;
 		//ActivateFloor("Floor6");
+
+
+		int marke_index = 22;
+		ActivateFloor("Floor7");
 
 		has_gas_mask = false;
 		in_gas_zone = false;
