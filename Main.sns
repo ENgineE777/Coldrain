@@ -323,6 +323,7 @@ class Main
 		core.scene.SetStateToGroup("Floor4", 0);
 		core.scene.SetStateToGroup("Floor5", 0);
 		core.scene.SetStateToGroup("Floor6", 0);
+		core.scene.SetStateToGroup("Floor7", 0);
 
 		core.scene.SetStateToGroup("Ground", 2);
 		core.scene.SetStateToGroup("Tunnels", 0);
@@ -341,8 +342,8 @@ class Main
 		holded_door_card = 0;
 		grass_counter = 0;
 
-		//int marke_index = 0;
-		//ActivateFloor("Floor1");
+		int marke_index = 0;
+		ActivateFloor("Floor1");
 
 		//int marke_index = 6;
 		//ActivateFloor("Floor4");
@@ -354,8 +355,8 @@ class Main
 		//ActivateFloor("Floor6");
 
 
-		int marke_index = 22;
-		ActivateFloor("Floor7");
+		//int marke_index = 22;
+		//ActivateFloor("Floor7");
 
 		has_gas_mask = false;
 		in_gas_zone = false;

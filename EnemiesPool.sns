@@ -220,21 +220,19 @@ class EnemiesPool : ChracterPoolBase
 
 				float len = sqrt(dir_x * dir_x + dir_y * dir_y);
 
-				if (len > 0.01f)
+				enemy.legs_graph.ActivateLink(len > 0.01f ? "Walk" : "Idle");
+				enemy.graph.ActivateLink(len > 0.01f ? "Walk" : "Idle");
+
+				enemy.legs_angle = enemy.angle;
+
+				enemy.prev_x = enemy.x; 
+				enemy.prev_y = enemy.y;
+
+				if ((core.utils.IsPointInSector(Vector2(hero.x, hero.y - 32), Vector2(enemy.x, enemy.y - 32), enemy.angle, enemy_view_dist, enemy_view_angle, main.show_debug_check)) &&
+				 	IsPlayerVisible(enemy, enemy_view_dist))
 				{
-					enemy.angle = atan2(dir_y / len, dir_x / len);
-					enemy.legs_angle = enemy.angle;
-
-					enemy.prev_x = enemy.x; 
-					enemy.prev_y = enemy.y;
-
-					if ((core.utils.IsPointInSector(Vector2(hero.x, hero.y - 32), Vector2(enemy.x, enemy.y - 32), enemy.angle, enemy_view_dist, enemy_view_angle, main.show_debug_check)) &&
-					 	IsPlayerVisible(enemy, enemy_view_dist))
-					{
-						enemy.track.Activate(false);
-
-						enemy.state = Idle;
-					}
+					enemy.track.Activate(false);
+					enemy.state = Idle;
 				}
 			}
 			else
@@ -318,6 +316,7 @@ class EnemiesPool : ChracterPoolBase
 							{
 								enemy.state = Pursuit;
 								enemy.FindPath(nav_mesh, hero.x, hero.y);
+								enemy.legs_graph.ActivateLink("Walk");
 							}
 						}
 						else
@@ -345,9 +344,11 @@ class EnemiesPool : ChracterPoolBase
 						if (!IsPlayerVisible(enemy, view_dist + 20) || hero.hp == 0)
 						{
 							enemy.state = Idle;
+							enemy.legs_graph.ActivateLink("Idle");
 						}
 						else
 						{
+							enemy.legs_graph.ActivateLink("Walk");
 							enemy.legs_phys.Move(-dir_y * 350.0f * dt * enemy.strafe_dir, dir_x * 350.0f * dt * enemy.strafe_dir, 3, 0);
 
 							if (enemy.action_time < 0.0f)
@@ -380,12 +381,13 @@ class EnemiesPool : ChracterPoolBase
 								enemy.strafe_dir = rand() > 0.5f ? -1.0f : 1.0f;
 
 								enemy.graph.ActivateLink("Idle");
-								enemy.legs_graph.ActivateLink("Idle");
+								enemy.legs_graph.ActivateLink("Walk");
 							}
 							else
 							{
 								enemy.state = Pursuit;
 								enemy.FindPath(nav_mesh, hero.x, hero.y);
+								enemy.legs_graph.ActivateLink("Walk");
 							}
 						}
 						else
@@ -482,12 +484,13 @@ class EnemiesPool : ChracterPoolBase
 								enemy.action_time2 = -1.0f;
 
 								enemy.graph.ActivateLink("Idle");
-								enemy.legs_graph.ActivateLink("Idle");
+								enemy.legs_graph.ActivateLink("Walk");
 							}
 							else
 							{
 								enemy.state = Pursuit;
 								enemy.FindPath(nav_mesh, hero.x, hero.y);
+								enemy.legs_graph.ActivateLink("Walk");
 							}
 						}
 						else
@@ -609,12 +612,13 @@ class EnemiesPool : ChracterPoolBase
 								enemy.action_time2 = -1.0f;
 
 								enemy.graph.ActivateLink("Idle");
-								enemy.legs_graph.ActivateLink("Idle");
+								enemy.legs_graph.ActivateLink("Walk");
 							}
 							else
 							{
 								enemy.state = Pursuit;
 								enemy.FindPath(nav_mesh, hero.x, hero.y);
+								enemy.legs_graph.ActivateLink("Walk");
 							}
 						}
 						else
