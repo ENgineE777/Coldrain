@@ -14,10 +14,10 @@
 	},
 	"camera_pos" :
 	{
-		"x" : 708.953369,
-		"y" : -861.745667
+		"x" : 635.975830,
+		"y" : -874.256836
 	},
-	"camera_zoom" : 1.160000,
+	"camera_zoom" : 1.700000,
 	"move_mode" : 1,
 	"gizmo2d_align_x" : 96,
 	"gizmo2d_align_y" : 96,
@@ -27,16 +27,16 @@
 			"uid" : 200902816,
 			"ed_camera_2d" :
 			{
-				"x" : 1081.389404,
-				"y" : 607.034729
+				"x" : 1184.645020,
+				"y" : 514.131470
 			},
-			"ed_camera_2d_zoom" : 0.820000,
+			"ed_camera_2d_zoom" : 0.700000,
 			"Name" : "Main",
 			"State" : 2,
 			"Group" : "",
 			"Layer" : "",
 			"main_class" : "Main",
-			"Count" : 58,
+			"Count" : 57,
 			"Node" : [
 				{
 					"type" : 1,
@@ -98,8 +98,8 @@
 					"name" : "blood_splash_obj",
 					"pos" :
 					{
-						"x" : 1241.956543,
-						"y" : 148.565231
+						"x" : 1246.038086,
+						"y" : 147.544830
 					},
 					"prefix" : ""
 				},
@@ -190,16 +190,6 @@
 				},
 				{
 					"type" : 1,
-					"name" : "combo_counter",
-					"pos" :
-					{
-						"x" : 1017.086975,
-						"y" : 478.912994
-					},
-					"prefix" : ""
-				},
-				{
-					"type" : 1,
 					"name" : "crosshair",
 					"pos" :
 					{
@@ -250,109 +240,109 @@
 					"Count" : 18,
 					"Link" : [
 						{
-							"node" : 17,
+							"node" : 16,
 							"param" : "2",
 							"param2" : "1",
 							"param3" : "1"
 						},
 						{
-							"node" : 16,
+							"node" : 15,
 							"param" : "1",
 							"param2" : "2",
 							"param3" : "11"
 						},
 						{
-							"node" : 19,
+							"node" : 18,
 							"param" : "2",
 							"param2" : "3",
 							"param3" : "4"
 						},
 						{
-							"node" : 20,
+							"node" : 19,
 							"param" : "0",
 							"param2" : "0",
 							"param3" : "17"
 						},
 						{
-							"node" : 21,
+							"node" : 20,
 							"param" : "5",
 							"param2" : "3",
 							"param3" : "10"
 						},
 						{
-							"node" : 22,
+							"node" : 21,
 							"param" : "3",
 							"param2" : "5",
 							"param3" : "7"
 						},
 						{
-							"node" : 23,
+							"node" : 22,
 							"param" : "4",
 							"param2" : "3",
 							"param3" : "5"
 						},
 						{
-							"node" : 24,
+							"node" : 23,
 							"param" : "0",
 							"param2" : "0",
 							"param3" : "15"
 						},
 						{
-							"node" : 25,
+							"node" : 24,
 							"param" : "0",
 							"param2" : "0",
 							"param3" : "13"
 						},
 						{
-							"node" : 26,
+							"node" : 25,
 							"param" : "3",
 							"param2" : "2",
 							"param3" : "3"
 						},
 						{
-							"node" : 27,
+							"node" : 26,
 							"param" : "3",
 							"param2" : "4",
 							"param3" : "6"
 						},
 						{
-							"node" : 28,
+							"node" : 27,
 							"param" : "0",
 							"param2" : "0",
 							"param3" : "12"
 						},
 						{
-							"node" : 29,
+							"node" : 28,
 							"param" : "0",
 							"param2" : "0",
 							"param3" : "14"
 						},
 						{
-							"node" : 30,
+							"node" : 29,
 							"param" : "0",
 							"param2" : "0",
 							"param3" : "18"
 						},
 						{
-							"node" : 51,
+							"node" : 49,
 							"param" : "0",
 							"param2" : "0",
 							"param3" : "20"
 						},
 						{
-							"node" : 52,
+							"node" : 50,
 							"param" : "0",
 							"param2" : "0",
 							"param3" : "19"
 						},
 						{
-							"node" : 53,
+							"node" : 51,
 							"param" : "5",
 							"param2" : "6",
 							"param3" : "16"
 						},
 						{
-							"node" : 54,
+							"node" : 52,
 							"param" : "6",
 							"param2" : "5",
 							"param3" : "21"
@@ -500,7 +490,7 @@
 					"Count" : 1,
 					"Link" : [
 						{
-							"node" : 32,
+							"node" : 31,
 							"param" : "",
 							"param2" : "",
 							"param3" : ""
@@ -540,7 +530,7 @@
 					"Count" : 1,
 					"Link" : [
 						{
-							"node" : 35,
+							"node" : 34,
 							"param" : "",
 							"param2" : "",
 							"param3" : ""
@@ -561,7 +551,7 @@
 					"Count" : 1,
 					"Link" : [
 						{
-							"node" : 39,
+							"node" : 38,
 							"param" : "",
 							"param2" : "",
 							"param3" : ""
@@ -582,7 +572,7 @@
 					"Count" : 1,
 					"Link" : [
 						{
-							"node" : 40,
+							"node" : 39,
 							"param" : "",
 							"param2" : "",
 							"param3" : ""
@@ -628,16 +618,6 @@
 					"prefix" : ""
 				},
 				{
-					"type" : 1,
-					"name" : "timer_label",
-					"pos" :
-					{
-						"x" : 814.350159,
-						"y" : 453.586884
-					},
-					"prefix" : ""
-				},
-				{
 					"type" : 0,
 					"name" : "Object",
 					"pos" :
@@ -669,7 +649,7 @@
 					"Count" : 1,
 					"Link" : [
 						{
-							"node" : 44,
+							"node" : 42,
 							"param" : "",
 							"param2" : "",
 							"param3" : ""
@@ -690,7 +670,7 @@
 					"Count" : 1,
 					"Link" : [
 						{
-							"node" : 45,
+							"node" : 43,
 							"param" : "",
 							"param2" : "",
 							"param3" : ""
@@ -720,7 +700,7 @@
 					"Count" : 1,
 					"Link" : [
 						{
-							"node" : 48,
+							"node" : 46,
 							"param" : "",
 							"param2" : "",
 							"param3" : ""
@@ -806,12 +786,22 @@
 					"Count" : 1,
 					"Link" : [
 						{
-							"node" : 56,
+							"node" : 54,
 							"param" : "",
 							"param2" : "",
 							"param3" : ""
 						}
 					]
+				},
+				{
+					"type" : 1,
+					"name" : "target_markers",
+					"pos" :
+					{
+						"x" : 1019.936768,
+						"y" : 481.169250
+					},
+					"prefix" : ""
 				}
 			],
 			"dep_count" : 24,
@@ -13799,6 +13789,72 @@
 					]
 				}
 			]
+		},
+		{
+			"type" : "SpriteAsset",
+			"uid" : 293236,
+			"ed_camera_2d" :
+			{
+				"x" : 0.000000,
+				"y" : 0.000000
+			},
+			"ed_camera_2d_zoom" : 1.000000,
+			"Name" : "TargetMarker",
+			"x" : 0.000000,
+			"y" : 0.000000,
+			"width" : 32.000000,
+			"height" : 32.000000,
+			"anchorn_x" : 0.500000,
+			"anchorn_y" : 0.500000,
+			"use_source_size" : false,
+			"source_scaleX" : 1.000000,
+			"source_scaleY" : 1.000000,
+			"sprite" :
+			{
+				"width" : 44,
+				"height" : 40,
+				"type" : 0,
+				"color" :
+				{
+					"r" : 1.000000,
+					"g" : 1.000000,
+					"b" : 1.000000,
+					"a" : 1.000000
+				},
+				"texName" : "Sprites/target.png",
+				"texMode" : 0,
+				"texFilter" : 0,
+				"count" : 1,
+				"Rect" : [
+					{
+						"pos" :
+						{
+							"x" : 0.000000,
+							"y" : 40.000000
+						},
+						"size" :
+						{
+							"x" : 44.000000,
+							"y" : 40.000000
+						},
+						"uv" :
+						{
+							"x" : 0.000000,
+							"y" : 1.000000
+						},
+						"duv" :
+						{
+							"x" : 1.000000,
+							"y" : 1.000000
+						},
+						"offset" :
+						{
+							"x" : 0.000000,
+							"y" : 0.000000
+						}
+					}
+				]
+			}
 		}
 	],
 	"SceneObject" : [
@@ -14006,16 +14062,16 @@
 			"uid" : -211527680,
 			"ed_camera_2d" :
 			{
-				"x" : 1627.910522,
-				"y" : 269.740417
+				"x" : 1323.507813,
+				"y" : 320.455139
 			},
-			"ed_camera_2d_zoom" : 0.740000,
+			"ed_camera_2d_zoom" : 0.980000,
 			"Name" : "MainScript",
 			"State" : 2,
 			"Group" : "Level",
 			"Layer" : "Level",
 			"asset_uid" : 200902816,
-			"Count" : 58,
+			"Count" : 57,
 			"Node" : [
 				{
 					"callback_type" : "",
@@ -14154,7 +14210,7 @@
 					}
 				},
 				{
-					"callback_type" : "",
+					"callback_type" : "OnContact",
 					"objects_list" :
 					{
 						"count" : 1,
@@ -14162,7 +14218,7 @@
 							{
 								"object" :
 								{
-									"uid" : 913790,
+									"uid" : 654204,
 									"child_uid" : 0,
 									"is_asset" : false
 								}
@@ -14232,23 +14288,6 @@
 								{
 									"uid" : 0,
 									"child_uid" : 0,
-									"is_asset" : false
-								}
-							}
-						]
-					}
-				},
-				{
-					"callback_type" : "",
-					"objects_list" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"object" :
-								{
-									"uid" : 130815,
-									"child_uid" : 359284,
 									"is_asset" : false
 								}
 							}
@@ -14749,23 +14788,6 @@
 					}
 				},
 				{
-					"callback_type" : "",
-					"objects_list" :
-					{
-						"count" : 1,
-						"Elem" : [
-							{
-								"object" :
-								{
-									"uid" : 130815,
-									"child_uid" : 261501,
-									"is_asset" : false
-								}
-							}
-						]
-					}
-				},
-				{
 					"callback_type" : "OnContactStart",
 					"objects_list" :
 					{
@@ -14996,6 +15018,23 @@
 								"object" :
 								{
 									"uid" : 0,
+									"child_uid" : 0,
+									"is_asset" : false
+								}
+							}
+						]
+					}
+				},
+				{
+					"callback_type" : "OnContact",
+					"objects_list" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"object" :
+								{
+									"uid" : 589821,
 									"child_uid" : 0,
 									"is_asset" : false
 								}
@@ -108161,6 +108200,39 @@
 					"type" : "Phys2DCompInst"
 				}
 			]
+		},
+		{
+			"type" : "SpriteInst",
+			"uid" : 589821,
+			"Name" : "TargetMarker",
+			"State" : 2,
+			"Group" : "",
+			"Layer" : "",
+			"axis_scale" : 1.000000,
+			"Depth" : 0.300000,
+			"UseDepth" : true,
+			"draw_level" : 0,
+			"inst" :
+			{
+				"count" : 1,
+				"Elem" : [
+					{
+						"x" : 864.000000,
+						"y" : -1152.000000,
+						"index" : 0,
+						"visible" : 1,
+						"color" :
+						{
+							"r" : 1.000000,
+							"g" : 1.000000,
+							"b" : 1.000000,
+							"a" : 1.000000
+						},
+						"alpha" : 1.000000
+					}
+				]
+			},
+			"asset_uid" : 293236
 		}
 	],
 	"asset_instances" : [
@@ -108869,6 +108941,17 @@
 					"scene" : "coldrain.sca",
 					"inst_uid" : 982270,
 					"inst_name" : "Crate"
+				}
+			]
+		},
+		{
+			"asset_uid" : 293236,
+			"asset_name" : "TargetMarker",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 589821,
+					"inst_name" : "TargetMarker"
 				}
 			]
 		},

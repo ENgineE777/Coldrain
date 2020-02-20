@@ -20,7 +20,7 @@
 		{
 			"name" : "Hero.MOVE_STRAFE",
 			"AliasesRef" : [
-				{ "names" : ["KEY_LSHIFT"] },
+				{ "names" : ["KEY_SPACE"] },
 			]
 		},
 		{
@@ -50,14 +50,14 @@
 		{
 			"name" : "Hero.Fire",
 			"AliasesRef" : [
-				{ "names" : ["MS_BTN0"] },
+				{ "names" : ["MS_BTN1"] },
 				{ "names" : ["JOY_RIGHT_TRIGER"] }
 			]
 		},
 		{
 			"name" : "Hero.Cover",
 			"AliasesRef" : [
-				{ "names" : ["MS_BTN1"] },
+				{ "names" : ["KEY_LSHIFT"] },
 				{ "names" : ["JOY_LEFT_TRIGER"] }
 			]
 		},
@@ -70,7 +70,7 @@
 		{
 			"name" : "Hero.Kick",
 			"AliasesRef" : [
-				{ "names" : ["KEY_E"] }
+				{ "names" : ["MS_BTN0"] }
 			]
 		}
 	]

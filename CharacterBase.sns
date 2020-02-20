@@ -44,8 +44,6 @@ class Character
 	float stun_time = 1.0f;
 	Graph2D@ legs_graph;
 	Phys2D@ legs_phys;
-	int combo_counter = 0;
-	float combo_cooldown = -1.0f;
 	bool is_player = false;
 
 	Vector2 started_pos;
@@ -156,7 +154,7 @@ class ChracterPoolBase
 
 	}
 
-	void AgroEnemies(float dist)
+	void AgroEnemies(float dist, bool check_visibilit)
 	{
 
 	}

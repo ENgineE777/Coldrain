@@ -177,19 +177,12 @@ class EnemiesPool : ChracterPoolBase
 
 			float dir_x = enemy.x - hero.x;
 			float dir_y = enemy.y - hero.y;
-			float angle = atan2(dir_y, dir_x);
 
 			if (dir_x * dir_x + dir_y * dir_y < dist2)
 			{
-				float pos_x, pos_y, normal_x, normal_y;
-				string str_object;
-				int obj_index;
-
-				float dist_offset = 35.0f;
-
 				if (check_visibility && !IsPlayerVisible(enemy, dist))
 				{
-					continue;
+					//continue;
 				}
 
 				enemy.track.Activate(false);
@@ -355,7 +348,7 @@ class EnemiesPool : ChracterPoolBase
 							{
 								if (enemy.graph.ActivateLink("shoot"))
 								{
-									AgroEnemies(1000);
+									AgroEnemies(1000, true);
 
 									main.AddBullet(enemy, dir_x, dir_y, 2.0f);
 

@@ -727,6 +727,11 @@
 			"type" : 1
 		},
 		{
+			"uid" : 589821,
+			"name" : "TargetMarker",
+			"type" : 1
+		},
+		{
 			"uid" : -1,
 			"name" : "",
 			"type" : 2
@@ -1434,6 +1439,11 @@
 			"type" : 1
 		},
 		{
+			"uid" : 293236,
+			"name" : "TargetMarker",
+			"type" : 1
+		},
+		{
 			"uid" : -1,
 			"name" : "",
 			"type" : 2
@@ -1441,7 +1451,7 @@
 		{
 			"uid" : -1,
 			"name" : "UI",
-			"type" : 0
+			"type" : 3
 		},
 		{
 			"uid" : 784383,
