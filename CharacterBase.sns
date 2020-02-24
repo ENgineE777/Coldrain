@@ -9,7 +9,10 @@ enum EnemyState
 	MelleAttack,
 	Stalking,
 	FatalityReady,
-	Stunned
+	Stunned,
+	GoingToGhost,
+	WaitingForTarget,
+	ReturningToTrack
 }
 
 class Character
@@ -45,6 +48,8 @@ class Character
 	Graph2D@ legs_graph;
 	Phys2D@ legs_phys;
 	bool is_player = false;
+	Vector2 last_track_pos;
+	Vector2 last_target_pos;
 
 	Vector2 started_pos;
 	Character@ target;

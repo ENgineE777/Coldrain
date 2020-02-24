@@ -14,10 +14,10 @@
 	},
 	"camera_pos" :
 	{
-		"x" : 635.975830,
-		"y" : -874.256775
+		"x" : 385.347107,
+		"y" : -366.293396
 	},
-	"camera_zoom" : 1.700000,
+	"camera_zoom" : 0.920000,
 	"move_mode" : 1,
 	"gizmo2d_align_x" : 96,
 	"gizmo2d_align_y" : 96,
@@ -98,8 +98,8 @@
 					"name" : "blood_splash_obj",
 					"pos" :
 					{
-						"x" : 1246.038208,
-						"y" : 147.544815
+						"x" : 1246.038330,
+						"y" : 147.544769
 					},
 					"prefix" : ""
 				},
@@ -799,7 +799,7 @@
 					"pos" :
 					{
 						"x" : 1019.936768,
-						"y" : 481.169281
+						"y" : 481.169312
 					},
 					"prefix" : ""
 				}
@@ -13789,7 +13789,7 @@
 			"State" : 2,
 			"Group" : "",
 			"Layer" : "",
-			"Depth" : 0.470000,
+			"Depth" : 0.460000,
 			"hack_height" : -32.000000,
 			"draw_level" : 0,
 			"inst" :
@@ -13898,7 +13898,7 @@
 			"State" : 2,
 			"Group" : "Level",
 			"Layer" : "Level",
-			"Depth" : 0.465000,
+			"Depth" : 0.455000,
 			"hack_height" : -32.000000,
 			"draw_level" : 0,
 			"inst" :
@@ -13987,7 +13987,7 @@
 			"ed_camera_2d" :
 			{
 				"x" : 1323.507813,
-				"y" : 320.455109
+				"y" : 320.454987
 			},
 			"ed_camera_2d_zoom" : 0.980000,
 			"Name" : "MainScript",
@@ -108125,6 +108125,154 @@
 				]
 			},
 			"asset_uid" : 293236
+		},
+		{
+			"type" : "BlueprintInst",
+			"uid" : 946935,
+			"Name" : "Grass",
+			"State" : 2,
+			"Group" : "Floor1",
+			"Layer" : "Floor1",
+			"x" : 0.000000,
+			"y" : 0.000000,
+			"asset_uid" : 292725,
+			"Childs" : [
+				{
+					"type" : "SceneScriptInst",
+					"uid" : 902052,
+					"Name" : "GrassScript",
+					"State" : 2,
+					"Group" : "Floor1",
+					"Layer" : "Floor1",
+					"asset_uid" : 258164,
+					"Count" : 5,
+					"Node" : [
+						{
+							"callback_type" : "OnContactStart",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 946935,
+											"child_uid" : 413468,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "OnContactEnd",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 946935,
+											"child_uid" : 413468,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : 0,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						},
+						{
+							"callback_type" : "",
+							"objects_list" :
+							{
+								"count" : 1,
+								"Elem" : [
+									{
+										"object" :
+										{
+											"uid" : -211527680,
+											"child_uid" : 0,
+											"is_asset" : false
+										}
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"type" : "SpriteInst",
+					"uid" : 413468,
+					"Name" : "GrassInst",
+					"State" : 2,
+					"Group" : "Floor1",
+					"Layer" : "Floor1",
+					"axis_scale" : 1.000000,
+					"Depth" : 0.520000,
+					"UseDepth" : true,
+					"draw_level" : 0,
+					"inst" :
+					{
+						"count" : 1,
+						"Elem" : [
+							{
+								"x" : 672.000000,
+								"y" : -768.000000,
+								"index" : 0,
+								"visible" : 1,
+								"color" :
+								{
+									"r" : 1.000000,
+									"g" : 1.000000,
+									"b" : 1.000000,
+									"a" : 1.000000
+								},
+								"alpha" : 1.000000
+							}
+						]
+					},
+					"asset_uid" : 913653,
+					"components" : [
+						{
+							"type" : "Phys2DCompInst"
+						}
+					]
+				}
+			]
 		}
 	],
 	"asset_instances" : [
@@ -108844,6 +108992,17 @@
 					"scene" : "coldrain.sca",
 					"inst_uid" : 589821,
 					"inst_name" : "TargetMarker"
+				}
+			]
+		},
+		{
+			"asset_uid" : 292725,
+			"asset_name" : "Grass",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 946935,
+					"inst_name" : "Grass"
 				}
 			]
 		},
@@ -110154,6 +110313,32 @@
 				{
 					"scene" : "coldrain.sca",
 					"inst_uid" : 196087,
+					"inst_child_uid" : 413468,
+					"is_asset" : false,
+					"inst_name" : "GrassInst"
+				}
+			]
+		},
+		{
+			"asset_uid" : 258164,
+			"asset_name" : "Grass",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 946935,
+					"inst_child_uid" : 902052,
+					"is_asset" : false,
+					"inst_name" : "GrassScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 913653,
+			"asset_name" : "Grass",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 946935,
 					"inst_child_uid" : 413468,
 					"is_asset" : false,
 					"inst_name" : "GrassInst"

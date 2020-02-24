@@ -637,7 +637,7 @@ class Main
 
 						if (active_character_pool != null)
 						{
-							active_character_pool.AgroEnemies(1000, true);
+							active_character_pool.AgroEnemies(1000, false);
 						}
 					}
 				}

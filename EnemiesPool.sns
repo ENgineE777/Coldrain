@@ -182,11 +182,26 @@ class EnemiesPool : ChracterPoolBase
 			{
 				if (check_visibility && !IsPlayerVisible(enemy, dist))
 				{
-					//continue;
+					continue;
 				}
 
-				enemy.track.Activate(false);
-				enemy.state = Idle;
+				if (enemy.state != Shoting || enemy.state != Pursuit)
+				{
+					if (enemy.state == FollowingTrack)
+					{
+						enemy.track.Activate(false);
+						enemy.last_track_pos.x = enemy.x;
+						enemy.last_track_pos.y = enemy.y;
+					}
+
+					enemy.last_target_pos.x = hero.x;
+					enemy.last_target_pos.y = hero.y - 32.0f;
+
+					enemy.state = GoingToGhost;
+					enemy.FindPath(nav_mesh, enemy.last_target_pos.x, enemy.last_target_pos.y);
+					enemy.graph.ActivateLink("Walk");
+					enemy.legs_graph.ActivateLink("Walk");
+				}
 			}
 		}
 	}
@@ -226,6 +241,12 @@ class EnemiesPool : ChracterPoolBase
 				{
 					enemy.track.Activate(false);
 					enemy.state = Idle;
+
+					enemy.last_track_pos.x = enemy.x;
+					enemy.last_track_pos.y = enemy.y;
+
+					enemy.last_target_pos.x = hero.x;
+					enemy.last_target_pos.y = hero.y - 32.0f;
 				}
 			}
 			else
@@ -265,7 +286,7 @@ class EnemiesPool : ChracterPoolBase
 					dir_y /= len;
 				}
 
-				if (enemy.state != FatalityReady && enemy.state != Stunned && enemy.state != Stalking)
+				if (enemy.state == Shoting || enemy.state == GoingClose || enemy.state == MelleAttack || enemy.state == Stalking)
 				{
 					enemy.angle = atan2(dir_y, dir_x);
 					enemy.legs_angle = enemy.angle;
@@ -307,15 +328,69 @@ class EnemiesPool : ChracterPoolBase
 							}
 							else
 							{
-								enemy.state = Pursuit;
-								enemy.FindPath(nav_mesh, hero.x, hero.y);
+								enemy.state = GoingToGhost;
+								enemy.FindPath(nav_mesh, enemy.last_target_pos.x, enemy.last_target_pos.y);
+								enemy.graph.ActivateLink("Walk");
 								enemy.legs_graph.ActivateLink("Walk");
 							}
 						}
 						else
 						{
+							enemy.state = ReturningToTrack;
+							enemy.FindPath(nav_mesh, enemy.last_track_pos.x, enemy.last_track_pos.y);
+							enemy.graph.ActivateLink("Walk");
+							enemy.legs_graph.ActivateLink("Walk");
+						}
+					}
+					else
+					if (enemy.state == GoingToGhost)
+					{
+						if (IsPlayerVisible(enemy, view_dist))
+						{
+							enemy.state = Idle;
 							enemy.graph.ActivateLink("Idle");
 							enemy.legs_graph.ActivateLink("Idle");
+						}
+						else
+						if (enemy.MoveAlongPath(nav_mesh, dt) == 0)
+						{
+							enemy.state = WaitingForTarget;
+							enemy.action_time = 3.0f;
+							enemy.graph.ActivateLink("Idle");
+							enemy.legs_graph.ActivateLink("Idle");
+						}
+					}
+					else
+					if (enemy.state == WaitingForTarget)
+					{
+						if (IsPlayerVisible(enemy, view_dist))
+						{
+							enemy.state = Idle;
+							enemy.graph.ActivateLink("Idle");
+							enemy.legs_graph.ActivateLink("Idle");
+						}
+						else
+						if (enemy.action_time < 0.0f)
+						{
+							enemy.state = ReturningToTrack;
+							enemy.FindPath(nav_mesh, enemy.last_track_pos.x, enemy.last_track_pos.y);
+							enemy.graph.ActivateLink("Walk");
+							enemy.legs_graph.ActivateLink("Walk");
+						}
+					}
+					else
+					if (enemy.state == ReturningToTrack)
+					{
+						if (IsPlayerVisible(enemy, view_dist))
+						{
+							enemy.state = Idle;
+							enemy.graph.ActivateLink("Idle");
+							enemy.legs_graph.ActivateLink("Idle");
+						}
+						if (enemy.MoveAlongPath(nav_mesh, dt) == 0)
+						{
+							enemy.state = FollowingTrack;
+							enemy.track.Activate(true);
 						}
 					}
 					else
@@ -341,6 +416,9 @@ class EnemiesPool : ChracterPoolBase
 						}
 						else
 						{
+							enemy.last_target_pos.x = hero.x;
+							enemy.last_target_pos.y = hero.y - 32.0f;
+
 							enemy.legs_graph.ActivateLink("Walk");
 							enemy.legs_phys.Move(-dir_y * 350.0f * dt * enemy.strafe_dir, dir_x * 350.0f * dt * enemy.strafe_dir, 3, 0);
 
@@ -348,7 +426,7 @@ class EnemiesPool : ChracterPoolBase
 							{
 								if (enemy.graph.ActivateLink("shoot"))
 								{
-									AgroEnemies(1000, true);
+									AgroEnemies(1000, false);
 
 									main.AddBullet(enemy, dir_x, dir_y, 2.0f);
 
