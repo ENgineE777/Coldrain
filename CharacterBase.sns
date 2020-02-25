@@ -52,7 +52,7 @@ class Character
 	Vector2 last_target_pos;
 
 	Vector2 started_pos;
-	Character@ target;
+	Character@ target = null;
 	bool lock_to_target = false;
 	bool in_fly_to_target = false;
 
@@ -67,7 +67,10 @@ class Character
 
 		r = g = b = alpha = 1.0;
 		
-		legs_phys.SetGroup(1);
+		if (legs_phys != null)
+		{
+			legs_phys.SetGroup(1);
+		}
 
 		fly_time = -1.0f;
 		spill_blood = -1.0f;
@@ -76,8 +79,20 @@ class Character
 		track.Reset();
 		track.Activate(true);
 
-		graph.GotoNode("Walk");
-		legs_graph.GotoNode("Walk");
+		if (legs_graph != null)
+		{
+			graph.GotoNode("Walk");
+			legs_graph.GotoNode("Walk");
+		}
+	}
+
+	void ActivateLink(string&in name)
+	{
+		if (legs_graph != null)
+		{
+			graph.ActivateLink(name);
+			legs_graph.ActivateLink(name);
+		}
 	}
 
 	void FindPath(NavMesh2DGen@ nav_mesh, float target_x, float target_y)

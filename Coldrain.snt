@@ -99,7 +99,7 @@
 		{
 			"uid" : -1,
 			"name" : "Floor2",
-			"type" : 0
+			"type" : 3
 		},
 		{
 			"uid" : -1,
@@ -139,7 +139,7 @@
 		{
 			"uid" : -1,
 			"name" : "Triggers",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : 1048061,
@@ -529,7 +529,7 @@
 		{
 			"uid" : -1,
 			"name" : "Floor6",
-			"type" : 0
+			"type" : 3
 		},
 		{
 			"uid" : -1,
@@ -881,7 +881,7 @@
 		{
 			"uid" : -1,
 			"name" : "Enemies",
-			"type" : 0
+			"type" : 3
 		},
 		{
 			"uid" : -1,
@@ -891,7 +891,7 @@
 		{
 			"uid" : -1,
 			"name" : "Legs",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : -1780856064,
@@ -916,7 +916,7 @@
 		{
 			"uid" : -1,
 			"name" : "SoldierAK47",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : 365581472,
@@ -946,7 +946,7 @@
 		{
 			"uid" : -1,
 			"name" : "SoldierGrabber",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : 817014,
@@ -981,7 +981,7 @@
 		{
 			"uid" : -1,
 			"name" : "SoldierMachete",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : 587893,
@@ -1054,6 +1054,11 @@
 			"type" : 2
 		},
 		{
+			"uid" : 1360461440,
+			"name" : "SoldierDead",
+			"type" : 1
+		},
+		{
 			"uid" : -1,
 			"name" : "",
 			"type" : 2
@@ -1064,8 +1069,8 @@
 			"type" : 1
 		},
 		{
-			"uid" : 1360461440,
-			"name" : "Soldier_Dead",
+			"uid" : 916599,
+			"name" : "SecurityCamera",
 			"type" : 1
 		},
 		{
@@ -1076,7 +1081,7 @@
 		{
 			"uid" : -1,
 			"name" : "Floors",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : 491007,
@@ -1256,7 +1261,7 @@
 		{
 			"uid" : -1,
 			"name" : "Items",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : 586229,
@@ -1301,7 +1306,7 @@
 		{
 			"uid" : -1,
 			"name" : "Lasers",
-			"type" : 3
+			"type" : 0
 		},
 		{
 			"uid" : 424445,
