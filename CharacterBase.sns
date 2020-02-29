@@ -148,6 +148,31 @@ class Character
 
 		g = b = legs_g = legs_b = higlight_time > 0.0f ? 0.5f : 1.0f;
 	}
+
+	void RenderInfo()
+	{
+		string state_name = "Unknown";
+
+		switch (state)
+		{
+			case FollowingTrack: state_name = "FollowingTrack"; break;
+			case Idle: state_name = "Idle"; break;
+			case Pursuit: state_name = "Pursuit"; break;
+			case Shoting: state_name = "Shoting"; break;
+			case Strafing: state_name = "Strafing"; break;
+			case GoingClose: state_name = "GoingClose"; break;
+			case MelleAttack: state_name = "MelleAttack"; break;
+			case Stalking: state_name = "Stalking"; break;
+			case FatalityReady: state_name = "FatalityReady"; break;
+			case Stunned: state_name = "Stunned"; break;
+			case GoingToGhost: state_name = "GoingToGhost"; break;
+			case WaitingForTarget: state_name = "WaitingForTarget"; break;
+			case ReturningToTrack: state_name = "ReturningToTrack"; break;
+		}
+		
+		core.render.DebugText2D(Vector2(x, y - 64), state_name);
+		core.render.DebugText2D(Vector2(x, y - 40), "atime: " + action_time);
+	}
 }
 
 class ChracterPoolBase

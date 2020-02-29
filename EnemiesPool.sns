@@ -177,6 +177,8 @@ class EnemiesPool : ChracterPoolBase
 
 	void AgroEnemies(float dist, bool check_visibility)
 	{
+		core.render.DebugCircle2D(Vector2(hero.x, hero.y - 32), dist);
+
 		float dist2 = dist * dist;
 
 		for (int j = 0; j<GetEnemiesCount();j++)
@@ -232,6 +234,7 @@ class EnemiesPool : ChracterPoolBase
 			}
 
 			enemy.UpdateHighlight(dt);
+			enemy.RenderInfo();
 
 			if (enemy.state == FollowingTrack)
 			{
