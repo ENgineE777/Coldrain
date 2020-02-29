@@ -5,6 +5,7 @@ class AgroSource
 	Vector2 pos;
 	float radius;
 	bool check_visibility;
+	bool alert_mode;
 	float timer;
 }
 
@@ -187,7 +188,7 @@ class EnemiesPool : ChracterPoolBase
 		}
 	}
 
-	void AgroEnemiesImpl(Vector2 pos, float radius, bool check_visibility)
+	void AgroEnemiesImpl(Vector2 pos, float radius, bool check_visibility, bool alert_mode)
 	{
 		core.render.DebugCircle2D(pos, radius);
 
@@ -225,6 +226,7 @@ class EnemiesPool : ChracterPoolBase
 					enemy.last_target_pos.y = pos.y;
 
 					enemy.state = GoingToGhost;
+					enemy.alert_mode = alert_mode;
 					enemy.FindPath(nav_mesh, enemy.last_target_pos.x, enemy.last_target_pos.y);
 					enemy.ActivateLink("Walk");
 				}
@@ -232,7 +234,7 @@ class EnemiesPool : ChracterPoolBase
 		}
 	}
 
-	void AgroEnemies(Vector2 pos, float radius, bool check_visibility)
+	void AgroEnemies(Vector2 pos, float radius, bool check_visibility, bool alert_mode)
 	{
 		int index = agros.get_length();
 		agros.resize(index+1);
@@ -242,6 +244,7 @@ class EnemiesPool : ChracterPoolBase
 		agro.pos = pos;
 		agro.radius = radius;
 		agro.check_visibility = check_visibility;
+		agro.alert_mode = alert_mode;
 		agro.timer = 0.0f;
 	}
 
@@ -260,7 +263,7 @@ class EnemiesPool : ChracterPoolBase
 			}
 			else
 			{
-				AgroEnemiesImpl(agro.pos, agro.radius * agro.timer / 0.35f, agro.check_visibility);
+				AgroEnemiesImpl(agro.pos, agro.radius * agro.timer / 0.35f, agro.check_visibility, agro.alert_mode);
 			}
 		}
 
@@ -391,6 +394,7 @@ class EnemiesPool : ChracterPoolBase
 						else
 						{
 							enemy.state = ReturningToTrack;
+							enemy.alert_mode = false;
 							enemy.FindPath(nav_mesh, enemy.last_track_pos.x, enemy.last_track_pos.y);
 							enemy.ActivateLink("Walk");
 						}
@@ -400,6 +404,7 @@ class EnemiesPool : ChracterPoolBase
 					{
 						if (IsPlayerVisible(enemy, view_dist))
 						{
+							enemy.alert_mode = true;
 							enemy.state = Idle;
 							enemy.ActivateLink("Idle");
 						}
@@ -423,6 +428,7 @@ class EnemiesPool : ChracterPoolBase
 						if (enemy.action_time < 0.0f)
 						{
 							enemy.state = ReturningToTrack;
+							enemy.alert_mode = false;
 							enemy.FindPath(nav_mesh, enemy.last_track_pos.x, enemy.last_track_pos.y);
 							enemy.ActivateLink("Walk");
 						}
@@ -432,6 +438,7 @@ class EnemiesPool : ChracterPoolBase
 					{
 						if (IsPlayerVisible(enemy, view_dist))
 						{
+							enemy.alert_mode = true;
 							enemy.state = Idle;
 							enemy.ActivateLink("Idle");
 						}
@@ -474,7 +481,7 @@ class EnemiesPool : ChracterPoolBase
 							{
 								if (enemy.graph.ActivateLink("shoot"))
 								{
-									AgroEnemies(Vector2(enemy.x, enemy.y - 32.0f), 1000, false);
+									AgroEnemies(Vector2(enemy.x, enemy.y - 32.0f), 1000, false, true);
 
 									main.AddBullet(enemy, dir_x, dir_y, 2.0f, main.player_group);
 
@@ -852,7 +859,7 @@ class EnemiesPool : ChracterPoolBase
 						{
 							if (core.utils.IsPointInSector(Vector2(hero.x, hero.y - 32), Vector2(enemy.x, enemy.y - 32), enemy.angle, enemy_view_dist, enemy_view_angle, main.show_debug_check))
 							{
-								AgroEnemies(Vector2(hero.x, hero.y - 32.0f), 1500.0f, false);
+								AgroEnemies(Vector2(hero.x, hero.y - 32.0f), 1500.0f, false, true);
 							}
 							else
 							{
