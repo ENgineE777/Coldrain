@@ -72,6 +72,12 @@
 			"AliasesRef" : [
 				{ "names" : ["MS_BTN0"] }
 			]
+		},
+		{
+			"name" : "Hero.Whistle",
+			"AliasesRef" : [
+				{ "names" : ["KEY_E"] }
+			]
 		}
 	]
 } 

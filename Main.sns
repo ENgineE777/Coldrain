@@ -65,6 +65,7 @@ class Main
 	int alias_fire = -1;
 	int alias_kick = -1;
 	int alias_cover = -1;
+	int alias_whistle = -1;
 
 	float crouch_speed = 225.0f;
 	float speed = 350.0f;
@@ -309,7 +310,7 @@ class Main
 		{
 			if (!is_crouching && active_character_pool != null)
 			{
-				active_character_pool.AgroEnemies(Vector2(hero[0].x, hero[0].y - 32.0f), 475, true);
+				active_character_pool.AgroEnemies(Vector2(hero[0].x, hero[0].y - 32.0f), 425, true);
 			}
 		}
 	}
@@ -399,6 +400,7 @@ class Main
 		alias_fire = core.controls.GetAliasIndex("Hero.Fire");
 		alias_kick = core.controls.GetAliasIndex("Hero.Kick");
 		alias_cover = core.controls.GetAliasIndex("Hero.Cover");
+		alias_whistle = core.controls.GetAliasIndex("Hero.Whistle");
 
 		max_health_level_width = health_level.width;
 		hero[0].is_player = true;
@@ -660,6 +662,14 @@ class Main
 				else
 				{
 					target_markers[0].visible = 0;
+				}
+
+				if (core.controls.GetState(alias_whistle, 1) > 0)
+				{
+					if (active_character_pool != null)
+					{
+						active_character_pool.AgroEnemies(Vector2(hero.x, hero.y - 32.0f), 650, false);
+					}
 				}
 
 				if (core.controls.GetState(alias_kick, 1) > 0)
