@@ -1,5 +1,13 @@
 #import "Main"
 
+class AgroSource
+{
+	Vector2 pos;
+	float radius;
+	bool check_visibility;
+	float timer;
+}
+
 class EnemiesPool : ChracterPoolBase
 {
 	Main@ main;
@@ -14,6 +22,8 @@ class EnemiesPool : ChracterPoolBase
 	Character@ hero;
 	float enemy_view_dist = 700.0f;
 	float enemy_view_angle = 65.0f * 0.01745329f;
+
+	array<AgroSource> agros;
 
 	void OnInit()
 	{
@@ -175,11 +185,11 @@ class EnemiesPool : ChracterPoolBase
 		}
 	}
 
-	void AgroEnemies(float dist, bool check_visibility)
+	void AgroEnemiesImpl(Vector2 pos, float radius, bool check_visibility)
 	{
-		core.render.DebugCircle2D(Vector2(hero.x, hero.y - 32), dist);
+		core.render.DebugCircle2D(pos, radius);
 
-		float dist2 = dist * dist;
+		float dist2 = radius * radius;
 
 		for (int j = 0; j<GetEnemiesCount();j++)
 		{
@@ -190,12 +200,12 @@ class EnemiesPool : ChracterPoolBase
 				continue;
 			}
 
-			float dir_x = enemy.x - hero.x;
-			float dir_y = enemy.y - hero.y;
+			float dir_x = enemy.x - pos.x;
+			float dir_y = enemy.y - pos.y;
 
 			if (dir_x * dir_x + dir_y * dir_y < dist2)
 			{
-				if (check_visibility && !IsPlayerVisible(enemy, dist))
+				if (check_visibility && !IsPlayerVisible(enemy, radius))
 				{
 					continue;
 				}
@@ -209,8 +219,8 @@ class EnemiesPool : ChracterPoolBase
 						enemy.last_track_pos.y = enemy.y;
 					}
 
-					enemy.last_target_pos.x = hero.x;
-					enemy.last_target_pos.y = hero.y - 32.0f;
+					enemy.last_target_pos.x = pos.x;
+					enemy.last_target_pos.y = pos.y;
 
 					enemy.state = GoingToGhost;
 					enemy.FindPath(nav_mesh, enemy.last_target_pos.x, enemy.last_target_pos.y);
@@ -220,8 +230,38 @@ class EnemiesPool : ChracterPoolBase
 		}
 	}
 
+	void AgroEnemies(Vector2 pos, float radius, bool check_visibility)
+	{
+		int index = agros.get_length();
+		agros.resize(index+1);
+
+		AgroSource@ agro = @agros[index];
+
+		agro.pos = pos;
+		agro.radius = radius;
+		agro.check_visibility = check_visibility;
+		agro.timer = 0.0f;
+	}
+
 	void Update(float dt)
 	{
+		for (int j = 0; j < agros.get_length();j++)
+		{
+			AgroSource@ agro = @agros[j];
+
+			agro.timer += dt;
+
+			if (agro.timer > 0.35f)
+			{
+				agros.removeAt(j);
+				j--;
+			}
+			else
+			{
+				AgroEnemiesImpl(agro.pos, agro.radius * agro.timer / 0.35f, agro.check_visibility);
+			}
+		}
+
 		for (int j = 0; j<GetEnemiesCount();j++)
 		{
 			Character@ enemy = GetEnemy(j);
@@ -432,7 +472,7 @@ class EnemiesPool : ChracterPoolBase
 							{
 								if (enemy.graph.ActivateLink("shoot"))
 								{
-									AgroEnemies(1000, false);
+									AgroEnemies(Vector2(enemy.x, enemy.y - 32.0f), 1000, false);
 
 									main.AddBullet(enemy, dir_x, dir_y, 2.0f);
 
@@ -810,7 +850,7 @@ class EnemiesPool : ChracterPoolBase
 						{
 							if (core.utils.IsPointInSector(Vector2(hero.x, hero.y - 32), Vector2(enemy.x, enemy.y - 32), enemy.angle, enemy_view_dist, enemy_view_angle, main.show_debug_check))
 							{
-								AgroEnemies(1500.0f, false);
+								AgroEnemies(Vector2(hero.x, hero.y - 32.0f), 1500.0f, false);
 							}
 							else
 							{

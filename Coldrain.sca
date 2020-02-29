@@ -63532,7 +63532,7 @@
 					"State" : 2,
 					"Group" : "Floor1",
 					"Layer" : "Floor1",
-					"collider_radius" : 32.000000
+					"collider_radius" : 48.000000
 				},
 				{
 					"type" : "SceneScriptInst",

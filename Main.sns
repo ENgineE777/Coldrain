@@ -309,7 +309,7 @@ class Main
 		{
 			if (!is_crouching && active_character_pool != null)
 			{
-				active_character_pool.AgroEnemies(475, true);
+				active_character_pool.AgroEnemies(Vector2(hero[0].x, hero[0].y - 32.0f), 475, true);
 			}
 		}
 	}
@@ -637,7 +637,7 @@ class Main
 
 						if (active_character_pool != null)
 						{
-							active_character_pool.AgroEnemies(1000, false);
+							active_character_pool.AgroEnemies(Vector2(hero.x, hero.y - 32.0f), 1000, false);
 						}
 					}
 				}
