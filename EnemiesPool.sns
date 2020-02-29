@@ -103,6 +103,8 @@ class EnemiesPool : ChracterPoolBase
 
 	void RestartLevel()
 	{
+		agros.resize(0);
+
 		for (int j = 0; j<GetEnemiesCount(); j++)
 		{
 			Character@ enemy = GetEnemy(j);
@@ -474,7 +476,7 @@ class EnemiesPool : ChracterPoolBase
 								{
 									AgroEnemies(Vector2(enemy.x, enemy.y - 32.0f), 1000, false);
 
-									main.AddBullet(enemy, dir_x, dir_y, 2.0f);
+									main.AddBullet(enemy, dir_x, dir_y, 2.0f, main.player_group);
 
 									enemy.action_time = 0.55f;
 

@@ -376,6 +376,8 @@ class Main
 		hero[0].lock_to_target = false;
 		hero[0].in_fly_to_target = false;
 
+		bullets.resize(0);
+
 		for (int i = 0; i < character_pools.get_length(); i++)
 		{
 			character_pools[i].RestartLevel();
@@ -615,24 +617,7 @@ class Main
 					{
 						for (int i = 0; i < 1; i++)
 						{
-							int index = bullets.get_length();
-							bullets.resize(index+1);
-
-							bullets[index].x = hero.x + crosshair_dir_x * crosshair_fire_dist;
-							bullets[index].y = hero.y + crosshair_dir_y * crosshair_fire_dist - 32;
-
-							float angle = atan2(crosshair_dir_y, crosshair_dir_x);// + (-3.0f + 6.0f * rand()) * 0.01745329f;
-							bullets[index].dir_x = cos(angle);
-							bullets[index].dir_y = sin(angle);
-							bullets[index].dist = 0;
-							bullets[index].angle = angle;
-							bullets[index].alpha = 0.0f;
-							bullets[index].width = 0.0f;
-
-							if (is_crouching)
-							{
-								bullets[index].group = 3;
-							}
+							AddBullet(hero, crosshair_dir_x, crosshair_dir_y, 0.0f, is_crouching ? 3 : 1);
 						}
 
 						if (active_character_pool != null)
@@ -760,7 +745,7 @@ class Main
 		}*/
 	}
 
-	void AddBullet(Character@ chracter, float dir_x, float dir_y, float degree_delta)
+	void AddBullet(Character@ chracter, float dir_x, float dir_y, float degree_delta, int group)
 	{
 		int index = bullets.get_length();
 		bullets.resize(index + 1);
@@ -769,14 +754,14 @@ class Main
 		bullet.x = chracter.x + dir_x * crosshair_fire_dist;
 		bullet.y = chracter.y + dir_y * crosshair_fire_dist - 32;
 				
-		float angle = chracter.angle + (-degree_delta + 2.0f * degree_delta * rand()) * 0.01745329f;
+		float angle = atan2(dir_y, dir_x) + (-degree_delta + 2.0f * degree_delta * rand()) * 0.01745329f;
 		bullet.dir_x = cos(angle);
 		bullet.dir_y = sin(angle);
 		bullet.dist = 0;
 		bullet.angle = angle;
 		bullet.alpha = 0.0f;
 		bullet.width = 0.0f;
-		bullet.group = player_group;
+		bullet.group = group;
 	}
 
 	void UpdateBullets(float dt)
