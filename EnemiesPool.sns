@@ -159,6 +159,17 @@ class EnemiesPool : ChracterPoolBase
 		return false;
 	}
 
+	bool IsPlayerVisibleInSector(Character@ enemy, float dist)
+	{
+		if (core.utils.IsPointInSector(Vector2(hero.x, hero.y - 32), Vector2(enemy.x, enemy.y - 32), enemy.angle, dist, enemy_view_angle, main.show_debug_check) &&
+			IsPlayerVisible(enemy, dist))
+		{
+			return true;
+		}
+
+		return false;
+	}
+
 	void OnEnemyAnimEvent(string&in name, int index, string&in event_name, string&in param)
 	{
 		Character@ enemy = GetEnemy(name, index);
@@ -295,8 +306,7 @@ class EnemiesPool : ChracterPoolBase
 				enemy.prev_x = enemy.x; 
 				enemy.prev_y = enemy.y;
 
-				if ((core.utils.IsPointInSector(Vector2(hero.x, hero.y - 32), Vector2(enemy.x, enemy.y - 32), enemy.angle, enemy_view_dist, enemy_view_angle, main.show_debug_check)) &&
-				 	IsPlayerVisible(enemy, enemy_view_dist))
+				if (IsPlayerVisibleInSector(enemy, enemy_view_dist))
 				{
 					enemy.track.Activate(false);
 					enemy.state = Idle;
@@ -377,7 +387,7 @@ class EnemiesPool : ChracterPoolBase
 					{
 						if (hero.hp != 0)
 						{
-							if (IsPlayerVisible(enemy, view_dist))
+							if (IsPlayerVisibleInSector(enemy, view_dist))
 							{
 								enemy.state = Shoting;
 								enemy.action_time = 0.55f;
@@ -402,7 +412,7 @@ class EnemiesPool : ChracterPoolBase
 					else
 					if (enemy.state == GoingToGhost)
 					{
-						if (IsPlayerVisible(enemy, view_dist))
+						if (IsPlayerVisibleInSector(enemy, view_dist))
 						{
 							enemy.alert_mode = true;
 							enemy.state = Idle;
@@ -419,7 +429,7 @@ class EnemiesPool : ChracterPoolBase
 					else
 					if (enemy.state == WaitingForTarget)
 					{
-						if (IsPlayerVisible(enemy, view_dist))
+						if (IsPlayerVisibleInSector(enemy, view_dist))
 						{
 							enemy.state = Idle;
 							enemy.ActivateLink("Idle");
@@ -436,7 +446,7 @@ class EnemiesPool : ChracterPoolBase
 					else
 					if (enemy.state == ReturningToTrack)
 					{
-						if (IsPlayerVisible(enemy, view_dist))
+						if (IsPlayerVisibleInSector(enemy, view_dist))
 						{
 							enemy.alert_mode = true;
 							enemy.state = Idle;

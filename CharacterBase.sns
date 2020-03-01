@@ -108,7 +108,10 @@ class Character
 	int MoveAlongPath(NavMesh2DGen@ nav_mesh, float dt)
 	{
 		int res = nav_mesh.MoveAlongPath(cur_path, dt * (alert_mode ? 300.0f : 100.0f));
-		nav_mesh.GetPathCurPoint(cur_path, x, y, angle);
+		float path_angle = angle;
+		nav_mesh.GetPathCurPoint(cur_path, x, y, path_angle);
+
+		angle = core.utils.AdvanceAngle(angle, path_angle, dt * 6.28318530f);
 
 		legs_angle = angle;
 
