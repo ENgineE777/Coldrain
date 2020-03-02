@@ -178,6 +178,11 @@ class Character
 		
 		core.render.DebugText2D(Vector2(x, y - 64), state_name);
 		core.render.DebugText2D(Vector2(x, y - 40), "atime: " + action_time);
+
+		if (state != FollowingTrack)
+		{
+			core.render.DebugText2D(last_target_pos, "TRG");
+		}
 	}
 }
 
