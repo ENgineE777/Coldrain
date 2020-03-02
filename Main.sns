@@ -310,7 +310,7 @@ class Main
 		{
 			if (!is_crouching && active_character_pool != null)
 			{
-				active_character_pool.AgroEnemies(Vector2(hero[0].x, hero[0].y - 32.0f), 425, true, false);
+				active_character_pool.AgroEnemies(Vector2(hero[0].x, hero[0].y - 32.0f), 425, true, 1);
 			}
 		}
 	}
@@ -624,7 +624,7 @@ class Main
 
 						if (active_character_pool != null)
 						{
-							active_character_pool.AgroEnemies(Vector2(hero.x, hero.y - 32.0f), 1000, false, true);
+							active_character_pool.AgroEnemies(Vector2(hero.x, hero.y - 32.0f), 1000, false, 2);
 						}
 					}
 				}
@@ -639,7 +639,7 @@ class Main
 					{
 						Character@ enemy = active_character_pool.GetEnemy(j);
 
-						if (enemy.hp > 0 && (enemy.state == FollowingTrack || enemy.state == WaitingForTarget || enemy.state == ReturningToTrack || (enemy.state == GoingToGhost && !enemy.alert_mode)) &&
+						if (enemy.hp > 0 && (enemy.state == FollowingTrack || enemy.state == WaitingForTarget || enemy.state == ReturningToTrack || (enemy.state == GoingToGhost && enemy.alert_level < 2)) &&
 							core.utils.IsPointInRectangle(Vector2(enemy.x,  enemy.y - 32.0f), Vector2(hero.x, hero.y - 32.0f), Vector2(0.0f, 0.0f), Vector2(200.0f, 160.0f), hero.angle, false /*show_debug_check*/))
 						{
 							Vector2 dir = Vector2(enemy.x, enemy.y) - Vector2(hero.x, hero.y);
@@ -669,7 +669,7 @@ class Main
 				{
 					if (active_character_pool != null)
 					{
-						active_character_pool.AgroEnemies(Vector2(hero.x, hero.y - 32.0f), 650, false, false);
+						active_character_pool.AgroEnemies(Vector2(hero.x, hero.y - 32.0f), 650, false, 1);
 					}
 				}
 

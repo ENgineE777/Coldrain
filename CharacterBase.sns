@@ -55,7 +55,7 @@ class Character
 	Character@ target = null;
 	bool lock_to_target = false;
 	bool in_fly_to_target = false;
-	bool alert_mode = true;
+	int alert_level = 0;
 
 	void Reset()
 	{
@@ -79,6 +79,8 @@ class Character
 
 		track.Reset();
 		track.Activate(true);
+
+		alert_level = 0;
 
 		if (legs_graph != null)
 		{
@@ -107,7 +109,7 @@ class Character
 
 	int MoveAlongPath(NavMesh2DGen@ nav_mesh, float dt)
 	{
-		int res = nav_mesh.MoveAlongPath(cur_path, dt * (alert_mode ? 300.0f : 100.0f));
+		int res = nav_mesh.MoveAlongPath(cur_path, dt * (100.0f + alert_level * 100.0f));
 		float path_angle = angle;
 		nav_mesh.GetPathCurPoint(cur_path, x, y, path_angle);
 
@@ -203,7 +205,7 @@ class ChracterPoolBase
 
 	}
 
-	void AgroEnemies(Vector2 pos, float radius, bool check_visibility, bool alert_mode)
+	void AgroEnemies(Vector2 pos, float radius, bool check_visibility, int alert_level)
 	{
 
 	}
