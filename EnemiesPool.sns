@@ -320,6 +320,7 @@ class EnemiesPool : ChracterPoolBase
 				if (IsPlayerVisibleInSector(enemy, enemy_view_dist))
 				{
 					enemy.track.Activate(false);
+					enemy.alert_level = 2;
 					enemy.state = Idle;
 
 					enemy.last_track_pos.x = enemy.x;
