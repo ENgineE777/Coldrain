@@ -356,7 +356,7 @@ class EnemiesPool : ChracterPoolBase
 					dir_y /= len;
 				}
 
-				if (enemy.state == Shoting || enemy.state == GoingClose || enemy.state == MelleAttack || enemy.state == Stalking)
+				if (enemy.state == Shoting || enemy.state == MelleAttack || enemy.state == Stalking)
 				{
 					enemy.angle = atan2(dir_y, dir_x);
 					enemy.legs_angle = enemy.angle;
