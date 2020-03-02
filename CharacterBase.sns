@@ -113,7 +113,7 @@ class Character
 		float path_angle = angle;
 		nav_mesh.GetPathCurPoint(cur_path, x, y, path_angle);
 
-		angle = core.utils.AdvanceAngle(angle, path_angle, dt * 6.28318530f);
+		angle = core.utils.AdvanceAngle(angle, path_angle, dt * 6.28318530f * 1.25f);
 
 		legs_angle = angle;
 
