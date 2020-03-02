@@ -246,16 +246,19 @@ class EnemiesPool : ChracterPoolBase
 		}
 	}
 
-	void AgroEnemies(Vector2 pos, float radius, bool check_visibility, int alert_level)
+	void AgroEnemies(Vector2 pos, float radius, bool check_visibility, int alert_level, bool visualize)
 	{
-		int index = agros.get_length();
-		agros.resize(index+1);
+		if (visualize)
+		{
+			int index = agros.get_length();
+			agros.resize(index+1);
 
-		AgroSource@ agro = @agros[index];
+			AgroSource@ agro = @agros[index];
 
-		agro.pos = pos;
-		agro.radius = radius;
-		agro.timer = 0.0f;
+			agro.pos = pos;
+			agro.radius = radius;
+			agro.timer = 0.0f;
+		}
 
 		AgroEnemiesImpl(pos, radius, check_visibility, alert_level);
 	}
@@ -492,7 +495,7 @@ class EnemiesPool : ChracterPoolBase
 							{
 								if (enemy.graph.ActivateLink("shoot"))
 								{
-									AgroEnemies(Vector2(enemy.x, enemy.y - 32.0f), 1000, false, 2);
+									AgroEnemies(Vector2(enemy.x, enemy.y - 32.0f), 1000, false, 2, false);
 
 									main.AddBullet(enemy, dir_x, dir_y, 2.0f, main.player_group);
 
@@ -870,7 +873,7 @@ class EnemiesPool : ChracterPoolBase
 						{
 							if (core.utils.IsPointInSector(Vector2(hero.x, hero.y - 32), Vector2(enemy.x, enemy.y - 32), enemy.angle, enemy_view_dist, enemy_view_angle, main.show_debug_check))
 							{
-								AgroEnemies(Vector2(hero.x, hero.y - 32.0f), 1500.0f, false, 2);
+								AgroEnemies(Vector2(hero.x, hero.y - 32.0f), 1500.0f, false, 2, false);
 							}
 							else
 							{

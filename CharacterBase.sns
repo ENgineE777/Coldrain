@@ -210,7 +210,7 @@ class ChracterPoolBase
 
 	}
 
-	void AgroEnemies(Vector2 pos, float radius, bool check_visibility, int alert_level)
+	void AgroEnemies(Vector2 pos, float radius, bool check_visibility, int alert_level, bool visualize)
 	{
 
 	}

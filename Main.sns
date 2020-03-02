@@ -310,7 +310,7 @@ class Main
 		{
 			if (!is_crouching && active_character_pool != null)
 			{
-				active_character_pool.AgroEnemies(Vector2(hero[0].x, hero[0].y - 32.0f), 425, true, 1);
+				active_character_pool.AgroEnemies(Vector2(hero[0].x, hero[0].y - 32.0f), 425, true, 1, true);
 			}
 		}
 	}
@@ -624,7 +624,7 @@ class Main
 
 						if (active_character_pool != null)
 						{
-							active_character_pool.AgroEnemies(Vector2(hero.x, hero.y - 32.0f), 1000, false, 2);
+							active_character_pool.AgroEnemies(Vector2(hero.x, hero.y - 32.0f), 1000, false, 2, false);
 						}
 					}
 				}
@@ -669,7 +669,7 @@ class Main
 				{
 					if (active_character_pool != null)
 					{
-						active_character_pool.AgroEnemies(Vector2(hero.x, hero.y - 32.0f), 650, false, 1);
+						active_character_pool.AgroEnemies(Vector2(hero.x, hero.y - 32.0f), 650, false, 1, true);
 					}
 				}
 
