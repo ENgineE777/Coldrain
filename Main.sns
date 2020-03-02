@@ -639,7 +639,8 @@ class Main
 					{
 						Character@ enemy = active_character_pool.GetEnemy(j);
 
-						if (enemy.hp > 0 && enemy.state == FollowingTrack && core.utils.IsPointInRectangle(Vector2(enemy.x,  enemy.y - 32.0f), Vector2(hero.x, hero.y - 32.0f), Vector2(0.0f, 0.0f), Vector2(200.0f, 160.0f), hero.angle, false /*show_debug_check*/))
+						if (enemy.hp > 0 && (enemy.state == FollowingTrack || enemy.state == WaitingForTarget || enemy.state == ReturningToTrack || (enemy.state == GoingToGhost && !enemy.alert_mode)) &&
+							core.utils.IsPointInRectangle(Vector2(enemy.x,  enemy.y - 32.0f), Vector2(hero.x, hero.y - 32.0f), Vector2(0.0f, 0.0f), Vector2(200.0f, 160.0f), hero.angle, false /*show_debug_check*/))
 						{
 							Vector2 dir = Vector2(enemy.x, enemy.y) - Vector2(hero.x, hero.y);
 							float cur_dist = dir.Length();
