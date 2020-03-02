@@ -209,7 +209,8 @@ class EnemiesPool : ChracterPoolBase
 		{
 			Character@ enemy = GetEnemy(j);
 
-			if (enemy.hp == 0 || enemy.type == 4 || enemy.state != FollowingTrack)
+			if (enemy.hp == 0 || enemy.type == 4 ||
+				(enemy.state != FollowingTrack && enemy.state != GoingToGhost && enemy.state != WaitingForTarget && enemy.state != ReturningToTrack))
 			{
 				continue;
 			}
