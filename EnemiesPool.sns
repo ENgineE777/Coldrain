@@ -340,6 +340,11 @@ class EnemiesPool : ChracterPoolBase
 
 				float view_dist = enemy_view_dist;
 				
+				if (enemy.alert_level > 1)
+				{
+					view_dist *= 1.25;
+				}
+
 				if (enemy.type == 1)
 				{
 					view_dist = 300.0f;
