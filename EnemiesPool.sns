@@ -22,6 +22,9 @@ class EnemiesPool : ChracterPoolBase
 	float enemy_view_dist = 700.0f;
 	float enemy_view_angle = 65.0f * 0.01745329f;
 
+	Vector2 last_target_pos;
+	int last_target_pos_is_valid = 0;
+
 	array<AgroSource> agros;
 
 	void OnInit()
@@ -230,8 +233,7 @@ class EnemiesPool : ChracterPoolBase
 						enemy.last_track_pos.y = enemy.y;
 					}
 
-					enemy.last_target_pos.x = pos.x;
-					enemy.last_target_pos.y = pos.y;
+					enemy.last_target_pos = pos;
 
 					enemy.state = GoingToGhost;
 					if (enemy.alert_level < alert_level)
@@ -265,6 +267,11 @@ class EnemiesPool : ChracterPoolBase
 
 	void Update(float dt)
 	{
+		if (last_target_pos_is_valid > 0)
+		{
+			last_target_pos_is_valid--;
+		}
+
 		for (int j = 0; j < agros.get_length();j++)
 		{
 			AgroSource@ agro = @agros[j];
@@ -423,11 +430,27 @@ class EnemiesPool : ChracterPoolBase
 							enemy.ActivateLink("Idle");
 						}
 						else
-						if (enemy.MoveAlongPath(nav_mesh, dt) == 0)
 						{
-							enemy.state = WaitingForTarget;
-							enemy.action_time = 3.0f;
-							enemy.ActivateLink("Idle");
+							bool still_moving = true;
+
+							if (last_target_pos_is_valid > 0)
+							{
+								Vector2 dir = last_target_pos - enemy.last_target_pos;
+
+								if (dir.Length() > 25.0f)
+								{
+									enemy.last_target_pos = last_target_pos;
+									enemy.FindPath(nav_mesh, enemy.last_target_pos.x, enemy.last_target_pos.y);
+									still_moving = false;	
+								}
+							}
+
+							if (still_moving && enemy.MoveAlongPath(nav_mesh, dt) == 0)
+							{
+								enemy.state = WaitingForTarget;
+								enemy.action_time = 3.0f;
+								enemy.ActivateLink("Idle");
+							}
 						}
 					}
 					else
@@ -439,12 +462,30 @@ class EnemiesPool : ChracterPoolBase
 							enemy.ActivateLink("Idle");
 						}
 						else
-						if (enemy.action_time < 0.0f)
 						{
-							enemy.state = ReturningToTrack;
-							enemy.alert_level = 0;
-							enemy.FindPath(nav_mesh, enemy.last_track_pos.x, enemy.last_track_pos.y);
-							enemy.ActivateLink("Walk");
+							bool still_waiting = true;
+
+							if (last_target_pos_is_valid > 0)
+							{
+								Vector2 dir = last_target_pos - enemy.last_target_pos;
+
+								if (dir.Length() > 25.0f)
+								{
+									enemy.state = GoingToGhost;
+									enemy.alert_level = 2;
+									enemy.last_target_pos = last_target_pos;
+									enemy.FindPath(nav_mesh, enemy.last_target_pos.x, enemy.last_target_pos.y);
+									still_waiting = false;	
+								} 
+							} 
+
+							if (still_waiting && enemy.action_time < 0.0f)
+							{
+								enemy.state = ReturningToTrack;
+								enemy.alert_level = 0;
+								enemy.FindPath(nav_mesh, enemy.last_track_pos.x, enemy.last_track_pos.y);
+								enemy.ActivateLink("Walk");
+							}
 						}
 					}
 					else
@@ -487,6 +528,9 @@ class EnemiesPool : ChracterPoolBase
 						{
 							enemy.last_target_pos.x = hero.x;
 							enemy.last_target_pos.y = hero.y - 32.0f;
+
+							last_target_pos = enemy.last_target_pos;
+							last_target_pos_is_valid = 2;
 
 							enemy.ActivateLink("Walk");
 							enemy.legs_phys.Move(-dir_y * 350.0f * dt * enemy.strafe_dir, dir_x * 350.0f * dt * enemy.strafe_dir, 3, 0);
