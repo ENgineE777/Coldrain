@@ -4,8 +4,6 @@ class AgroSource
 {
 	Vector2 pos;
 	float radius;
-	bool check_visibility;
-	int alert_level;
 	float timer;
 }
 
@@ -201,8 +199,6 @@ class EnemiesPool : ChracterPoolBase
 
 	void AgroEnemiesImpl(Vector2 pos, float radius, bool check_visibility, int alert_level)
 	{
-		core.render.DebugCircle2D(pos, radius);
-
 		float dist2 = radius * radius;
 
 		for (int j = 0; j<GetEnemiesCount();j++)
@@ -259,9 +255,9 @@ class EnemiesPool : ChracterPoolBase
 
 		agro.pos = pos;
 		agro.radius = radius;
-		agro.check_visibility = check_visibility;
-		agro.alert_level = alert_level;
 		agro.timer = 0.0f;
+
+		AgroEnemiesImpl(pos, radius, check_visibility, alert_level);
 	}
 
 	void Update(float dt)
@@ -279,7 +275,7 @@ class EnemiesPool : ChracterPoolBase
 			}
 			else
 			{
-				AgroEnemiesImpl(agro.pos, agro.radius * agro.timer / 0.35f, agro.check_visibility, agro.alert_level);
+				core.render.DebugCircle2D(agro.pos, agro.radius * agro.timer / 0.35f);
 			}
 		}
 
