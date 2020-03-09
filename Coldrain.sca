@@ -14,10 +14,10 @@
 	},
 	"camera_pos" :
 	{
-		"x" : 3097.431641,
-		"y" : 226.587280
+		"x" : 1408.097290,
+		"y" : -884.722229
 	},
-	"camera_zoom" : 0.200000,
+	"camera_zoom" : 0.380000,
 	"move_mode" : 1,
 	"gizmo2d_align_x" : 98,
 	"gizmo2d_align_y" : 98,
