@@ -12,6 +12,7 @@ enum EnemyState
 	Stunned,
 	Wondering,
 	GoingToGhost,
+	GoingToDeadFriend,
 	WaitingForTarget,
 	ReturningToTrack
 }
@@ -58,6 +59,8 @@ class Character
 	bool in_fly_to_target = false;
 	int alert_level = 0;
 
+	array<Character@> deadFriends;
+
 	void Reset()
 	{
 		state = FollowingTrack;
@@ -80,6 +83,8 @@ class Character
 
 		track.Reset();
 		track.Activate(true);
+
+		deadFriends.resize(0);
 
 		alert_level = 0;
 
@@ -174,6 +179,7 @@ class Character
 			case Stunned: state_name = "Stunned"; break;
 			case Wondering: state_name = "Wondering"; break;
 			case GoingToGhost: state_name = "GoingToGhost"; break;
+			case GoingToDeadFriend: state_name = "GoingToDeadFriend"; break;
 			case WaitingForTarget: state_name = "WaitingForTarget"; break;
 			case ReturningToTrack: state_name = "ReturningToTrack"; break;
 		}

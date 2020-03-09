@@ -77,7 +77,7 @@ class EnemiesPool : ChracterPoolBase
 	{
 		if (name == "SoldiersMachete_Legs" || name == "SoldiersMachete")
 		{
-			return soldiersMachete[index];			
+			return soldiersMachete[index];
 		}
 
 		if (name == "SoldiersAK47_Legs" || name == "SoldiersAK47")
@@ -103,6 +103,36 @@ class EnemiesPool : ChracterPoolBase
 		return null;
 	}
 
+	bool EnemyHitted(Character@ enemy, string&in name, int index)
+	{
+		if (name == "SoldiersMachete_Legs" || name == "SoldiersMachete")
+		{
+			return (@enemy == @soldiersMachete[index]);
+		}
+
+		if (name == "SoldiersAK47_Legs" || name == "SoldiersAK47")
+		{
+			return (@enemy == @soldiersAK47[index]);
+		}
+
+		if (name == "SoldiersStalker_Legs" || name == "SoldiersStalker")
+		{
+			return (@enemy == @soldiersStalker[index]);
+		}
+
+		if (name == "SoldiersGrabber_Legs" || name == "SoldiersGrabber")
+		{
+			return (@enemy == @soldiersGrabber[index]);
+		}
+
+		if (name == "SoldiersGrabber_Legs" || name == "SoldiersGrabber")
+		{
+			return (@enemy == @soldiersGrabber[index]);
+		}
+
+		return false;
+	}
+
 	void RestartLevel()
 	{
 		agros.resize(0);
@@ -114,22 +144,14 @@ class EnemiesPool : ChracterPoolBase
 		}
 	}
 
-	bool IsPlayerVisibleByRadius(Character@ enemy, float dist)
-	{
-		float dir_x = hero.x - enemy.x;
-		float dir_y = hero.y - enemy.y;
-
-		return dir_x * dir_x + dir_y * dir_y < dist * dist;
-	}
-
-	bool IsPlayerVisible(Character@ enemy, float dist)
+	bool IsCharacterVisible(Character@ enemy, Character@ target, float dist)
 	{
 		float pos_x, pos_y, normal_x, normal_y;
 		string str_object;
 		int obj_index;
 
-		float dir_x = hero.x - enemy.x;
-		float dir_y = hero.y - enemy.y;
+		float dir_x = target.x - enemy.x;
+		float dir_y = target.y - enemy.y;
 
 		float len = sqrt(dir_x * dir_x + dir_y * dir_y);
 
@@ -150,7 +172,24 @@ class EnemiesPool : ChracterPoolBase
 			{
 				//core.render.DrawLine2D(enemy.x+ dir_x * dist_offset, enemy.y + dir_y * dist_offset - 33.0f, pos_x, pos_y);
 
-				if (str_object == "Hero_Legs")
+				if (@target == @hero)
+				{
+					if (str_object == "Hero_Legs")
+					{
+						return true;
+					}
+				}
+				else
+				{
+					if (EnemyHitted(target, str_object, obj_index))
+					{
+						return true;
+					}
+				}
+			}
+			else
+			{
+				if (target.hp == 0)
 				{
 					return true;
 				}
@@ -160,15 +199,61 @@ class EnemiesPool : ChracterPoolBase
 		return false;
 	}
 
-	bool IsPlayerVisibleInSector(Character@ enemy, float dist)
+	bool IsPlayerVisible(Character@ enemy, float dist)
 	{
-		if (core.utils.IsPointInSector(Vector2(hero.x, hero.y - 32), Vector2(enemy.x, enemy.y - 32), enemy.angle, dist, enemy_view_angle, main.show_debug_check) &&
-			IsPlayerVisible(enemy, dist))
+		return IsCharacterVisible(enemy, hero, dist);
+	}
+
+	bool IsChracterVisibleInSector(Character@ enemy, Character@ target, float dist)
+	{
+		if (core.utils.IsPointInSector(Vector2(target.x, target.y - 32), Vector2(enemy.x, enemy.y - 32), enemy.angle, dist, enemy_view_angle, main.show_debug_check) &&
+			IsCharacterVisible(enemy, target, dist))
 		{
 			return true;
 		}
 
 		return false;
+	}
+
+	bool IsPlayerVisibleInSector(Character@ enemy, float dist)
+	{
+		return IsChracterVisibleInSector(enemy, hero, dist);
+	}
+
+	Character@ IsDeadFriendVisibleInSector(Character@ enemy, float dist)
+	{
+		for (int j = 0; j<GetEnemiesCount();j++)
+		{
+			Character@ candidate = GetEnemy(j);
+
+			if (candidate.hp > 0)
+			{
+				continue;
+			}
+
+			bool already_checked = false;
+
+			for (int j = 0; j<enemy.deadFriends.get_length(); j++)
+			{
+				if (@enemy.deadFriends[j] == @candidate)
+				{
+					already_checked = true;
+					break;
+				}
+			}
+
+			if (already_checked)
+			{
+				continue;
+			}
+
+			if (IsChracterVisibleInSector(enemy, candidate, dist))
+			{
+				return @candidate;
+			}
+		}
+
+		return null;
 	}
 
 	void OnEnemyAnimEvent(string&in name, int index, string&in event_name, string&in param)
@@ -328,6 +413,24 @@ class EnemiesPool : ChracterPoolBase
 					enemy.last_target_pos.x = hero.x;
 					enemy.last_target_pos.y = hero.y - 32.0f;
 				}
+				else
+				{
+					Character@ victim = IsDeadFriendVisibleInSector(enemy, enemy_view_dist);
+
+					if (victim != null)
+					{
+						enemy.deadFriends.insertLast(victim);
+
+						enemy.state = GoingToDeadFriend;
+						enemy.alert_level = 2;
+						enemy.FindPath(nav_mesh, victim.x, victim.y);
+						enemy.ActivateLink("Walk");
+
+						enemy.track.Activate(false);
+						enemy.last_track_pos.x = enemy.x;
+						enemy.last_track_pos.y = enemy.y;
+					}
+				}
 			}
 			else
 			{
@@ -439,20 +542,24 @@ class EnemiesPool : ChracterPoolBase
 					else
 					if (enemy.state == Wondering)
 					{
-						if (enemy.action_time < 0.001f)
+						if (IsPlayerVisibleInSector(enemy, view_dist))
 						{
-							if (!IsPlayerVisibleInSector(enemy, view_dist))
-							{
-								enemy.state = GoingToGhost;
-								enemy.FindPath(nav_mesh, enemy.last_target_pos.x, enemy.last_target_pos.y);
-								enemy.ActivateLink("Walk");
-							}
-							else
+							enemy.last_target_pos.x = hero.x;
+							enemy.last_target_pos.y = hero.y - 32.0f;
+
+							if (enemy.action_time < 0.001f)
 							{
 								enemy.state = Shoting;
 								enemy.alert_level = 2;
 								enemy.action_time = 0.55f;
 							}
+						}
+						else
+						if (enemy.action_time < 0.001f)
+						{
+							enemy.state = GoingToGhost;
+							enemy.FindPath(nav_mesh, enemy.last_target_pos.x, enemy.last_target_pos.y);
+							enemy.ActivateLink("Walk");
 						}
 					}
 					else
@@ -488,6 +595,24 @@ class EnemiesPool : ChracterPoolBase
 								enemy.strafe_dir2 = enemy.angle;
 								enemy.ActivateLink("Idle");
 							}
+						}
+					}
+					else
+					if (enemy.state == GoingToDeadFriend)
+					{
+						if (IsPlayerVisibleInSector(enemy, view_dist))
+						{
+							enemy.state = Idle;
+							enemy.ActivateLink("Idle");
+						}
+						else
+						if (enemy.MoveAlongPath(nav_mesh, dt) == 0)
+						{
+							enemy.state = WaitingForTarget;
+							enemy.action_time = 5.0f;
+							enemy.action_time2 = 0.65f;
+							enemy.strafe_dir2 = enemy.angle;
+							enemy.ActivateLink("Idle");
 						}
 					}
 					else
