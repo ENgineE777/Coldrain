@@ -467,7 +467,6 @@ class Main
 	{
 		is_crouching = (core.controls.GetState(alias_cover, 0) > 0) || (grass_counter > 0);
 		hero.legs_phys.SetGroup(is_crouching ? 4 : 1);
-		hero.alpha = is_crouching ? 0.5f : 1.0f;
 		player_group = is_crouching ? 7 : 1;
 
 		if (hero.hp > 0 && in_gas_zone)
@@ -484,6 +483,9 @@ class Main
 		if (hero.hp > 0)
 		{
 			hero.UpdateHighlight(dt);
+			hero.r = is_crouching ? 0.65f : 1.0f;
+			hero.g *= is_crouching ? 0.65f : 1.0f;
+			hero.b *= is_crouching ? 0.65f : 1.0f;
 
 			if (hero.lock_to_target)
 			{
