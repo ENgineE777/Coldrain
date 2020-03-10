@@ -144,14 +144,14 @@ class EnemiesPool : ChracterPoolBase
 		}
 	}
 
-	bool IsCharacterVisible(Character@ enemy, Character@ target, float dist)
+	bool IsCharacterVisible(Character@ enemy, Character@ target, float dist, Vector2 dir = Vector2(0.0f, 0.0f))
 	{
 		float pos_x, pos_y, normal_x, normal_y;
 		string str_object;
 		int obj_index;
 
-		float dir_x = target.x - enemy.x;
-		float dir_y = target.y - enemy.y;
+		float dir_x = target.x - enemy.x - dir.x;
+		float dir_y = target.y - enemy.y - dir.y;
 
 		float len = sqrt(dir_x * dir_x + dir_y * dir_y);
 
@@ -167,7 +167,7 @@ class EnemiesPool : ChracterPoolBase
 			dir_x /= len;
 			dir_y /= len;
 
-			if (core.scene.Raycast2D(enemy.x + dir_x * dist_offset, enemy.y + dir_y * dist_offset - 33.0f, dir_x, dir_y, len - dist_offset, main.player_group,
+			if (core.scene.Raycast2D(enemy.x + dir_x * dist_offset + dir.x, enemy.y + dir_y * dist_offset - 33.0f + dir.y, dir_x, dir_y, len - dist_offset, main.player_group,
 			                    pos_x, pos_y, normal_x, normal_y, str_object, obj_index))
 			{
 				//core.render.DrawLine2D(enemy.x+ dir_x * dist_offset, enemy.y + dir_y * dist_offset - 33.0f, pos_x, pos_y);
@@ -199,9 +199,9 @@ class EnemiesPool : ChracterPoolBase
 		return false;
 	}
 
-	bool IsPlayerVisible(Character@ enemy, float dist)
+	bool IsPlayerVisible(Character@ enemy, float dist, Vector2 dir = Vector2(0.0f, 0.0f))
 	{
-		return IsCharacterVisible(enemy, hero, dist);
+		return IsCharacterVisible(enemy, hero, dist, dir);
 	}
 
 	bool IsChracterVisibleInSector(Character@ enemy, Character@ target, float dist)
@@ -521,7 +521,7 @@ class EnemiesPool : ChracterPoolBase
 									enemy.alert_level = 2;
 									enemy.action_time = 0.55f;
 
-									enemy.ActivateLink("Idle");
+									enemy.ActivateLink("Walk");
 								}
 							}
 							else
@@ -552,6 +552,8 @@ class EnemiesPool : ChracterPoolBase
 								enemy.state = Shoting;
 								enemy.alert_level = 2;
 								enemy.action_time = 0.55f;
+
+								enemy.ActivateLink("Walk");
 							}
 						}
 						else
@@ -709,8 +711,20 @@ class EnemiesPool : ChracterPoolBase
 							last_target_pos = enemy.last_target_pos;
 							last_target_pos_is_valid = 2;
 
-							enemy.ActivateLink("Walk");
-							enemy.legs_phys.Move(-dir_y * 350.0f * dt * enemy.strafe_dir, dir_x * 350.0f * dt * enemy.strafe_dir, 3, 0);
+							Vector2 strafe_dir = Vector2(-dir_y * 350.0f * dt * enemy.strafe_dir, dir_x * 350.0f * dt * enemy.strafe_dir);
+
+							if (!IsPlayerVisible(enemy, view_dist + 20, strafe_dir))
+							{
+								enemy.strafe_dir *= -1.0f;
+								strafe_dir *= -1.0f;
+
+								if (!IsPlayerVisible(enemy, view_dist + 20, strafe_dir))
+								{
+									strafe_dir = Vector2(dir_x * 350.0f * dt, dir_y * 350.0f * dt);
+								}
+							}
+
+							enemy.legs_phys.Move(strafe_dir.x, strafe_dir.y, 3, 0);
 
 							if (enemy.action_time < 0.0f)
 							{
