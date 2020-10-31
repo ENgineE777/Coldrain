@@ -184,12 +184,12 @@ class Character
 			case ReturningToTrack: state_name = "ReturningToTrack"; break;
 		}
 		
-		core.render.DebugText2D(Vector2(x, y - 64), state_name);
-		core.render.DebugText2D(Vector2(x, y - 40), "atime: " + alert_level);
+		core.render.DebugText(Vector2(x, y - 64), 0, state_name);
+		core.render.DebugText(Vector2(x, y - 40), 0, "atime: " + alert_level);
 
 		if (state != FollowingTrack && state != ReturningToTrack)
 		{
-			core.render.DebugText2D(last_target_pos, "TRG");
+			core.render.DebugText(last_target_pos, 0, "TRG");
 		}
 	}
 }

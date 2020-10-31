@@ -3,22 +3,22 @@
 	"scene_nodes" : [
 		{
 			"uid" : -1,
-			"name" : "FX",
+			"name" : "UI",
 			"type" : 3
 		},
 		{
-			"uid" : 676955072,
-			"name" : "BloodSplash",
+			"uid" : 895327744,
+			"name" : "UIRestartMessage",
 			"type" : 1
 		},
 		{
-			"uid" : 1071438912,
-			"name" : "Bullet",
+			"uid" : 130815,
+			"name" : "Healthbar",
 			"type" : 1
 		},
 		{
-			"uid" : -2003724544,
-			"name" : "BulletWallHit",
+			"uid" : 1105479296,
+			"name" : "Crosshair",
 			"type" : 1
 		},
 		{
@@ -33,122 +33,102 @@
 		},
 		{
 			"uid" : -1,
-			"name" : "Floor1",
-			"type" : 3
+			"name" : "Floor7",
+			"type" : 0
 		},
 		{
 			"uid" : -1,
-			"name" : "Colliders",
+			"name" : "Level",
 			"type" : 3
 		},
 		{
-			"uid" : 717303,
-			"name" : "Crate",
-			"type" : 1
-		},
-		{
-			"uid" : 160757,
-			"name" : "WallHorz",
-			"type" : 1
-		},
-		{
-			"uid" : 1014262,
+			"uid" : 389878,
 			"name" : "WallVert",
 			"type" : 1
 		},
 		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : -1,
-			"name" : "Triggers",
-			"type" : 3
-		},
-		{
-			"uid" : 326652,
-			"name" : "ChangeFloor1-2",
-			"type" : 1
-		},
-		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : 553078,
-			"name" : "Enemies",
-			"type" : 1
-		},
-		{
-			"uid" : 522229,
-			"name" : "Floor1",
-			"type" : 1
-		},
-		{
-			"uid" : 946935,
-			"name" : "Grass",
-			"type" : 1
-		},
-		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : -1,
-			"name" : "Floor2",
-			"type" : 3
-		},
-		{
-			"uid" : -1,
-			"name" : "Colliders",
-			"type" : 3
-		},
-		{
-			"uid" : 228340,
-			"name" : "Crate",
-			"type" : 1
-		},
-		{
-			"uid" : 523903,
+			"uid" : 784893,
 			"name" : "WallHorz",
 			"type" : 1
 		},
 		{
-			"uid" : 686071,
+			"uid" : 982270,
+			"name" : "Crate",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : 751604,
+			"name" : "Floor7",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "Floor6",
+			"type" : 3
+		},
+		{
+			"uid" : -1,
+			"name" : "Triggers",
+			"type" : 3
+		},
+		{
+			"uid" : 654070,
+			"name" : "ToTunnel2",
+			"type" : 1
+		},
+		{
+			"uid" : 31231,
+			"name" : "ToTunnel1",
+			"type" : 1
+		},
+		{
+			"uid" : 917494,
+			"name" : "FromTunnel2",
+			"type" : 1
+		},
+		{
+			"uid" : 1045759,
+			"name" : "FromTunnel1",
+			"type" : 1
+		},
+		{
+			"uid" : 64373,
+			"name" : "ChangeFloor6-5",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "Level",
+			"type" : 3
+		},
+		{
+			"uid" : 359029,
 			"name" : "WallVert",
 			"type" : 1
 		},
 		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : -1,
-			"name" : "Doors",
-			"type" : 3
-		},
-		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : -1,
-			"name" : "Triggers",
-			"type" : 0
-		},
-		{
-			"uid" : 1048061,
-			"name" : "ChangeFloor2-1",
+			"uid" : 1046900,
+			"name" : "WallHorz",
 			"type" : 1
 		},
 		{
-			"uid" : 488950,
-			"name" : "ChangeFloor2-3",
+			"uid" : 816630,
+			"name" : "Crate",
 			"type" : 1
 		},
 		{
@@ -157,129 +137,39 @@
 			"type" : 2
 		},
 		{
-			"uid" : 687612,
+			"uid" : 488446,
+			"name" : "Weat",
+			"type" : 1
+		},
+		{
+			"uid" : 556023,
+			"name" : "Item_WeatOff",
+			"type" : 1
+		},
+		{
+			"uid" : 262143,
+			"name" : "Item_CardLvl3",
+			"type" : 1
+		},
+		{
+			"uid" : 946422,
+			"name" : "Floor6",
+			"type" : 1
+		},
+		{
+			"uid" : 785014,
 			"name" : "Enemies",
 			"type" : 1
 		},
 		{
-			"uid" : 491135,
-			"name" : "Floor2",
-			"type" : 1
-		},
-		{
-			"uid" : 947455,
-			"name" : "Grass",
-			"type" : 1
-		},
-		{
 			"uid" : -1,
 			"name" : "",
 			"type" : 2
 		},
 		{
 			"uid" : -1,
-			"name" : "Floor3",
+			"name" : "Floor5",
 			"type" : 0
-		},
-		{
-			"uid" : -1,
-			"name" : "Doors",
-			"type" : 3
-		},
-		{
-			"uid" : 62844,
-			"name" : "DoorHrz_L1_BP",
-			"type" : 1
-		},
-		{
-			"uid" : 687351,
-			"name" : "DoorHrz_L2_BP",
-			"type" : 1
-		},
-		{
-			"uid" : 980597,
-			"name" : "DoorVrt_L1_BP",
-			"type" : 1
-		},
-		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : -1,
-			"name" : "Items",
-			"type" : 0
-		},
-		{
-			"uid" : 950007,
-			"name" : "Item_CardLvl1",
-			"type" : 1
-		},
-		{
-			"uid" : 817012,
-			"name" : "Item_GasMask",
-			"type" : 1
-		},
-		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : -1,
-			"name" : "Lasers",
-			"type" : 3
-		},
-		{
-			"uid" : 30077,
-			"name" : "LaserHorz",
-			"type" : 1
-		},
-		{
-			"uid" : 686716,
-			"name" : "LaserHorzConst",
-			"type" : 1
-		},
-		{
-			"uid" : 327029,
-			"name" : "LaserVertConst",
-			"type" : 1
-		},
-		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : -1,
-			"name" : "Triggers",
-			"type" : 3
-		},
-		{
-			"uid" : 717692,
-			"name" : "ChangeFloor3-2",
-			"type" : 1
-		},
-		{
-			"uid" : 30327,
-			"name" : "ChangeFloor3-4",
-			"type" : 1
-		},
-		{
-			"uid" : 819068,
-			"name" : "ChangeFloor3-5",
-			"type" : 1
-		},
-		{
-			"uid" : 32631,
-			"name" : "GasZone",
-			"type" : 1
-		},
-		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
 		},
 		{
 			"uid" : -1,
@@ -287,13 +177,13 @@
 			"type" : 3
 		},
 		{
-			"uid" : 751733,
-			"name" : "WallHorz",
+			"uid" : 882300,
+			"name" : "WallVert",
 			"type" : 1
 		},
 		{
-			"uid" : 783862,
-			"name" : "WallVert",
+			"uid" : 621556,
+			"name" : "WallHorz",
 			"type" : 1
 		},
 		{
@@ -302,28 +192,68 @@
 			"type" : 2
 		},
 		{
-			"uid" : 652917,
-			"name" : "Crate",
+			"uid" : -1,
+			"name" : "Triggers",
+			"type" : 3
+		},
+		{
+			"uid" : 979829,
+			"name" : "ToTunnel2",
 			"type" : 1
 		},
 		{
-			"uid" : 326270,
+			"uid" : 458494,
+			"name" : "ToTunnel1",
+			"type" : 1
+		},
+		{
+			"uid" : 260085,
+			"name" : "FromTunnel2",
+			"type" : 1
+		},
+		{
+			"uid" : 324350,
+			"name" : "FromTunnel1",
+			"type" : 1
+		},
+		{
+			"uid" : 162685,
+			"name" : "ChangeFloor5-6",
+			"type" : 1
+		},
+		{
+			"uid" : 520575,
+			"name" : "ChangeFloor5-3",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : 196087,
+			"name" : "Grass",
+			"type" : 1
+		},
+		{
+			"uid" : 225399,
+			"name" : "Floor5",
+			"type" : 1
+		},
+		{
+			"uid" : 950015,
 			"name" : "Enemies",
 			"type" : 1
 		},
 		{
-			"uid" : 555510,
-			"name" : "Floor3",
+			"uid" : 588276,
+			"name" : "DoorHrz_L3_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 227316,
-			"name" : "Gas",
-			"type" : 1
-		},
-		{
-			"uid" : 163191,
-			"name" : "Grass",
+			"uid" : 64764,
+			"name" : "Crate",
 			"type" : 1
 		},
 		{
@@ -338,32 +268,17 @@
 		},
 		{
 			"uid" : -1,
-			"name" : "Doors",
+			"name" : "Walls",
 			"type" : 3
 		},
 		{
-			"uid" : 293493,
-			"name" : "DoorHrz_L2_BP",
+			"uid" : 490102,
+			"name" : "WallVert",
 			"type" : 1
 		},
 		{
-			"uid" : 260734,
-			"name" : "DoorHrz_L2_BP",
-			"type" : 1
-		},
-		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : -1,
-			"name" : "Items",
-			"type" : 3
-		},
-		{
-			"uid" : 587895,
-			"name" : "Item_CardLvl2",
+			"uid" : 913791,
+			"name" : "WallHorz",
 			"type" : 1
 		},
 		{
@@ -388,17 +303,12 @@
 		},
 		{
 			"uid" : -1,
-			"name" : "Walls",
+			"name" : "Items",
 			"type" : 3
 		},
 		{
-			"uid" : 913791,
-			"name" : "WallHorz",
-			"type" : 1
-		},
-		{
-			"uid" : 490102,
-			"name" : "WallVert",
+			"uid" : 587895,
+			"name" : "Item_CardLvl2",
 			"type" : 1
 		},
 		{
@@ -407,13 +317,28 @@
 			"type" : 2
 		},
 		{
-			"uid" : 751484,
-			"name" : "Crate",
+			"uid" : -1,
+			"name" : "Doors",
+			"type" : 3
+		},
+		{
+			"uid" : 293493,
+			"name" : "DoorHrz_L2_BP",
 			"type" : 1
 		},
 		{
-			"uid" : 816245,
-			"name" : "Enemies",
+			"uid" : 260734,
+			"name" : "DoorHrz_L2_BP",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : 424061,
+			"name" : "Grass",
 			"type" : 1
 		},
 		{
@@ -422,8 +347,13 @@
 			"type" : 1
 		},
 		{
-			"uid" : 424061,
-			"name" : "Grass",
+			"uid" : 816245,
+			"name" : "Enemies",
+			"type" : 1
+		},
+		{
+			"uid" : 751484,
+			"name" : "Crate",
 			"type" : 1
 		},
 		{
@@ -433,48 +363,8 @@
 		},
 		{
 			"uid" : -1,
-			"name" : "Floor5",
+			"name" : "Floor3",
 			"type" : 0
-		},
-		{
-			"uid" : -1,
-			"name" : "Triggers",
-			"type" : 3
-		},
-		{
-			"uid" : 520575,
-			"name" : "ChangeFloor5-3",
-			"type" : 1
-		},
-		{
-			"uid" : 162685,
-			"name" : "ChangeFloor5-6",
-			"type" : 1
-		},
-		{
-			"uid" : 324350,
-			"name" : "FromTunnel1",
-			"type" : 1
-		},
-		{
-			"uid" : 260085,
-			"name" : "FromTunnel2",
-			"type" : 1
-		},
-		{
-			"uid" : 458494,
-			"name" : "ToTunnel1",
-			"type" : 1
-		},
-		{
-			"uid" : 979829,
-			"name" : "ToTunnel2",
-			"type" : 1
-		},
-		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
 		},
 		{
 			"uid" : -1,
@@ -482,73 +372,13 @@
 			"type" : 3
 		},
 		{
-			"uid" : 621556,
-			"name" : "WallHorz",
-			"type" : 1
-		},
-		{
-			"uid" : 882300,
+			"uid" : 783862,
 			"name" : "WallVert",
 			"type" : 1
 		},
 		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : 64764,
-			"name" : "Crate",
-			"type" : 1
-		},
-		{
-			"uid" : 588276,
-			"name" : "DoorHrz_L3_BP",
-			"type" : 1
-		},
-		{
-			"uid" : 950015,
-			"name" : "Enemies",
-			"type" : 1
-		},
-		{
-			"uid" : 225399,
-			"name" : "Floor5",
-			"type" : 1
-		},
-		{
-			"uid" : 196087,
-			"name" : "Grass",
-			"type" : 1
-		},
-		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : -1,
-			"name" : "Floor6",
-			"type" : 3
-		},
-		{
-			"uid" : -1,
-			"name" : "Level",
-			"type" : 3
-		},
-		{
-			"uid" : 816630,
-			"name" : "Crate",
-			"type" : 1
-		},
-		{
-			"uid" : 1046900,
+			"uid" : 751733,
 			"name" : "WallHorz",
-			"type" : 1
-		},
-		{
-			"uid" : 359029,
-			"name" : "WallVert",
 			"type" : 1
 		},
 		{
@@ -562,28 +392,23 @@
 			"type" : 3
 		},
 		{
-			"uid" : 64373,
-			"name" : "ChangeFloor6-5",
+			"uid" : 32631,
+			"name" : "GasZone",
 			"type" : 1
 		},
 		{
-			"uid" : 1045759,
-			"name" : "FromTunnel1",
+			"uid" : 819068,
+			"name" : "ChangeFloor3-5",
 			"type" : 1
 		},
 		{
-			"uid" : 917494,
-			"name" : "FromTunnel2",
+			"uid" : 30327,
+			"name" : "ChangeFloor3-4",
 			"type" : 1
 		},
 		{
-			"uid" : 31231,
-			"name" : "ToTunnel1",
-			"type" : 1
-		},
-		{
-			"uid" : 654070,
-			"name" : "ToTunnel2",
+			"uid" : 717692,
+			"name" : "ChangeFloor3-2",
 			"type" : 1
 		},
 		{
@@ -592,68 +417,178 @@
 			"type" : 2
 		},
 		{
-			"uid" : 785014,
+			"uid" : -1,
+			"name" : "Lasers",
+			"type" : 3
+		},
+		{
+			"uid" : 327029,
+			"name" : "LaserVertConst",
+			"type" : 1
+		},
+		{
+			"uid" : 686716,
+			"name" : "LaserHorzConst",
+			"type" : 1
+		},
+		{
+			"uid" : 30077,
+			"name" : "LaserHorz",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "Items",
+			"type" : 0
+		},
+		{
+			"uid" : 817012,
+			"name" : "Item_GasMask",
+			"type" : 1
+		},
+		{
+			"uid" : 950007,
+			"name" : "Item_CardLvl1",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "Doors",
+			"type" : 3
+		},
+		{
+			"uid" : 980597,
+			"name" : "DoorVrt_L1_BP",
+			"type" : 1
+		},
+		{
+			"uid" : 687351,
+			"name" : "DoorHrz_L2_BP",
+			"type" : 1
+		},
+		{
+			"uid" : 62844,
+			"name" : "DoorHrz_L1_BP",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : 163191,
+			"name" : "Grass",
+			"type" : 1
+		},
+		{
+			"uid" : 227316,
+			"name" : "Gas",
+			"type" : 1
+		},
+		{
+			"uid" : 555510,
+			"name" : "Floor3",
+			"type" : 1
+		},
+		{
+			"uid" : 326270,
 			"name" : "Enemies",
 			"type" : 1
 		},
 		{
-			"uid" : 946422,
-			"name" : "Floor6",
-			"type" : 1
-		},
-		{
-			"uid" : 262143,
-			"name" : "Item_CardLvl3",
-			"type" : 1
-		},
-		{
-			"uid" : 556023,
-			"name" : "Item_WeatOff",
-			"type" : 1
-		},
-		{
-			"uid" : 488446,
-			"name" : "Weat",
-			"type" : 1
-		},
-		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : -1,
-			"name" : "Floor7",
-			"type" : 0
-		},
-		{
-			"uid" : -1,
-			"name" : "Level",
-			"type" : 3
-		},
-		{
-			"uid" : 982270,
+			"uid" : 652917,
 			"name" : "Crate",
 			"type" : 1
 		},
 		{
-			"uid" : 784893,
-			"name" : "WallHorz",
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "Floor2",
+			"type" : 3
+		},
+		{
+			"uid" : -1,
+			"name" : "Triggers",
+			"type" : 0
+		},
+		{
+			"uid" : 488950,
+			"name" : "ChangeFloor2-3",
 			"type" : 1
 		},
 		{
-			"uid" : 389878,
+			"uid" : 1048061,
+			"name" : "ChangeFloor2-1",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "Doors",
+			"type" : 3
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "Colliders",
+			"type" : 3
+		},
+		{
+			"uid" : 686071,
 			"name" : "WallVert",
 			"type" : 1
 		},
 		{
+			"uid" : 523903,
+			"name" : "WallHorz",
+			"type" : 1
+		},
+		{
+			"uid" : 228340,
+			"name" : "Crate",
+			"type" : 1
+		},
+		{
 			"uid" : -1,
 			"name" : "",
 			"type" : 2
 		},
 		{
-			"uid" : 751604,
-			"name" : "Floor7",
+			"uid" : 947455,
+			"name" : "Grass",
+			"type" : 1
+		},
+		{
+			"uid" : 491135,
+			"name" : "Floor2",
+			"type" : 1
+		},
+		{
+			"uid" : 687612,
+			"name" : "Enemies",
 			"type" : 1
 		},
 		{
@@ -663,27 +598,17 @@
 		},
 		{
 			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : -1,
-			"name" : "UI",
+			"name" : "Floor1",
 			"type" : 3
 		},
 		{
-			"uid" : 1105479296,
-			"name" : "Crosshair",
-			"type" : 1
+			"uid" : -1,
+			"name" : "Triggers",
+			"type" : 3
 		},
 		{
-			"uid" : 130815,
-			"name" : "Healthbar",
-			"type" : 1
-		},
-		{
-			"uid" : 895327744,
-			"name" : "UIRestartMessage",
+			"uid" : 326652,
+			"name" : "ChangeFloor1-2",
 			"type" : 1
 		},
 		{
@@ -692,38 +617,83 @@
 			"type" : 2
 		},
 		{
-			"uid" : 521845,
-			"name" : "ControlsAliases",
+			"uid" : -1,
+			"name" : "Colliders",
+			"type" : 3
+		},
+		{
+			"uid" : 1014262,
+			"name" : "WallVert",
 			"type" : 1
 		},
 		{
-			"uid" : 619895,
-			"name" : "FogOfWar",
+			"uid" : 160757,
+			"name" : "WallHorz",
 			"type" : 1
 		},
 		{
-			"uid" : 413751904,
-			"name" : "Hero",
+			"uid" : 717303,
+			"name" : "Crate",
 			"type" : 1
 		},
 		{
-			"uid" : -224630016,
-			"name" : "Hero_Legs",
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : 946935,
+			"name" : "Grass",
 			"type" : 1
 		},
 		{
-			"uid" : 410668992,
-			"name" : "LevelCamera",
+			"uid" : 522229,
+			"name" : "Floor1",
 			"type" : 1
 		},
 		{
-			"uid" : -211527680,
-			"name" : "MainScript",
+			"uid" : 553078,
+			"name" : "Enemies",
 			"type" : 1
 		},
 		{
-			"uid" : 654204,
-			"name" : "Marker",
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "FX",
+			"type" : 3
+		},
+		{
+			"uid" : -2003724544,
+			"name" : "BulletWallHit",
+			"type" : 1
+		},
+		{
+			"uid" : 1071438912,
+			"name" : "Bullet",
+			"type" : 1
+		},
+		{
+			"uid" : 676955072,
+			"name" : "BloodSplash",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : 589821,
+			"name" : "TargetMarker",
 			"type" : 1
 		},
 		{
@@ -732,8 +702,38 @@
 			"type" : 1
 		},
 		{
-			"uid" : 589821,
-			"name" : "TargetMarker",
+			"uid" : 654204,
+			"name" : "Marker",
+			"type" : 1
+		},
+		{
+			"uid" : -211527680,
+			"name" : "MainScript",
+			"type" : 1
+		},
+		{
+			"uid" : 410668992,
+			"name" : "LevelCamera",
+			"type" : 1
+		},
+		{
+			"uid" : -224630016,
+			"name" : "Hero_Legs",
+			"type" : 1
+		},
+		{
+			"uid" : 413751904,
+			"name" : "Hero",
+			"type" : 1
+		},
+		{
+			"uid" : 619895,
+			"name" : "FogOfWar",
+			"type" : 1
+		},
+		{
+			"uid" : 521845,
+			"name" : "ControlsAliases",
 			"type" : 1
 		},
 		{
@@ -745,127 +745,17 @@
 	"asset_nodes" : [
 		{
 			"uid" : -1,
-			"name" : "Blueprints",
+			"name" : "UI",
 			"type" : 3
 		},
 		{
-			"uid" : -1,
-			"name" : "Doors",
-			"type" : 3
-		},
-		{
-			"uid" : 687485,
-			"name" : "DoorHrz_L1_BP",
+			"uid" : -876151296,
+			"name" : "UIRestartMessage",
 			"type" : 1
 		},
 		{
-			"uid" : 914685,
-			"name" : "DoorHrz_L2_BP",
-			"type" : 1
-		},
-		{
-			"uid" : 750845,
-			"name" : "DoorHrz_L3_BP",
-			"type" : 1
-		},
-		{
-			"uid" : 423927,
-			"name" : "DoorHrz_L4_BP",
-			"type" : 1
-		},
-		{
-			"uid" : 752254,
-			"name" : "DoorVrt_L1_BP",
-			"type" : 1
-		},
-		{
-			"uid" : 1015807,
-			"name" : "DoorVrt_L2_BP",
-			"type" : 1
-		},
-		{
-			"uid" : 718069,
-			"name" : "DoorVrt_L3_BP",
-			"type" : 1
-		},
-		{
-			"uid" : 554103,
-			"name" : "DoorVrt_L4_BP",
-			"type" : 1
-		},
-		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : 883318,
-			"name" : "Enemies",
-			"type" : 1
-		},
-		{
-			"uid" : 292725,
-			"name" : "Grass",
-			"type" : 1
-		},
-		{
-			"uid" : 226302,
-			"name" : "LaserHorz",
-			"type" : 1
-		},
-		{
-			"uid" : 523639,
-			"name" : "LaserVert",
-			"type" : 1
-		},
-		{
-			"uid" : 979582,
-			"name" : "Weat",
-			"type" : 1
-		},
-		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : -1,
-			"name" : "Scripts",
-			"type" : 3
-		},
-		{
-			"uid" : 195958,
-			"name" : "CharacterBase",
-			"type" : 1
-		},
-		{
-			"uid" : 685438,
-			"name" : "Door",
-			"type" : 1
-		},
-		{
-			"uid" : 752380,
-			"name" : "EnemiesPool",
-			"type" : 1
-		},
-		{
-			"uid" : 258164,
-			"name" : "Grass",
-			"type" : 1
-		},
-		{
-			"uid" : 589823,
-			"name" : "Laser",
-			"type" : 1
-		},
-		{
-			"uid" : 200902816,
-			"name" : "Main",
-			"type" : 1
-		},
-		{
-			"uid" : 95996,
-			"name" : "Weat",
+			"uid" : 784383,
+			"name" : "Healthbar",
 			"type" : 1
 		},
 		{
@@ -880,6 +770,341 @@
 		},
 		{
 			"uid" : -1,
+			"name" : "Level",
+			"type" : 3
+		},
+		{
+			"uid" : -1,
+			"name" : "Lasers",
+			"type" : 0
+		},
+		{
+			"uid" : 96757,
+			"name" : "LaserVert",
+			"type" : 1
+		},
+		{
+			"uid" : 424445,
+			"name" : "LaserHorz",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "Items",
+			"type" : 0
+		},
+		{
+			"uid" : 29302,
+			"name" : "Item_WeatOff",
+			"type" : 1
+		},
+		{
+			"uid" : 589813,
+			"name" : "Item_GasMask",
+			"type" : 1
+		},
+		{
+			"uid" : 29815,
+			"name" : "Item_CardLvl4",
+			"type" : 1
+		},
+		{
+			"uid" : 621949,
+			"name" : "Item_CardLvl3",
+			"type" : 1
+		},
+		{
+			"uid" : 193021,
+			"name" : "Item_CardLvl2",
+			"type" : 1
+		},
+		{
+			"uid" : 586229,
+			"name" : "Item_CardLvl1",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "Doors",
+			"type" : 0
+		},
+		{
+			"uid" : 324092,
+			"name" : "DoorVertLvl4",
+			"type" : 1
+		},
+		{
+			"uid" : 422645,
+			"name" : "DoorVertLvl3",
+			"type" : 1
+		},
+		{
+			"uid" : 914431,
+			"name" : "DoorVertLvl2",
+			"type" : 1
+		},
+		{
+			"uid" : 883582,
+			"name" : "DoorVertLvl1",
+			"type" : 1
+		},
+		{
+			"uid" : 717431,
+			"name" : "DoorHorzLvl4",
+			"type" : 1
+		},
+		{
+			"uid" : 290942,
+			"name" : "DoorHorzLvl3",
+			"type" : 1
+		},
+		{
+			"uid" : 587388,
+			"name" : "DoorHorzLvl2",
+			"type" : 1
+		},
+		{
+			"uid" : 291455,
+			"name" : "DoorHorzLvl1",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : 554743,
+			"name" : "Ã–ÃWeat",
+			"type" : 1
+		},
+		{
+			"uid" : 2002990720,
+			"name" : "WallVert",
+			"type" : 1
+		},
+		{
+			"uid" : -719308288,
+			"name" : "WallHorz",
+			"type" : 1
+		},
+		{
+			"uid" : 2145061376,
+			"name" : "WallCorner",
+			"type" : 1
+		},
+		{
+			"uid" : 784255,
+			"name" : "TunnelWall",
+			"type" : 1
+		},
+		{
+			"uid" : 489591,
+			"name" : "Tunnel",
+			"type" : 1
+		},
+		{
+			"uid" : 292860,
+			"name" : "TunelExit",
+			"type" : 1
+		},
+		{
+			"uid" : 425975,
+			"name" : "TunelEntrance",
+			"type" : 1
+		},
+		{
+			"uid" : 948989,
+			"name" : "StairsUp",
+			"type" : 1
+		},
+		{
+			"uid" : 687615,
+			"name" : "StairsDown",
+			"type" : 1
+		},
+		{
+			"uid" : 357886,
+			"name" : "Marker",
+			"type" : 1
+		},
+		{
+			"uid" : 913653,
+			"name" : "Grass",
+			"type" : 1
+		},
+		{
+			"uid" : 652406,
+			"name" : "Gas",
+			"type" : 1
+		},
+		{
+			"uid" : 429937152,
+			"name" : "FloorWood",
+			"type" : 1
+		},
+		{
+			"uid" : -691562240,
+			"name" : "FloorGreen",
+			"type" : 1
+		},
+		{
+			"uid" : -1624141568,
+			"name" : "FloorCarpet",
+			"type" : 1
+		},
+		{
+			"uid" : 1550317184,
+			"name" : "FloorBlue",
+			"type" : 1
+		},
+		{
+			"uid" : 881149,
+			"name" : "Crate",
+			"type" : 1
+		},
+		{
+			"uid" : 684150,
+			"name" : "BackTunel",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "Hero",
+			"type" : 0
+		},
+		{
+			"uid" : -1,
+			"name" : "Legs",
+			"type" : 3
+		},
+		{
+			"uid" : -161430528,
+			"name" : "HeroLegs_Walk",
+			"type" : 1
+		},
+		{
+			"uid" : 828659840,
+			"name" : "HeroLegs_Idle",
+			"type" : 1
+		},
+		{
+			"uid" : 59089060,
+			"name" : "HeroGraph_Legs",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "Body",
+			"type" : 3
+		},
+		{
+			"uid" : 1972033280,
+			"name" : "HeroWalk",
+			"type" : 1
+		},
+		{
+			"uid" : -1464472832,
+			"name" : "HeroShoot",
+			"type" : 1
+		},
+		{
+			"uid" : 422644,
+			"name" : "HeroPreKick",
+			"type" : 1
+		},
+		{
+			"uid" : 294644,
+			"name" : "HeroKick",
+			"type" : 1
+		},
+		{
+			"uid" : 1062832448,
+			"name" : "HeroIdle",
+			"type" : 1
+		},
+		{
+			"uid" : 1078503808,
+			"name" : "HeroGraph_Body",
+			"type" : 1
+		},
+		{
+			"uid" : -1350148352,
+			"name" : "HeroDeath",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "Floors",
+			"type" : 0
+		},
+		{
+			"uid" : 980476,
+			"name" : "Floor6",
+			"type" : 1
+		},
+		{
+			"uid" : 293878,
+			"name" : "Floor5",
+			"type" : 1
+		},
+		{
+			"uid" : 881919,
+			"name" : "Floor4",
+			"type" : 1
+		},
+		{
+			"uid" : 194293,
+			"name" : "Floor3",
+			"type" : 1
+		},
+		{
+			"uid" : 29436,
+			"name" : "Floor2",
+			"type" : 1
+		},
+		{
+			"uid" : 491007,
+			"name" : "Floor1",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
 			"name" : "Enemies",
 			"type" : 3
 		},
@@ -890,87 +1115,42 @@
 		},
 		{
 			"uid" : -1,
-			"name" : "Legs",
-			"type" : 0
+			"name" : "SoldierStalker",
+			"type" : 3
 		},
 		{
-			"uid" : -1780856064,
-			"name" : "SoldierLegs_Graph",
+			"uid" : 752508,
+			"name" : "SoldierStalker_Walk",
 			"type" : 1
 		},
 		{
-			"uid" : -1039160064,
-			"name" : "SoldierLegs_Idle",
+			"uid" : 325244,
+			"name" : "SoldierStalker_StalkEnd",
 			"type" : 1
 		},
 		{
-			"uid" : 548886016,
-			"name" : "SoldierLegs_Walk",
+			"uid" : 751231,
+			"name" : "SoldierStalker_Stalk",
 			"type" : 1
 		},
 		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : -1,
-			"name" : "SoldierAK47",
-			"type" : 0
-		},
-		{
-			"uid" : 365581472,
-			"name" : "SoldierAK47_Graph",
+			"uid" : 851709,
+			"name" : "SoldierStalker_Idle",
 			"type" : 1
 		},
 		{
-			"uid" : 185616720,
-			"name" : "SoldierAK47_Idle",
+			"uid" : 524286,
+			"name" : "SoldierStalker_Graph",
 			"type" : 1
 		},
 		{
-			"uid" : 593845056,
-			"name" : "SoldierAK47_Shoot",
+			"uid" : 392183,
+			"name" : "SoldierStalker_Dead",
 			"type" : 1
 		},
 		{
-			"uid" : 281700672,
-			"name" : "SoldierAK47_Walk",
-			"type" : 1
-		},
-		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : -1,
-			"name" : "SoldierGrabber",
-			"type" : 0
-		},
-		{
-			"uid" : 817014,
-			"name" : "SoldierGrabber_Attack",
-			"type" : 1
-		},
-		{
-			"uid" : 1048445,
-			"name" : "SoldierGrabber_Dead",
-			"type" : 1
-		},
-		{
-			"uid" : 782972,
-			"name" : "SoldierGrabber_Graph",
-			"type" : 1
-		},
-		{
-			"uid" : 423285,
-			"name" : "SoldierGrabber_Idle",
-			"type" : 1
-		},
-		{
-			"uid" : 1013631,
-			"name" : "SoldierGrabber_Walk",
+			"uid" : 489334,
+			"name" : "SoldierStalker_Attack",
 			"type" : 1
 		},
 		{
@@ -984,13 +1164,8 @@
 			"type" : 0
 		},
 		{
-			"uid" : 587893,
-			"name" : "SoldierMachete_Attack",
-			"type" : 1
-		},
-		{
-			"uid" : 63478,
-			"name" : "SoldierMachete_Graph",
+			"uid" : 357759,
+			"name" : "SoldierMachete_Walk",
 			"type" : 1
 		},
 		{
@@ -999,8 +1174,13 @@
 			"type" : 1
 		},
 		{
-			"uid" : 357759,
-			"name" : "SoldierMachete_Walk",
+			"uid" : 63478,
+			"name" : "SoldierMachete_Graph",
+			"type" : 1
+		},
+		{
+			"uid" : 587893,
+			"name" : "SoldierMachete_Attack",
 			"type" : 1
 		},
 		{
@@ -1010,42 +1190,87 @@
 		},
 		{
 			"uid" : -1,
-			"name" : "SoldierStalker",
-			"type" : 3
+			"name" : "SoldierGrabber",
+			"type" : 0
 		},
 		{
-			"uid" : 489334,
-			"name" : "SoldierStalker_Attack",
+			"uid" : 1013631,
+			"name" : "SoldierGrabber_Walk",
 			"type" : 1
 		},
 		{
-			"uid" : 392183,
-			"name" : "SoldierStalker_Dead",
+			"uid" : 423285,
+			"name" : "SoldierGrabber_Idle",
 			"type" : 1
 		},
 		{
-			"uid" : 524286,
-			"name" : "SoldierStalker_Graph",
+			"uid" : 782972,
+			"name" : "SoldierGrabber_Graph",
 			"type" : 1
 		},
 		{
-			"uid" : 851709,
-			"name" : "SoldierStalker_Idle",
+			"uid" : 1048445,
+			"name" : "SoldierGrabber_Dead",
 			"type" : 1
 		},
 		{
-			"uid" : 751231,
-			"name" : "SoldierStalker_Stalk",
+			"uid" : 817014,
+			"name" : "SoldierGrabber_Attack",
 			"type" : 1
 		},
 		{
-			"uid" : 325244,
-			"name" : "SoldierStalker_StalkEnd",
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "SoldierAK47",
+			"type" : 0
+		},
+		{
+			"uid" : 281700672,
+			"name" : "SoldierAK47_Walk",
 			"type" : 1
 		},
 		{
-			"uid" : 752508,
-			"name" : "SoldierStalker_Walk",
+			"uid" : 593845056,
+			"name" : "SoldierAK47_Shoot",
+			"type" : 1
+		},
+		{
+			"uid" : 185616720,
+			"name" : "SoldierAK47_Idle",
+			"type" : 1
+		},
+		{
+			"uid" : 365581472,
+			"name" : "SoldierAK47_Graph",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "Legs",
+			"type" : 0
+		},
+		{
+			"uid" : 548886016,
+			"name" : "SoldierLegs_Walk",
+			"type" : 1
+		},
+		{
+			"uid" : -1039160064,
+			"name" : "SoldierLegs_Idle",
+			"type" : 1
+		},
+		{
+			"uid" : -1780856064,
+			"name" : "SoldierLegs_Graph",
 			"type" : 1
 		},
 		{
@@ -1064,11 +1289,6 @@
 			"type" : 2
 		},
 		{
-			"uid" : 64629,
-			"name" : "EnemytypeMetaData",
-			"type" : 1
-		},
-		{
 			"uid" : 916599,
 			"name" : "SecurityCamera",
 			"type" : 1
@@ -1079,368 +1299,8 @@
 			"type" : 2
 		},
 		{
-			"uid" : -1,
-			"name" : "Floors",
-			"type" : 0
-		},
-		{
-			"uid" : 491007,
-			"name" : "Floor1",
-			"type" : 1
-		},
-		{
-			"uid" : 29436,
-			"name" : "Floor2",
-			"type" : 1
-		},
-		{
-			"uid" : 194293,
-			"name" : "Floor3",
-			"type" : 1
-		},
-		{
-			"uid" : 881919,
-			"name" : "Floor4",
-			"type" : 1
-		},
-		{
-			"uid" : 293878,
-			"name" : "Floor5",
-			"type" : 1
-		},
-		{
-			"uid" : 980476,
-			"name" : "Floor6",
-			"type" : 1
-		},
-		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : -1,
-			"name" : "Hero",
-			"type" : 0
-		},
-		{
-			"uid" : -1,
-			"name" : "Body",
-			"type" : 3
-		},
-		{
-			"uid" : -1350148352,
-			"name" : "HeroDeath",
-			"type" : 1
-		},
-		{
-			"uid" : 1078503808,
-			"name" : "HeroGraph_Body",
-			"type" : 1
-		},
-		{
-			"uid" : 1062832448,
-			"name" : "HeroIdle",
-			"type" : 1
-		},
-		{
-			"uid" : 294644,
-			"name" : "HeroKick",
-			"type" : 1
-		},
-		{
-			"uid" : 422644,
-			"name" : "HeroPreKick",
-			"type" : 1
-		},
-		{
-			"uid" : -1464472832,
-			"name" : "HeroShoot",
-			"type" : 1
-		},
-		{
-			"uid" : 1972033280,
-			"name" : "HeroWalk",
-			"type" : 1
-		},
-		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : -1,
-			"name" : "Legs",
-			"type" : 3
-		},
-		{
-			"uid" : 59089060,
-			"name" : "HeroGraph_Legs",
-			"type" : 1
-		},
-		{
-			"uid" : 828659840,
-			"name" : "HeroLegs_Idle",
-			"type" : 1
-		},
-		{
-			"uid" : -161430528,
-			"name" : "HeroLegs_Walk",
-			"type" : 1
-		},
-		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : -1,
-			"name" : "Level",
-			"type" : 3
-		},
-		{
-			"uid" : -1,
-			"name" : "Doors",
-			"type" : 0
-		},
-		{
-			"uid" : 291455,
-			"name" : "DoorHorzLvl1",
-			"type" : 1
-		},
-		{
-			"uid" : 587388,
-			"name" : "DoorHorzLvl2",
-			"type" : 1
-		},
-		{
-			"uid" : 290942,
-			"name" : "DoorHorzLvl3",
-			"type" : 1
-		},
-		{
-			"uid" : 717431,
-			"name" : "DoorHorzLvl4",
-			"type" : 1
-		},
-		{
-			"uid" : 553854,
-			"name" : "DoorLevel_SD",
-			"type" : 1
-		},
-		{
-			"uid" : 883582,
-			"name" : "DoorVertLvl1",
-			"type" : 1
-		},
-		{
-			"uid" : 914431,
-			"name" : "DoorVertLvl2",
-			"type" : 1
-		},
-		{
-			"uid" : 422645,
-			"name" : "DoorVertLvl3",
-			"type" : 1
-		},
-		{
-			"uid" : 324092,
-			"name" : "DoorVertLvl4",
-			"type" : 1
-		},
-		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : -1,
-			"name" : "Items",
-			"type" : 0
-		},
-		{
-			"uid" : 586229,
-			"name" : "Item_CardLvl1",
-			"type" : 1
-		},
-		{
-			"uid" : 193021,
-			"name" : "Item_CardLvl2",
-			"type" : 1
-		},
-		{
-			"uid" : 621949,
-			"name" : "Item_CardLvl3",
-			"type" : 1
-		},
-		{
-			"uid" : 29815,
-			"name" : "Item_CardLvl4",
-			"type" : 1
-		},
-		{
-			"uid" : 589813,
-			"name" : "Item_GasMask",
-			"type" : 1
-		},
-		{
-			"uid" : 884469,
-			"name" : "Item_SD",
-			"type" : 1
-		},
-		{
-			"uid" : 29302,
-			"name" : "Item_WeatOff",
-			"type" : 1
-		},
-		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : -1,
-			"name" : "Lasers",
-			"type" : 0
-		},
-		{
-			"uid" : 424445,
-			"name" : "LaserHorz",
-			"type" : 1
-		},
-		{
-			"uid" : 96757,
-			"name" : "LaserVert",
-			"type" : 1
-		},
-		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : 554743,
-			"name" : "Ã–ÃWeat",
-			"type" : 1
-		},
-		{
-			"uid" : 684150,
-			"name" : "BackTunel",
-			"type" : 1
-		},
-		{
-			"uid" : 881149,
-			"name" : "Crate",
-			"type" : 1
-		},
-		{
-			"uid" : 1550317184,
-			"name" : "FloorBlue",
-			"type" : 1
-		},
-		{
-			"uid" : -1624141568,
-			"name" : "FloorCarpet",
-			"type" : 1
-		},
-		{
-			"uid" : -691562240,
-			"name" : "FloorGreen",
-			"type" : 1
-		},
-		{
-			"uid" : 429937152,
-			"name" : "FloorWood",
-			"type" : 1
-		},
-		{
-			"uid" : 652406,
-			"name" : "Gas",
-			"type" : 1
-		},
-		{
-			"uid" : 913653,
-			"name" : "Grass",
-			"type" : 1
-		},
-		{
-			"uid" : 357886,
-			"name" : "Marker",
-			"type" : 1
-		},
-		{
-			"uid" : 687615,
-			"name" : "StairsDown",
-			"type" : 1
-		},
-		{
-			"uid" : 948989,
-			"name" : "StairsUp",
-			"type" : 1
-		},
-		{
-			"uid" : 425975,
-			"name" : "TunelEntrance",
-			"type" : 1
-		},
-		{
-			"uid" : 292860,
-			"name" : "TunelExit",
-			"type" : 1
-		},
-		{
-			"uid" : 489591,
-			"name" : "Tunnel",
-			"type" : 1
-		},
-		{
-			"uid" : 784255,
-			"name" : "TunnelWall",
-			"type" : 1
-		},
-		{
-			"uid" : 2145061376,
-			"name" : "WallCorner",
-			"type" : 1
-		},
-		{
-			"uid" : -719308288,
-			"name" : "WallHorz",
-			"type" : 1
-		},
-		{
-			"uid" : 2002990720,
-			"name" : "WallVert",
-			"type" : 1
-		},
-		{
-			"uid" : -1,
-			"name" : "",
-			"type" : 2
-		},
-		{
-			"uid" : -200352256,
-			"name" : "Arrow",
-			"type" : 1
-		},
-		{
-			"uid" : 1553014656,
-			"name" : "BloodSplash",
-			"type" : 1
-		},
-		{
-			"uid" : -1790361600,
-			"name" : "Bullet",
-			"type" : 1
-		},
-		{
-			"uid" : -807685120,
-			"name" : "BulletWallHit",
+			"uid" : 293236,
+			"name" : "TargetMarker",
 			"type" : 1
 		},
 		{
@@ -1449,8 +1309,23 @@
 			"type" : 1
 		},
 		{
-			"uid" : 293236,
-			"name" : "TargetMarker",
+			"uid" : -807685120,
+			"name" : "BulletWallHit",
+			"type" : 1
+		},
+		{
+			"uid" : -1790361600,
+			"name" : "Bullet",
+			"type" : 1
+		},
+		{
+			"uid" : 1553014656,
+			"name" : "BloodSplash",
+			"type" : 1
+		},
+		{
+			"uid" : -200352256,
+			"name" : "Arrow",
 			"type" : 1
 		},
 		{
@@ -1460,17 +1335,127 @@
 		},
 		{
 			"uid" : -1,
-			"name" : "UI",
+			"name" : "Scripts",
 			"type" : 3
 		},
 		{
-			"uid" : 784383,
-			"name" : "Healthbar",
+			"uid" : 95996,
+			"name" : "Weat",
 			"type" : 1
 		},
 		{
-			"uid" : -876151296,
-			"name" : "UIRestartMessage",
+			"uid" : 200902816,
+			"name" : "Main",
+			"type" : 1
+		},
+		{
+			"uid" : 589823,
+			"name" : "Laser",
+			"type" : 1
+		},
+		{
+			"uid" : 258164,
+			"name" : "Grass",
+			"type" : 1
+		},
+		{
+			"uid" : 752380,
+			"name" : "EnemiesPool",
+			"type" : 1
+		},
+		{
+			"uid" : 685438,
+			"name" : "Door",
+			"type" : 1
+		},
+		{
+			"uid" : 195958,
+			"name" : "CharacterBase",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : -1,
+			"name" : "Blueprints",
+			"type" : 3
+		},
+		{
+			"uid" : -1,
+			"name" : "Doors",
+			"type" : 3
+		},
+		{
+			"uid" : 554103,
+			"name" : "DoorVrt_L4_BP",
+			"type" : 1
+		},
+		{
+			"uid" : 718069,
+			"name" : "DoorVrt_L3_BP",
+			"type" : 1
+		},
+		{
+			"uid" : 1015807,
+			"name" : "DoorVrt_L2_BP",
+			"type" : 1
+		},
+		{
+			"uid" : 752254,
+			"name" : "DoorVrt_L1_BP",
+			"type" : 1
+		},
+		{
+			"uid" : 423927,
+			"name" : "DoorHrz_L4_BP",
+			"type" : 1
+		},
+		{
+			"uid" : 750845,
+			"name" : "DoorHrz_L3_BP",
+			"type" : 1
+		},
+		{
+			"uid" : 914685,
+			"name" : "DoorHrz_L2_BP",
+			"type" : 1
+		},
+		{
+			"uid" : 687485,
+			"name" : "DoorHrz_L1_BP",
+			"type" : 1
+		},
+		{
+			"uid" : -1,
+			"name" : "",
+			"type" : 2
+		},
+		{
+			"uid" : 979582,
+			"name" : "Weat",
+			"type" : 1
+		},
+		{
+			"uid" : 523639,
+			"name" : "LaserVert",
+			"type" : 1
+		},
+		{
+			"uid" : 226302,
+			"name" : "LaserHorz",
+			"type" : 1
+		},
+		{
+			"uid" : 292725,
+			"name" : "Grass",
+			"type" : 1
+		},
+		{
+			"uid" : 883318,
+			"name" : "Enemies",
 			"type" : 1
 		},
 		{

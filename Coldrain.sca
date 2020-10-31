@@ -14,10 +14,10 @@
 	},
 	"camera_pos" :
 	{
-		"x" : 1851.956665,
-		"y" : -862.505005
+		"x" : 1921.861938,
+		"y" : -292.872559
 	},
-	"camera_zoom" : 0.980000,
+	"camera_zoom" : 0.200000,
 	"move_mode" : 1,
 	"gizmo2d_align_x" : 96,
 	"gizmo2d_align_y" : 96,
@@ -36,6 +36,7 @@
 			"Group" : "",
 			"Layer" : "",
 			"main_class" : "Main",
+			"class_namespace" : "",
 			"Count" : 57,
 			"Node" : [
 				{
@@ -3740,24 +3741,6 @@
 					"Event" : [
 					]
 				}
-			],
-			"components" : [
-				{
-					"type" : "ScriptMetaDataComp",
-					"Asset" :
-					{
-						"uid" : 64629,
-						"child_uid" : 0,
-						"is_asset" : true
-					},
-					"count" : 1,
-					"value" : [
-						{
-							"type" : 1,
-							"value" : 0
-						}
-					]
-				}
 			]
 		},
 		{
@@ -5991,46 +5974,7 @@
 					"Event" : [
 					]
 				}
-			],
-			"components" : [
-				{
-					"type" : "ScriptMetaDataComp",
-					"Asset" :
-					{
-						"uid" : 64629,
-						"child_uid" : 0,
-						"is_asset" : true
-					},
-					"count" : 1,
-					"value" : [
-						{
-							"type" : 1,
-							"value" : 2
-						}
-					]
-				}
 			]
-		},
-		{
-			"type" : "ScriptMetaDataAsset",
-			"uid" : 64629,
-			"ed_camera_2d" :
-			{
-				"x" : 0.000000,
-				"y" : 0.000000
-			},
-			"ed_camera_2d_zoom" : 1.000000,
-			"Name" : "EnemyTypeMetaData",
-			"properties" :
-			{
-				"count" : 1,
-				"Elem" : [
-					{
-						"data_type" : 1,
-						"name" : "type"
-					}
-				]
-			}
 		},
 		{
 			"type" : "SpriteAsset",
@@ -6643,24 +6587,6 @@
 							"time" : 0.010000,
 							"name" : "MelleAttack",
 							"param" : ""
-						}
-					]
-				}
-			],
-			"components" : [
-				{
-					"type" : "ScriptMetaDataComp",
-					"Asset" :
-					{
-						"uid" : 64629,
-						"child_uid" : 0,
-						"is_asset" : true
-					},
-					"count" : 1,
-					"value" : [
-						{
-							"type" : 1,
-							"value" : 3
 						}
 					]
 				}
@@ -7501,24 +7427,6 @@
 					"Event" : [
 					]
 				}
-			],
-			"components" : [
-				{
-					"type" : "ScriptMetaDataComp",
-					"Asset" :
-					{
-						"uid" : 64629,
-						"child_uid" : 0,
-						"is_asset" : true
-					},
-					"count" : 1,
-					"value" : [
-						{
-							"type" : 1,
-							"value" : 4
-						}
-					]
-				}
 			]
 		},
 		{
@@ -7585,25 +7493,7 @@
 						}
 					}
 				]
-			},
-			"components" : [
-				{
-					"type" : "ScriptMetaDataComp",
-					"Asset" :
-					{
-						"uid" : 64629,
-						"child_uid" : 0,
-						"is_asset" : true
-					},
-					"count" : 1,
-					"value" : [
-						{
-							"type" : 1,
-							"value" : 4
-						}
-					]
-				}
-			]
+			}
 		},
 		{
 			"type" : "SpriteAsset",
@@ -8889,22 +8779,6 @@
 					"width" : 64.000000,
 					"height" : 64.000000,
 					"group" : 3
-				},
-				{
-					"type" : "ScriptMetaDataComp",
-					"Asset" :
-					{
-						"uid" : 553854,
-						"child_uid" : 0,
-						"is_asset" : true
-					},
-					"count" : 1,
-					"value" : [
-						{
-							"type" : 1,
-							"value" : 1
-						}
-					]
 				}
 			]
 		},
@@ -8984,22 +8858,6 @@
 					"width" : 64.000000,
 					"height" : 64.000000,
 					"group" : 3
-				},
-				{
-					"type" : "ScriptMetaDataComp",
-					"Asset" :
-					{
-						"uid" : 553854,
-						"child_uid" : 0,
-						"is_asset" : true
-					},
-					"count" : 1,
-					"value" : [
-						{
-							"type" : 1,
-							"value" : 1
-						}
-					]
 				}
 			]
 		},
@@ -9079,22 +8937,6 @@
 					"width" : 64.000000,
 					"height" : 64.000000,
 					"group" : 3
-				},
-				{
-					"type" : "ScriptMetaDataComp",
-					"Asset" :
-					{
-						"uid" : 553854,
-						"child_uid" : 0,
-						"is_asset" : true
-					},
-					"count" : 1,
-					"value" : [
-						{
-							"type" : 1,
-							"value" : 2
-						}
-					]
 				}
 			]
 		},
@@ -9174,22 +9016,6 @@
 					"width" : 64.000000,
 					"height" : 64.000000,
 					"group" : 3
-				},
-				{
-					"type" : "ScriptMetaDataComp",
-					"Asset" :
-					{
-						"uid" : 553854,
-						"child_uid" : 0,
-						"is_asset" : true
-					},
-					"count" : 1,
-					"value" : [
-						{
-							"type" : 1,
-							"value" : 2
-						}
-					]
 				}
 			]
 		},
@@ -9269,22 +9095,6 @@
 					"width" : 64.000000,
 					"height" : 64.000000,
 					"group" : 3
-				},
-				{
-					"type" : "ScriptMetaDataComp",
-					"Asset" :
-					{
-						"uid" : 553854,
-						"child_uid" : 0,
-						"is_asset" : true
-					},
-					"count" : 1,
-					"value" : [
-						{
-							"type" : 1,
-							"value" : 3
-						}
-					]
 				}
 			]
 		},
@@ -9364,22 +9174,6 @@
 					"width" : 64.000000,
 					"height" : 64.000000,
 					"group" : 3
-				},
-				{
-					"type" : "ScriptMetaDataComp",
-					"Asset" :
-					{
-						"uid" : 553854,
-						"child_uid" : 0,
-						"is_asset" : true
-					},
-					"count" : 1,
-					"value" : [
-						{
-							"type" : 1,
-							"value" : 4
-						}
-					]
 				}
 			]
 		},
@@ -9459,22 +9253,6 @@
 					"width" : 64.000000,
 					"height" : 64.000000,
 					"group" : 3
-				},
-				{
-					"type" : "ScriptMetaDataComp",
-					"Asset" :
-					{
-						"uid" : 553854,
-						"child_uid" : 0,
-						"is_asset" : true
-					},
-					"count" : 1,
-					"value" : [
-						{
-							"type" : 1,
-							"value" : 3
-						}
-					]
 				}
 			]
 		},
@@ -9554,22 +9332,6 @@
 					"width" : 64.000000,
 					"height" : 64.000000,
 					"group" : 3
-				},
-				{
-					"type" : "ScriptMetaDataComp",
-					"Asset" :
-					{
-						"uid" : 553854,
-						"child_uid" : 0,
-						"is_asset" : true
-					},
-					"count" : 1,
-					"value" : [
-						{
-							"type" : 1,
-							"value" : 4
-						}
-					]
 				}
 			]
 		},
@@ -9587,6 +9349,7 @@
 			"Group" : "",
 			"Layer" : "",
 			"main_class" : "DoorController",
+			"class_namespace" : "",
 			"Count" : 6,
 			"Node" : [
 				{
@@ -9675,48 +9438,6 @@
 			]
 		},
 		{
-			"type" : "ScriptMetaDataAsset",
-			"uid" : 553854,
-			"ed_camera_2d" :
-			{
-				"x" : 0.000000,
-				"y" : 0.000000
-			},
-			"ed_camera_2d_zoom" : 1.000000,
-			"Name" : "DoorLevel_SD",
-			"properties" :
-			{
-				"count" : 1,
-				"Elem" : [
-					{
-						"data_type" : 1,
-						"name" : "level"
-					}
-				]
-			}
-		},
-		{
-			"type" : "ScriptMetaDataAsset",
-			"uid" : 884469,
-			"ed_camera_2d" :
-			{
-				"x" : 0.000000,
-				"y" : 0.000000
-			},
-			"ed_camera_2d_zoom" : 1.000000,
-			"Name" : "Item_SD",
-			"properties" :
-			{
-				"count" : 1,
-				"Elem" : [
-					{
-						"data_type" : 1,
-						"name" : "door_level"
-					}
-				]
-			}
-		},
-		{
 			"type" : "SpriteAsset",
 			"uid" : 586229,
 			"ed_camera_2d" :
@@ -9792,22 +9513,6 @@
 					"width" : 64.000000,
 					"height" : 64.000000,
 					"group" : 1
-				},
-				{
-					"type" : "ScriptMetaDataComp",
-					"Asset" :
-					{
-						"uid" : 884469,
-						"child_uid" : 0,
-						"is_asset" : true
-					},
-					"count" : 1,
-					"value" : [
-						{
-							"type" : 1,
-							"value" : 1
-						}
-					]
 				}
 			]
 		},
@@ -9984,9 +9689,6 @@
 					"components" : [
 						{
 							"type" : "Phys2DCompInst"
-						},
-						{
-							"type" : "ScriptMetaDataCompInst"
 						}
 					]
 				}
@@ -10165,9 +9867,6 @@
 					"components" : [
 						{
 							"type" : "Phys2DCompInst"
-						},
-						{
-							"type" : "ScriptMetaDataCompInst"
 						}
 					]
 				}
@@ -10346,9 +10045,6 @@
 					"components" : [
 						{
 							"type" : "Phys2DCompInst"
-						},
-						{
-							"type" : "ScriptMetaDataCompInst"
 						}
 					]
 				}
@@ -10527,9 +10223,6 @@
 					"components" : [
 						{
 							"type" : "Phys2DCompInst"
-						},
-						{
-							"type" : "ScriptMetaDataCompInst"
 						}
 					]
 				}
@@ -10708,9 +10401,6 @@
 					"components" : [
 						{
 							"type" : "Phys2DCompInst"
-						},
-						{
-							"type" : "ScriptMetaDataCompInst"
 						}
 					]
 				}
@@ -10889,9 +10579,6 @@
 					"components" : [
 						{
 							"type" : "Phys2DCompInst"
-						},
-						{
-							"type" : "ScriptMetaDataCompInst"
 						}
 					]
 				}
@@ -11070,9 +10757,6 @@
 					"components" : [
 						{
 							"type" : "Phys2DCompInst"
-						},
-						{
-							"type" : "ScriptMetaDataCompInst"
 						}
 					]
 				}
@@ -11251,9 +10935,6 @@
 					"components" : [
 						{
 							"type" : "Phys2DCompInst"
-						},
-						{
-							"type" : "ScriptMetaDataCompInst"
 						}
 					]
 				}
@@ -11335,22 +11016,6 @@
 					"width" : 64.000000,
 					"height" : 64.000000,
 					"group" : 1
-				},
-				{
-					"type" : "ScriptMetaDataComp",
-					"Asset" :
-					{
-						"uid" : 884469,
-						"child_uid" : 0,
-						"is_asset" : true
-					},
-					"count" : 1,
-					"value" : [
-						{
-							"type" : 1,
-							"value" : 2
-						}
-					]
 				}
 			]
 		},
@@ -11430,22 +11095,6 @@
 					"width" : 64.000000,
 					"height" : 64.000000,
 					"group" : 1
-				},
-				{
-					"type" : "ScriptMetaDataComp",
-					"Asset" :
-					{
-						"uid" : 884469,
-						"child_uid" : 0,
-						"is_asset" : true
-					},
-					"count" : 1,
-					"value" : [
-						{
-							"type" : 1,
-							"value" : 3
-						}
-					]
 				}
 			]
 		},
@@ -11525,22 +11174,6 @@
 					"width" : 64.000000,
 					"height" : 64.000000,
 					"group" : 1
-				},
-				{
-					"type" : "ScriptMetaDataComp",
-					"Asset" :
-					{
-						"uid" : 884469,
-						"child_uid" : 0,
-						"is_asset" : true
-					},
-					"count" : 1,
-					"value" : [
-						{
-							"type" : 1,
-							"value" : 4
-						}
-					]
 				}
 			]
 		},
@@ -11558,6 +11191,7 @@
 			"Group" : "",
 			"Layer" : "",
 			"main_class" : "EnemiesPool",
+			"class_namespace" : "",
 			"Count" : 19,
 			"Node" : [
 				{
@@ -11803,6 +11437,7 @@
 			"Group" : "",
 			"Layer" : "",
 			"main_class" : "",
+			"class_namespace" : "",
 			"Count" : 0,
 			"Node" : [
 			],
@@ -11929,12 +11564,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 365581472,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 365581472
 				},
 				{
 					"type" : "SpriteGraphInst",
@@ -11952,12 +11582,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 782972,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 782972
 				},
 				{
 					"type" : "SpriteGraphInst",
@@ -11975,12 +11600,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 63478,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 63478
 				},
 				{
 					"type" : "SpriteGraphInst",
@@ -11998,12 +11618,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 524286,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 524286
 				},
 				{
 					"type" : "NavMesh2DGen",
@@ -12366,12 +11981,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 916599,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 916599
 				}
 			]
 		},
@@ -12468,6 +12078,7 @@
 			"Group" : "",
 			"Layer" : "",
 			"main_class" : "Grass",
+			"class_namespace" : "",
 			"Count" : 5,
 			"Node" : [
 				{
@@ -12996,6 +12607,7 @@
 			"Group" : "",
 			"Layer" : "",
 			"main_class" : "LaserController",
+			"class_namespace" : "",
 			"Count" : 9,
 			"Node" : [
 				{
@@ -13607,6 +13219,7 @@
 			"Group" : "",
 			"Layer" : "",
 			"main_class" : "WeatController",
+			"class_namespace" : "",
 			"Count" : 3,
 			"Node" : [
 				{
@@ -13830,22 +13443,6 @@
 					"width" : 64.000000,
 					"height" : 64.000000,
 					"group" : 1
-				},
-				{
-					"type" : "ScriptMetaDataComp",
-					"Asset" :
-					{
-						"uid" : 884469,
-						"child_uid" : 0,
-						"is_asset" : true
-					},
-					"count" : 1,
-					"value" : [
-						{
-							"type" : 1,
-							"value" : 4
-						}
-					]
 				}
 			]
 		},
@@ -49921,9 +49518,6 @@
 			"components" : [
 				{
 					"type" : "Phys2DCompInst"
-				},
-				{
-					"type" : "ScriptMetaDataCompInst"
 				}
 			]
 		},
@@ -63029,9 +62623,6 @@
 					"asset_uid" : 365581472,
 					"components" : [
 						{
-							"type" : "ScriptMetaDataCompInst"
-						},
-						{
 							"type" : "Track2DComp",
 							"flip_mode" : 0,
 							"tracks" :
@@ -63472,12 +63063,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 782972,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 782972
 				},
 				{
 					"type" : "SpriteGraphInst",
@@ -63495,12 +63081,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 63478,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 63478
 				},
 				{
 					"type" : "SpriteGraphInst",
@@ -63518,12 +63099,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 524286,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 524286
 				},
 				{
 					"type" : "NavMesh2DGen",
@@ -63902,9 +63478,6 @@
 					},
 					"asset_uid" : 916599,
 					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						},
 						{
 							"type" : "Track2DComp",
 							"flip_mode" : 0,
@@ -64287,9 +63860,6 @@
 					},
 					"asset_uid" : 365581472,
 					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						},
 						{
 							"type" : "Track2DComp",
 							"flip_mode" : 0,
@@ -64746,12 +64316,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 782972,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 782972
 				},
 				{
 					"type" : "SpriteGraphInst",
@@ -64769,12 +64334,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 63478,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 63478
 				},
 				{
 					"type" : "SpriteGraphInst",
@@ -64792,12 +64352,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 524286,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 524286
 				},
 				{
 					"type" : "NavMesh2DGen",
@@ -65160,12 +64715,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 916599,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 916599
 				}
 			]
 		},
@@ -65570,9 +65120,6 @@
 					},
 					"asset_uid" : 365581472,
 					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						},
 						{
 							"type" : "Track2DComp",
 							"flip_mode" : 0,
@@ -66109,12 +65656,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 782972,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 782972
 				},
 				{
 					"type" : "SpriteGraphInst",
@@ -66132,12 +65674,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 63478,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 63478
 				},
 				{
 					"type" : "SpriteGraphInst",
@@ -66155,12 +65692,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 524286,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 524286
 				},
 				{
 					"type" : "NavMesh2DGen",
@@ -66523,12 +66055,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 916599,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 916599
 				}
 			]
 		},
@@ -66919,9 +66446,6 @@
 					},
 					"asset_uid" : 365581472,
 					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						},
 						{
 							"type" : "Track2DComp",
 							"flip_mode" : 0,
@@ -67483,12 +67007,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 782972,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 782972
 				},
 				{
 					"type" : "SpriteGraphInst",
@@ -67506,12 +67025,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 63478,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 63478
 				},
 				{
 					"type" : "SpriteGraphInst",
@@ -67529,12 +67043,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 524286,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 524286
 				},
 				{
 					"type" : "NavMesh2DGen",
@@ -67897,12 +67406,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 916599,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 916599
 				}
 			]
 		},
@@ -71611,9 +71115,6 @@
 					"components" : [
 						{
 							"type" : "Phys2DCompInst"
-						},
-						{
-							"type" : "ScriptMetaDataCompInst"
 						}
 					]
 				}
@@ -71792,9 +71293,6 @@
 					"components" : [
 						{
 							"type" : "Phys2DCompInst"
-						},
-						{
-							"type" : "ScriptMetaDataCompInst"
 						}
 					]
 				}
@@ -76001,9 +75499,6 @@
 			"components" : [
 				{
 					"type" : "Phys2DCompInst"
-				},
-				{
-					"type" : "ScriptMetaDataCompInst"
 				}
 			]
 		},
@@ -76180,9 +75675,6 @@
 					"components" : [
 						{
 							"type" : "Phys2DCompInst"
-						},
-						{
-							"type" : "ScriptMetaDataCompInst"
 						}
 					]
 				}
@@ -76361,9 +75853,6 @@
 					"components" : [
 						{
 							"type" : "Phys2DCompInst"
-						},
-						{
-							"type" : "ScriptMetaDataCompInst"
 						}
 					]
 				}
@@ -76555,9 +76044,6 @@
 					"components" : [
 						{
 							"type" : "Phys2DCompInst"
-						},
-						{
-							"type" : "ScriptMetaDataCompInst"
 						}
 					]
 				}
@@ -86103,9 +85589,6 @@
 					"components" : [
 						{
 							"type" : "Phys2DCompInst"
-						},
-						{
-							"type" : "ScriptMetaDataCompInst"
 						}
 					]
 				}
@@ -86146,9 +85629,6 @@
 			"components" : [
 				{
 					"type" : "Phys2DCompInst"
-				},
-				{
-					"type" : "ScriptMetaDataCompInst"
 				}
 			]
 		},
@@ -90515,9 +89995,6 @@
 			"components" : [
 				{
 					"type" : "Phys2DCompInst"
-				},
-				{
-					"type" : "ScriptMetaDataCompInst"
 				}
 			]
 		},
@@ -90754,9 +90231,6 @@
 					},
 					"asset_uid" : 365581472,
 					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						},
 						{
 							"type" : "Track2DComp",
 							"flip_mode" : 0,
@@ -90999,12 +90473,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 782972,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 782972
 				},
 				{
 					"type" : "SpriteGraphInst",
@@ -91022,12 +90491,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 63478,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 63478
 				},
 				{
 					"type" : "SpriteGraphInst",
@@ -91045,12 +90509,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 524286,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 524286
 				},
 				{
 					"type" : "NavMesh2DGen",
@@ -91413,12 +90872,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 916599,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 916599
 				}
 			]
 		},
@@ -91781,9 +91235,6 @@
 					},
 					"asset_uid" : 365581472,
 					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						},
 						{
 							"type" : "Track2DComp",
 							"flip_mode" : 0,
@@ -92263,12 +91714,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 782972,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 782972
 				},
 				{
 					"type" : "SpriteGraphInst",
@@ -92286,12 +91732,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 63478,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 63478
 				},
 				{
 					"type" : "SpriteGraphInst",
@@ -92309,12 +91750,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 524286,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 524286
 				},
 				{
 					"type" : "NavMesh2DGen",
@@ -92677,12 +92113,7 @@
 						"Elem" : [
 						]
 					},
-					"asset_uid" : 916599,
-					"components" : [
-						{
-							"type" : "ScriptMetaDataCompInst"
-						}
-					]
+					"asset_uid" : 916599
 				}
 			]
 		},
@@ -108747,6 +108178,64 @@
 	],
 	"asset_instances" : [
 		{
+			"asset_uid" : 200902816,
+			"asset_name" : "Main",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : -211527680,
+					"inst_name" : "MainScript"
+				}
+			]
+		},
+		{
+			"asset_uid" : 1062832448,
+			"asset_name" : "HeroIdle",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 1972033280,
+			"asset_name" : "HeroWalk",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : -1464472832,
+			"asset_name" : "HeroShoot",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : -1350148352,
+			"asset_name" : "HeroDeath",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 828659840,
+			"asset_name" : "HeroLegs_Idle",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : -161430528,
+			"asset_name" : "HeroLegs_Walk",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 1078503808,
+			"asset_name" : "HeroGraph_Body",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 413751904,
+					"inst_name" : "Hero"
+				}
+			]
+		},
+		{
 			"asset_uid" : 59089060,
 			"asset_name" : "HeroGraph_Legs",
 			"instances" : [
@@ -108769,6 +108258,124 @@
 			]
 		},
 		{
+			"asset_uid" : 185616720,
+			"asset_name" : "SoldierAK47_Idle",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 281700672,
+			"asset_name" : "SoldierAK47_Walk",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 593845056,
+			"asset_name" : "SoldierAK47_Shoot",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 1360461440,
+			"asset_name" : "SoldierDead",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : -1039160064,
+			"asset_name" : "SoldierLegs_Idle",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 548886016,
+			"asset_name" : "SoldierLegs_Walk",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 365581472,
+			"asset_name" : "SoldierAK47_Graph",
+			"instances" : [
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				}
+			]
+		},
+		{
+			"asset_uid" : -1780856064,
+			"asset_name" : "SoldierLegs_Graph",
+			"instances" : [
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				}
+			]
+		},
+		{
 			"asset_uid" : -1790361600,
 			"asset_name" : "Bullet",
 			"instances" : [
@@ -108780,6 +108387,118 @@
 			]
 		},
 		{
+			"asset_uid" : 1550317184,
+			"asset_name" : "FloorBlue",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 2002990720,
+			"asset_name" : "WallVert",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 1014262,
+					"inst_name" : "WallVert"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 686071,
+					"inst_name" : "WallVert"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 783862,
+					"inst_name" : "WallVert"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 490102,
+					"inst_name" : "WallVert"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 882300,
+					"inst_name" : "WallVert"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 359029,
+					"inst_name" : "WallVert"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 389878,
+					"inst_name" : "WallVert"
+				}
+			]
+		},
+		{
+			"asset_uid" : -719308288,
+			"asset_name" : "WallHorz",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 160757,
+					"inst_name" : "WallHorz"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 523903,
+					"inst_name" : "WallHorz"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 751733,
+					"inst_name" : "WallHorz"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 913791,
+					"inst_name" : "WallHorz"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 621556,
+					"inst_name" : "WallHorz"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 1046900,
+					"inst_name" : "WallHorz"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 784893,
+					"inst_name" : "WallHorz"
+				}
+			]
+		},
+		{
+			"asset_uid" : 2145061376,
+			"asset_name" : "WallCorner",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : -691562240,
+			"asset_name" : "FloorGreen",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 429937152,
+			"asset_name" : "FloorWood",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : -1624141568,
+			"asset_name" : "FloorCarpet",
+			"instances" : [
+			]
+		},
+		{
 			"asset_uid" : 1553014656,
 			"asset_name" : "BloodSplash",
 			"instances" : [
@@ -108787,17 +108506,6 @@
 					"scene" : "coldrain.sca",
 					"inst_uid" : 676955072,
 					"inst_name" : "BloodSplash"
-				}
-			]
-		},
-		{
-			"asset_uid" : 1078503808,
-			"asset_name" : "HeroGraph_Body",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 413751904,
-					"inst_name" : "Hero"
 				}
 			]
 		},
@@ -108813,26 +108521,134 @@
 			]
 		},
 		{
-			"asset_uid" : -876151296,
-			"asset_name" : "UIRestartMessage",
+			"asset_uid" : -200352256,
+			"asset_name" : "Arrow",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 881149,
+			"asset_name" : "Crate",
 			"instances" : [
 				{
 					"scene" : "coldrain.sca",
-					"inst_uid" : 895327744,
-					"inst_child_uid" : 0,
-					"is_asset" : false,
-					"inst_name" : "UIRestartMessage"
+					"inst_uid" : 228340,
+					"inst_name" : "Crate"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 717303,
+					"inst_name" : "Crate"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 64764,
+					"inst_name" : "Crate"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 652917,
+					"inst_name" : "Crate"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 751484,
+					"inst_name" : "Crate"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 816630,
+					"inst_name" : "Crate"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 982270,
+					"inst_name" : "Crate"
 				}
 			]
 		},
 		{
-			"asset_uid" : 200902816,
-			"asset_name" : "Main",
+			"asset_uid" : 357886,
+			"asset_name" : "Marker",
 			"instances" : [
 				{
 					"scene" : "coldrain.sca",
-					"inst_uid" : -211527680,
-					"inst_name" : "MainScript"
+					"inst_uid" : 654204,
+					"inst_name" : "Marker"
+				}
+			]
+		},
+		{
+			"asset_uid" : 489591,
+			"asset_name" : "Tunnel",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 784255,
+			"asset_name" : "TunnelWall",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 684150,
+			"asset_name" : "BackTunel",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 425975,
+			"asset_name" : "TunelEntrance",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 292860,
+			"asset_name" : "TunelExit",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 294644,
+			"asset_name" : "HeroKick",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 63350,
+			"asset_name" : "SoldierMachete_Idle",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 357759,
+			"asset_name" : "SoldierMachete_Walk",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 587893,
+			"asset_name" : "SoldierMachete_Attack",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 63478,
+			"asset_name" : "SoldierMachete_Graph",
+			"instances" : [
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
 				}
 			]
 		},
@@ -108844,20 +108660,132 @@
 					"scene" : "coldrain.sca",
 					"inst_uid" : 522229,
 					"inst_name" : "Floor1"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 751604,
+					"inst_name" : "Floor7"
 				}
 			]
 		},
 		{
-			"asset_uid" : 784383,
-			"asset_name" : "Healthbar",
+			"asset_uid" : 422644,
+			"asset_name" : "HeroPreKick",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 751231,
+			"asset_name" : "SoldierStalker_Stalk",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 524286,
+			"asset_name" : "SoldierStalker_Graph",
 			"instances" : [
 				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 130815,
-					"inst_child_uid" : 0,
-					"is_asset" : false,
-					"inst_name" : "Healthbar"
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
 				}
+			]
+		},
+		{
+			"asset_uid" : 851709,
+			"asset_name" : "SoldierStalker_Idle",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 752508,
+			"asset_name" : "SoldierStalker_Walk",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 392183,
+			"asset_name" : "SoldierStalker_Dead",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 817014,
+			"asset_name" : "SoldierGrabber_Attack",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 1048445,
+			"asset_name" : "SoldierGrabber_Dead",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 782972,
+			"asset_name" : "SoldierGrabber_Graph",
+			"instances" : [
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				}
+			]
+		},
+		{
+			"asset_uid" : 916599,
+			"asset_name" : "SecurityCamera",
+			"instances" : [
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				}
+			]
+		},
+		{
+			"asset_uid" : 423285,
+			"asset_name" : "SoldierGrabber_Idle",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 1013631,
+			"asset_name" : "SoldierGrabber_Walk",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 489334,
+			"asset_name" : "SoldierStalker_Attack",
+			"instances" : [
 			]
 		},
 		{
@@ -108916,123 +108844,130 @@
 			]
 		},
 		{
-			"asset_uid" : 357886,
-			"asset_name" : "Marker",
+			"asset_uid" : 687615,
+			"asset_name" : "StairsDown",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 948989,
+			"asset_name" : "StairsUp",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 325244,
+			"asset_name" : "SoldierStalker_StalkEnd",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 883582,
+			"asset_name" : "DoorVertLvl1",
 			"instances" : [
 				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 654204,
-					"inst_name" : "Marker"
+				},
+				{
 				}
 			]
 		},
 		{
-			"asset_uid" : -719308288,
-			"asset_name" : "WallHorz",
+			"asset_uid" : 291455,
+			"asset_name" : "DoorHorzLvl1",
 			"instances" : [
 				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 160757,
-					"inst_name" : "WallHorz"
+				},
+				{
 				}
 			]
 		},
 		{
-			"asset_uid" : 2002990720,
-			"asset_name" : "WallVert",
+			"asset_uid" : 914431,
+			"asset_name" : "DoorVertLvl2",
 			"instances" : [
 				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 1014262,
-					"inst_name" : "WallVert"
 				}
 			]
 		},
 		{
-			"asset_uid" : -719308288,
-			"asset_name" : "WallHorz",
+			"asset_uid" : 587388,
+			"asset_name" : "DoorHorzLvl2",
 			"instances" : [
 				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 523903,
-					"inst_name" : "WallHorz"
+				},
+				{
+				},
+				{
+				},
+				{
 				}
 			]
 		},
 		{
-			"asset_uid" : 2002990720,
-			"asset_name" : "WallVert",
+			"asset_uid" : 290942,
+			"asset_name" : "DoorHorzLvl3",
 			"instances" : [
 				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 686071,
-					"inst_name" : "WallVert"
+				},
+				{
 				}
 			]
 		},
 		{
-			"asset_uid" : 881149,
-			"asset_name" : "Crate",
+			"asset_uid" : 717431,
+			"asset_name" : "DoorHorzLvl4",
 			"instances" : [
 				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 228340,
-					"inst_name" : "Crate"
 				}
 			]
 		},
 		{
-			"asset_uid" : 881149,
-			"asset_name" : "Crate",
+			"asset_uid" : 422645,
+			"asset_name" : "DoorVertLvl3",
 			"instances" : [
 				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 717303,
-					"inst_name" : "Crate"
 				}
 			]
 		},
 		{
-			"asset_uid" : -719308288,
-			"asset_name" : "WallHorz",
+			"asset_uid" : 324092,
+			"asset_name" : "DoorVertLvl4",
 			"instances" : [
 				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 751733,
-					"inst_name" : "WallHorz"
 				}
 			]
 		},
 		{
-			"asset_uid" : 2002990720,
-			"asset_name" : "WallVert",
+			"asset_uid" : 685438,
+			"asset_name" : "Door",
 			"instances" : [
 				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 783862,
-					"inst_name" : "WallVert"
-				}
-			]
-		},
-		{
-			"asset_uid" : -719308288,
-			"asset_name" : "WallHorz",
-			"instances" : [
+				},
 				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 913791,
-					"inst_name" : "WallHorz"
-				}
-			]
-		},
-		{
-			"asset_uid" : 2002990720,
-			"asset_name" : "WallVert",
-			"instances" : [
+				},
 				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 490102,
-					"inst_name" : "WallVert"
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
 				}
 			]
 		},
@@ -109048,105 +108983,6 @@
 			]
 		},
 		{
-			"asset_uid" : -719308288,
-			"asset_name" : "WallHorz",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 621556,
-					"inst_name" : "WallHorz"
-				}
-			]
-		},
-		{
-			"asset_uid" : 2002990720,
-			"asset_name" : "WallVert",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 882300,
-					"inst_name" : "WallVert"
-				}
-			]
-		},
-		{
-			"asset_uid" : 881149,
-			"asset_name" : "Crate",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 64764,
-					"inst_name" : "Crate"
-				}
-			]
-		},
-		{
-			"asset_uid" : 883318,
-			"asset_name" : "Enemies",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 553078,
-					"inst_name" : "Enemies"
-				}
-			]
-		},
-		{
-			"asset_uid" : 883318,
-			"asset_name" : "Enemies",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 687612,
-					"inst_name" : "Enemies"
-				}
-			]
-		},
-		{
-			"asset_uid" : 883318,
-			"asset_name" : "Enemies",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 326270,
-					"inst_name" : "Enemies"
-				}
-			]
-		},
-		{
-			"asset_uid" : 883318,
-			"asset_name" : "Enemies",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 816245,
-					"inst_name" : "Enemies"
-				}
-			]
-		},
-		{
-			"asset_uid" : 292725,
-			"asset_name" : "Grass",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 947455,
-					"inst_name" : "Grass"
-				}
-			]
-		},
-		{
-			"asset_uid" : 881149,
-			"asset_name" : "Crate",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 652917,
-					"inst_name" : "Crate"
-				}
-			]
-		},
-		{
 			"asset_uid" : 687485,
 			"asset_name" : "DoorHrz_L1_BP",
 			"instances" : [
@@ -109158,6 +108994,44 @@
 			]
 		},
 		{
+			"asset_uid" : 914685,
+			"asset_name" : "DoorHrz_L2_BP",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 260734,
+					"inst_name" : "DoorHrz_L2_BP"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 293493,
+					"inst_name" : "DoorHrz_L2_BP"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 687351,
+					"inst_name" : "DoorHrz_L2_BP"
+				}
+			]
+		},
+		{
+			"asset_uid" : 750845,
+			"asset_name" : "DoorHrz_L3_BP",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 588276,
+					"inst_name" : "DoorHrz_L3_BP"
+				}
+			]
+		},
+		{
+			"asset_uid" : 423927,
+			"asset_name" : "DoorHrz_L4_BP",
+			"instances" : [
+			]
+		},
+		{
 			"asset_uid" : 752254,
 			"asset_name" : "DoorVrt_L1_BP",
 			"instances" : [
@@ -109165,6 +109039,181 @@
 					"scene" : "coldrain.sca",
 					"inst_uid" : 980597,
 					"inst_name" : "DoorVrt_L1_BP"
+				}
+			]
+		},
+		{
+			"asset_uid" : 1015807,
+			"asset_name" : "DoorVrt_L2_BP",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 718069,
+			"asset_name" : "DoorVrt_L3_BP",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 554103,
+			"asset_name" : "DoorVrt_L4_BP",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 193021,
+			"asset_name" : "Item_CardLvl2",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 587895,
+					"inst_name" : "Item_CardLvl2"
+				}
+			]
+		},
+		{
+			"asset_uid" : 621949,
+			"asset_name" : "Item_CardLvl3",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 262143,
+					"inst_name" : "Item_CardLvl3"
+				}
+			]
+		},
+		{
+			"asset_uid" : 29815,
+			"asset_name" : "Item_CardLvl4",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 752380,
+			"asset_name" : "EnemiesPool",
+			"instances" : [
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				}
+			]
+		},
+		{
+			"asset_uid" : 195958,
+			"asset_name" : "CharacterBase",
+			"instances" : [
+			]
+		},
+		{
+			"asset_uid" : 883318,
+			"asset_name" : "Enemies",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 553078,
+					"inst_name" : "Enemies"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 687612,
+					"inst_name" : "Enemies"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 326270,
+					"inst_name" : "Enemies"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 816245,
+					"inst_name" : "Enemies"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 785014,
+					"inst_name" : "Enemies"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 950015,
+					"inst_name" : "Enemies"
+				}
+			]
+		},
+		{
+			"asset_uid" : 913653,
+			"asset_name" : "Grass",
+			"instances" : [
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				}
+			]
+		},
+		{
+			"asset_uid" : 258164,
+			"asset_name" : "Grass",
+			"instances" : [
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				}
+			]
+		},
+		{
+			"asset_uid" : 292725,
+			"asset_name" : "Grass",
+			"instances" : [
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 947455,
+					"inst_name" : "Grass"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 163191,
+					"inst_name" : "Grass"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 424061,
+					"inst_name" : "Grass"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 196087,
+					"inst_name" : "Grass"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 946935,
+					"inst_name" : "Grass"
 				}
 			]
 		},
@@ -109191,6 +109240,44 @@
 			]
 		},
 		{
+			"asset_uid" : 424445,
+			"asset_name" : "LaserHorz",
+			"instances" : [
+				{
+				},
+				{
+				},
+				{
+				}
+			]
+		},
+		{
+			"asset_uid" : 96757,
+			"asset_name" : "LaserVert",
+			"instances" : [
+				{
+				},
+				{
+				}
+			]
+		},
+		{
+			"asset_uid" : 589823,
+			"asset_name" : "Laser",
+			"instances" : [
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				},
+				{
+				}
+			]
+		},
+		{
 			"asset_uid" : 226302,
 			"asset_name" : "LaserHorz",
 			"instances" : [
@@ -109198,6 +109285,11 @@
 					"scene" : "coldrain.sca",
 					"inst_uid" : 30077,
 					"inst_name" : "LaserHorz"
+				},
+				{
+					"scene" : "coldrain.sca",
+					"inst_uid" : 686716,
+					"inst_name" : "LaserHorzConst"
 				}
 			]
 		},
@@ -109213,145 +109305,22 @@
 			]
 		},
 		{
-			"asset_uid" : 226302,
-			"asset_name" : "LaserHorz",
+			"asset_uid" : 554743,
+			"asset_name" : "Ö?eat",
 			"instances" : [
 				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 686716,
-					"inst_name" : "LaserHorzConst"
+				},
+				{
 				}
 			]
 		},
 		{
-			"asset_uid" : 292725,
-			"asset_name" : "Grass",
+			"asset_uid" : 95996,
+			"asset_name" : "Weat",
 			"instances" : [
 				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 163191,
-					"inst_name" : "Grass"
-				}
-			]
-		},
-		{
-			"asset_uid" : 881149,
-			"asset_name" : "Crate",
-			"instances" : [
+				},
 				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 751484,
-					"inst_name" : "Crate"
-				}
-			]
-		},
-		{
-			"asset_uid" : 193021,
-			"asset_name" : "Item_CardLvl2",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 587895,
-					"inst_name" : "Item_CardLvl2"
-				}
-			]
-		},
-		{
-			"asset_uid" : 914685,
-			"asset_name" : "DoorHrz_L2_BP",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 260734,
-					"inst_name" : "DoorHrz_L2_BP"
-				}
-			]
-		},
-		{
-			"asset_uid" : 914685,
-			"asset_name" : "DoorHrz_L2_BP",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 293493,
-					"inst_name" : "DoorHrz_L2_BP"
-				}
-			]
-		},
-		{
-			"asset_uid" : 914685,
-			"asset_name" : "DoorHrz_L2_BP",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 687351,
-					"inst_name" : "DoorHrz_L2_BP"
-				}
-			]
-		},
-		{
-			"asset_uid" : 292725,
-			"asset_name" : "Grass",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 424061,
-					"inst_name" : "Grass"
-				}
-			]
-		},
-		{
-			"asset_uid" : -719308288,
-			"asset_name" : "WallHorz",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 1046900,
-					"inst_name" : "WallHorz"
-				}
-			]
-		},
-		{
-			"asset_uid" : 2002990720,
-			"asset_name" : "WallVert",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 359029,
-					"inst_name" : "WallVert"
-				}
-			]
-		},
-		{
-			"asset_uid" : 881149,
-			"asset_name" : "Crate",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 816630,
-					"inst_name" : "Crate"
-				}
-			]
-		},
-		{
-			"asset_uid" : 750845,
-			"asset_name" : "DoorHrz_L3_BP",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 588276,
-					"inst_name" : "DoorHrz_L3_BP"
-				}
-			]
-		},
-		{
-			"asset_uid" : 621949,
-			"asset_name" : "Item_CardLvl3",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 262143,
-					"inst_name" : "Item_CardLvl3"
 				}
 			]
 		},
@@ -109378,83 +109347,6 @@
 			]
 		},
 		{
-			"asset_uid" : 883318,
-			"asset_name" : "Enemies",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 785014,
-					"inst_name" : "Enemies"
-				}
-			]
-		},
-		{
-			"asset_uid" : 883318,
-			"asset_name" : "Enemies",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 950015,
-					"inst_name" : "Enemies"
-				}
-			]
-		},
-		{
-			"asset_uid" : 292725,
-			"asset_name" : "Grass",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 196087,
-					"inst_name" : "Grass"
-				}
-			]
-		},
-		{
-			"asset_uid" : 491007,
-			"asset_name" : "Floor1",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 751604,
-					"inst_name" : "Floor7"
-				}
-			]
-		},
-		{
-			"asset_uid" : -719308288,
-			"asset_name" : "WallHorz",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 784893,
-					"inst_name" : "WallHorz"
-				}
-			]
-		},
-		{
-			"asset_uid" : 2002990720,
-			"asset_name" : "WallVert",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 389878,
-					"inst_name" : "WallVert"
-				}
-			]
-		},
-		{
-			"asset_uid" : 881149,
-			"asset_name" : "Crate",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 982270,
-					"inst_name" : "Crate"
-				}
-			]
-		},
-		{
 			"asset_uid" : 293236,
 			"asset_name" : "TargetMarker",
 			"instances" : [
@@ -109462,1629 +109354,6 @@
 					"scene" : "coldrain.sca",
 					"inst_uid" : 589821,
 					"inst_name" : "TargetMarker"
-				}
-			]
-		},
-		{
-			"asset_uid" : 292725,
-			"asset_name" : "Grass",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 946935,
-					"inst_name" : "Grass"
-				}
-			]
-		},
-		{
-			"asset_uid" : 685438,
-			"asset_name" : "Door",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 687485,
-					"inst_child_uid" : 138033,
-					"is_asset" : true,
-					"inst_name" : "DoorScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 291455,
-			"asset_name" : "DoorHorzLvl1",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 687485,
-					"inst_child_uid" : 534743,
-					"is_asset" : true,
-					"inst_name" : "DoorHorzLvl1"
-				}
-			]
-		},
-		{
-			"asset_uid" : 685438,
-			"asset_name" : "Door",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 62844,
-					"inst_child_uid" : 138033,
-					"is_asset" : false,
-					"inst_name" : "DoorScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 291455,
-			"asset_name" : "DoorHorzLvl1",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 62844,
-					"inst_child_uid" : 534743,
-					"is_asset" : false,
-					"inst_name" : "DoorHorzLvl1"
-				}
-			]
-		},
-		{
-			"asset_uid" : 685438,
-			"asset_name" : "Door",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 914685,
-					"inst_child_uid" : 138033,
-					"is_asset" : true,
-					"inst_name" : "DoorScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 587388,
-			"asset_name" : "DoorHorzLvl2",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 914685,
-					"inst_child_uid" : 426077,
-					"is_asset" : true,
-					"inst_name" : "DoorHorzLvl2"
-				}
-			]
-		},
-		{
-			"asset_uid" : 685438,
-			"asset_name" : "Door",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 260734,
-					"inst_child_uid" : 138033,
-					"is_asset" : false,
-					"inst_name" : "DoorScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 587388,
-			"asset_name" : "DoorHorzLvl2",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 260734,
-					"inst_child_uid" : 426077,
-					"is_asset" : false,
-					"inst_name" : "DoorHorzLvl2"
-				}
-			]
-		},
-		{
-			"asset_uid" : 685438,
-			"asset_name" : "Door",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 293493,
-					"inst_child_uid" : 138033,
-					"is_asset" : false,
-					"inst_name" : "DoorScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 587388,
-			"asset_name" : "DoorHorzLvl2",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 293493,
-					"inst_child_uid" : 426077,
-					"is_asset" : false,
-					"inst_name" : "DoorHorzLvl2"
-				}
-			]
-		},
-		{
-			"asset_uid" : 685438,
-			"asset_name" : "Door",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 687351,
-					"inst_child_uid" : 138033,
-					"is_asset" : false,
-					"inst_name" : "DoorScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 587388,
-			"asset_name" : "DoorHorzLvl2",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 687351,
-					"inst_child_uid" : 426077,
-					"is_asset" : false,
-					"inst_name" : "DoorHorzLvl2"
-				}
-			]
-		},
-		{
-			"asset_uid" : 685438,
-			"asset_name" : "Door",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 750845,
-					"inst_child_uid" : 138033,
-					"is_asset" : true,
-					"inst_name" : "DoorScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 290942,
-			"asset_name" : "DoorHorzLvl3",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 750845,
-					"inst_child_uid" : 443248,
-					"is_asset" : true,
-					"inst_name" : "DoorHorzLvl3"
-				}
-			]
-		},
-		{
-			"asset_uid" : 685438,
-			"asset_name" : "Door",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 588276,
-					"inst_child_uid" : 138033,
-					"is_asset" : false,
-					"inst_name" : "DoorScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 290942,
-			"asset_name" : "DoorHorzLvl3",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 588276,
-					"inst_child_uid" : 443248,
-					"is_asset" : false,
-					"inst_name" : "DoorHorzLvl3"
-				}
-			]
-		},
-		{
-			"asset_uid" : 685438,
-			"asset_name" : "Door",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 423927,
-					"inst_child_uid" : 138033,
-					"is_asset" : true,
-					"inst_name" : "DoorScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 717431,
-			"asset_name" : "DoorHorzLvl4",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 423927,
-					"inst_child_uid" : 747512,
-					"is_asset" : true,
-					"inst_name" : "DoorHorzLvl4"
-				}
-			]
-		},
-		{
-			"asset_uid" : 685438,
-			"asset_name" : "Door",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 752254,
-					"inst_child_uid" : 138033,
-					"is_asset" : true,
-					"inst_name" : "DoorScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 883582,
-			"asset_name" : "DoorVertLvl1",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 752254,
-					"inst_child_uid" : 593447,
-					"is_asset" : true,
-					"inst_name" : "DoorVertLvl1"
-				}
-			]
-		},
-		{
-			"asset_uid" : 685438,
-			"asset_name" : "Door",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 980597,
-					"inst_child_uid" : 138033,
-					"is_asset" : false,
-					"inst_name" : "DoorScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 883582,
-			"asset_name" : "DoorVertLvl1",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 980597,
-					"inst_child_uid" : 593447,
-					"is_asset" : false,
-					"inst_name" : "DoorVertLvl1"
-				}
-			]
-		},
-		{
-			"asset_uid" : 685438,
-			"asset_name" : "Door",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 1015807,
-					"inst_child_uid" : 138033,
-					"is_asset" : true,
-					"inst_name" : "DoorScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 914431,
-			"asset_name" : "DoorVertLvl2",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 1015807,
-					"inst_child_uid" : 362778,
-					"is_asset" : true,
-					"inst_name" : "DoorVertLvl2"
-				}
-			]
-		},
-		{
-			"asset_uid" : 685438,
-			"asset_name" : "Door",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 718069,
-					"inst_child_uid" : 138033,
-					"is_asset" : true,
-					"inst_name" : "DoorScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 422645,
-			"asset_name" : "DoorVertLvl3",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 718069,
-					"inst_child_uid" : 357139,
-					"is_asset" : true,
-					"inst_name" : "DoorVertLvl3"
-				}
-			]
-		},
-		{
-			"asset_uid" : 685438,
-			"asset_name" : "Door",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 554103,
-					"inst_child_uid" : 138033,
-					"is_asset" : true,
-					"inst_name" : "DoorScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 324092,
-			"asset_name" : "DoorVertLvl4",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 554103,
-					"inst_child_uid" : 345544,
-					"is_asset" : true,
-					"inst_name" : "DoorVertLvl4"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 883318,
-					"inst_child_uid" : 72834,
-					"is_asset" : true,
-					"inst_name" : "SoldierGrabber_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 883318,
-					"inst_child_uid" : 881278,
-					"is_asset" : true,
-					"inst_name" : "SoldierAK47_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 883318,
-					"inst_child_uid" : 94582,
-					"is_asset" : true,
-					"inst_name" : "SoldierMachete_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 883318,
-					"inst_child_uid" : 818940,
-					"is_asset" : true,
-					"inst_name" : "SoldierStalker_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : 365581472,
-			"asset_name" : "SoldierAK47_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 883318,
-					"inst_child_uid" : 993895,
-					"is_asset" : true,
-					"inst_name" : "SoldierAK47"
-				}
-			]
-		},
-		{
-			"asset_uid" : 782972,
-			"asset_name" : "SoldierGrabber_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 883318,
-					"inst_child_uid" : 509683,
-					"is_asset" : true,
-					"inst_name" : "SoldierGrabber"
-				}
-			]
-		},
-		{
-			"asset_uid" : 63478,
-			"asset_name" : "SoldierMachete_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 883318,
-					"inst_child_uid" : 276131,
-					"is_asset" : true,
-					"inst_name" : "SoldierMachete"
-				}
-			]
-		},
-		{
-			"asset_uid" : 524286,
-			"asset_name" : "SoldierStalker_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 883318,
-					"inst_child_uid" : 310853,
-					"is_asset" : true,
-					"inst_name" : "SoldierStalker"
-				}
-			]
-		},
-		{
-			"asset_uid" : 752380,
-			"asset_name" : "EnemiesPool",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 883318,
-					"inst_child_uid" : 884120,
-					"is_asset" : true,
-					"inst_name" : "EnemiesPool"
-				}
-			]
-		},
-		{
-			"asset_uid" : 916599,
-			"asset_name" : "SecurityCamera",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 883318,
-					"inst_child_uid" : 447525,
-					"is_asset" : true,
-					"inst_name" : "SecurityCamera"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 553078,
-					"inst_child_uid" : 72834,
-					"is_asset" : false,
-					"inst_name" : "SoldierGrabber_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 553078,
-					"inst_child_uid" : 881278,
-					"is_asset" : false,
-					"inst_name" : "SoldierAK47_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 553078,
-					"inst_child_uid" : 94582,
-					"is_asset" : false,
-					"inst_name" : "SoldierMachete_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 553078,
-					"inst_child_uid" : 818940,
-					"is_asset" : false,
-					"inst_name" : "SoldierStalker_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : 365581472,
-			"asset_name" : "SoldierAK47_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 553078,
-					"inst_child_uid" : 993895,
-					"is_asset" : false,
-					"inst_name" : "SoldierAK47"
-				}
-			]
-		},
-		{
-			"asset_uid" : 782972,
-			"asset_name" : "SoldierGrabber_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 553078,
-					"inst_child_uid" : 509683,
-					"is_asset" : false,
-					"inst_name" : "SoldierGrabber"
-				}
-			]
-		},
-		{
-			"asset_uid" : 63478,
-			"asset_name" : "SoldierMachete_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 553078,
-					"inst_child_uid" : 276131,
-					"is_asset" : false,
-					"inst_name" : "SoldierMachete"
-				}
-			]
-		},
-		{
-			"asset_uid" : 524286,
-			"asset_name" : "SoldierStalker_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 553078,
-					"inst_child_uid" : 310853,
-					"is_asset" : false,
-					"inst_name" : "SoldierStalker"
-				}
-			]
-		},
-		{
-			"asset_uid" : 752380,
-			"asset_name" : "EnemiesPool",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 553078,
-					"inst_child_uid" : 884120,
-					"is_asset" : false,
-					"inst_name" : "EnemiesPool"
-				}
-			]
-		},
-		{
-			"asset_uid" : 916599,
-			"asset_name" : "SecurityCamera",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 553078,
-					"inst_child_uid" : 447525,
-					"is_asset" : false,
-					"inst_name" : "SecurityCamera"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 687612,
-					"inst_child_uid" : 72834,
-					"is_asset" : false,
-					"inst_name" : "SoldierGrabber_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 687612,
-					"inst_child_uid" : 881278,
-					"is_asset" : false,
-					"inst_name" : "SoldierAK47_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 687612,
-					"inst_child_uid" : 94582,
-					"is_asset" : false,
-					"inst_name" : "SoldierMachete_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 687612,
-					"inst_child_uid" : 818940,
-					"is_asset" : false,
-					"inst_name" : "SoldierStalker_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : 365581472,
-			"asset_name" : "SoldierAK47_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 687612,
-					"inst_child_uid" : 993895,
-					"is_asset" : false,
-					"inst_name" : "SoldierAK47"
-				}
-			]
-		},
-		{
-			"asset_uid" : 782972,
-			"asset_name" : "SoldierGrabber_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 687612,
-					"inst_child_uid" : 509683,
-					"is_asset" : false,
-					"inst_name" : "SoldierGrabber"
-				}
-			]
-		},
-		{
-			"asset_uid" : 63478,
-			"asset_name" : "SoldierMachete_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 687612,
-					"inst_child_uid" : 276131,
-					"is_asset" : false,
-					"inst_name" : "SoldierMachete"
-				}
-			]
-		},
-		{
-			"asset_uid" : 524286,
-			"asset_name" : "SoldierStalker_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 687612,
-					"inst_child_uid" : 310853,
-					"is_asset" : false,
-					"inst_name" : "SoldierStalker"
-				}
-			]
-		},
-		{
-			"asset_uid" : 752380,
-			"asset_name" : "EnemiesPool",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 687612,
-					"inst_child_uid" : 884120,
-					"is_asset" : false,
-					"inst_name" : "EnemiesPool"
-				}
-			]
-		},
-		{
-			"asset_uid" : 916599,
-			"asset_name" : "SecurityCamera",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 687612,
-					"inst_child_uid" : 447525,
-					"is_asset" : false,
-					"inst_name" : "SecurityCamera"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 326270,
-					"inst_child_uid" : 72834,
-					"is_asset" : false,
-					"inst_name" : "SoldierGrabber_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 326270,
-					"inst_child_uid" : 881278,
-					"is_asset" : false,
-					"inst_name" : "SoldierAK47_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 326270,
-					"inst_child_uid" : 94582,
-					"is_asset" : false,
-					"inst_name" : "SoldierMachete_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 326270,
-					"inst_child_uid" : 818940,
-					"is_asset" : false,
-					"inst_name" : "SoldierStalker_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : 365581472,
-			"asset_name" : "SoldierAK47_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 326270,
-					"inst_child_uid" : 993895,
-					"is_asset" : false,
-					"inst_name" : "SoldierAK47"
-				}
-			]
-		},
-		{
-			"asset_uid" : 782972,
-			"asset_name" : "SoldierGrabber_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 326270,
-					"inst_child_uid" : 509683,
-					"is_asset" : false,
-					"inst_name" : "SoldierGrabber"
-				}
-			]
-		},
-		{
-			"asset_uid" : 63478,
-			"asset_name" : "SoldierMachete_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 326270,
-					"inst_child_uid" : 276131,
-					"is_asset" : false,
-					"inst_name" : "SoldierMachete"
-				}
-			]
-		},
-		{
-			"asset_uid" : 524286,
-			"asset_name" : "SoldierStalker_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 326270,
-					"inst_child_uid" : 310853,
-					"is_asset" : false,
-					"inst_name" : "SoldierStalker"
-				}
-			]
-		},
-		{
-			"asset_uid" : 752380,
-			"asset_name" : "EnemiesPool",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 326270,
-					"inst_child_uid" : 884120,
-					"is_asset" : false,
-					"inst_name" : "EnemiesPool"
-				}
-			]
-		},
-		{
-			"asset_uid" : 916599,
-			"asset_name" : "SecurityCamera",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 326270,
-					"inst_child_uid" : 447525,
-					"is_asset" : false,
-					"inst_name" : "SecurityCamera"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 816245,
-					"inst_child_uid" : 72834,
-					"is_asset" : false,
-					"inst_name" : "SoldierGrabber_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 816245,
-					"inst_child_uid" : 881278,
-					"is_asset" : false,
-					"inst_name" : "SoldierAK47_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 816245,
-					"inst_child_uid" : 94582,
-					"is_asset" : false,
-					"inst_name" : "SoldierMachete_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 816245,
-					"inst_child_uid" : 818940,
-					"is_asset" : false,
-					"inst_name" : "SoldierStalker_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : 365581472,
-			"asset_name" : "SoldierAK47_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 816245,
-					"inst_child_uid" : 993895,
-					"is_asset" : false,
-					"inst_name" : "SoldierAK47"
-				}
-			]
-		},
-		{
-			"asset_uid" : 782972,
-			"asset_name" : "SoldierGrabber_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 816245,
-					"inst_child_uid" : 509683,
-					"is_asset" : false,
-					"inst_name" : "SoldierGrabber"
-				}
-			]
-		},
-		{
-			"asset_uid" : 63478,
-			"asset_name" : "SoldierMachete_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 816245,
-					"inst_child_uid" : 276131,
-					"is_asset" : false,
-					"inst_name" : "SoldierMachete"
-				}
-			]
-		},
-		{
-			"asset_uid" : 524286,
-			"asset_name" : "SoldierStalker_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 816245,
-					"inst_child_uid" : 310853,
-					"is_asset" : false,
-					"inst_name" : "SoldierStalker"
-				}
-			]
-		},
-		{
-			"asset_uid" : 752380,
-			"asset_name" : "EnemiesPool",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 816245,
-					"inst_child_uid" : 884120,
-					"is_asset" : false,
-					"inst_name" : "EnemiesPool"
-				}
-			]
-		},
-		{
-			"asset_uid" : 916599,
-			"asset_name" : "SecurityCamera",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 816245,
-					"inst_child_uid" : 447525,
-					"is_asset" : false,
-					"inst_name" : "SecurityCamera"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 785014,
-					"inst_child_uid" : 72834,
-					"is_asset" : false,
-					"inst_name" : "SoldierGrabber_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 785014,
-					"inst_child_uid" : 881278,
-					"is_asset" : false,
-					"inst_name" : "SoldierAK47_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 785014,
-					"inst_child_uid" : 94582,
-					"is_asset" : false,
-					"inst_name" : "SoldierMachete_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 785014,
-					"inst_child_uid" : 818940,
-					"is_asset" : false,
-					"inst_name" : "SoldierStalker_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : 365581472,
-			"asset_name" : "SoldierAK47_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 785014,
-					"inst_child_uid" : 993895,
-					"is_asset" : false,
-					"inst_name" : "SoldierAK47"
-				}
-			]
-		},
-		{
-			"asset_uid" : 782972,
-			"asset_name" : "SoldierGrabber_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 785014,
-					"inst_child_uid" : 509683,
-					"is_asset" : false,
-					"inst_name" : "SoldierGrabber"
-				}
-			]
-		},
-		{
-			"asset_uid" : 63478,
-			"asset_name" : "SoldierMachete_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 785014,
-					"inst_child_uid" : 276131,
-					"is_asset" : false,
-					"inst_name" : "SoldierMachete"
-				}
-			]
-		},
-		{
-			"asset_uid" : 524286,
-			"asset_name" : "SoldierStalker_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 785014,
-					"inst_child_uid" : 310853,
-					"is_asset" : false,
-					"inst_name" : "SoldierStalker"
-				}
-			]
-		},
-		{
-			"asset_uid" : 752380,
-			"asset_name" : "EnemiesPool",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 785014,
-					"inst_child_uid" : 884120,
-					"is_asset" : false,
-					"inst_name" : "EnemiesPool"
-				}
-			]
-		},
-		{
-			"asset_uid" : 916599,
-			"asset_name" : "SecurityCamera",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 785014,
-					"inst_child_uid" : 447525,
-					"is_asset" : false,
-					"inst_name" : "SecurityCamera"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 950015,
-					"inst_child_uid" : 72834,
-					"is_asset" : false,
-					"inst_name" : "SoldierGrabber_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 950015,
-					"inst_child_uid" : 881278,
-					"is_asset" : false,
-					"inst_name" : "SoldierAK47_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 950015,
-					"inst_child_uid" : 94582,
-					"is_asset" : false,
-					"inst_name" : "SoldierMachete_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : -1780856064,
-			"asset_name" : "SoldierLegs_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 950015,
-					"inst_child_uid" : 818940,
-					"is_asset" : false,
-					"inst_name" : "SoldierStalker_Legs"
-				}
-			]
-		},
-		{
-			"asset_uid" : 365581472,
-			"asset_name" : "SoldierAK47_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 950015,
-					"inst_child_uid" : 993895,
-					"is_asset" : false,
-					"inst_name" : "SoldierAK47"
-				}
-			]
-		},
-		{
-			"asset_uid" : 782972,
-			"asset_name" : "SoldierGrabber_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 950015,
-					"inst_child_uid" : 509683,
-					"is_asset" : false,
-					"inst_name" : "SoldierGrabber"
-				}
-			]
-		},
-		{
-			"asset_uid" : 63478,
-			"asset_name" : "SoldierMachete_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 950015,
-					"inst_child_uid" : 276131,
-					"is_asset" : false,
-					"inst_name" : "SoldierMachete"
-				}
-			]
-		},
-		{
-			"asset_uid" : 524286,
-			"asset_name" : "SoldierStalker_Graph",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 950015,
-					"inst_child_uid" : 310853,
-					"is_asset" : false,
-					"inst_name" : "SoldierStalker"
-				}
-			]
-		},
-		{
-			"asset_uid" : 752380,
-			"asset_name" : "EnemiesPool",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 950015,
-					"inst_child_uid" : 884120,
-					"is_asset" : false,
-					"inst_name" : "EnemiesPool"
-				}
-			]
-		},
-		{
-			"asset_uid" : 916599,
-			"asset_name" : "SecurityCamera",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 950015,
-					"inst_child_uid" : 447525,
-					"is_asset" : false,
-					"inst_name" : "SecurityCamera"
-				}
-			]
-		},
-		{
-			"asset_uid" : 258164,
-			"asset_name" : "Grass",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 292725,
-					"inst_child_uid" : 902052,
-					"is_asset" : true,
-					"inst_name" : "GrassScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 913653,
-			"asset_name" : "Grass",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 292725,
-					"inst_child_uid" : 413468,
-					"is_asset" : true,
-					"inst_name" : "GrassInst"
-				}
-			]
-		},
-		{
-			"asset_uid" : 258164,
-			"asset_name" : "Grass",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 947455,
-					"inst_child_uid" : 902052,
-					"is_asset" : false,
-					"inst_name" : "GrassScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 913653,
-			"asset_name" : "Grass",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 947455,
-					"inst_child_uid" : 413468,
-					"is_asset" : false,
-					"inst_name" : "GrassInst"
-				}
-			]
-		},
-		{
-			"asset_uid" : 258164,
-			"asset_name" : "Grass",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 163191,
-					"inst_child_uid" : 902052,
-					"is_asset" : false,
-					"inst_name" : "GrassScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 913653,
-			"asset_name" : "Grass",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 163191,
-					"inst_child_uid" : 413468,
-					"is_asset" : false,
-					"inst_name" : "GrassInst"
-				}
-			]
-		},
-		{
-			"asset_uid" : 258164,
-			"asset_name" : "Grass",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 424061,
-					"inst_child_uid" : 902052,
-					"is_asset" : false,
-					"inst_name" : "GrassScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 913653,
-			"asset_name" : "Grass",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 424061,
-					"inst_child_uid" : 413468,
-					"is_asset" : false,
-					"inst_name" : "GrassInst"
-				}
-			]
-		},
-		{
-			"asset_uid" : 258164,
-			"asset_name" : "Grass",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 196087,
-					"inst_child_uid" : 902052,
-					"is_asset" : false,
-					"inst_name" : "GrassScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 913653,
-			"asset_name" : "Grass",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 196087,
-					"inst_child_uid" : 413468,
-					"is_asset" : false,
-					"inst_name" : "GrassInst"
-				}
-			]
-		},
-		{
-			"asset_uid" : 258164,
-			"asset_name" : "Grass",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 946935,
-					"inst_child_uid" : 902052,
-					"is_asset" : false,
-					"inst_name" : "GrassScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 913653,
-			"asset_name" : "Grass",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 946935,
-					"inst_child_uid" : 413468,
-					"is_asset" : false,
-					"inst_name" : "GrassInst"
-				}
-			]
-		},
-		{
-			"asset_uid" : 589823,
-			"asset_name" : "Laser",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 226302,
-					"inst_child_uid" : 870624,
-					"is_asset" : true,
-					"inst_name" : "LaserScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 424445,
-			"asset_name" : "LaserHorz",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 226302,
-					"inst_child_uid" : 183052,
-					"is_asset" : true,
-					"inst_name" : "LaserHorz"
-				}
-			]
-		},
-		{
-			"asset_uid" : 589823,
-			"asset_name" : "Laser",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 30077,
-					"inst_child_uid" : 870624,
-					"is_asset" : false,
-					"inst_name" : "LaserScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 424445,
-			"asset_name" : "LaserHorz",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 30077,
-					"inst_child_uid" : 183052,
-					"is_asset" : false,
-					"inst_name" : "LaserHorz"
-				}
-			]
-		},
-		{
-			"asset_uid" : 589823,
-			"asset_name" : "Laser",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 686716,
-					"inst_child_uid" : 870624,
-					"is_asset" : false,
-					"inst_name" : "LaserScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 424445,
-			"asset_name" : "LaserHorz",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 686716,
-					"inst_child_uid" : 183052,
-					"is_asset" : false,
-					"inst_name" : "LaserHorz"
-				}
-			]
-		},
-		{
-			"asset_uid" : 589823,
-			"asset_name" : "Laser",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 523639,
-					"inst_child_uid" : 870624,
-					"is_asset" : true,
-					"inst_name" : "LaserScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 96757,
-			"asset_name" : "LaserVert",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 523639,
-					"inst_child_uid" : 970831,
-					"is_asset" : true,
-					"inst_name" : "LaserVert"
-				}
-			]
-		},
-		{
-			"asset_uid" : 589823,
-			"asset_name" : "Laser",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 327029,
-					"inst_child_uid" : 870624,
-					"is_asset" : false,
-					"inst_name" : "LaserScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 96757,
-			"asset_name" : "LaserVert",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 327029,
-					"inst_child_uid" : 970831,
-					"is_asset" : false,
-					"inst_name" : "LaserVert"
-				}
-			]
-		},
-		{
-			"asset_uid" : 95996,
-			"asset_name" : "Weat",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 979582,
-					"inst_child_uid" : 806312,
-					"is_asset" : true,
-					"inst_name" : "WeatScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 554743,
-			"asset_name" : "Ö?eat",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 979582,
-					"inst_child_uid" : 793830,
-					"is_asset" : true,
-					"inst_name" : "Ö?eatInst"
-				}
-			]
-		},
-		{
-			"asset_uid" : 95996,
-			"asset_name" : "Weat",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 488446,
-					"inst_child_uid" : 806312,
-					"is_asset" : false,
-					"inst_name" : "WeatScript"
-				}
-			]
-		},
-		{
-			"asset_uid" : 554743,
-			"asset_name" : "Ö?eat",
-			"instances" : [
-				{
-					"scene" : "coldrain.sca",
-					"inst_uid" : 488446,
-					"inst_child_uid" : 793830,
-					"is_asset" : false,
-					"inst_name" : "Ö?eatInst"
 				}
 			]
 		}
